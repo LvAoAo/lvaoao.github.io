@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Basics on My New Hugo Site</title>
-    <link>http://example.org/basics/</link>
-    <description>Recent content in Basics on My New Hugo Site</description>
+    <title>Basics on Hugo Relearn Theme</title>
+    <link>/basics/</link>
+    <description>Recent content in Basics on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Oct 2022 11:49:57 +0800</lastBuildDate><atom:link href="http://example.org/basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Oct 2022 11:49:57 +0800</lastBuildDate><atom:link href="/basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second Content</title>
-      <link>http://example.org/basics/second-content/</link>
+      <link>/basics/second-content/</link>
       <pubDate>Thu, 27 Oct 2022 11:49:57 +0800</pubDate>
-      <guid>http://example.org/basics/second-content/</guid>
+      <guid>/basics/second-content/</guid>
       <description></description>
     </item>
     <item>
       <title>First Content</title>
-      <link>http://example.org/basics/first-content/</link>
+      <link>/basics/first-content/</link>
       <pubDate>Thu, 27 Oct 2022 11:48:56 +0800</pubDate>
-      <guid>http://example.org/basics/first-content/</guid>
+      <guid>/basics/first-content/</guid>
       <description></description>
     </item>
     <item>
       <title>Monte Carlo</title>
-      <link>http://example.org/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</link>
+      <link>/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</guid>
+      <guid>/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</guid>
       <description>蒙特卡洛树 Platform 本实验使用Malmo作为实验平台
 Launch 第一步 参考Malmo上Launching Minecraft with our Mod模块的说明启动Minecraft。
 Minecraft是一个沙盒开放世界，将压缩包中的MC.py文件复制到Python_Examples文件夹下并运行，可以实现蒙特卡洛树的效果展示

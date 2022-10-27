@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pattern Recognition on My New Hugo Site</title>
-    <link>http://example.org/pattern-recognition/</link>
-    <description>Recent content in Pattern Recognition on My New Hugo Site</description>
+    <title>Pattern Recognition on Hugo Relearn Theme</title>
+    <link>/pattern-recognition/</link>
+    <description>Recent content in Pattern Recognition on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/pattern-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/pattern-recognition/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beyasian Decision</title>
-      <link>http://example.org/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/</link>
+      <link>/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/</guid>
+      <guid>/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/</guid>
       <description>贝叶斯决策理论 引言 根据概率论中的贝叶斯公式, 有: $$ p\left(\omega_i \mid x\right)=\frac{P\left(x, \omega_i\right)}{P(x)}=\frac{P\left(x \mid \omega_i\right) P\left(\omega_i\right)}{P(x)}, i=1,2 $$ 其中, $P\left(\omega_i\right)$ 是先验概率; $P\left(x, \omega_i\right)$ 是 $x$ 与 $\omega_i$ 的联合概率密度; $P(x)$ 是两类所有样本的概率密度, 称作总体密度。 这样, 后验概率就转化成为了先验概率与类条件密度的乘积, 再用整体的密度进行归一化。 在比较时, 总体密度没有区别, 因此只需要比较分子项。决策规则如下: 如果 $P\left(x \mid \omega_1\right) P\left(\omega_1\right)&amp;gt;P\left(x \mid \omega_2\right) P\left(\omega_2\right)$, 则 $x \in \omega_1$ ；反之, $x \in \omega_2$
 其中, 先验概率需要根据实际健康人群和患者的总体比例进行估计; 类条件密度则需要用一定的属于本类别的训练样本来进行估计。
 错误率 在只有两类的情况下, $P\left(\omega_1\right)+P\left(\omega_2\right)=1$; 如果决策 $\omega_1$, 那么犯错误的概率就是 $P(\operatorname{error})=1-P\left(\omega_1\right)=P\left(\omega_2\right)$; 反之亦然。
@@ -19,9 +19,9 @@
     </item>
     <item>
       <title>Linear Discriminant Analysis</title>
-      <link>http://example.org/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</link>
+      <link>/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</guid>
+      <guid>/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</guid>
       <description>Pattern-recognition-LDA 两种模式识别方法 概率密度函数方法 已知概率密度函数的形式，通过样本来估计密度函数的参数
 判别函数方法 ✔线性判别分析
 非线性判别
@@ -34,27 +34,23 @@ $\alpha$ 为学习率 (Learning rate) 或更新步长
 随机梯度下降 每次只用一个 $\left(\mathbf{x}_r, y_r\right)$或一些样本</description>
     </item>
     <item>
-      <title>NonLinear Discriminant Analysis</title>
-      <link>http://example.org/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</link>
+      <title>Nonlinear Discriminant Analysis</title>
+      <link>/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</guid>
+      <guid>/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/</guid>
       <description>非线性判别函数 引言 线性判别函数 简单、经济、实用 但线性不可分时错误率可能较大
 非线性判别函数 指：除了线性判别函数之外的各种判别函数! 分段线性判别函数
 优点
 决策面由若干个超平面段组成, 计算相对比较简单; 能够逼近各种形状的超曲面, 适应各种复杂的数据分布情况; 实际情况下类别之间的划分无法用解析形式表示时, 非线性判别函数仍能够对判别函数进行逼近。 分段线性判别函数 线性距离分类器 当两类的类条件概率密度为正态分布且两类先验概率相等, 各维特征独立且方差相等时, 最小错误率贝叶斯决策是基于最小距离的分段线性判别函数:
-分段线性距离分类器 将各类别划分为相对密集的子类, 每个子类以它们的均值作为代表点, 然后按最小距离分类。
+$$\left\|x-\mu_1\right\|^2-\left\|x-\mu_2\right\|^2 \lessgtr 0 \rightarrow x \in\left\{\begin{array}{l}\omega_1 \\\omega_2\end{array}\right.$$在**两类**情况下, 最小距离分类器就是**两类均值**之间**连线**的**垂直平分面**。可以把类均值看做是该类的代表点。分段线性距离分类器 将各类别划分为相对密集的子类, 每个子类以它们的均值作为代表点, 然后按最小距离分类。
 判别函数定义 $\omega_i$ 有 $l_i$ 个子类, 即属于 $\omega_i$ 的决策域 $R_i$ 分成 $l_i$ 个子域 $R_i^1, R_i^2, \ldots, R_i^{l_i}$, 每个子区域用均值 $m_i^k$ 代表 $$ g_i(x)=\min _{k=1, \ldots, l_i}\left|x-m_i^k\right| $$ 这里$g_i(x)$的意义为：和所有$w_i$的子类均值的距离中最小的那一个，作为和$i$类的距离
-判别规则 如果 $j=\underset{i=1, \ldots, c}{\arg \min } g_i(x)$ 则 $x$ 属于 $\omega_j$
-意义：和$j$类的距离最小，则被归为$j$类
-缺点 分段线性距离分类器是较为特殊的情况，适用于各维分布基本对称的情形，对于更复杂的情形则不适用。
-一般形式的分段线性判别函数 对于每个子类定义一个线性判别函数:
-$g_i^k(x)$ 表示第 $i$ 类第 $k$ 段线性判别函数</description>
+判别规则 如果 $j=\underset{i=1, \ldots, c}{\arg \min } g_i(x)$ 则 $x$ 属于 $\omega_j$</description>
     </item>
     <item>
       <title>Parameter Estimation</title>
-      <link>http://example.org/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</link>
+      <link>/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</guid>
+      <guid>/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</guid>
       <description></description>
     </item>
   </channel>
