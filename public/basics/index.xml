@@ -21,5 +21,18 @@
       <guid>http://example.org/basics/first-content/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Monte Carlo</title>
+      <link>http://example.org/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://example.org/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</guid>
+      <description>蒙特卡洛树 Platform 本实验使用Malmo作为实验平台
+Launch 第一步 参考Malmo上Launching Minecraft with our Mod模块的说明启动Minecraft。
+Minecraft是一个沙盒开放世界，将压缩包中的MC.py文件复制到Python_Examples文件夹下并运行，可以实现蒙特卡洛树的效果展示
+第二步 cd Python_Examples cp {PATH_OF_ZIP_DIR}/MC.py ./ python3 MC.py Theory 实验流程：
+在给定的悬空迷宫中，给定起点和终点。
+agent拥有感知全图和预演路径的能力，通过蒙托卡罗树算法，agent最终得到一个Q表格，并依据其来确定策略。
+功能主要由MC.py中的Monte_Carlo函数实现</description>
+    </item>
   </channel>
 </rss>

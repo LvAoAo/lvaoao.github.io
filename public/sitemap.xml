@@ -20,6 +20,9 @@
     <loc>http://example.org/categories/</loc>
   </url>
   <url>
+    <loc>http://example.org/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/</loc>
+  </url>
+  <url>
     <loc>http://example.org/tags/</loc>
   </url>
 </urlset>
