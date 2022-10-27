@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Basics"
-weight = 10
+weight = 1
 +++
 
-Changed!!!!!!!!!!!!!!!!
+This is mainly about 

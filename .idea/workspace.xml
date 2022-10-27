@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/content/basics/蒙特卡洛树.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/basics/蒙特卡洛树.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/basics/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/basics/_index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +23,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Pattern Recognition",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ssh.settings"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Pattern Recognition" />
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Pattern Recognization" />
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\public\Slides\Pattern Recognition" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -39,7 +53,7 @@
       <updated>1666845803666</updated>
       <workItem from="1666845805620" duration="12000" />
       <workItem from="1666846167714" duration="1767000" />
-      <workItem from="1666854790001" duration="318000" />
+      <workItem from="1666854790001" duration="2081000" />
     </task>
     <servers />
   </component>
