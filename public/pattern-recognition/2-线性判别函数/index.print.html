@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.104.3">
+    <meta name="generator" content="Relearn 5.3.3+tip">
+    <meta name="description" content="Documentation for Hugo Relearn Theme">
+    <meta name="author" content="Sören Weber">
+    <title>Linear Discriminant Analysis :: Hugo Relearn Theme</title>
+    <link href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" rel="canonical" type="text/html" title="Hugo Relearn Theme">
+    <link href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Relearn Theme">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1666877418" rel="stylesheet">
+    <link href="/css/nucleus.css?1666877418" rel="stylesheet">
+    <link href="/css/fonts.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1666877418" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1666877418" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1666877418" rel="stylesheet">
+    <link href="/css/variant.css?1666877418" rel="stylesheet">
+    <link href="/css/print.css?1666877418" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1666877418" rel="stylesheet">
+    <script src="/js/variant.js?1666877418"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var index_url="/index.json";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+    </script>
+    <script src="/js/jquery.min.js?1666877418" defer></script>
+  </head>
+  <body class="mobile-support print" data-url="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+             <a class="nav nav-next" href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="Nonlinear Discriminant Analysis (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+             <a class="nav nav-prev" href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" title="Beyasian Decision (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/Pattern%20Recognition/2-%e7%ba%bf%e6%80%a7%e5%88%a4%e5%88%ab%e5%87%bd%e6%95%b0.md" target="blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/pattern-recognition/"><span itemprop="name">Pattern Recognition</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Linear Discriminant Analysis</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#两种模式识别方法">两种模式识别方法</a>
+      <ul>
+        <li><a href="#概率密度函数方法">概率密度函数方法</a></li>
+        <li><a href="#判别函数方法">判别函数方法</a></li>
+      </ul>
+    </li>
+    <li><a href="#问题求解">问题求解</a></li>
+    <li><a href="#回归方法">(回归)方法</a>
+      <ul>
+        <li><a href="#批处理梯度下降">(批处理）梯度下降</a></li>
+        <li><a href="#随机梯度下降">随机梯度下降</a></li>
+        <li><a href="#正规方程组normal-equations">正规方程组(Normal Equations)</a></li>
+      </ul>
+    </li>
+    <li><a href="#线性判别函数用于分类">线性判别函数（用于<strong>分类</strong>）</a>
+      <ul>
+        <li><a href="#形式">形式</a></li>
+        <li><a href="#决策规则">决策规则</a></li>
+        <li><a href="#gx的意义">$g(x)$的意义</a></li>
+        <li><a href="#增广数据与齐次化">增广数据与齐次化</a></li>
+      </ul>
+    </li>
+    <li><a href="#准则函数">准则函数</a>
+      <ul>
+        <li><a href="#引入">引入</a></li>
+        <li><a href="#fisher准则">Fisher准则</a></li>
+        <li><a href="#感知机准则">感知机准则</a></li>
+        <li><a href="#最小平方误差准则">最小平方误差准则</a></li>
+      </ul>
+    </li>
+    <li><a href="#多分类问题">多分类问题</a>
+      <ul>
+        <li><a href="#概括">概括</a></li>
+        <li><a href="#c-1-two-class-problems">$c-1$ two-class problems</a></li>
+        <li><a href="#cc-1--2-two-class-problems">$c(c-1) / 2$ two-class problems</a></li>
+        <li><a href="#define-c-linear-discriminant-functions">Define $c$ linear discriminant functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#逻辑回归">逻辑回归</a>
+      <ul>
+        <li><a href="#多类逻辑回归">多类逻辑回归</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+           
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+    });
+</script>
+  
+
+    
+          <article class="default">
+<h1>Linear Discriminant Analysis</h1>
+
+<h1 id="pattern-recognition-lda">Pattern-recognition-LDA</h1>
+<h2 id="两种模式识别方法">两种模式识别方法</h2>
+<h3 id="概率密度函数方法">概率密度函数方法</h3>
+<p>已知概率密度函数的<strong>形式</strong>，通过样本来估计<strong>密度函数</strong>的<strong>参数</strong></p>
+<h3 id="判别函数方法">判别函数方法</h3>
+<p>✔线性判别分析</p>
+<p>非线性判别</p>
+<h2 id="问题求解">问题求解</h2>
+<ul>
+<li><strong>问题</strong>: 如何选择模型中的参数 $\mathbf{w}^T$</li>
+<li><strong>基本思想</strong>: 在训练集中, 预测 $f$ 与真正的输出 $y$ 的差异要最小</li>
+<li>因此<strong>目标函数</strong>(又叫成本函数Cost function) 定义为:
+$$
+J(\mathbf{w})=\frac{1}{2} \sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)^2
+$$
+进一步:
+$$
+\hat{\mathbf{w}}=\arg \min _{\mathbf{w}} J(\mathbf{w})=\arg \min <em>{\mathbf{w}}\left[\frac{1}{2} \sum</em>{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)^2\right]
+$$</li>
+</ul>
+<h2 id="回归方法">(回归)方法</h2>
+<h3 id="批处理梯度下降">(批处理）梯度下降</h3>
+<ul>
+<li>
+<p>给定初始值$w^0$</p>
+</li>
+<li>
+<p>更新w使得 $J(\mathbf{w})$ 越来越小</p>
+</li>
+<li>
+<p>$$
+\begin{aligned}
+&amp;\frac{\partial}{\partial w_j} J(\mathbf{w})=\sum_{i=1}^N\left(f\left(\mathbf{x}<em>i\right)-y_i\right) \cdot \mathbf{x}</em>{i, j} \
+&amp;w_j^t=w_j^{t-1}-\alpha \frac{\partial}{\partial w_j} J(\mathbf{w})
+\end{aligned}
+$$</p>
+</li>
+<li>
+<p>同时更新 $\mathbf{w}$ 的各维 $f\left(\mathbf{x}_i\right)=\left[\mathbf{w}^{t-1}\right]^T \mathbf{x}_i$</p>
+</li>
+<li>
+<p>$\alpha$ 为学习率 (Learning rate) 或更新步长</p>
+</li>
+<li>
+<p>迭代速度<strong>较慢</strong></p>
+</li>
+</ul>
+<h3 id="随机梯度下降">随机梯度下降</h3>
+<ul>
+<li>
+<p>每次只用<strong>一个 $\left(\mathbf{x}_r, y_r\right)$<strong>或</strong>一些</strong>样本</p>
+</li>
+<li>
+<p>$$
+w_j^t=w_j^{t-1}-\alpha\left(f\left(\mathbf{x}<em>r\right)-y_r\right) \cdot \mathbf{x}</em>{r, j}
+$$</p>
+<ul>
+<li>收敛速度较快</li>
+<li>不太容易陷入局部极值</li>
+<li>对大样本数据较有效</li>
+</ul>
+</li>
+<li>
+<p>又叫在线学习 (Online learning)</p>
+<ul>
+<li>数据集可以随时进行增加，不需要预先了解所有的数据集</li>
+<li>可离线学习, 对所有样本循环使用多次 (一次循环称为一个 epoch)</li>
+<li>每次可以看一些样本 (mini-batch)</li>
+</ul>
+</li>
+</ul>
+<h3 id="正规方程组normal-equations">正规方程组(Normal Equations)</h3>
+<h4 id="思想">思想</h4>
+<p>直接令导数为零，而非用梯度下降迭代得出</p>
+<h4 id="具体计算">具体计算</h4>
+<p>$$
+\begin{aligned}
+\frac{\partial}{\partial \mathbf{w}} J(\mathbf{w}) &amp;=\frac{\partial}{\partial \mathbf{w}}(X \mathbf{w}-\mathbf{y})^T(X \mathbf{w}-\mathbf{y}) \
+&amp;=2 X^T(X \mathbf{w}-\mathbf{y})=0 \
+\Rightarrow X^T X \mathbf{w} &amp;=X^T \mathbf{y}
+\end{aligned}
+$$
+得到模型的<strong>参数估计</strong>为：$\hat{\mathbf{w}}=\left(X^T X\right)^{-1} X^T \mathbf{y}$</p>
+<p>其中：$\left(X^T X\right)^{-1} X^T$为$\mathrm{X}$的伪逆矩阵</p>
+<h2 id="线性判别函数用于分类">线性判别函数（用于<strong>分类</strong>）</h2>
+<h3 id="形式">形式</h3>
+<p>$d$ 维空间中的线性判别函数（决策面）的一般形式:
+$$
+\mathrm{g}(\mathrm{x})=w^T x+w_0
+$$
+其中：$x$ 是样本向量-样本在 $d$ 维特征空间中的描述, $w$ 是权 向量, $w_0$ 是一个常数(阈值权):
+$$
+\begin{gathered}
+x=\left[x_1, x_2, \ldots, x_d\right]^T \
+w=\left[w_1, w_2, \ldots, w_d\right]^T
+\end{gathered}
+$$</p>
+<h3 id="决策规则">决策规则</h3>
+<p>两类问题的线性分类可采用如下决策规则:
+$$
+\text { 如果 }\left{\begin{array}{c}
+\mathbf{g}(\mathbf{x})&gt;\mathbf{0}, \text { 则决策 } \mathrm{x} \in \omega_1 \
+\mathbf{g}(\mathbf{x})&lt;\mathbf{0}, \text { 则决策 } \mathrm{x} \in \omega_2 \
+\mathbf{g}(\mathbf{x})=\mathbf{0}, \text { 可将其任意分类或拒绝 }
+\end{array}\right.
+$$
+$\mathbf{g}(\mathbf{x})=\mathbf{0}$ 定义了一个<strong>决策面</strong>, 把两类实例分开。如果 $\mathbf{g}(\mathbf{x})$ 是线性的, 则决策面是一个<strong>超平面</strong>。
+如果 $x_1$ 和 $x_2$ 都在决策面上, 则：</p>
+<p>对于超平面 $H$ 上的点 $x_1$ 和 $x_2$, 有:
+$$
+\quad w^T x_1+w_0=w^T x_2+w_0 \
+w^T\left(x_1-x_2\right)=0
+$$
+说明**$w$是$H$的法向量**</p>
+<h3 id="gx的意义">$g(x)$的意义</h3>
+<p>判别函数 $g(x)$ 也可以看作是特征空间中某个点 $x$ 到<strong>超平面距离</strong>的一种<strong>代数度量</strong>。若把 $x$ 表示为:
+$$
+x=x_p+r \frac{w}{|w|}
+$$
+$$
+\text{其中}\left{\begin{array}{c}
+x_p 是 x 到 H 的射影向量\</p>
+<p>r 是 x 到 H 的垂直距离\</p>
+<p>\frac{w}{|w|} 是 w 方向上的单位向量\
+\end{array}\right.
+$$</p>
+<img src="/images/2-线性判别函数.assets/image-20220911162732108-16668562085459-166685675857831.png" alt="image-20220911162732108" style="zoom:50%;" />
+<p>$g(x)$可进一步写为:
+$$
+\begin{aligned}
+g(x)&amp;=w^T\left(x_p+r \frac{w}{| w |}\right)+w_0\
+&amp;=w^T x_p+\omega_0+r \frac{w^T w}{| w|} \
+&amp;=r|w| \
+\
+r&amp;=\frac{g(x)}{|w|}
+\end{aligned}
+$$
+例如</p>
+<ul>
+<li>若 $x$ 为原点, 则 $\mathrm{g}(\mathrm{x})=\omega_0$</li>
+<li>原点到超平面 $H$ 的距离可以写作: $r_0=\frac{\omega_0}{|w|}$</li>
+</ul>
+<h3 id="增广数据与齐次化">增广数据与齐次化</h3>
+<h4 id="增广数据">增广数据</h4>
+<p>称$y=\left[\begin{array}{c}1 \ x_1 \ x_2 \ \vdots \ x_d\end{array}\right]=\left[\begin{array}{l}1 \ x\end{array}\right]$ 为<strong>增广样本向量</strong>；称 $a=\left[\begin{array}{c}w_0 \ w_1 \ w_2 \ \vdots \ w_d\end{array}\right]=\left[\begin{array}{c}w_0 \ w\end{array}\right]$ 为<strong>增广权向量</strong></p>
+<p>增广空间<strong>维数</strong>$\hat{d}=d+1 $
+方程 $a^T y=0$ 在增广空间 $Y$ 确定了一个<strong>通过原点</strong>的超平面 $\hat{H}$, 它对 $d$ 维子空间的划分与原决策面 $w^T x+w_0=0$ 对原 $X$ 空间的<strong>划分完全相同</strong>。 $Y$ 空间中任意一点 $y$ 到 $\hat{H}$ 的距离: $\quad r=\frac{g(x)}{|a|}=\frac{a^T y}{|a|}$</p>
+<h4 id="线性判别函数齐次化">线性判别函数齐次化</h4>
+<p>线性判别函数 
+$$
+g(x)=w^T x+w_0
+$$
+改写成 
+$$
+g(x)=w_0+\sum_{i=1}^d w_i x_i=\sum_{i=1}^d a_i y_i=a^T y
+$$
+称为线性判别函数的<strong>齐次化</strong></p>
+<h2 id="准则函数">准则函数</h2>
+<h3 id="引入">引入</h3>
+<p>上文讲述了线性判别函数的<strong>决策规则</strong>，下文讲解的<strong>准则函数</strong>则是在这样的决策规则下给出的一个<strong>利益准则</strong>/<strong>目标函数</strong>，通过<strong>最大化利益准则</strong>可以使我们达到不同的<strong>分类效果</strong></p>
+<h3 id="fisher准则">Fisher准则</h3>
+<h4 id="基本思想">基本思想</h4>
+<p>希望<strong>投影后</strong>的一维数据满足：</p>
+<ol>
+<li>两类<strong>之间</strong>的距离尽可能<strong>远</strong></li>
+<li>每一类<strong>自身</strong>尽可能<strong>紧凑</strong></li>
+</ol>
+<h4 id="基本思想的数学描述建模">基本思想的数学描述（建模）</h4>
+<p>(1)各类样本的<strong>均值向量</strong> $ m_i=\frac{1}{N_i} \sum_{x \in x_i} x, i=1,2$
+(2)原始空间内样本<strong>类内离散度矩阵</strong> $S_i$ 和<strong>总</strong>类内离散度矩阵 $S_w$
+$$
+\begin{gathered}
+S_i=\sum_{x \in \chi_i}\left(x-m_i\right)\left(x-m_i\right)^T, i=1,2 \
+or \
+S_w=S_1+S_2 \quad S_w=P\left(w_1\right) S_1+P\left(w_1\right) S_2
+\end{gathered}
+$$
+(3)样本<strong>类间离散度矩阵</strong> $S_b$
+$$
+\begin{gathered}
+S_b=\left(m_1-m_2\right)\left(m_1-m_2\right)^T \
+or \
+S_b=P\left(w_1\right) P\left(w_2\right)\left(m_1-m_2\right)\left(m_1-m_2\right)^T
+\end{gathered}
+$$</p>
+<h4 id="目标准则的数学描述建模">目标准则的数学描述（建模）</h4>
+<p>在投影以后的一维 $Y$ 空间 $y_n=w^T x_n$
+(1)各类<strong>样本均值</strong> $\tilde{m}<em>i=\frac{1}{N_i} \sum</em>{y \in \eta_i} y, i=1,2$
+(2)<strong>样本类内离散度</strong> $\widetilde{S_i^2}$ 和<strong>总</strong>类内离散度 $\widetilde{S_w}$
+$$
+\begin{gathered}
+\tilde{S}<em>i^2=\sum</em>{y \in \eta_i}\left(y-\tilde{m}_i\right)^2, i=1,2 \
+\tilde{S}_w=\tilde{S}_1^2+\tilde{S}<em>2^2
+\end{gathered}
+$$
+(3)而类间离散度 $\widetilde{S}</em>{\mathrm{b}}$ 就成为了两类均值差的平方 $\left(\widetilde{m_1}-\widetilde{m}_2\right)^2$ 。</p>
+<p><strong>注</strong>：这是<strong>投影后</strong>空间上的离散度（<strong>距离</strong>)表征(也正是我们的<strong>目标准则</strong>所要求的)，在<strong>给定$w$<strong>的情况下$S$和$\tilde{S}$的</strong>本质</strong>是相同的<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>，例如：
+$$
+\begin{aligned}
+\tilde{S}<em>i^2&amp;=\sum</em>{y \in \eta_i}\left(y-\tilde{m}<em>i\right)^2 \
+&amp;=\sum</em>{x \in \chi_i}\left(w^T x-w^Tm_i\right)^2 \
+&amp;=\sum_{x \in \chi_i}\left(w^T x-w^Tm_i\right)\left(w^T x-w^Tm_i\right) \
+&amp;=\sum_{x \in \chi_i}w^T\left( x-m_i\right)\left( x-m_i\right)^Tw \
+&amp;=w^T S_i w
+\end{aligned}
+$$</p>
+<p>故<strong>目标准则</strong>可以形式化成问题</p>
+<p>$$
+\underset{w}{\arg \max }\quad J_F(w) 
+&amp;=\frac{\left(\widetilde{m_1}-\widetilde{m}_2\right)^2}{\tilde{S}_1^2+\tilde{S}_2^2}\
+&amp;=\frac{w^T S_b w}{w^T S_w w}
+$$</p>
+<p>若考虑两类样本<strong>类内散度矩阵</strong>的<strong>不对称性</strong>（即考虑他们的<strong>先验概率</strong>），（?)则<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+$$
+\begin{aligned}
+J_F(w)&amp;=\frac{w^T S_b w}{w^T S_w w} \
+&amp;=\frac{w^T P\left(w_1\right) P\left(w_2\right)\left(m_1-m_2\right)\left(m_1-m_2\right)^T w}{w^TP\left(w_2\right) S_1 w+w^T P\left(w_1\right) S_2 w} \
+&amp;=\frac{w^T \left(m_1-m_2\right)\left(m_1-m_2\right)^T w}{w^T\frac{S_1}{P\left(w_1\right)} w+w^T \frac{S_2}{P\left(w_2\right)} w}
+\end{aligned}
+$$</p>
+<h4 id="投影方向w求解">投影方向$w$求解</h4>
+<p>$J_F(w)$ 只与投影方向有关, 与 $w$ 的<strong>大小无关</strong>。即若 $w$ 是一个最优解, $k w$ 也是最优解，其中 $k$ 是任何不为零的常数。
+因此, 在求解时, 可以假定分母项为非零的常数而最大化分子部分, 可以转化为如下问题：
+$$
+\underset{w}{\arg \max}\quad w^T S_b w \quad \
+s.t. \quad w^T S_w w=c \neq 0
+$$
+假定 $S_{\mathrm{w}}$ 是非奇异的, 可以得到:
+$$
+S_w^{-1} S_b w^<em>=\lambda w^</em>
+$$
+也就是说, $w^<em>$ 是 $S_w^{-1} S_b$ 的<strong>特征向量</strong>。把 $S_b$ 代入, 可进一步写为：
+$$
+\lambda w^</em>=S_w^{-1}\left(m_1-m_2\right)\left(m_1-m_2\right)^T w^*
+$$
+应该注意, $\left(m_1-m_2\right)^T w^<em>$ 是<strong>标量</strong>, 不影响 $w^</em>$ 的方向, $w^<em>$ 的方向是由 $S_w^{-1}\left(m_1-m_2\right)$ 决定的, 因此可取:
+$$
+w^</em>=S_w^{-1}\left(m_1-m_2\right)=\left(S_1+S_2\right)^{-1}\left(m_1-m_2\right)
+$$
+这就是Fisher判别准则下的<strong>最优投影方向</strong></p>
+<h4 id="分类阈值b求解">分类阈值$b$求解</h4>
+<p>上文只给出了<strong>投影方向</strong>, 却没给出分类面（缺少<strong>截距</strong>），所以要在投影之后的方向上确定<strong>分类阈值</strong></p>
+<p><strong>分类阈值</strong>的两种确定方法</p>
+<ul>
+<li>两类均值的中点(先验概率相同)
+$$
+b=\frac{\mu_1+\mu_2}{2}
+$$</li>
+<li>投影后数据的<strong>调和</strong>均值 (先验概率相同)(?权重是不是反了)</li>
+</ul>
+<p>$$
+\begin{aligned}
+b&amp;=\frac{n_1 \mu_1+n_2 \mu_2}{n_1+n_2}
+\end{aligned}
+$$</p>
+<p>（在先验概率不同时, 分界点向先验概率<strong>小</strong>的一侧偏移）</p>
+<p>其中，$n_1, n_2$ 是两类样本的个数，$\mu_i= \tilde{m}<em>i=\frac{1}{N_i} \sum</em>{x \in x_i} w^T x=\frac{1}{N_i} \sum_{y \in \eta_i} y, i=1,2$</p>
+<p>注意这里$\mu_i$的求解<strong>与b无关</strong>，也就是<strong>不妨取$b_0=0$</strong>，求完调和平均后才能真正的确定能用来分类的$b$</p>
+<p>直观来说，用<strong>0</strong>将1个**-1<strong>和3个</strong>3<strong>调和分开，和用</strong>100<strong>将1个</strong>99<strong>和3个</strong>103**调和分开是一样的</p>
+<img src="/images/2-线性判别函数.assets/image-20220911212641491-16668561840203-166685676367732.png" alt="image-20220911212641491" style="zoom: 67%;" />
+<p>故最后的Fisher准则下的分类器为
+$$
+\begin{gathered}
+\mathrm{g}(\mathrm{x})=w^T x+w_0\ \
+\text{其中}\quad w=S_w^{-1}\left(m_1-m_2\right)=\left(S_1+S_2\right)^{-1}\left(m_1-m_2\right)\ \
+w_0=-b=-\frac{\mu_1+\mu_2}{2}\quad or\quad-\frac{n_2 \mu_1+n_1 \mu_2}{n_1+n_2}
+\end{gathered}
+$$</p>
+<h3 id="感知机准则">感知机准则</h3>
+<h4 id="思想-1">思想</h4>
+<p>感知准则是一种自学习判别函数的生成方法, 由于 Rosenblatt试图将其用于脑模型感知器, 因此得名。</p>
+<p>该方法对<strong>随意给定</strong>的判别函数<strong>初始值</strong>, 通过<strong>样本分类训练过程</strong>逐步对其<strong>修正</strong>直至最终确定。</p>
+<h4 id="基本概念">基本概念</h4>
+<h5 id="线性可分性">线性可分性</h5>
+<p>一组容量为 $N$ 的样本集 $y_1, y_2, \ldots y_N$, 其中 $y_n$ 为 $d$ 维增广样本向量, 分别来自 $w_I$ 类和 $w_2$ 类, 如果存在权向量 $a$, 使得对于任何 $y \in w_1$, 都有 $a^T y&gt;0$, 而对于任何 $y \in w_2$, 都有 $a^T y&lt;0$, 则称这组样本为线性可分的。</p>
+<h5 id="样本的规范化">样本的规范化</h5>
+<p>原问题是
+$$
+\begin{aligned}
+&amp;\left{\begin{array}{l}
+a^T y_i&gt;0, y_i \in w_1 \
+a^T y_j&lt;0, y_j \in w_2
+\end{array}\right. \
+\end{aligned}
+$$
+通过<strong>规范化样本增广向量</strong>
+$$
+&amp;y_n^{\prime}=\left{\begin{array}{c}
+y_i&gt;0, y_i \in w_1 \
+-y_j&lt;0, y_j \in w_2
+\end{array}\right.
+$$
+使得
+$$
+a^T y_n^{\prime}&gt;0, n=1,2, \ldots, N
+$$
+<strong>线性可分</strong>的条件: 存在向量 $a^<em>$, 使得上式成立; $a^</em>$为解向量</p>
+<h5 id="解向量存在向量a使得上式成立">解向量：存在向量a*，使得上式成立</h5>
+<h5 id="解区在权值空间内所有的解向量组成的区域">解区：在权值空间内所有的解向量组成的区域</h5>
+<img src="/images/2-线性判别函数.assets/image-20220911211153532-16668561871824-166685676671633.png" alt="image-20220911211153532" style="zoom:50%;" />
+<p>考虑到<strong>噪声、误差</strong>的存在，应为解区留有<strong>余量</strong>，即$a^T y_n\ge b&gt;0$</p>
+<img src="/images/2-线性判别函数.assets/image-20220911211227659-16668561895625-166685677060434.png" alt="image-20220911211227659" style="zoom:50%;" />
+<h4 id="目标准则的数学描述建模-1">目标准则的数学描述（建模）</h4>
+<p>寻找解向量 $a^*$，使得对于一组样本 $y_1, y_2, \ldots y_N$：
+$$
+a^T y_n&gt;0, n=1,2, \ldots, N
+$$
+其中 $y_n$ 是规范化增广样本向量</p>
+<h4 id="算法思想">算法思想</h4>
+<p>对于<strong>线性可分</strong>问题, 构造<strong>准则函数</strong> $J_P(a)=\sum_{y \in \eta^k}\left(-a^T y\right)$
+其中 $\eta^k$ 是被权向量 $a$ 错分的样本集合, 即当 $y$ 被<strong>错分</strong>时, 就有 $a^T y_n \leq 0$
+因此 $J_P(a) \geq 0$, 仅当 $a$ 为解向量或在解区边界时 $J_P(a)=0$
+也就是说, 当且仅当 $\eta^k$ 为空集时 $J_P^<em>(a)=\min J_P(a)=0$，此时无错分样本, 这时的 $a$ 就是解向量 $a^</em>$ 。</p>
+<h4 id="算法梯度下降法">算法——梯度下降法</h4>
+<p>求使 $J_P(a)$ 达到最小值的 $a^*$, 采用梯度下降法求解:
+$$
+\begin{aligned}
+J_P(a) &amp;=\sum_{y \in \eta^k}\left(-a^T y\right) \
+\nabla J_P(a)=&amp; \frac{\partial J_P(a)}{\partial a}=\sum_{y \in \eta^k}(-y) \
+a(k+1) &amp;=a(k)-\rho_k \nabla J \quad   \
+a(k+1) &amp;=a(k)+\rho_k  \sum_{y \in \eta^k} y
+\end{aligned}
+$$</p>
+<h5 id="具体步骤">具体步骤</h5>
+<p><strong>初值</strong>：任意给定一向量初始值 $a(0)$
+<strong>迭代</strong>: 第 $k+1$ 次迭代时的权向量 $a(k+1)$ 等于第 $k$ 次的权向量 $a(k)$ 加上被错分类的所有样本之和与 $r_k$ 的乘积
+<strong>终止</strong>: 对所有样本正确分类。</p>
+<h5 id="算法tricks">算法Tricks</h5>
+<ul>
+<li>
+<p><strong>固定增量法</strong>与<strong>可变增量法</strong>($\rho_k$的变化与否)</p>
+</li>
+<li>
+<p><strong>批量样本</strong>修正法与<strong>单样本</strong>修正法</p>
+<ul>
+<li>
+<p>单样本修正法: 样本集视为不断重复出现的序列, 逐个样本检查, 修正权向量✔</p>
+</li>
+<li>
+<p>批量样本修正法: 样本<strong>成批</strong>或<strong>全部</strong>检查后, 修正权向量</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="注意">注意</h5>
+<ol>
+<li>只要<strong>解区间存在</strong>, 那么经过<strong>有限的步骤</strong>后可以得到一个解向量。</li>
+<li>如果不是线性可分，迭代的过程中总会出现<strong>新的被错误分类</strong>的样本$y$，算法<strong>不会终止</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ol>
+<h3 id="最小平方误差准则">最小平方误差准则</h3>
+<h4 id="思想-2">思想</h4>
+<p>寻找最好<strong>投影方向 $a^* $<strong>使得$\quad a^T y_n&gt;0$ ，对于一个</strong>人为给定</strong>的n维向量$b&gt;0,b\in R^N$
+$$
+Y=\left[\begin{array}{c}
+y_1^T \
+y_2^T \
+\vdots \
+y_N^T
+\end{array}\right]=\left[\begin{array}{cccc}
+y_{11} &amp; y_{12} &amp; \cdots &amp; y_{1 \hat{d}} \
+y_{21} &amp; y_{22} &amp; \cdots &amp; y_{2 \widehat{d}} \
+\cdots &amp; \cdots &amp; \cdots &amp; \cdots \
+y_{N 1} &amp; y_{N 2} &amp; \cdots &amp; y_{N \widehat{d}}
+\end{array}\right]
+$$
+$Ya=b$通常是<strong>不可以直接求解</strong>的（<strong>方程数</strong>多于<strong>末知数</strong>的矛盾方程组通常没有精确解）</p>
+<p>通过减少误差来确定最优的<strong>投影方向</strong> $a^* $</p>
+<p>定义误差向量: $e=Y a-b$,及平方误差准则函数:
+$$
+J_S(a)=|e|^2=|Y a-b|^2=\sum_{n=1}^N\left(a^T y_n-b_n\right)^2
+$$</p>
+<h4 id="解法">解法</h4>
+<h5 id="直接求解析解">直接求<strong>解析解</strong></h5>
+<p>$$
+a^<em>=Y^{+} b \quad Y^{+}=\left(Y^T Y\right)^{-1}  Y^T
+$$
+问题: (1)要求 $Y^T$ <strong>非奇异</strong>; (2) 求 $Y^</em>$ <strong>计算量大</strong>同时可能引入<strong>较大误差</strong>。</p>
+<h5 id="或者用梯度下降法">或者用<strong>梯度下降法</strong></h5>
+<p>采用梯度下降法求解: $\nabla J_S(a)=2 Y^T(Y a-b)$
+$$
+\left{\begin{array}{l}
+a(1), \text { Random } \
+a(k+1)=a(k)-\rho_k Y^T(Y a-b)
+\end{array}\right.
+$$
+可以证明,选择 $\rho_k=\frac{\rho_1}{k}$比较合适， $\rho_1$ 是任意常数
+该算法权向量收敛于使 $\nabla J_S(a)=2 Y^T(Y a-b)=0$ 的权向量 $a^{\text {* }}$
+优点：（1）不要求 $Y^r Y$ 奇异与否 （2）只计算 $d \times d$ 方阵 $Y ^T Y$, 比 $d \times N$ 矩阵$Y^{+}=\left(Y^T Y\right)^{-1}  Y^T$计算量小</p>
+<h4 id="b不同取值的意义">$b$不同取值的意义</h4>
+<h5 id="如果同一类样本对应的-b_i-为相同的值">如果<strong>同一类样本</strong>对应的 $b_i$ 为<strong>相同</strong>的值</h5>
+<p>$$
+\boldsymbol{b}=\left[\begin{array}{c}
+N / N_1 \
+\cdots \
+N / N_1 \
+N / N_2 \
+\cdots \
+N / N_2
+\end{array}\right] N_1 \text { 个 }
+$$
+<strong>a</strong><em>等价于</em><em>Fisher解</em>*</p>
+<h5 id="如果所有样本对应b_i取相同值且n趋于无穷">如果<strong>所有样本</strong>对应$b_i$取<strong>相同</strong>值，且<strong>N</strong>趋于<strong>无穷</strong></h5>
+<p>$$
+N \rightarrow \infty, b=\underset{N \uparrow}{[1,1, \cdots, 1}]^T
+$$</p>
+<p>$$
+g_0(x)=P\left(w_1 \mid x\right)-P\left(w_2 \mid x\right)
+$$
+以<strong>最小均方误差</strong>逼近<strong>贝叶斯判别函数</strong>（？不会）</p>
+<h4 id="问题和对比">问题和对比</h4>
+<p>相对其他准则，对于<strong>异常值</strong>(outlier)很敏感（很受印象）</p>
+<img src="/images/2-线性判别函数.assets/image-20220920200808481-16668561936516-166685677735635.png" alt="image-20220920200808481" style="zoom:50%;" />
+<table>
+<thead>
+<tr>
+<th></th>
+<th>线性可分</th>
+<th>线性不可分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>感知机准则</td>
+<td>收敛</td>
+<td>不收敛</td>
+</tr>
+<tr>
+<td>最小平方误差准则</td>
+<td>算法会收敛，但可能未将样本分开</td>
+<td>算法会收敛，样本不会被分开</td>
+</tr>
+</tbody>
+</table>
+<h2 id="多分类问题">多分类问题</h2>
+<h3 id="概括">概括</h3>
+<p><strong>多分类问题</strong>可以通过三种方法<strong>转换为二分类问题</strong>（下面方法中<strong>c</strong>为<strong>类别数</strong>）</p>
+<h3 id="c-1-two-class-problems">$c-1$ two-class problems</h3>
+<h4 id="思想-3">思想</h4>
+<p>用c-1个超平面把特征空间划分为c个区域</p>
+<p>每一个超平面将 $\omega_i$ 和not $\omega_i$ 的样本分开</p>
+<h4 id="问题">问题</h4>
+<ol>
+<li>两类样本不均衡导致<strong>分类面有偏</strong>, 样本<strong>数量少</strong>的类别易发生<strong>分类错误</strong></li>
+<li>往往<strong>不会</strong>恰好<strong>得到c个区域</strong>，造成特征空间内部分区域<strong>歧义</strong>（下图中绿色区域无法判断是$C_1$或者$C_2$）</li>
+</ol>
+<img src="/images/2-线性判别函数.assets/image-20220920202043462-16668561961537-166685678037436.png" alt="image-20220920202043462" style="zoom:50%;" />
+<h3 id="cc-1--2-two-class-problems">$c(c-1) / 2$ two-class problems</h3>
+<h4 id="思想-4">思想</h4>
+<p>每两类构造一个分类器</p>
+<p>Separate every pair of classes.</p>
+<h4 id="问题-1">问题</h4>
+<p>下图中的<strong>ambiguous region</strong> B的样本满足</p>
+<p>𝐻12: 1 &gt; 2</p>
+<p>𝐻13: 3 &gt; 1</p>
+<p>𝐻14: 4 &gt; 1</p>
+<p>𝐻23: 2 &gt; 3</p>
+<p>𝐻24: 4 &gt; 2</p>
+<p>𝐻34: 3 &gt; 4</p>
+<p>那么这6个分类器产生<strong>矛盾</strong>，无法确定这个区域的类别到底属于什么（没有一个类别大于<strong>所有</strong>其他类别）</p>
+<img src="/images/2-线性判别函数.assets/image-20220920202859425-166685679443841.png" alt="image-20220920202859425" style="zoom:50%;" />
+<h3 id="define-c-linear-discriminant-functions">Define $c$ linear discriminant functions</h3>
+<h4 id="思想-5">思想</h4>
+<p>所有**（分段）线性分类器<strong>转化为</strong>线性判别函数**</p>
+<p>Assign $x$ to $\omega_i$ if $g_i(x)&gt;g_j(x)$ for all $j \neq i$
+$$
+g_i(x)=w_i^t x+w_{i 0} \quad i=1, \ldots, c
+$$
+<img src="/images/2-线性判别函数.assets/image-20220920203642463-166685678562638.png" alt="image-20220920203642463" style="zoom:50%;" /></p>
+<h2 id="逻辑回归">逻辑回归</h2>
+<p>逻辑回归是概率型非线性回归, 但其<strong>本质</strong>是<strong>线性回归</strong>, 只是在特征到结果的映射中加入了<strong>一层函数映射</strong>,</p>
+<p>即先把特征线性求和, 然后使用函数 $\sigma(\mathbf{z})$ (Sigmoid函数) 来预测。
+$\quad \sigma(a)=\frac{1}{1+\exp (-a)} $</p>
+<p>其中$a=w^T x$,其<strong>意义</strong>是：属于第一个类别的几率（<strong>相对可能性</strong>）的对数，即$a=\ln \left(\frac{\sigma}{1-\sigma}\right)=\ln \frac{p\left(C_1 \mid x\right)}{p\left(C_2 \mid x\right)}$</p>
+<blockquote>
+<p>Sigmoid函数性质：</p>
+<ol>
+<li>可以将连续值映射到0和1区间上</li>
+<li>可导性 $\frac{d \sigma}{d a}=\sigma(1-\sigma)$</li>
+<li>对称性 $\sigma(-a)=1-\sigma(a)$</li>
+<li>反转性 $a=\ln \left(\frac{\sigma}{1-\sigma}\right)=\ln \frac{p\left(C_1 \mid x\right)}{p\left(C_2 \mid x\right)}$</li>
+</ol>
+</blockquote>
+<p>可根据已有样本, 定义目标函数为模型的似然函数的负对数, 并采用梯度下降 算法进行优化求解</p>
+<h3 id="多类逻辑回归">多类逻辑回归</h3>
+<p>$$
+\begin{aligned}
+&amp;p\left(C_k \mid \mathbf{x}\right)=\frac{p\left(\mathbf{x} \mid C_k\right) p\left(c_k\right)}{\sum_j p\left(\mathbf{x} \mid C_j\right) p\left(c_j\right)}=\frac{\exp \left(a_k\right)}{\sum_j \exp \left(a_j\right)} \quad \begin{array}{c}
+\text { 归一化指数 } \
+\text { Normalized Exponential }
+\end{array} \
+&amp;a_k=\ln p\left(\mathbf{x} \mid C_k\right) p\left(c_k\right)
+\end{aligned}
+$$
+$p(C_k|x)$的表达转换为<strong>Softmax函数</strong>：如果 $a_k \gg a_j$, 对于所有的 $k \neq j$, 有 $p\left(C_k \mid \mathbf{x}\right) \simeq 1$ $p\left(C_j \mid \mathbf{x}\right) \simeq 0$</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>$S_w$和$S_b$<strong>在$w$​​确定的情况下</strong>可以用来评估<strong>类内距离</strong>和<strong>类间距离</strong>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>这里的$P(w_i)$​为不同类别的<strong>先验概率</strong>，也即不同类别样本的<strong>比例</strong>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>需要注意，这里必须保证样本是线性可分的，否则算法迭代不会结束&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation showVisitedLinks">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+          <style>
+            #logo svg,
+            #logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 30px;
+              font-weight: 300;
+              margin-top: -13px;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 226px;
+              white-space: nowrap;
+            }
+            a#logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #logo svg {
+              margin-bottom: -20px;
+              margin-left: -23.5px;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.938em) {
+              a#logo {
+                font-size: 25px;
+                margin-top: -3px;
+              }
+              #logo svg {
+                margin-bottom: -12px;
+                margin-left: -23px;
+              }
+            }
+            @media all and (-ms-high-contrast:none) {
+              /* IE11s understanding of positioning is weird at best */
+              a#logo {
+                margin-top: -58px;
+              }
+              #logo svg {
+                margin-bottom: -62px;
+              }
+            }
+          </style>
+          <a id="logo" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044">
+              <path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:1.03763;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.992837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" style="color:#000;fill:#282828;stroke-width:1.02352;-inkscape-stroke:none" transform="translate(-40.698 -95.175)"/>
+              <path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.991342;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+            </svg>
+            Relearn
+          </a>
+        </div>
+        <div class="searchbox default-animation">
+          <label class="a11y-only" for="search-by">Search</label>
+          <i class="fas fa-search"></i>
+          <input data-search-input id="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1666877418" defer></script>
+        <script src="/js/lunr.min.js?1666877418" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1666877418" defer></script>
+        <script src="/js/lunr.multi.min.js?1666877418" defer></script>
+        <script src="/js/lunr.en.min.js?1666877418" defer></script>
+        <script src="/js/search.js?1666877418" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/basics/" class="dd-item"><input type="checkbox" id="section-3494ad44d160b070fd31576fe4a3841e" aria-controls="subsections-3494ad44d160b070fd31576fe4a3841e" class="toggle"><label class="a11y-only toggle" for="section-3494ad44d160b070fd31576fe4a3841e" >Submenu Basics</label><a href="/basics/">Basics<i class="fas fa-check read-icon"></i></a><ul id="subsections-3494ad44d160b070fd31576fe4a3841e">
+          <li data-nav-id="/basics/second-content/" class="dd-item"><a href="/basics/second-content/">Second Content<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/basics/first-content/" class="dd-item"><a href="/basics/first-content/">First Content<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/" class="dd-item"><a href="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/">Monte Carlo<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/pattern-recognition/" class="dd-item parent"><input type="checkbox" id="section-d97dd4feeffe48ab6a56cf2ae66c1e37" aria-controls="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37" class="toggle" checked><label class="a11y-only toggle" for="section-d97dd4feeffe48ab6a56cf2ae66c1e37" >Submenu Pattern Recognition</label><a href="/pattern-recognition/">Pattern Recognition<i class="fas fa-check read-icon"></i></a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
+          <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item active"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Nonlinear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation<i class="fas fa-check read-icon"></i></a></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
+          <ul>
+            <li><a class="padding" href="/https:/github.com/McShelby/hugo-theme-relearn"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="/more/showcase/"><i class='fas fa-fw fa-camera'></i> Showcases</a></li>
+            <li><a class="padding" href="/https:/gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a></li>
+            <li><a class="padding" href="/more/credits/"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+            <li><a class="padding" href="/tags/"><i class='fas fa-fw fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch showVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" selected>English</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-light" value="relearn-light" selected>Relearn Light</option>
+                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="red" value="red">Red</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks showVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1666877418" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1666877418" defer></script>
+    <script src="/js/featherlight.min.js?1666877418" defer></script>
+    <script src="/js/theme.js?1666877418" defer></script>
+  </body>
+        
+<link rel="stylesheet" href="/js/katex/katex.min.css" >
+<script src="/js/katex/katex.min.js" > </script>
+<script src="/js/katex/contrib/auto-render.min.js" ></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body);
+    });
+</script>
+</html>

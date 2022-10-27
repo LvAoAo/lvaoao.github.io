@@ -5,21 +5,24 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.104.3">
     <meta name="generator" content="Relearn 5.3.3+tip">
-    <meta name="description" content="">
-    <title>Linear Discriminant Analysis :: My New Hugo Site</title>
+    <meta name="description" content="Documentation for Hugo Relearn Theme">
+    <meta name="author" content="Sören Weber">
+    <title>Linear Discriminant Analysis :: Hugo Relearn Theme</title>
+    <link href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Relearn Theme">
+    <link href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/index.print.html" rel="alternate" type="text/html" title="Hugo Relearn Theme">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1666861319" rel="stylesheet">
-    <link href="/css/nucleus.css?1666861319" rel="stylesheet">
-    <link href="/css/fonts.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1666861319" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1666861319" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1666861319" rel="stylesheet">
-    <link href="/css/variant.css?1666861319" rel="stylesheet">
-    <link href="/css/print.css?1666861319" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1666861319"></script>
+    <link href="/css/fontawesome-all.min.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1666877418" rel="stylesheet">
+    <link href="/css/nucleus.css?1666877418" rel="stylesheet">
+    <link href="/css/fonts.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1666877418" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1666877418" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1666877418" rel="stylesheet">
+    <link href="/css/variant.css?1666877418" rel="stylesheet">
+    <link href="/css/print.css?1666877418" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1666877418"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -32,22 +35,32 @@
       window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
       window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
       // some further base stuff
-      var baseUriFull='http:\/\/example.org/';
-      window.variants && variants.init( [ 'relearn-light' ] );
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1666861319" defer></script>
+    <script src="/js/jquery.min.js?1666877418" defer></script>
   </head>
-  <body class="mobile-support default" data-url="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">
+  <body class="mobile-support html" data-url="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-             <a class="nav nav-next" href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="NonLinear Discriminant Analysis (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+             <a class="nav nav-next" href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="Nonlinear Discriminant Analysis (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
              <a class="nav nav-prev" href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" title="Beyasian Decision (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/Pattern%20Recognition/2-%e7%ba%bf%e6%80%a7%e5%88%a4%e5%88%ab%e5%87%bd%e6%95%b0.md" target="blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -55,7 +68,7 @@
             </span>
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">My New Hugo Site</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/pattern-recognition/"><span itemprop="name">Pattern Recognition</span></a><meta itemprop="position" content="2"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Linear Discriminant Analysis</span><meta itemprop="position" content="3"></li>
             </ol>
@@ -117,6 +130,37 @@
         <div class="flex-block-wrapper">
           <div id="head-tags">
           </div>
+           
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+    });
+</script>
+  
+
           <article class="default">
 <h1>Linear Discriminant Analysis</h1>
 
@@ -246,7 +290,7 @@ x_p 是 x 到 H 的射影向量\</p>
 <p>\frac{w}{|w|} 是 w 方向上的单位向量\
 \end{array}\right.
 $$</p>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220911162732108-16668562085459-166685675857831.png" alt="image-20220911162732108" style="zoom:50%;" />
 <p>$g(x)$可进一步写为:
 $$
 \begin{aligned}
@@ -379,7 +423,7 @@ $$</p>
 <p>其中，$n_1, n_2$ 是两类样本的个数，$\mu_i= \tilde{m}<em>i=\frac{1}{N_i} \sum</em>{x \in x_i} w^T x=\frac{1}{N_i} \sum_{y \in \eta_i} y, i=1,2$</p>
 <p>注意这里$\mu_i$的求解<strong>与b无关</strong>，也就是<strong>不妨取$b_0=0$</strong>，求完调和平均后才能真正的确定能用来分类的$b$</p>
 <p>直观来说，用<strong>0</strong>将1个**-1<strong>和3个</strong>3<strong>调和分开，和用</strong>100<strong>将1个</strong>99<strong>和3个</strong>103**调和分开是一样的</p>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220911212641491-16668561840203-166685676367732.png" alt="image-20220911212641491" style="zoom: 67%;" />
 <p>故最后的Fisher准则下的分类器为
 $$
 \begin{gathered}
@@ -419,9 +463,9 @@ $$
 <strong>线性可分</strong>的条件: 存在向量 $a^<em>$, 使得上式成立; $a^</em>$为解向量</p>
 <h5 id="解向量存在向量a使得上式成立">解向量：存在向量a*，使得上式成立</h5>
 <h5 id="解区在权值空间内所有的解向量组成的区域">解区：在权值空间内所有的解向量组成的区域</h5>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220911211153532-16668561871824-166685676671633.png" alt="image-20220911211153532" style="zoom:50%;" />
 <p>考虑到<strong>噪声、误差</strong>的存在，应为解区留有<strong>余量</strong>，即$a^T y_n\ge b&gt;0$</p>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220911211227659-16668561895625-166685677060434.png" alt="image-20220911211227659" style="zoom:50%;" />
 <h4 id="目标准则的数学描述建模-1">目标准则的数学描述（建模）</h4>
 <p>寻找解向量 $a^*$，使得对于一组样本 $y_1, y_2, \ldots y_N$：
 $$
@@ -531,7 +575,7 @@ $$
 以<strong>最小均方误差</strong>逼近<strong>贝叶斯判别函数</strong>（？不会）</p>
 <h4 id="问题和对比">问题和对比</h4>
 <p>相对其他准则，对于<strong>异常值</strong>(outlier)很敏感（很受印象）</p>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220920200808481-16668561936516-166685677735635.png" alt="image-20220920200808481" style="zoom:50%;" />
 <table>
 <thead>
 <tr>
@@ -565,7 +609,7 @@ $$
 <li>两类样本不均衡导致<strong>分类面有偏</strong>, 样本<strong>数量少</strong>的类别易发生<strong>分类错误</strong></li>
 <li>往往<strong>不会</strong>恰好<strong>得到c个区域</strong>，造成特征空间内部分区域<strong>歧义</strong>（下图中绿色区域无法判断是$C_1$或者$C_2$）</li>
 </ol>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220920202043462-16668561961537-166685678037436.png" alt="image-20220920202043462" style="zoom:50%;" />
 <h3 id="cc-1--2-two-class-problems">$c(c-1) / 2$ two-class problems</h3>
 <h4 id="思想-4">思想</h4>
 <p>每两类构造一个分类器</p>
@@ -579,7 +623,7 @@ $$
 <p>𝐻24: 4 &gt; 2</p>
 <p>𝐻34: 3 &gt; 4</p>
 <p>那么这6个分类器产生<strong>矛盾</strong>，无法确定这个区域的类别到底属于什么（没有一个类别大于<strong>所有</strong>其他类别）</p>
-<!-- raw HTML omitted -->
+<img src="/images/2-线性判别函数.assets/image-20220920202859425-166685679443841.png" alt="image-20220920202859425" style="zoom:50%;" />
 <h3 id="define-c-linear-discriminant-functions">Define $c$ linear discriminant functions</h3>
 <h4 id="思想-5">思想</h4>
 <p>所有**（分段）线性分类器<strong>转化为</strong>线性判别函数**</p>
@@ -587,7 +631,7 @@ $$
 $$
 g_i(x)=w_i^t x+w_{i 0} \quad i=1, \ldots, c
 $$
-<!-- raw HTML omitted --></p>
+<img src="/images/2-线性判别函数.assets/image-20220920203642463-166685678562638.png" alt="image-20220920203642463" style="zoom:50%;" /></p>
 <h2 id="逻辑回归">逻辑回归</h2>
 <p>逻辑回归是概率型非线性回归, 但其<strong>本质</strong>是<strong>线性回归</strong>, 只是在特征到结果的映射中加入了<strong>一层函数映射</strong>,</p>
 <p>即先把特征线性求和, 然后使用函数 $\sigma(\mathbf{z})$ (Sigmoid函数) 来预测。
@@ -635,7 +679,7 @@ $p(C_k|x)$的表达转换为<strong>Softmax函数</strong>：如果 $a_k \gg a_j
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
+    <aside id="sidebar" class="default-animation showVisitedLinks">
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
           <style>
@@ -707,49 +751,53 @@ $p(C_k|x)$的表达转换为<strong>Softmax函数</strong>：如果 $a_k \gg a_j
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1666861319" defer></script>
-        <script src="/js/lunr.min.js?1666861319" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1666861319" defer></script>
-        <script src="/js/lunr.multi.min.js?1666861319" defer></script>
-        <script src="/js/lunr.en.min.js?1666861319" defer></script>
-        <script src="/js/search.js?1666861319" defer></script>
-      </div>
-      <div id="homelinks" class="default-animation">
-        <ul>
-          <li>
-              <a class="padding" href="/"><i class="fas fa-home"></i> Home</a>
-          </li>
-        </ul>
+        <script src="/js/auto-complete.js?1666877418" defer></script>
+        <script src="/js/lunr.min.js?1666877418" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1666877418" defer></script>
+        <script src="/js/lunr.multi.min.js?1666877418" defer></script>
+        <script src="/js/lunr.en.min.js?1666877418" defer></script>
+        <script src="/js/search.js?1666877418" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
-        <ul class="topics">
-          <li data-nav-id="/basics/" class="dd-item"><a href="/basics/">Basics</a><ul id="subsections-3494ad44d160b070fd31576fe4a3841e">
-          <li data-nav-id="/basics/second-content/" class="dd-item"><a href="/basics/second-content/">Second Content</a></li>
-          <li data-nav-id="/basics/first-content/" class="dd-item"><a href="/basics/first-content/">First Content</a></li>
-          <li data-nav-id="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/" class="dd-item"><a href="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/">Monte Carlo</a></li></ul></li>
-          <li data-nav-id="/pattern-recognition/" class="dd-item parent"><a href="/pattern-recognition/">Pattern Recognition</a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
-          <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision</a></li>
-          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item active"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis</a></li>
-          <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">NonLinear Discriminant Analysis</a></li>
-          <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation</a></li></ul></li>
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/basics/" class="dd-item"><input type="checkbox" id="section-3494ad44d160b070fd31576fe4a3841e" aria-controls="subsections-3494ad44d160b070fd31576fe4a3841e" class="toggle"><label class="a11y-only toggle" for="section-3494ad44d160b070fd31576fe4a3841e" >Submenu Basics</label><a href="/basics/">Basics<i class="fas fa-check read-icon"></i></a><ul id="subsections-3494ad44d160b070fd31576fe4a3841e">
+          <li data-nav-id="/basics/second-content/" class="dd-item"><a href="/basics/second-content/">Second Content<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/basics/first-content/" class="dd-item"><a href="/basics/first-content/">First Content<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/" class="dd-item"><a href="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/">Monte Carlo<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/pattern-recognition/" class="dd-item parent"><input type="checkbox" id="section-d97dd4feeffe48ab6a56cf2ae66c1e37" aria-controls="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37" class="toggle" checked><label class="a11y-only toggle" for="section-d97dd4feeffe48ab6a56cf2ae66c1e37" >Submenu Pattern Recognition</label><a href="/pattern-recognition/">Pattern Recognition<i class="fas fa-check read-icon"></i></a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
+          <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item active"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Nonlinear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
-        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
-        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
           <ul>
-            <li id="select-language-container" class="footerLangSwitch">
+            <li><a class="padding" href="/https:/github.com/McShelby/hugo-theme-relearn"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="/more/showcase/"><i class='fas fa-fw fa-camera'></i> Showcases</a></li>
+            <li><a class="padding" href="/https:/gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a></li>
+            <li><a class="padding" href="/more/credits/"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+            <li><a class="padding" href="/tags/"><i class='fas fa-fw fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch showVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
               <div class="padding select-container">
                 <i class="fas fa-language fa-fw"></i>
                 <span>&nbsp;</span>
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" selected>English</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
               </div>
             </li>
-            <li id="select-variant-container" class="footerVariantSwitch">
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
               <div class="padding select-container">
                 <i class="fas fa-paint-brush fa-fw"></i>
                 <span>&nbsp;</span>
@@ -757,13 +805,19 @@ $p(C_k|x)$的表达转换为<strong>Softmax函数</strong>：如果 $a_k \gg a_j
                   <label class="a11y-only" for="select-variant">Theme</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
                     <option id="relearn-light" value="relearn-light" selected>Relearn Light</option>
+                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="red" value="red">Red</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+            <li class="footerVisitedLinks showVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter">
@@ -771,25 +825,18 @@ $p(C_k|x)$的表达转换为<strong>Softmax函数</strong>：如果 $a_k \gg a_j
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1666861319" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1666861319" defer></script>
-    <script src="/js/featherlight.min.js?1666861319" defer></script>
-    <script src="/js/theme.js?1666861319" defer></script>
+    <script src="/js/clipboard.min.js?1666877418" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1666877418" defer></script>
+    <script src="/js/featherlight.min.js?1666877418" defer></script>
+    <script src="/js/theme.js?1666877418" defer></script>
   </body>
         
-<link
-	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
-	integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
-	crossorigin="anonymous"
-/>
-
-
-<script
-	defer
-	src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
-	integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
-	crossorigin="anonymous"
-></script>
-
+<link rel="stylesheet" href="/js/katex/katex.min.css" >
+<script src="/js/katex/katex.min.js" > </script>
+<script src="/js/katex/contrib/auto-render.min.js" ></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body);
+    });
+</script>
 </html>

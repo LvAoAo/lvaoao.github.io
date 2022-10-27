@@ -138,3 +138,6 @@
     {{- end }}
   {{- end }}
 {{- end }}
+           {{ if or .Params.math .Site.Params.math }}
+  {{ partial "math.html" . }}
+  {{ end }}

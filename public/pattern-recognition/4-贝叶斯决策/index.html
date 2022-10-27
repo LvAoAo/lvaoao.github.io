@@ -5,21 +5,24 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.104.3">
     <meta name="generator" content="Relearn 5.3.3+tip">
-    <meta name="description" content="">
-    <title>Beyasian Decision :: My New Hugo Site</title>
+    <meta name="description" content="Documentation for Hugo Relearn Theme">
+    <meta name="author" content="Sören Weber">
+    <title>Beyasian Decision :: Hugo Relearn Theme</title>
+    <link href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Relearn Theme">
+    <link href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/index.print.html" rel="alternate" type="text/html" title="Hugo Relearn Theme">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1666861319" rel="stylesheet">
-    <link href="/css/nucleus.css?1666861319" rel="stylesheet">
-    <link href="/css/fonts.css?1666861319" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1666861319" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1666861319" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1666861319" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1666861319" rel="stylesheet">
-    <link href="/css/variant.css?1666861319" rel="stylesheet">
-    <link href="/css/print.css?1666861319" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1666861319"></script>
+    <link href="/css/fontawesome-all.min.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1666877418" rel="stylesheet">
+    <link href="/css/nucleus.css?1666877418" rel="stylesheet">
+    <link href="/css/fonts.css?1666877418" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1666877418" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1666877418" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1666877418" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1666877418" rel="stylesheet">
+    <link href="/css/variant.css?1666877418" rel="stylesheet">
+    <link href="/css/print.css?1666877418" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1666877418"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -32,12 +35,12 @@
       window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
       window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
       // some further base stuff
-      var baseUriFull='http:\/\/example.org/';
-      window.variants && variants.init( [ 'relearn-light' ] );
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1666861319" defer></script>
+    <script src="/js/jquery.min.js?1666877418" defer></script>
   </head>
-  <body class="mobile-support default" data-url="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">
+  <body class="mobile-support html" data-url="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -49,13 +52,23 @@
           <div class="navigation">
              <a class="nav nav-prev" href="/pattern-recognition/" title="Pattern Recognition (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
+          <div id="top-print-link">
+            <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/Pattern%20Recognition/4-%e8%b4%9d%e5%8f%b6%e6%96%af%e5%86%b3%e7%ad%96.md" target="blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">My New Hugo Site</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/pattern-recognition/"><span itemprop="name">Pattern Recognition</span></a><meta itemprop="position" content="2"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Beyasian Decision</span><meta itemprop="position" content="3"></li>
             </ol>
@@ -120,6 +133,37 @@
         <div class="flex-block-wrapper">
           <div id="head-tags">
           </div>
+           
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+    });
+</script>
+  
+
           <article class="default">
 <h1>Beyasian Decision</h1>
 
@@ -186,7 +230,7 @@ $$
 $$</p>
 <h3 id="图示">图示</h3>
 <p>从图中可以看到，这种决策实际的分类线就是图中的<strong>虚线</strong>位置，被称为<strong>决策边界</strong>或<strong>分类线</strong>。在多维的情况下，<strong>称为决策面</strong>或<strong>分类面</strong>，它把特征空间划分成属于各类的区域。</p>
-<!-- raw HTML omitted -->
+<img src="/images/4-贝叶斯决策.assets/image-20221005082900683-166686901998458.png" alt="image-20221005082900683" style="zoom:50%;" />
 <h3 id="多类识别问题">多类识别问题</h3>
 <p>多类识别问题的Bayes最小错误率决策:</p>
 <ul>
@@ -449,7 +493,8 @@ $$
 (\boldsymbol{x}-\boldsymbol{\mu})^T \boldsymbol{\Sigma}^{-1}(\boldsymbol{x}-\boldsymbol{\mu})=\gamma^2=\text { 常数c }
 $$
 式中 $\gamma$ 称为 $x$ 到 $\mu$ 的<strong>马氏距离</strong>。所以<strong>等密度点</strong>轨迹是 $x$ 到 $\mu$ 的马氏距离 $\gamma$ 为常数的<strong>超椭球面</strong>。</p>
-<!-- raw HTML omitted -->
+<img src="/images/4-贝叶斯决策.assets/image-20221005144716870-166686902360559.png" alt="image-20221005144716870" style="zoom:50%;" />
+从下图可以看出, 从正态分布总体中抽取的样本大部分落在由 $\mu$ 和 $\Sigma$ 所确定的一个区域里, 这个区域的中心由均值向量 $\mu$ 决定，区域的大小由协方差矩阵决定。
 <h4 id="性质">性质</h4>
 <ol>
 <li>
@@ -554,8 +599,8 @@ x_0=\frac{1}{2}\left(\mu_i+\mu_j\right)-\frac{\sigma^2}{\left|\mu_i-\mu_j\right|
 $$
 满足 $w^T\left(x-x_0\right)=0$ 的 $x$ 的轨迹构成了 $\omega_i$ 和 $\omega_j$ 类间的<strong>决策面</strong>。</p>
 <p>当 $P\left(\omega_i\right)=P\left(\omega_j\right)$ 时, 该超平面与 $\mu_i$ 与 $\mu_j$ 的连线正交并通过连线中点。
-当 $P\left(\omega_i\right), i=1,2, \ldots, c$ 不相等, 决策面与<strong>先验概率相等</strong>时候的决策面平行, 向**<!-- raw HTML omitted -->先验概率小<!-- raw HTML omitted --><strong>的方向偏移, 即</strong>先验概率大<strong>的一类占据</strong>更大的决策空间**。</p>
-<!-- raw HTML omitted -->
+当 $P\left(\omega_i\right), i=1,2, \ldots, c$ 不相等, 决策面与<strong>先验概率相等</strong>时候的决策面平行, 向**<u>先验概率小</u><strong>的方向偏移, 即</strong>先验概率大<strong>的一类占据</strong>更大的决策空间**。</p>
+<img src="/images/4-贝叶斯决策.assets/image-20221005155716961-166686902640460.png" alt="image-20221005155716961" style="zoom:50%;" />
 <h4 id="特硃情况2各类的协方差矩阵都相等">特硃情况2：各类的协方差矩阵都相等</h4>
 <p>$$
 \Sigma_i=\Sigma, i=1,2, \ldots, c
@@ -594,7 +639,7 @@ $$
 x_0=\frac{1}{2}\left(\mu_i+\mu_j\right)
 $$
 此时, $x_0$ 为 $\mu_i,\mu_j$ 连线的中点, 决策面<strong>通过该点</strong>。 当 $P\left(\omega_i\right), i=1,2, \ldots, c$ 不相等, 决策面向<strong>先验概率小</strong>的方向偏移。</p>
-<!-- raw HTML omitted -->
+<img src="/images/4-贝叶斯决策.assets/image-20221005162330467-166686904171964.png" alt="image-20221005162330467" style="zoom: 67%;" />
 <h4 id="特殊情况3-各类协方差阵不相等">特殊情况3: 各类协方差阵不相等</h4>
 <p>判别函数中只有 $\frac{d}{2} \ln 2 \pi$ 与 $i$ 无关, 判别函数可以简化为: 
 $$
@@ -610,12 +655,12 @@ $$
 x^T\left(W_i-W_j\right) x+\left(w_i-w_j\right)^T x+\omega_{i 0}-\omega_{j 0}=0
 $$
 该决策面为<strong>超二次曲面</strong>。随着 $\Sigma_i, \mu_i, \quad P\left(\omega_i\right)$ 的不同而呈现出某种曲面, 即<strong>超球面、超椭球面、超拋物线面、超双曲面或者超平面</strong>。</p>
-<!-- raw HTML omitted -->
+<img src="/images/4-贝叶斯决策.assets/image-20221005162816331-166686903211662.png" alt="image-20221005162816331" style="zoom:50%;" />
 <h2 id="错误率计算非考试重点">错误率计算（非考试重点）</h2>
 <h3 id="引入-2">引入</h3>
 <ul>
 <li>任何一种<strong>决策规则</strong>都有其相应的<strong>错误率</strong>。</li>
-<li>当采用<strong>指定的决策规则</strong>来对<strong>类条件概率密度</strong>及<strong>先验概率</strong>均为<strong>已知</strong>的问题进行分类时，它的<strong>错误率</strong>是**<!-- raw HTML omitted -->固定<!-- raw HTML omitted -->**的。</li>
+<li>当采用<strong>指定的决策规则</strong>来对<strong>类条件概率密度</strong>及<strong>先验概率</strong>均为<strong>已知</strong>的问题进行分类时，它的<strong>错误率</strong>是**<u>固定</u>**的。</li>
 <li>错误率反映了分类问题<strong>固有的复杂性</strong>的程度。</li>
 <li>对同一种问题设计出的多种<strong>不同的分类方案</strong>，通常总是以错误率大小作为比较方案好坏的<strong>标准</strong>。</li>
 </ul>
@@ -640,7 +685,7 @@ $$
 h(x)=-\ln (l(x))=-\ln \mathbf{p}\left(x \mid \omega_1\right)+\ln \mathbf{p}\left(x \mid \omega_2\right)
 $$
 若 $h(x) \lessgtr \ln \frac{P\left(\omega_1\right)}{P\left(\omega_2\right)}$, 则 $x \in\left{\begin{array}{l}\omega_1 \ \omega_2\end{array}\right.$
-$h(x)$ 为随机变量, 记它的<strong>分布函数</strong>为 $p\left(h \mid \omega_i\right)$, 是**<!-- raw HTML omitted -->一维密度函数<!-- raw HTML omitted -->**（ <!-- raw HTML omitted -->由多维积分转换为一维积分<!-- raw HTML omitted -->）</p>
+$h(x)$ 为随机变量, 记它的<strong>分布函数</strong>为 $p\left(h \mid \omega_i\right)$, 是**<u>一维密度函数</u>**（ <u>由多维积分转换为一维积分</u>）</p>
 <p>这样贝叶斯决策的<strong>最小错误率形式</strong>
 $$
 \begin{aligned}
@@ -744,7 +789,7 @@ $$</p>
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
+    <aside id="sidebar" class="default-animation showVisitedLinks">
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
           <style>
@@ -816,49 +861,53 @@ $$</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1666861319" defer></script>
-        <script src="/js/lunr.min.js?1666861319" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1666861319" defer></script>
-        <script src="/js/lunr.multi.min.js?1666861319" defer></script>
-        <script src="/js/lunr.en.min.js?1666861319" defer></script>
-        <script src="/js/search.js?1666861319" defer></script>
-      </div>
-      <div id="homelinks" class="default-animation">
-        <ul>
-          <li>
-              <a class="padding" href="/"><i class="fas fa-home"></i> Home</a>
-          </li>
-        </ul>
+        <script src="/js/auto-complete.js?1666877418" defer></script>
+        <script src="/js/lunr.min.js?1666877418" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1666877418" defer></script>
+        <script src="/js/lunr.multi.min.js?1666877418" defer></script>
+        <script src="/js/lunr.en.min.js?1666877418" defer></script>
+        <script src="/js/search.js?1666877418" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
-        <ul class="topics">
-          <li data-nav-id="/basics/" class="dd-item"><a href="/basics/">Basics</a><ul id="subsections-3494ad44d160b070fd31576fe4a3841e">
-          <li data-nav-id="/basics/second-content/" class="dd-item"><a href="/basics/second-content/">Second Content</a></li>
-          <li data-nav-id="/basics/first-content/" class="dd-item"><a href="/basics/first-content/">First Content</a></li>
-          <li data-nav-id="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/" class="dd-item"><a href="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/">Monte Carlo</a></li></ul></li>
-          <li data-nav-id="/pattern-recognition/" class="dd-item parent"><a href="/pattern-recognition/">Pattern Recognition</a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
-          <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item active"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision</a></li>
-          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis</a></li>
-          <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">NonLinear Discriminant Analysis</a></li>
-          <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation</a></li></ul></li>
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/basics/" class="dd-item"><input type="checkbox" id="section-3494ad44d160b070fd31576fe4a3841e" aria-controls="subsections-3494ad44d160b070fd31576fe4a3841e" class="toggle"><label class="a11y-only toggle" for="section-3494ad44d160b070fd31576fe4a3841e" >Submenu Basics</label><a href="/basics/">Basics<i class="fas fa-check read-icon"></i></a><ul id="subsections-3494ad44d160b070fd31576fe4a3841e">
+          <li data-nav-id="/basics/second-content/" class="dd-item"><a href="/basics/second-content/">Second Content<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/basics/first-content/" class="dd-item"><a href="/basics/first-content/">First Content<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/" class="dd-item"><a href="/basics/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91/">Monte Carlo<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/pattern-recognition/" class="dd-item parent"><input type="checkbox" id="section-d97dd4feeffe48ab6a56cf2ae66c1e37" aria-controls="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37" class="toggle" checked><label class="a11y-only toggle" for="section-d97dd4feeffe48ab6a56cf2ae66c1e37" >Submenu Pattern Recognition</label><a href="/pattern-recognition/">Pattern Recognition<i class="fas fa-check read-icon"></i></a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
+          <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item active"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Nonlinear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
-        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
-        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
           <ul>
-            <li id="select-language-container" class="footerLangSwitch">
+            <li><a class="padding" href="/https:/github.com/McShelby/hugo-theme-relearn"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="/more/showcase/"><i class='fas fa-fw fa-camera'></i> Showcases</a></li>
+            <li><a class="padding" href="/https:/gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a></li>
+            <li><a class="padding" href="/more/credits/"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+            <li><a class="padding" href="/tags/"><i class='fas fa-fw fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch showVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
               <div class="padding select-container">
                 <i class="fas fa-language fa-fw"></i>
                 <span>&nbsp;</span>
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" selected>English</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
               </div>
             </li>
-            <li id="select-variant-container" class="footerVariantSwitch">
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
               <div class="padding select-container">
                 <i class="fas fa-paint-brush fa-fw"></i>
                 <span>&nbsp;</span>
@@ -866,13 +915,19 @@ $$</p>
                   <label class="a11y-only" for="select-variant">Theme</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
                     <option id="relearn-light" value="relearn-light" selected>Relearn Light</option>
+                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="red" value="red">Red</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+            <li class="footerVisitedLinks showVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter">
@@ -880,10 +935,18 @@ $$</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1666861319" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1666861319" defer></script>
-    <script src="/js/featherlight.min.js?1666861319" defer></script>
-    <script src="/js/theme.js?1666861319" defer></script>
+    <script src="/js/clipboard.min.js?1666877418" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1666877418" defer></script>
+    <script src="/js/featherlight.min.js?1666877418" defer></script>
+    <script src="/js/theme.js?1666877418" defer></script>
   </body>
         
+<link rel="stylesheet" href="/js/katex/katex.min.css" >
+<script src="/js/katex/katex.min.js" > </script>
+<script src="/js/katex/contrib/auto-render.min.js" ></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body);
+    });
+</script>
 </html>
