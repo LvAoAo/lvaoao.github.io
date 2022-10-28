@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/basics/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/basics/first-content.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/basics/second-content/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/basics/蒙特卡洛树.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/shortcodes/math.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/shortcodes/math.html" afterDir="false" />
-    </list>
+    <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +55,7 @@
       <workItem from="1666846167714" duration="1767000" />
       <workItem from="1666854790001" duration="12112000" />
       <workItem from="1666869460127" duration="8364000" />
-      <workItem from="1666956313342" duration="4795000" />
+      <workItem from="1666956313342" duration="5190000" />
     </task>
     <servers />
   </component>
