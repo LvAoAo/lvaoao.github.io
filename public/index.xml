@@ -7,6 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Game Theory</title>
+      <link>/game-theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/game-theory/</guid>
+      <description>This is mainly about Game Theory.</description>
+    </item>
+    <item>
       <title>Pattern Recognition</title>
       <link>/pattern-recognition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

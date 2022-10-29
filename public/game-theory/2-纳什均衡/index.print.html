@@ -7,9 +7,9 @@
     <meta name="generator" content="Relearn 5.3.3+tip">
     <meta name="description" content="Documentation for Hugo Relearn Theme">
     <meta name="author" content="Sören Weber">
-    <title>YU&#39;s POOL</title>
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
-    <link href="/index.print.html" rel="alternate" type="text/html" title="YU&#39;s POOL">
+    <title>Nash Equilibrium :: YU&#39;s POOL</title>
+    <link href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" rel="canonical" type="text/html" title="YU&#39;s POOL">
+    <link href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667018930" rel="stylesheet"></noscript>
     <link href="/css/featherlight.min.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667018930" rel="stylesheet"></noscript>
@@ -22,6 +22,7 @@
     <link href="/css/ie.css?1667018930" rel="stylesheet">
     <link href="/css/variant.css?1667018930" rel="stylesheet">
     <link href="/css/print.css?1667018930" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1667018930" rel="stylesheet">
     <script src="/js/variant.js?1667018930"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
@@ -40,21 +41,26 @@
     </script>
     <script src="/js/jquery.min.js?1667018930" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/">
+  <body class="mobile-support print" data-url="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-             <a class="nav nav-next" href="/game-theory/" title="Game Theory (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+             <a class="nav nav-next" href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" title="Complete Information Dynamic Game (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-             <span class="nav nav-prev"><i class="fa fa-chevron-left fa-fw"></i></span>
+             <a class="nav nav-prev" href="/game-theory/" title="Game Theory (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
-            <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/index.print.html">
+            <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/index.print.html">
               <i class="fas fa-print fa-fw"></i>
+            </a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/Game%20theory/2-%e7%ba%b3%e4%bb%80%e5%9d%87%e8%a1%a1.md" target="blank">
+              <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
           <div id="breadcrumbs">
@@ -62,12 +68,14 @@
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">YU&#39;s POOL</span><meta itemprop="position" content="1"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">YU&#39;s POOL</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/game-theory/"><span itemprop="name">Game Theory</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Nash Equilibrium</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable home" tabindex="-1">
+      <main id="body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
           <div id="head-tags">
           </div>
@@ -102,17 +110,168 @@
 </script>
   
 
-          <article class="home deprecated">
+    
+          <article class="default">
+<h1>Nash Equilibrium</h1>
 
-<h1 id="create-this-page">Create this Page</h1>
-<p>You need to create a file for this page. You can either</p>
-<ul>
-<li>create an _index.md, index.md or otherly named markdown file
-(depending on Hugo’s bundle type) in <em>content</em> folder and fill it
-with Markdown content</li>
-<li>create an <em>index.html</em> file in the <b>static</b> folder and
-fill the file with HTML content</li>
-</ul>
+<h1 id="纳什均衡">纳什均衡</h1>
+<h2 id="博弈组成">博弈组成</h2>
+<ol type="1">
+<li>参与人<span class="math inline">\(i=1,2,\cdots,n\)</span></li>
+<li>参与人的策略集为<span class="math inline">\(S_i\)</span>,<span
+class="math inline">\(s_i\)</span>为<span
+class="math inline">\(S_i\)</span>中的一个策略，<span
+class="math inline">\(\left\{s_1, s_2,\cdots,
+s_n\right\}\)</span>为所有人的一个策略组合</li>
+<li>参与人的收益为<span class="math inline">\(u_i\left(s_1, s_2,\cdots,
+s_n\right)\)</span></li>
+<li>博弈<span class="math inline">\(G=\left\{s_1, \cdots, s_n ; u_1,
+\cdots, u_n\right\}\)</span></li>
+</ol>
+<h2 id="博弈的解">博弈的解</h2>
+<h3 id="重复剔除严格劣策略">重复剔除严格劣策略</h3>
+<h4 id="定义">定义</h4>
+<p>在标准式博弈 <span class="math inline">\(G=\left\{s_1, \cdots, s_n ;
+u_1, \cdots, u_n\right\}\)</span> 中，令 <span
+class="math inline">\(s_i^{\prime}\)</span> 和 <span
+class="math inline">\(s_i^{\prime \prime}\)</span> 代表参与者 <span
+class="math inline">\(i\)</span> 的两个可行策略 (即 <span
+class="math inline">\(s_i^{\prime}\)</span> 和 <span
+class="math inline">\(s_i^{\prime \prime}\)</span> 是 <span
+class="math inline">\(S_i\)</span> 中的元素)
+。如果对<strong>其他参与者</strong>每一个可能的策略组合， <span
+class="math inline">\(i\)</span>选择 <span
+class="math inline">\(s_i^{\prime}\)</span> 的收益都小于其选择 <span
+class="math inline">\(s_i^{\prime \prime}\)</span>
+的收益（<strong>只是两个策略的对比，而不是多个</strong>)，则称<strong>策略
+<span class="math inline">\(s_i^{\prime}\)</span> 相对于策略 <span
+class="math inline">\(s_i^{\prime \prime}\)</span></strong>
+是<strong>严格劣策略</strong>： <span
+class="math inline">\(u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime},
+s_{i+1}, \cdots, s_n\right)&lt;u_i\left(s_1, \cdots, s_{i-1},
+s_i^{\prime \prime}, s_{i+1}, \cdots, s_n\right)\)</span>
+对其他参与者在其策略空间 <span class="math inline">\(S_1, \cdots
+S_{i-1}, s_{i+1}, \cdots, s_n\)</span> 中每一组可能的策略 <span
+class="math inline">\(\left(s_1, \cdots, s_{i-1}, s_{i+1}, \cdots,
+s_n\right)\)</span> 都成立。</p>
+<p>博弈开始前：如果<strong>参与者均为理性为公共知识</strong>(理性的参与者不会选择严格劣策略），需要剔除<strong>所有人</strong>的严格劣策略</p>
+<h4 id="博弈参与者的理性">博弈参与者的理性</h4>
+<p>个体理性：以个人利益最大为目标</p>
+<p>完全理性：不会做出错误选择</p>
+<h4 id="例子">例子</h4>
+<h5 id="立场选择模型">立场选择模型</h5>
+<table>
+<thead>
+<tr class="header">
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>两候选人选立场，每一立场的选民有10%，选民会选择离自己立场更近的选民，如果两候选人立场距离相近，则选民选票均分</p>
+<h6 id="分析">分析</h6>
+<p>对两候选人，2&gt;1，则剔除1；在1被提出的情况下，3&gt;2，…，最终两候选人的立场回归于中间</p>
+<h6 id="中位选民定理">中位选民定理</h6>
+<p>在<strong>多数裁定</strong>原则下，假定选民的偏好是<strong>单峰</strong>的，
+则选择的结果是由<strong>中位选民的偏好</strong>决定的。
+<strong>思考</strong>：美国的选举<strong>极化</strong>越来越严重，是否对中位选民定理有什么影响?
+从博弈的角度分析极化的原因</p>
+<h3 id="最优对策">最优对策</h3>
+<h4 id="定义-1">定义</h4>
+<p>对于标准式博弈 <span class="math inline">\(G=\left\{S_1, \cdots, S_n
+; u_1, \cdots, u_n\right\}\)</span> 中, 应对其他博弈方策略的组合 <span
+class="math inline">\(\left(s_1^*, \cdots, s_{i-1}^*, s_{i+1}^*, \cdots,
+s_n^*\right)\)</span>，（不是其他人的任意策略组合，而是对于<strong>单一策略组合</strong>而言！），策略方
+<span class="math inline">\(\mathbf{i}\)</span> 选择策略 <span
+class="math inline">\(s_i^*\)</span>
+的收益大于<strong>任意其他策略</strong>$s_{i j} $的收益, 即 <span
+class="math inline">\(u_i\left(s_1^*, \cdots, s_{i-1}^*, s_i^*,
+s_{i+1}^*, \cdots, s_n^*\right) \geq\)</span> <span
+class="math inline">\(u_i\left(s_1^*, \cdots, s_{i-1}^*, s_{i j},
+s_{i+1}^*, \cdots, s_n^*\right)\)</span> 对<strong>任意</strong> <span
+class="math inline">\(s_{i j} \in S_i\)</span> 都成立, 则称 <span
+class="math inline">\(s_i^*\)</span> 是策略方 <span
+class="math inline">\(\mathbf{i}\)</span> 应对 <span
+class="math inline">\(\left(s_1^*, \cdots, s_{i-1}^*, s_{i+1}^*, \cdots,
+s_n^*\right)\)</span> 的<strong>最优对策</strong></p>
+<h4 id="例子-1">例子</h4>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>L</th>
+<th>R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>U</td>
+<td>5,1</td>
+<td>0,2</td>
+</tr>
+<tr class="even">
+<td>M</td>
+<td>1,3</td>
+<td>4,1</td>
+</tr>
+<tr class="odd">
+<td>D</td>
+<td>4,2</td>
+<td>2,3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="纳什均衡-1">纳什均衡</h3>
+<h4 id="合伙人博弈">合伙人博弈</h4>
+<p>2人同时运营一个公司，并均分收益
+每人可以各自决策自己在公司中花费的时间， <span class="math inline">\(S
+\in[0,4]\)</span> 公司收益通过以下公式计算4 <span
+class="math inline">\(\left(S_1+S_2+b S_1 S_2\right) ， b
+\in[0,0.25]\)</span> ,个人的成本是 <span
+class="math inline">\(\mathbf{S}^2\)</span></p>
+<h4 id="纳什均衡-2">纳什均衡</h4>
+<h5 id="定义-2">定义</h5>
+<p>对于标准式博弈 <span class="math inline">\(G=\left\{S_1, \cdots, S_n
+; u_1, \cdots, u_n\right\}\)</span> 中,
+如果在由每个博弈方的一个策略所组成的某个策略组合 <span
+class="math inline">\(\left(s_1^*, \cdots \cdots, s_n^*\right)\)</span>
+中, 任一博弈方 <span class="math inline">\(i\)</span> 的策略 <span
+class="math inline">\(s_i^*\)</span>, 都是应对其他博弈方策略的组合 <span
+class="math inline">\(\left(s_1^*, \cdots, s_{i-1}^*, s_{i+1}^*, \cdots,
+s_n^*\right)\)</span> 的最佳策略, 也即 <span
+class="math inline">\(u_i\left(s_1^*, \cdots, s_{i-1}^*, s_i^*,
+s_{i+1}^*, \cdots, s_n^*\right) \geq u_i\left(s_1^*, \cdots, s_{i-1}^*,
+s_{i j}, s_{i+1}^*, \cdots, s_n^*\right)\)</span> 对任意 <span
+class="math inline">\(s_{i j} \in S_i\)</span> 都成立，则称 <span
+class="math inline">\(\left(s_1^*, \cdots \cdots, s_n^*\right)\)</span>
+为标准式博弈<span class="math inline">\(G\)</span> 的一个 “纳什均衡”
+(Nash Equilibrium)。</p>
+<p><strong>直观理解</strong>：任何一方都没有偏离这个均衡的意愿</p>
+<h5 id="两个真命题">两个真命题</h5>
+<p>命题<span class="math inline">\(\mathrm{A}\)</span>
+如果用重复剔除严格劣策略把除策略组合<span
+class="math inline">\(\left\{s_1^*, \cdots, s_n^*\right\}\)</span>
+外所有的策略组合都剔除掉,
+则该所存策略组合就是此博弈唯一的纳什均衡。（<strong>怎么证明？</strong>）
+命题<span class="math inline">\(B\)</span> 如果策略 <span
+class="math inline">\(\left\{s_1^*, \cdots, s_n^*\right\}\)</span>
+是一个纳什均衡，那么它就不 会被重复剔除严格劣策略所剔除</p>
+<h4 id="找到纳什均衡的方法">找到纳什均衡的方法</h4>
+<ol type="1">
+<li>根据命题A，如果可以用重复剔除严格劣策略剔除到只剩一个策略，那么它是纳什均衡</li>
+<li>也可以用<a
+href="https://jingyan.baidu.com/article/f71d60375828445bb741d159.html">划线法</a></li>
+</ol>
 
             <footer class="footline">
             </footer>
@@ -201,8 +360,8 @@ fill the file with HTML content</li>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
-          <li data-nav-id="/game-theory/" class="dd-item"><input type="checkbox" id="section-e70f5d73bafb2f417493745d881ff2c1" aria-controls="subsections-e70f5d73bafb2f417493745d881ff2c1" class="toggle"><label class="a11y-only toggle" for="section-e70f5d73bafb2f417493745d881ff2c1" >Submenu Game Theory</label><a href="/game-theory/">Game Theory<i class="fas fa-check read-icon"></i></a><ul id="subsections-e70f5d73bafb2f417493745d881ff2c1">
-          <li data-nav-id="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" class="dd-item"><a href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">Nash Equilibrium<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/" class="dd-item parent"><input type="checkbox" id="section-e70f5d73bafb2f417493745d881ff2c1" aria-controls="subsections-e70f5d73bafb2f417493745d881ff2c1" class="toggle" checked><label class="a11y-only toggle" for="section-e70f5d73bafb2f417493745d881ff2c1" >Submenu Game Theory</label><a href="/game-theory/">Game Theory<i class="fas fa-check read-icon"></i></a><ul id="subsections-e70f5d73bafb2f417493745d881ff2c1">
+          <li data-nav-id="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" class="dd-item active"><a href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">Nash Equilibrium<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Dynamic Game<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/">Repeated Game<i class="fas fa-check read-icon"></i></a></li>
@@ -231,8 +390,7 @@ fill the file with HTML content</li>
                 <div class="select-style">
                   <label class="a11y-only" for="select-language">Language</label>
                   <select id="select-language" onchange="location = baseUri + this.value;">
-                    <option lang="pir" id="pir" value="/pir/">Arrr! ☠ Pirrrates ☠</option>
-                    <option lang="en" id="en" value="/" selected>English</option>
+                    <option lang="en" id="en" value="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" selected>English</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
