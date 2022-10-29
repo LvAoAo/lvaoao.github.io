@@ -11,19 +11,19 @@
     <link href="/pattern-recognition/" rel="canonical" type="text/html" title="YU&#39;s POOL">
     <link href="/pattern-recognition/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667018930" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667018930" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667018930" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667018930" rel="stylesheet">
-    <link href="/css/nucleus.css?1667018930" rel="stylesheet">
-    <link href="/css/fonts.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667018930" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667018930" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667018930" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667018930" rel="stylesheet">
-    <link href="/css/variant.css?1667018930" rel="stylesheet">
-    <link href="/css/print.css?1667018930" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1667018930" rel="stylesheet">
-    <script src="/js/variant.js?1667018930"></script>
+    <link href="/css/fontawesome-all.min.css?1667020413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667020413" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667020413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667020413" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667020413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667020413" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667020413" rel="stylesheet">
+    <link href="/css/nucleus.css?1667020413" rel="stylesheet">
+    <link href="/css/fonts.css?1667020413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667020413" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667020413" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667020413" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667020413" rel="stylesheet">
+    <link href="/css/variant.css?1667020413" rel="stylesheet">
+    <link href="/css/print.css?1667020413" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1667020413" rel="stylesheet">
+    <script src="/js/variant.js?1667020413"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,7 +39,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667018930" defer></script>
+    <script src="/js/jquery.min.js?1667020413" defer></script>
   </head>
   <body class="mobile-support print" data-url="/pattern-recognition/">
     <div id="body" class="default-animation">
@@ -48,10 +48,10 @@
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-             <a class="nav nav-next" href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="Linear Discriminant Analysis (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+             <a class="nav nav-next" href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="Nonlinear Discriminant Analysis (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-             <a class="nav nav-prev" href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" title="Complete Information Static Game (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+             <a class="nav nav-prev" href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" title="Incomplete Information Static Game (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
             <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/pattern-recognition/index.print.html">
@@ -124,668 +124,14 @@
             <h1 class="a11y-only">Subsections of Pattern Recognition</h1>
     
           <article class="default">
-<h1>Linear Discriminant Analysis</h1>
-
-<h1 id="pattern-recognition-lda">Pattern-recognition-LDA</h1>
-<h2 id="两种模式识别方法">两种模式识别方法</h2>
-<h3 id="概率密度函数方法">概率密度函数方法</h3>
-<p>已知概率密度函数的<strong>形式</strong>，通过样本来估计<strong>密度函数</strong>的<strong>参数</strong></p>
-<h3 id="判别函数方法">判别函数方法</h3>
-<p>✔线性判别分析</p>
-<p>非线性判别</p>
-<h2 id="问题求解">问题求解</h2>
-<ul>
-<li><strong>问题</strong>: 如何选择模型中的参数 <span
-class="math inline">\(\mathbf{w}^T\)</span></li>
-<li><strong>基本思想</strong>: 在训练集中, 预测 <span
-class="math inline">\(f\)</span> 与真正的输出 <span
-class="math inline">\(y\)</span> 的差异要最小</li>
-<li>因此<strong>目标函数</strong>(又叫成本函数Cost function) 定义为:
-<span class="math display">\[
-J(\mathbf{w})=\frac{1}{2}
-\sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)^2
-\]</span> 进一步: <span class="math display">\[
-\hat{\mathbf{w}}=\arg \min _{\mathbf{w}} J(\mathbf{w})=\arg \min
-_{\mathbf{w}}\left[\frac{1}{2}
-\sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)^2\right]
-\]</span></li>
-</ul>
-<h2 id="回归方法">(回归)方法</h2>
-<h3 id="批处理梯度下降">(批处理）梯度下降</h3>
-<ul>
-<li><p>给定初始值<span class="math inline">\(w^0\)</span></p></li>
-<li><p>更新w使得 <span class="math inline">\(J(\mathbf{w})\)</span>
-越来越小</p></li>
-<li><p><span class="math display">\[
-\begin{aligned}
-&amp;\frac{\partial}{\partial w_j}
-J(\mathbf{w})=\sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)
-\cdot \mathbf{x}_{i, j} \\
-&amp;w_j^t=w_j^{t-1}-\alpha \frac{\partial}{\partial w_j} J(\mathbf{w})
-\end{aligned}
-\]</span></p></li>
-<li><p>同时更新 <span class="math inline">\(\mathbf{w}\)</span> 的各维
-<span
-class="math inline">\(f\left(\mathbf{x}_i\right)=\left[\mathbf{w}^{t-1}\right]^T
-\mathbf{x}_i\)</span></p></li>
-<li><p><span class="math inline">\(\alpha\)</span> 为学习率 (Learning
-rate) 或更新步长</p></li>
-<li><p>迭代速度<strong>较慢</strong></p></li>
-</ul>
-<h3 id="随机梯度下降">随机梯度下降</h3>
-<ul>
-<li><p>每次只用<strong>一个 <span
-class="math inline">\(\left(\mathbf{x}_r,
-y_r\right)\)</span></strong>或<strong>一些</strong>样本</p></li>
-<li><p><span class="math display">\[
-w_j^t=w_j^{t-1}-\alpha\left(f\left(\mathbf{x}_r\right)-y_r\right) \cdot
-\mathbf{x}_{r, j}
-\]</span></p>
-<ul>
-<li>收敛速度较快</li>
-<li>不太容易陷入局部极值</li>
-<li>对大样本数据较有效</li>
-</ul></li>
-<li><p>又叫在线学习 (Online learning)</p>
-<ul>
-<li>数据集可以随时进行增加，不需要预先了解所有的数据集</li>
-<li>可离线学习, 对所有样本循环使用多次 (一次循环称为一个 epoch)</li>
-<li>每次可以看一些样本 (mini-batch)</li>
-</ul></li>
-</ul>
-<h3 id="正规方程组normal-equations">正规方程组(Normal Equations)</h3>
-<h4 id="思想">思想</h4>
-<p>直接令导数为零，而非用梯度下降迭代得出</p>
-<h4 id="具体计算">具体计算</h4>
-<p><span class="math display">\[
-\begin{aligned}
-\frac{\partial}{\partial \mathbf{w}} J(\mathbf{w})
-&amp;=\frac{\partial}{\partial \mathbf{w}}(X \mathbf{w}-\mathbf{y})^T(X
-\mathbf{w}-\mathbf{y}) \\
-&amp;=2 X^T(X \mathbf{w}-\mathbf{y})=0 \\
-\Rightarrow X^T X \mathbf{w} &amp;=X^T \mathbf{y}
-\end{aligned}
-\]</span> 得到模型的<strong>参数估计</strong>为：<span
-class="math inline">\(\hat{\mathbf{w}}=\left(X^T X\right)^{-1} X^T
-\mathbf{y}\)</span></p>
-<p>其中：<span class="math inline">\(\left(X^T X\right)^{-1}
-X^T\)</span>为<span
-class="math inline">\(\mathrm{X}\)</span>的伪逆矩阵</p>
-<h2
-id="线性判别函数用于分类">线性判别函数（用于<strong>分类</strong>）</h2>
-<h3 id="形式">形式</h3>
-<p><span class="math inline">\(d\)</span>
-维空间中的线性判别函数（决策面）的一般形式: <span
-class="math display">\[
-\mathrm{g}(\mathrm{x})=w^T x+w_0
-\]</span> 其中：<span class="math inline">\(x\)</span> 是样本向量-样本在
-<span class="math inline">\(d\)</span> 维特征空间中的描述, <span
-class="math inline">\(w\)</span> 是权 向量, <span
-class="math inline">\(w_0\)</span> 是一个常数(阈值权): <span
-class="math display">\[
-\begin{gathered}
-x=\left[x_1, x_2, \ldots, x_d\right]^T \\
-w=\left[w_1, w_2, \ldots, w_d\right]^T
-\end{gathered}
-\]</span> ### 决策规则</p>
-<p>两类问题的线性分类可采用如下决策规则: <span class="math display">\[
-\text { 如果 }\left\{\begin{array}{c}
-\mathbf{g}(\mathbf{x})&gt;\mathbf{0}, \text { 则决策 } \mathrm{x} \in
-\omega_1 \\
-\mathbf{g}(\mathbf{x})&lt;\mathbf{0}, \text { 则决策 } \mathrm{x} \in
-\omega_2 \\
-\mathbf{g}(\mathbf{x})=\mathbf{0}, \text { 可将其任意分类或拒绝 }
-\end{array}\right.
-\]</span> <span
-class="math inline">\(\mathbf{g}(\mathbf{x})=\mathbf{0}\)</span>
-定义了一个<strong>决策面</strong>, 把两类实例分开。如果 <span
-class="math inline">\(\mathbf{g}(\mathbf{x})\)</span> 是线性的,
-则决策面是一个<strong>超平面</strong>。 如果 <span
-class="math inline">\(x_1\)</span> 和 <span
-class="math inline">\(x_2\)</span> 都在决策面上, 则：</p>
-<p>对于超平面 <span class="math inline">\(H\)</span> 上的点 <span
-class="math inline">\(x_1\)</span> 和 <span
-class="math inline">\(x_2\)</span>, 有: <span class="math display">\[
-\quad w^T x_1+w_0=w^T x_2+w_0 \\
-w^T\left(x_1-x_2\right)=0
-\]</span> 说明<strong><span class="math inline">\(w\)</span>是<span
-class="math inline">\(H\)</span>的法向量</strong></p>
-<h3 id="gx的意义"><span class="math inline">\(g(x)\)</span>的意义</h3>
-判别函数 <span class="math inline">\(g(x)\)</span>
-也可以看作是特征空间中某个点 <span class="math inline">\(x\)</span>
-到<strong>超平面距离</strong>的一种<strong>代数度量</strong>。若把 <span
-class="math inline">\(x\)</span> 表示为: <span class="math display">\[
-x=x_p+r \frac{w}{\|w\|}
-\]</span> $$ {
-<span class="math display">\[\begin{array}{c}
-x_p 是 x 到 H 的射影向量\\
-
-r 是 x 到 H 的垂直距离\\
-
-\frac{w}{\|w\|} 是 w 方向上的单位向量\\
-\end{array}\]</span>
-<p>. $$</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213658.png?token=AWSGDYSU3RM6YTFIBNWBU5TDLSUMC" alt="image-20220911162732108" style="zoom:50%;" /></p>
-<p><span class="math inline">\(g(x)\)</span>可进一步写为: <span
-class="math display">\[
-\begin{aligned}
-g(x)&amp;=w^T\left(x_p+r \frac{w}{\| w \|}\right)+w_0\\
-&amp;=w^T x_p+\omega_0+r \frac{w^T w}{\| w\|} \\
-&amp;=r\|w\| \\
-\\
-r&amp;=\frac{g(x)}{\|w\|}
-\end{aligned}
-\]</span> 例如</p>
-<ul>
-<li>若 <span class="math inline">\(x\)</span> 为原点, 则 <span
-class="math inline">\(\mathrm{g}(\mathrm{x})=\omega_0\)</span></li>
-<li>原点到超平面 <span class="math inline">\(H\)</span> 的距离可以写作:
-<span class="math inline">\(r_0=\frac{\omega_0}{\|w\|}\)</span></li>
-</ul>
-<h3 id="增广数据与齐次化">增广数据与齐次化</h3>
-<h4 id="增广数据">增广数据</h4>
-<p>称<span class="math inline">\(y=\left[\begin{array}{c}1 \\ x_1 \\ x_2
-\\ \vdots \\ x_d\end{array}\right]=\left[\begin{array}{l}1 \\
-x\end{array}\right]\)</span> 为<strong>增广样本向量</strong>；称 <span
-class="math inline">\(a=\left[\begin{array}{c}w_0 \\ w_1 \\ w_2 \\
-\vdots \\ w_d\end{array}\right]=\left[\begin{array}{c}w_0 \\
-w\end{array}\right]\)</span> 为<strong>增广权向量</strong></p>
-<p>增广空间<strong>维数</strong>$=d+1 $ 方程 <span
-class="math inline">\(a^T y=0\)</span> 在增广空间 <span
-class="math inline">\(Y\)</span>
-确定了一个<strong>通过原点</strong>的超平面 <span
-class="math inline">\(\hat{H}\)</span>, 它对 <span
-class="math inline">\(d\)</span> 维子空间的划分与原决策面 <span
-class="math inline">\(w^T x+w_0=0\)</span> 对原 <span
-class="math inline">\(X\)</span> 空间的<strong>划分完全相同</strong>。
-<span class="math inline">\(Y\)</span> 空间中任意一点 <span
-class="math inline">\(y\)</span> 到 <span
-class="math inline">\(\hat{H}\)</span> 的距离: <span
-class="math inline">\(\quad r=\frac{g(x)}{\|a\|}=\frac{a^T
-y}{\|a\|}\)</span></p>
-<h4 id="线性判别函数齐次化">线性判别函数齐次化</h4>
-<p>线性判别函数 <span class="math display">\[
-g(x)=w^T x+w_0
-\]</span> 改写成 <span class="math display">\[
-g(x)=w_0+\sum_{i=1}^d w_i x_i=\sum_{i=1}^d a_i y_i=a^T y
-\]</span> 称为线性判别函数的<strong>齐次化</strong></p>
-<h2 id="准则函数">准则函数</h2>
-<h3 id="引入">引入</h3>
-<p>上文讲述了线性判别函数的<strong>决策规则</strong>，下文讲解的<strong>准则函数</strong>则是在这样的决策规则下给出的一个<strong>利益准则</strong>/<strong>目标函数</strong>，通过<strong>最大化利益准则</strong>可以使我们达到不同的<strong>分类效果</strong></p>
-<h3 id="fisher准则">Fisher准则</h3>
-<h4 id="基本思想">基本思想</h4>
-<p>希望<strong>投影后</strong>的一维数据满足：</p>
-<ol type="1">
-<li>两类<strong>之间</strong>的距离尽可能<strong>远</strong></li>
-<li>每一类<strong>自身</strong>尽可能<strong>紧凑</strong></li>
-</ol>
-<h4 id="基本思想的数学描述建模">基本思想的数学描述（建模）</h4>
-<p>(1)各类样本的<strong>均值向量</strong> $ m_i= _{x x_i} x, i=1,2$
-(2)原始空间内样本<strong>类内离散度矩阵</strong> <span
-class="math inline">\(S_i\)</span> 和<strong>总</strong>类内离散度矩阵
-<span class="math inline">\(S_w\)</span> <span class="math display">\[
-\begin{gathered}
-S_i=\sum_{x \in \chi_i}\left(x-m_i\right)\left(x-m_i\right)^T, i=1,2 \\
-or \\
-S_w=S_1+S_2 \quad S_w=P\left(w_1\right) S_1+P\left(w_1\right) S_2
-\end{gathered}
-\]</span> (3)样本<strong>类间离散度矩阵</strong> <span
-class="math inline">\(S_b\)</span> <span class="math display">\[
-\begin{gathered}
-S_b=\left(m_1-m_2\right)\left(m_1-m_2\right)^T \\
-or \\
-S_b=P\left(w_1\right)
-P\left(w_2\right)\left(m_1-m_2\right)\left(m_1-m_2\right)^T
-\end{gathered}
-\]</span> [^1]:<span class="math inline">\(S_w\)</span>和<span
-class="math inline">\(S_b\)</span><strong>在<span
-class="math inline">\(w\)</span>​​确定的情况下</strong>可以用来评估<strong>类内距离</strong>和<strong>类间距离</strong>
-[^2]:这里的<span
-class="math inline">\(P(w_i)\)</span>​为不同类别的<strong>先验概率</strong>，也即不同类别样本的<strong>比例</strong></p>
-<h4 id="目标准则的数学描述建模">目标准则的数学描述（建模）</h4>
-<p>在投影以后的一维 <span class="math inline">\(Y\)</span> 空间 <span
-class="math inline">\(y_n=w^T x_n\)</span>
-(1)各类<strong>样本均值</strong> <span
-class="math inline">\(\tilde{m}_i=\frac{1}{N_i} \sum_{y \in \eta_i} y,
-i=1,2\)</span> (2)<strong>样本类内离散度</strong> <span
-class="math inline">\(\widetilde{S_i^2}\)</span>
-和<strong>总</strong>类内离散度 <span
-class="math inline">\(\widetilde{S_w}\)</span> <span
-class="math display">\[
-\begin{gathered}
-\tilde{S}_i^2=\sum_{y \in \eta_i}\left(y-\tilde{m}_i\right)^2, i=1,2 \\
-\tilde{S}_w=\tilde{S}_1^2+\tilde{S}_2^2
-\end{gathered}
-\]</span> (3)而类间离散度 <span
-class="math inline">\(\widetilde{S}_{\mathrm{b}}\)</span>
-就成为了两类均值差的平方 <span
-class="math inline">\(\left(\widetilde{m_1}-\widetilde{m}_2\right)^2\)</span>
-。</p>
-<p><strong>注</strong>：这是<strong>投影后</strong>空间上的离散度（<strong>距离</strong>)表征(也正是我们的<strong>目标准则</strong>所要求的)，在<strong>给定<span
-class="math inline">\(w\)</span></strong>的情况下<span
-class="math inline">\(S\)</span>和<span
-class="math inline">\(\tilde{S}\)</span>的<strong>本质</strong>是相同的[^1]，例如：
-<span class="math display">\[
-\begin{aligned}
-\tilde{S}_i^2&amp;=\sum_{y \in \eta_i}\left(y-\tilde{m}_i\right)^2 \\
-&amp;=\sum_{x \in \chi_i}\left(w^T x-w^Tm_i\right)^2 \\
-&amp;=\sum_{x \in \chi_i}\left(w^T x-w^Tm_i\right)\left(w^T
-x-w^Tm_i\right) \\
-&amp;=\sum_{x \in \chi_i}w^T\left( x-m_i\right)\left( x-m_i\right)^Tw \\
-&amp;=w^T S_i w
-\end{aligned}
-\]</span></p>
-<p>故<strong>目标准则</strong>可以形式化成问题</p>
-<p><span class="math display">\[
-\underset{w}{\arg \max }\quad J_F(w)
-=\frac{\left(\widetilde{m_1}-\widetilde{m}_2\right)^2}{\tilde{S}_1^2+\tilde{S}_2^2}
-=\frac{w^T S_b w}{w^T S_w w}
-\]</span></p>
-<p>若考虑两类样本<strong>类内散度矩阵</strong>的<strong>不对称性</strong>（即考虑他们的<strong>先验概率</strong>），（?)则[^2]
-<span class="math display">\[
-\begin{aligned}
-J_F(w)&amp;=\frac{w^T S_b w}{w^T S_w w} \\
-&amp;=\frac{w^T P\left(w_1\right)
-P\left(w_2\right)\left(m_1-m_2\right)\left(m_1-m_2\right)^T
-w}{w^TP\left(w_2\right) S_1 w+w^T P\left(w_1\right) S_2 w} \\
-&amp;=\frac{w^T \left(m_1-m_2\right)\left(m_1-m_2\right)^T
-w}{w^T\frac{S_1}{P\left(w_1\right)} w+w^T \frac{S_2}{P\left(w_2\right)}
-w}
-\end{aligned}
-\]</span> #### 投影方向<span class="math inline">\(w\)</span>求解</p>
-<p><span class="math inline">\(J_F(w)\)</span> 只与投影方向有关, 与
-<span class="math inline">\(w\)</span> 的<strong>大小无关</strong>。即若
-<span class="math inline">\(w\)</span> 是一个最优解, <span
-class="math inline">\(k w\)</span> 也是最优解，其中 <span
-class="math inline">\(k\)</span> 是任何不为零的常数。 因此, 在求解时,
-可以假定分母项为非零的常数而最大化分子部分, 可以转化为如下问题： <span
-class="math display">\[
-\underset{w}{\arg \max}\quad w^T S_b w \quad \\
-s.t. \quad w^T S_w w=c \neq 0
-\]</span> 假定 <span class="math inline">\(S_{\mathrm{w}}\)</span>
-是非奇异的, 可以得到: <span class="math display">\[
-S_w^{-1} S_b w^*=\lambda w^*
-\]</span> 也就是说, <span class="math inline">\(w^*\)</span> 是 <span
-class="math inline">\(S_w^{-1} S_b\)</span>
-的<strong>特征向量</strong>。把 <span class="math inline">\(S_b\)</span>
-代入, 可进一步写为： <span class="math display">\[
-\lambda w^*=S_w^{-1}\left(m_1-m_2\right)\left(m_1-m_2\right)^T w^*
-\]</span> 应该注意, <span class="math inline">\(\left(m_1-m_2\right)^T
-w^*\)</span> 是<strong>标量</strong>, 不影响 <span
-class="math inline">\(w^*\)</span> 的方向, <span
-class="math inline">\(w^*\)</span> 的方向是由 <span
-class="math inline">\(S_w^{-1}\left(m_1-m_2\right)\)</span> 决定的,
-因此可取: <span class="math display">\[
-w^*=S_w^{-1}\left(m_1-m_2\right)=\left(S_1+S_2\right)^{-1}\left(m_1-m_2\right)
-\]</span> 这就是Fisher判别准则下的<strong>最优投影方向</strong></p>
-<h4 id="分类阈值b求解">分类阈值<span
-class="math inline">\(b\)</span>求解</h4>
-<p>上文只给出了<strong>投影方向</strong>,
-却没给出分类面（缺少<strong>截距</strong>），所以要在投影之后的方向上确定<strong>分类阈值</strong></p>
-<p><strong>分类阈值</strong>的两种确定方法</p>
-<ul>
-<li>两类均值的中点(先验概率相同) <span class="math display">\[
-b=\frac{\mu_1+\mu_2}{2}
-\]</span></li>
-<li>投影后数据的<strong>调和</strong>均值
-(先验概率相同)(?权重是不是反了)</li>
-</ul>
-<p><span class="math display">\[
-\begin{aligned}
-b&amp;=\frac{n_1 \mu_1+n_2 \mu_2}{n_1+n_2}
-\end{aligned}
-\]</span></p>
-<p>（在先验概率不同时,
-分界点向先验概率<strong>小</strong>的一侧偏移）</p>
-<p>其中，<span class="math inline">\(n_1, n_2\)</span>
-是两类样本的个数，<span class="math inline">\(\mu_i=
-\tilde{m}_i=\frac{1}{N_i} \sum_{x \in x_i} w^T x=\frac{1}{N_i} \sum_{y
-\in \eta_i} y, i=1,2\)</span></p>
-<p>注意这里<span
-class="math inline">\(\mu_i\)</span>的求解<strong>与b无关</strong>，也就是<strong>不妨取<span
-class="math inline">\(b_0=0\)</span></strong>，求完调和平均后才能真正的确定能用来分类的<span
-class="math inline">\(b\)</span></p>
-<p>直观来说，用<strong>0</strong>将1个<strong>-1</strong>和3个<strong>3</strong>调和分开，和用<strong>100</strong>将1个<strong>99</strong>和3个<strong>103</strong>调和分开是一样的</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213659.png?token=AWSGDYQ2YAUFVAWILM5MDXLDLSUME" alt="image-20220911212641491" style="zoom: 67%;" /></p>
-<p>故最后的Fisher准则下的分类器为 <span class="math display">\[
-\begin{gathered}
-\mathrm{g}(\mathrm{x})=w^T x+w_0\\ \\
-\text{其中}\quad
-w=S_w^{-1}\left(m_1-m_2\right)=\left(S_1+S_2\right)^{-1}\left(m_1-m_2\right)\\
-\\
-w_0=-b=-\frac{\mu_1+\mu_2}{2}\quad or\quad-\frac{n_2 \mu_1+n_1
-\mu_2}{n_1+n_2}
-\end{gathered}
-\]</span></p>
-<h3 id="感知机准则">感知机准则</h3>
-<h4 id="思想-1">思想</h4>
-<p>感知准则是一种自学习判别函数的生成方法, 由于
-Rosenblatt试图将其用于脑模型感知器, 因此得名。</p>
-<p>该方法对<strong>随意给定</strong>的判别函数<strong>初始值</strong>,
-通过<strong>样本分类训练过程</strong>逐步对其<strong>修正</strong>直至最终确定。</p>
-<h4 id="基本概念">基本概念</h4>
-<h5 id="线性可分性">线性可分性</h5>
-<p>一组容量为 <span class="math inline">\(N\)</span> 的样本集 <span
-class="math inline">\(y_1, y_2, \ldots y_N\)</span>, 其中 <span
-class="math inline">\(y_n\)</span> 为 <span
-class="math inline">\(d\)</span> 维增广样本向量, 分别来自 <span
-class="math inline">\(w_I\)</span> 类和 <span
-class="math inline">\(w_2\)</span> 类, 如果存在权向量 <span
-class="math inline">\(a\)</span>, 使得对于任何 <span
-class="math inline">\(y \in w_1\)</span>, 都有 <span
-class="math inline">\(a^T y&gt;0\)</span>, 而对于任何 <span
-class="math inline">\(y \in w_2\)</span>, 都有 <span
-class="math inline">\(a^T y&lt;0\)</span>,
-则称这组样本为线性可分的。</p>
-<h5 id="样本的规范化">样本的规范化</h5>
-<p>原问题是 <span class="math display">\[
-\begin{aligned}
-&amp;\left\{\begin{array}{l}
-a^T y_i&gt;0, y_i \in w_1 \\
-a^T y_j&lt;0, y_j \in w_2
-\end{array}\right. \\
-\end{aligned}
-\]</span></p>
-<p>通过<strong>规范化样本增广向量</strong></p>
-<p><span class="math display">\[
-y_n^{\prime}=\left\{\begin{array}{c}
-y_i&gt;0, y_i \in w_1 \\
--y_j&lt;0, y_j \in w_2
-\end{array}\right.
-\]</span></p>
-<p>使得 <span class="math display">\[
-a^T y_n^{\prime}&gt;0, n=1,2, \ldots, N
-\]</span> <strong>线性可分</strong>的条件: 存在向量 <span
-class="math inline">\(a^*\)</span>, 使得上式成立; <span
-class="math inline">\(a^*\)</span>为解向量</p>
-<h5
-id="解向量存在向量a使得上式成立">解向量：存在向量a*，使得上式成立</h5>
-<h5
-id="解区在权值空间内所有的解向量组成的区域">解区：在权值空间内所有的解向量组成的区域</h5>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213660.png?token=AWSGDYW573TJLM4EADVAZUTDLSUMG" alt="image-20220911211153532" style="zoom:50%;" /></p>
-<p>考虑到<strong>噪声、误差</strong>的存在，应为解区留有<strong>余量</strong>，即<span
-class="math inline">\(a^T y_n\ge b&gt;0\)</span></p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213661.png?token=AWSGDYTFOVQ6K5SD3OVNXEDDLSUMK" alt="image-20220911211227659" style="zoom:50%;" /></p>
-<h4 id="目标准则的数学描述建模-1">目标准则的数学描述（建模）</h4>
-<p>寻找解向量 <span class="math inline">\(a^*\)</span>，使得对于一组样本
-<span class="math inline">\(y_1, y_2, \ldots y_N\)</span>： <span
-class="math display">\[
-a^T y_n&gt;0, n=1,2, \ldots, N
-\]</span> 其中 <span class="math inline">\(y_n\)</span>
-是规范化增广样本向量</p>
-<h4 id="算法思想">算法思想</h4>
-<p>对于<strong>线性可分</strong>问题, 构造<strong>准则函数</strong>
-<span class="math inline">\(J_P(a)=\sum_{y \in \eta^k}\left(-a^T
-y\right)\)</span> 其中 <span class="math inline">\(\eta^k\)</span>
-是被权向量 <span class="math inline">\(a\)</span> 错分的样本集合, 即当
-<span class="math inline">\(y\)</span> 被<strong>错分</strong>时, 就有
-<span class="math inline">\(a^T y_n \leq 0\)</span> 因此 <span
-class="math inline">\(J_P(a) \geq 0\)</span>, 仅当 <span
-class="math inline">\(a\)</span> 为解向量或在解区边界时 <span
-class="math inline">\(J_P(a)=0\)</span> 也就是说, 当且仅当 <span
-class="math inline">\(\eta^k\)</span> 为空集时 <span
-class="math inline">\(J_P^*(a)=\min J_P(a)=0\)</span>，此时无错分样本,
-这时的 <span class="math inline">\(a\)</span> 就是解向量 <span
-class="math inline">\(a^*\)</span> 。</p>
-<h4 id="算法梯度下降法">算法——梯度下降法</h4>
-<p>求使 <span class="math inline">\(J_P(a)\)</span> 达到最小值的 <span
-class="math inline">\(a^*\)</span>, 采用梯度下降法求解: <span
-class="math display">\[
-\begin{aligned}
-J_P(a) &amp;=\sum_{y \in \eta^k}\left(-a^T y\right) \\
-\nabla J_P(a)=&amp; \frac{\partial J_P(a)}{\partial a}=\sum_{y \in
-\eta^k}(-y) \\
-a(k+1) &amp;=a(k)-\rho_k \nabla J \quad   \\
-a(k+1) &amp;=a(k)+\rho_k  \sum_{y \in \eta^k} y
-\end{aligned}
-\]</span></p>
-<h5 id="具体步骤">具体步骤</h5>
-<p><strong>初值</strong>：任意给定一向量初始值 <span
-class="math inline">\(a(0)\)</span> <strong>迭代</strong>: 第 <span
-class="math inline">\(k+1\)</span> 次迭代时的权向量 <span
-class="math inline">\(a(k+1)\)</span> 等于第 <span
-class="math inline">\(k\)</span> 次的权向量 <span
-class="math inline">\(a(k)\)</span> 加上被错分类的所有样本之和与 <span
-class="math inline">\(r_k\)</span> 的乘积 <strong>终止</strong>:
-对所有样本正确分类。</p>
-<h5 id="算法tricks">算法Tricks</h5>
-<ul>
-<li><p><strong>固定增量法</strong>与<strong>可变增量法</strong>(<span
-class="math inline">\(\rho_k\)</span>的变化与否)</p></li>
-<li><p><strong>批量样本</strong>修正法与<strong>单样本</strong>修正法</p>
-<ul>
-<li><p>单样本修正法: 样本集视为不断重复出现的序列, 逐个样本检查,
-修正权向量✔</p></li>
-<li><p>批量样本修正法:
-样本<strong>成批</strong>或<strong>全部</strong>检查后,
-修正权向量</p></li>
-</ul></li>
-</ul>
-<h5 id="注意">注意</h5>
-<ol type="1">
-<li>只要<strong>解区间存在</strong>,
-那么经过<strong>有限的步骤</strong>后可以得到一个解向量。</li>
-<li>如果不是线性可分，迭代的过程中总会出现<strong>新的被错误分类</strong>的样本<span
-class="math inline">\(y\)</span>，算法<strong>不会终止</strong><a
-href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></li>
-</ol>
-<h3 id="最小平方误差准则">最小平方误差准则</h3>
-<h4 id="思想-2">思想</h4>
-<p>寻找最好<strong>投影方向 $a^* $ </strong>使得<span
-class="math inline">\(\quad a^T y_n&gt;0\)</span>
-，对于一个<strong>人为给定</strong>的n维向量<span
-class="math inline">\(b&gt;0,b\in R^N\)</span> <span
-class="math display">\[
-Y=\left[\begin{array}{c}
-y_1^T \\
-y_2^T \\
-\vdots \\
-y_N^T
-\end{array}\right]=\left[\begin{array}{cccc}
-y_{11} &amp; y_{12} &amp; \cdots &amp; y_{1 \hat{d}} \\
-y_{21} &amp; y_{22} &amp; \cdots &amp; y_{2 \widehat{d}} \\
-\cdots &amp; \cdots &amp; \cdots &amp; \cdots \\
-y_{N 1} &amp; y_{N 2} &amp; \cdots &amp; y_{N \widehat{d}}
-\end{array}\right]
-\]</span> <span
-class="math inline">\(Ya=b\)</span>通常是<strong>不可以直接求解</strong>的（<strong>方程数</strong>多于<strong>末知数</strong>的矛盾方程组通常没有精确解）</p>
-<p>通过减少误差来确定最优的<strong>投影方向</strong> $a^* $</p>
-<p>定义误差向量: <span class="math inline">\(e=Y
-a-b\)</span>,及平方误差准则函数: <span class="math display">\[
-J_S(a)=\|e\|^2=\|Y a-b\|^2=\sum_{n=1}^N\left(a^T y_n-b_n\right)^2
-\]</span> #### 解法</p>
-<h5 id="直接求解析解">直接求<strong>解析解</strong></h5>
-<p><span class="math display">\[
-a^*=Y^{+} b \quad Y^{+}=\left(Y^T Y\right)^{-1}  Y^T
-\]</span> 问题: (1)要求 <span class="math inline">\(Y^T\)</span>
-<strong>非奇异</strong>; (2) 求 <span class="math inline">\(Y^*\)</span>
-<strong>计算量大</strong>同时可能引入<strong>较大误差</strong>。</p>
-<h5 id="或者用梯度下降法">或者用<strong>梯度下降法</strong></h5>
-<p>采用梯度下降法求解: <span class="math inline">\(\nabla J_S(a)=2 Y^T(Y
-a-b)\)</span> <span class="math display">\[
-\left\{\begin{array}{l}
-a(1), \text { Random } \\
-a(k+1)=a(k)-\rho_k Y^T(Y a-b)
-\end{array}\right.
-\]</span> 可以证明,选择 <span
-class="math inline">\(\rho_k=\frac{\rho_1}{k}\)</span>比较合适， <span
-class="math inline">\(\rho_1\)</span> 是任意常数 该算法权向量收敛于使
-<span class="math inline">\(\nabla J_S(a)=2 Y^T(Y a-b)=0\)</span>
-的权向量 <span class="math inline">\(a^{\text {* }}\)</span>
-优点：（1）不要求 <span class="math inline">\(Y^r Y\)</span> 奇异与否
-（2）只计算 <span class="math inline">\(d \times d\)</span> 方阵 <span
-class="math inline">\(Y ^T Y\)</span>, 比 <span class="math inline">\(d
-\times N\)</span> 矩阵<span class="math inline">\(Y^{+}=\left(Y^T
-Y\right)^{-1} Y^T\)</span>计算量小</p>
-<h4 id="b不同取值的意义"><span
-class="math inline">\(b\)</span>不同取值的意义</h4>
-<h5
-id="如果同一类样本对应的-b_i-为相同的值">如果<strong>同一类样本</strong>对应的
-<span class="math inline">\(b_i\)</span>
-为<strong>相同</strong>的值</h5>
-<p><span class="math display">\[
-\boldsymbol{b}=\left[\begin{array}{c}
-N / N_1 \\
-\cdots \\
-N / N_1 \\
-N / N_2 \\
-\cdots \\
-N / N_2
-\end{array}\right] N_1 \text { 个 }
-\]</span> <strong>a</strong>*等价于<strong>Fisher解</strong></p>
-<h5
-id="如果所有样本对应b_i取相同值且n趋于无穷">如果<strong>所有样本</strong>对应<span
-class="math inline">\(b_i\)</span>取<strong>相同</strong>值，且<strong>N</strong>趋于<strong>无穷</strong></h5>
-<p><span class="math display">\[
-N \rightarrow \infty, b=\underset{N \uparrow}{[1,1, \cdots, 1}]^T
-\]</span></p>
-<p><span class="math display">\[
-g_0(x)=P\left(w_1 \mid x\right)-P\left(w_2 \mid x\right)
-\]</span>
-以<strong>最小均方误差</strong>逼近<strong>贝叶斯判别函数</strong>（？不会）</p>
-<h4 id="问题和对比">问题和对比</h4>
-<p>相对其他准则，对于<strong>异常值</strong>(outlier)很敏感（很受印象）</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213662.png?token=AWSGDYUTY5IWSCFIS5P3FWLDLSUMM" alt="image-20220920200808481" style="zoom:50%;" /></p>
-<table>
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 41%" />
-<col style="width: 36%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>线性可分</th>
-<th>线性不可分</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>感知机准则</td>
-<td>收敛</td>
-<td>不收敛</td>
-</tr>
-<tr class="even">
-<td>最小平方误差准则</td>
-<td>算法会收敛，但可能未将样本分开</td>
-<td>算法会收敛，样本不会被分开</td>
-</tr>
-</tbody>
-</table>
-<h2 id="多分类问题">多分类问题</h2>
-<h3 id="概括">概括</h3>
-<p><strong>多分类问题</strong>可以通过三种方法<strong>转换为二分类问题</strong>（下面方法中<strong>c</strong>为<strong>类别数</strong>）</p>
-<h3 id="c-1-two-class-problems"><span class="math inline">\(c-1\)</span>
-two-class problems</h3>
-<h4 id="思想-3">思想</h4>
-<p>用c-1个超平面把特征空间划分为c个区域</p>
-<p>每一个超平面将 <span class="math inline">\(\omega_i\)</span> 和not
-<span class="math inline">\(\omega_i\)</span> 的样本分开</p>
-<h4 id="问题">问题</h4>
-<ol type="1">
-<li>两类样本不均衡导致<strong>分类面有偏</strong>,
-样本<strong>数量少</strong>的类别易发生<strong>分类错误</strong></li>
-<li>往往<strong>不会</strong>恰好<strong>得到c个区域</strong>，造成特征空间内部分区域<strong>歧义</strong>（下图中绿色区域无法判断是<span
-class="math inline">\(C_1\)</span>或者<span
-class="math inline">\(C_2\)</span>）</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213663.png?token=AWSGDYQ4PMZQBKWNYVJ37MTDLSUMQ" alt="image-20220920202043462" style="zoom:50%;" /></p>
-<h3 id="cc-1-2-two-class-problems"><span class="math inline">\(c(c-1) /
-2\)</span> two-class problems</h3>
-<h4 id="思想-4">思想</h4>
-<p>每两类构造一个分类器</p>
-<p>Separate every pair of classes.</p>
-<h4 id="问题-1">问题</h4>
-<p>下图中的<strong>ambiguous region</strong> B的样本满足</p>
-<p>𝐻12: 1 &gt; 2</p>
-<p>𝐻13: 3 &gt; 1</p>
-<p>𝐻14: 4 &gt; 1</p>
-<p>𝐻23: 2 &gt; 3</p>
-<p>𝐻24: 4 &gt; 2</p>
-<p>𝐻34: 3 &gt; 4</p>
-<p>那么这6个分类器产生<strong>矛盾</strong>，无法确定这个区域的类别到底属于什么（没有一个类别大于<strong>所有</strong>其他类别）</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213664.png?token=AWSGDYVKPXMGKVQQRK3JYMTDLSUMS" alt="image-20220920202859425" style="zoom:50%;" /></p>
-<h3 id="define-c-linear-discriminant-functions">Define <span
-class="math inline">\(c\)</span> linear discriminant functions</h3>
-<h4 id="思想-5">思想</h4>
-<p>所有<strong>（分段）线性分类器</strong>转化为<strong>线性判别函数</strong></p>
-<p>Assign <span class="math inline">\(x\)</span> to <span
-class="math inline">\(\omega_i\)</span> if <span
-class="math inline">\(g_i(x)&gt;g_j(x)\)</span> for all <span
-class="math inline">\(j \neq i\)</span> <span class="math display">\[
-g_i(x)=w_i^t x+w_{i 0} \quad i=1, \ldots, c
-\]</span>
-<img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291213665.png?token=AWSGDYTKF54TVWWOBBR67KLDLSUMU" alt="image-20220920203642463" style="zoom:50%;" /></p>
-<h2 id="逻辑回归">逻辑回归</h2>
-<p>逻辑回归是概率型非线性回归,
-但其<strong>本质</strong>是<strong>线性回归</strong>,
-只是在特征到结果的映射中加入了<strong>一层函数映射</strong>,</p>
-<p>即先把特征线性求和, 然后使用函数 <span
-class="math inline">\(\sigma(\mathbf{z})\)</span> (Sigmoid函数) 来预测。
-$(a)= $</p>
-<p>其中<span class="math inline">\(a=w^T
-x\)</span>,其<strong>意义</strong>是：属于第一个类别的几率（<strong>相对可能性</strong>）的对数，即<span
-class="math inline">\(a=\ln \left(\frac{\sigma}{1-\sigma}\right)=\ln
-\frac{p\left(C_1 \mid x\right)}{p\left(C_2 \mid x\right)}\)</span></p>
-<blockquote>
-<p>Sigmoid函数性质：</p>
-<ol type="1">
-<li>可以将连续值映射到0和1区间上</li>
-<li>可导性 <span class="math inline">\(\frac{d \sigma}{d
-a}=\sigma(1-\sigma)\)</span></li>
-<li>对称性 <span
-class="math inline">\(\sigma(-a)=1-\sigma(a)\)</span></li>
-<li>反转性 <span class="math inline">\(a=\ln
-\left(\frac{\sigma}{1-\sigma}\right)=\ln \frac{p\left(C_1 \mid
-x\right)}{p\left(C_2 \mid x\right)}\)</span></li>
-</ol>
-</blockquote>
-<p>可根据已有样本, 定义目标函数为模型的似然函数的负对数, 并采用梯度下降
-算法进行优化求解</p>
-<h3 id="多类逻辑回归">多类逻辑回归</h3>
-<p><span class="math display">\[
-\begin{aligned}
-&amp;p\left(C_k \mid \mathbf{x}\right)=\frac{p\left(\mathbf{x} \mid
-C_k\right) p\left(c_k\right)}{\sum_j p\left(\mathbf{x} \mid C_j\right)
-p\left(c_j\right)}=\frac{\exp \left(a_k\right)}{\sum_j \exp
-\left(a_j\right)} \quad \begin{array}{c}
-\text { 归一化指数 } \\
-\text { Normalized Exponential }
-\end{array} \\
-&amp;a_k=\ln p\left(\mathbf{x} \mid C_k\right) p\left(c_k\right)
-\end{aligned}
-\]</span> <span
-class="math inline">\(p(C_k|x)\)</span>的表达转换为<strong>Softmax函数</strong>：如果
-<span class="math inline">\(a_k \gg a_j\)</span>, 对于所有的 <span
-class="math inline">\(k \neq j\)</span>, 有 <span
-class="math inline">\(p\left(C_k \mid \mathbf{x}\right) \simeq
-1\)</span> <span class="math inline">\(p\left(C_j \mid \mathbf{x}\right)
-\simeq 0\)</span></p>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li
-id="fn1"><p>需要注意，这里必须保证样本是线性可分的，否则算法迭代不会结束<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
-    
-          <article class="default">
 <h1>Nonlinear Discriminant Analysis</h1>
 
 <h1 id="非线性判别函数">非线性判别函数</h1>
 <h2 id="引言">引言</h2>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222954.png?token=AWSGDYWMP7CEETH2YLPUVC3DLSVMY" alt="image-20220920213359981" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220920213359981-166686871797342.png" alt="image-20220920213359981" style="zoom:50%;" /></p>
 <h3 id="线性判别函数">线性判别函数</h3>
 <p>简单、经济、实用 但线性不可分时错误率可能较大</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222956.png?token=AWSGDYSPXUZXBSVKLRSDO63DLSVM2" alt="image-20220920213109513" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220920213109513-166686887026156.png" alt="image-20220920213109513" style="zoom:50%;" /></p>
 <h3 id="非线性判别函数-1">非线性判别函数</h3>
 <p>指：<strong>除了线性判别函数之外</strong>的各种判别函数!
 分段线性判别函数</p>
@@ -802,7 +148,7 @@ href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <p>当两类的类条件概率密度为<strong>正态分布</strong>且两类<strong>先验概率</strong>相等,
 <strong>各维特征独立</strong>且<strong>方差相等</strong>时,
 <strong>最小错误率贝叶斯决策</strong>是基于<strong>最小距离</strong>的分段线性判别函数:</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222957.png?token=AWSGDYQPHH7MNFS4Z4XWKB3DLSVM4" alt="image-20220920214406075" style="zoom:50%;" />
+<p><img src="/images/3-非线性判别函数.assets/image-20220920214406075-166686873157343.png" alt="image-20220920214406075" style="zoom:50%;" />
 <span class="math display">\[
 \left\|x-\mu_1\right\|^2-\left\|x-\mu_2\right\|^2 \lessgtr 0 \rightarrow
 x \in\left\{\begin{array}{l}
@@ -836,10 +182,10 @@ class="math inline">\(i\)</span><strong>类</strong>的<strong>距离</strong></
 <p>意义：和<span
 class="math inline">\(j\)</span>类的<strong>距离</strong>最小，则被归为<span
 class="math inline">\(j\)</span>类</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222958.png?token=AWSGDYW5HHBAS7CVJQ7FWKLDLSVM6" alt="image-20220921082756451" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921082756451-166686873479644.png" alt="image-20220921082756451" style="zoom:50%;" /></p>
 <h5 id="缺点"><strong>缺点</strong></h5>
 <p>分段线性距离分类器是较为特殊的情况，适用于<strong>各维</strong>分布基本<strong>对称</strong>的情形，对于更<strong>复杂</strong>的情形则<strong>不适用</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222959.png?token=AWSGDYRCYYSPJX2FALLSWETDLSVNA" alt="image-20220921082928270" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921082928270-166686873785945.png" alt="image-20220921082928270" style="zoom:50%;" /></p>
 <h3 id="一般形式的分段线性判别函数">一般形式的分段线性判别函数</h3>
 <p>对于每个<strong>子类</strong>定义一个线性判别函数:</p>
 <blockquote>
@@ -979,8 +325,8 @@ T} y_t\)</span>这两个子类判别式的<strong>梯度</strong></p>
 分成两个空间（确定空间内样本为同一类别的空间，可以用来分类，否则就要继续被划分）</li>
 <li>若子类中有错分, 则在其中再分, 直到全部<strong>正确分类</strong></li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222960.png?token=AWSGDYU5GN72IM2EPTJTIE3DLSVNC" alt="image-20220921091847778" style="zoom:50%;" /></p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222961.png?token=AWSGDYTP32LC5BICBAMKARLDLSVNE" alt="image-20220921091904642" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921091847778-166686874631347.png" alt="image-20220921091847778" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921091904642-166686888155257.png" alt="image-20220921091904642" style="zoom:50%;" /></p>
 <h2 id="二次判别函数">二次判别函数</h2>
 <h3
 id="多元正态分布中先验概率和方差对决策面的影响">多元正态分布中——先验概率和方差对决策面的影响</h3>
@@ -991,13 +337,13 @@ x_0=\frac{1}{2}\left(\mu_i+\mu_j\right)
 \]</span> 此时, <span class="math inline">\(x_0\)</span> 为 <span
 class="math inline">\(\mu_i+\mu_j\)</span>
 连线的中点，<strong>决策面通过该点</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222962.png?token=AWSGDYTXK7OTNQALHOQLB43DLSVNI" alt="image-20220921093013666" style="zoom: 50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921093013666-166686874909948.png" alt="image-20220921093013666" style="zoom: 50%;" /></p>
 <h4 id="先验概率">先验概率</h4>
 <p>当 <span class="math inline">\(P\left(\omega_i\right), i=1,2, \ldots,
 c\)</span> 不相等，决策面向<strong>先验概率小</strong>的方向偏移。</p>
 <h4 id="方差项">方差项</h4>
 <p>如果假定<strong>各先验概率相等</strong>，<strong>决策面的不同</strong>是由于<strong>方差项</strong>的差异引起的。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222963.png?token=AWSGDYSS43MDFOKNWBJNWY3DLSVNK" alt="image-20220921093445005" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921093445005-166686875232749.png" alt="image-20220921093445005" style="zoom:50%;" /></p>
 <p>其中，<strong>阴影内圈内部</strong>为样本类2的<strong><u>分布</u></strong>，<strong>阴影外圈的边界</strong>是1和2的<strong><u>决策面</u></strong></p>
 <h3 id="二次判别函数-1">二次判别函数</h3>
 <h4 id="二次函数形式">二次函数形式</h4>
@@ -1025,7 +371,7 @@ id="假定已知样本-omega_1-分布比较集中-形成单峰-omega_2-分布分
 <span class="math inline">\(\omega_1\)</span> 分布比较集中, 形成单峰,
 <span class="math inline">\(\omega_2\)</span> 分布分散</h5>
 <p>如下图。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222964.png?token=AWSGDYV2JQP54GCWVYQ27ZDDLSVNM" alt="image-20220921094418010" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921094418010-166686875504550.png" alt="image-20220921094418010" style="zoom:50%;" /></p>
 <p>此时定义 <span class="math inline">\(\omega_1\)</span>
 <strong>判别函数</strong>: <span class="math display">\[
 g(x)=\boldsymbol{K}^2-\left(x-\bar{\mu}_1\right)^T
@@ -1080,7 +426,7 @@ x-\left(\bar{\mu}_1{ }^T \sum_1^{-1} \bar{\mu}_1-\bar{\mu}_2{ }^T
 <p>可以通过调整两类的<strong>阈值</strong> <span
 class="math inline">\(K_1{ }^2, K_2{ }^2\)</span>
 来调整两类的<strong>错误率</strong>情况。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222965.png?token=AWSGDYWIHWXL3QSSBFHEMLLDLSVNO" alt="image-20220921095708588" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220921095708588-166686875735151.png" alt="image-20220921095708588" style="zoom:50%;" /></p>
 <h2 id="多层感知器神经网络">多层感知器神经网络</h2>
 <h3 id="mp多层感知器">MP多层感知器</h3>
 <p>省略</p>
@@ -1123,7 +469,7 @@ class="math inline">\(\mathbf{w}^{(\tau+1)}=\mathbf{w}^{(\tau)}-\eta
 \nabla E\left(\mathbf{w}^{(\tau)}\right)\)</span></li>
 <li>计算全局误差, 判断是否进入下一轮迭代</li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222966.png?token=AWSGDYVQ6T6WZWHFANVQXFTDLSVNS" alt="image-20220926190027251" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220926190027251-166686875998552.png" alt="image-20220926190027251" style="zoom:50%;" /></p>
 <h4 id="缺点和改进">缺点和改进</h4>
 <p><strong>缺点</strong>：学习效率低, 收敛速度慢 易陷入局部极小状态
 <strong>改进</strong>：变步长；引入 “惯性项”</p>
@@ -1157,7 +503,7 @@ class="math inline">\(a\)</span> 为 1 至 10 之间的常数</p>
 <h4
 id="前馈型神经网络径向基函数网络rbf">前馈型神经网络：径向基函数网络（RBF）</h4>
 <h5 id="网络结构"><strong>网络结构</strong></h5>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222967.png?token=AWSGDYVXXCPEVZEVRFYAMVTDLSVNU" alt="image-20220926191357059" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220926191357059-166686876254753.png" alt="image-20220926191357059" style="zoom:50%;" /></p>
 <h5 id="网络特点"><strong>网络特点</strong></h5>
 <p>只有一个<strong>隐层(都是径向基函数）</strong>,
 用一组径向基函数(Radial Basis Function,
@@ -1185,11 +531,11 @@ k\left(\left\|x-x_c\right\|\right)=\exp
 <p>这样，RBF网络可以看成是首先将原始的<strong>非线性可分</strong>的特征空间变换到另一空间(通常是<strong>高维空间</strong>)，通过这一变换使<strong>在新空间中线性可分</strong>，然后用一个线性单元来解决问题。</p>
 <h4 id="反馈型神经网络hopfield网络">反馈型神经网络：Hopfield网络</h4>
 <p>Hopfield网络是一种<strong>反馈网络</strong>。这种神经网络的特点是，输入信号作用于神经节点上，各个节点的<strong>输出</strong>又<strong>作为输入</strong>反馈到各个节点，形成一个<strong>动态系统</strong>，当<strong>系统稳定</strong>后<strong>读取其输出</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222968.png?token=AWSGDYSUGBPB4FBL24HSKDTDLSVNW" alt="image-20220926192120741" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220926192120741-166686876458054.png" alt="image-20220926192120741" style="zoom:50%;" /></p>
 <h4 id="自组织特征映射神经网络som">自组织特征映射神经网络（SOM）</h4>
 <p>在竞争学习网络中，<strong>所有</strong>的<strong>神经元节点</strong>通常<strong>排列在同一个层次</strong>上，没有反馈连接，但是神经元之间<strong>有横向的连接</strong>或相互影响。在学习时，通过神经元之间的<strong>竞争</strong>实现特定的映射。</p>
 <p>其模型结构由<strong>输入层</strong>和<strong>输出竞争层</strong>组成，输入层与输出层之间是全互连的。<strong>输出层各神经元之间</strong>还有<strong>侧抑制连接</strong></p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291222969.png?token=AWSGDYRKWAC7SLOS4AUTJMDDLSVNY" alt="image-20220926192422966" style="zoom:50%;" /></p>
+<p><img src="/images/3-非线性判别函数.assets/image-20220926192422966-166686876671955.png" alt="image-20220926192422966" style="zoom:50%;" /></p>
 
             <footer class="footline">
             </footer>
@@ -1314,7 +660,7 @@ class="math display">\[
 \]</span></p>
 <h3 id="图示">图示</h3>
 <p>从图中可以看到，这种决策实际的分类线就是图中的<strong>虚线</strong>位置，被称为<strong>决策边界</strong>或<strong>分类线</strong>。在多维的情况下，<strong>称为决策面</strong>或<strong>分类面</strong>，它把特征空间划分成属于各类的区域。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223109.png?token=AWSGDYRDXYMKVF4E73IN7Q3DLSVOU" alt="image-20221005082900683" style="zoom:50%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005082900683-166686901998458.png" alt="image-20221005082900683" style="zoom:50%;" /></p>
 <h3 id="多类识别问题">多类识别问题</h3>
 <p>多类识别问题的Bayes最小错误率决策:</p>
 <ul>
@@ -1354,10 +700,13 @@ p\left(\omega_2\right)+\boldsymbol{p}\left(\boldsymbol{x} \in
 \boldsymbol{p}\left(\boldsymbol{x} \mid
 \boldsymbol{\omega}_{\mathbf{2}}\right) \boldsymbol{d x}
 \]</span></p>
-<p><img
-src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223110.png?token=AWSGDYXOGNZ2Y6O3Z76D47DDLSVOW"
-alt="image-20221028200841094" /> 在多类决策的过程中，要把特征空间分割成
-<span class="math inline">\(\Re_1 、 \Re_2\)</span>,<span
+<figure>
+<img src="/images/4-贝叶斯决策.assets/image-20221028200841094.png"
+alt="image-20221028200841094" />
+<figcaption aria-hidden="true">image-20221028200841094</figcaption>
+</figure>
+<p>在多类决策的过程中，要把特征空间分割成 <span
+class="math inline">\(\Re_1 、 \Re_2\)</span>,<span
 class="math inline">\(\ldots, \mathfrak{R}_{\mathrm{c}}\)</span> 个区域,
 平均错误率由c(c-1)项组成, 即: <span class="math display">\[
 \left.\begin{array}{l}
@@ -1719,7 +1068,7 @@ class="math inline">\(x\)</span> 到 <span
 class="math inline">\(\mu\)</span> 的马氏距离 <span
 class="math inline">\(\gamma\)</span>
 为常数的<strong>超椭球面</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223111.png?token=AWSGDYS3VBYKKIFYK3VSLJDDLSVOY" alt="image-20221005144716870" style="zoom:50%;" />
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005144716870-166686902360559.png" alt="image-20221005144716870" style="zoom:50%;" />
 从下图可以看出, 从正态分布总体中抽取的样本大部分落在由 <span
 class="math inline">\(\mu\)</span> 和 <span
 class="math inline">\(\Sigma\)</span> 所确定的一个区域里,
@@ -1876,7 +1225,7 @@ class="math inline">\(P\left(\omega_i\right), i=1,2, \ldots, c\)</span>
 不相等, 决策面与<strong>先验概率相等</strong>时候的决策面平行,
 向<strong><u>先验概率小</u></strong>的方向偏移,
 即<strong>先验概率大</strong>的一类占据<strong>更大的决策空间</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223112.png?token=AWSGDYS64ZR3AHEMDR4N7SDDLSVO4" alt="image-20221005155716961" style="zoom:50%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005155716961-166686902640460.png" alt="image-20221005155716961" style="zoom:50%;" /></p>
 <h4
 id="特硃情况2各类的协方差矩阵都相等">特硃情况2：各类的协方差矩阵都相等</h4>
 <p><span class="math display">\[
@@ -1929,7 +1278,7 @@ class="math inline">\(\mu_i,\mu_j\)</span> 连线的中点,
 决策面<strong>通过该点</strong>。 当 <span
 class="math inline">\(P\left(\omega_i\right), i=1,2, \ldots, c\)</span>
 不相等, 决策面向<strong>先验概率小</strong>的方向偏移。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223113.png?token=AWSGDYSGTERDPBRRLSEYYQLDLSVO6" alt="image-20221005162330467" style="zoom: 67%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005162330467-166686904171964.png" alt="image-20221005162330467" style="zoom: 67%;" /></p>
 <h4 id="特殊情况3-各类协方差阵不相等">特殊情况3: 各类协方差阵不相等</h4>
 <p>判别函数中只有 <span class="math inline">\(\frac{d}{2} \ln 2
 \pi\)</span> 与 <span class="math inline">\(i\)</span> 无关,
@@ -1954,7 +1303,7 @@ x^T\left(W_i-W_j\right) x+\left(w_i-w_j\right)^T x+\omega_{i
 class="math inline">\(\Sigma_i, \mu_i, \quad
 P\left(\omega_i\right)\)</span> 的不同而呈现出某种曲面,
 即<strong>超球面、超椭球面、超拋物线面、超双曲面或者超平面</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223115.png?token=AWSGDYQPBYQZFYSULFI57PDDLSVPA" alt="image-20221005162816331" style="zoom:50%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005162816331-166686903211662.png" alt="image-20221005162816331" style="zoom:50%;" /></p>
 <h2 id="错误率计算非考试重点">错误率计算（非考试重点）</h2>
 <h3 id="引入-2">引入</h3>
 <ul>
@@ -2145,6 +1494,660 @@ class="math display">\[
 
     
           <article class="default">
+<h1>Linear Discriminant Analysis</h1>
+
+<h1 id="pattern-recognition-lda">Pattern-recognition-LDA</h1>
+<h2 id="两种模式识别方法">两种模式识别方法</h2>
+<h3 id="概率密度函数方法">概率密度函数方法</h3>
+<p>已知概率密度函数的<strong>形式</strong>，通过样本来估计<strong>密度函数</strong>的<strong>参数</strong></p>
+<h3 id="判别函数方法">判别函数方法</h3>
+<p>✔线性判别分析</p>
+<p>非线性判别</p>
+<h2 id="问题求解">问题求解</h2>
+<ul>
+<li><strong>问题</strong>: 如何选择模型中的参数 <span
+class="math inline">\(\mathbf{w}^T\)</span></li>
+<li><strong>基本思想</strong>: 在训练集中, 预测 <span
+class="math inline">\(f\)</span> 与真正的输出 <span
+class="math inline">\(y\)</span> 的差异要最小</li>
+<li>因此<strong>目标函数</strong>(又叫成本函数Cost function) 定义为:
+<span class="math display">\[
+J(\mathbf{w})=\frac{1}{2}
+\sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)^2
+\]</span> 进一步: <span class="math display">\[
+\hat{\mathbf{w}}=\arg \min _{\mathbf{w}} J(\mathbf{w})=\arg \min
+_{\mathbf{w}}\left[\frac{1}{2}
+\sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)^2\right]
+\]</span></li>
+</ul>
+<h2 id="回归方法">(回归)方法</h2>
+<h3 id="批处理梯度下降">(批处理）梯度下降</h3>
+<ul>
+<li><p>给定初始值<span class="math inline">\(w^0\)</span></p></li>
+<li><p>更新w使得 <span class="math inline">\(J(\mathbf{w})\)</span>
+越来越小</p></li>
+<li><p><span class="math display">\[
+\begin{aligned}
+&amp;\frac{\partial}{\partial w_j}
+J(\mathbf{w})=\sum_{i=1}^N\left(f\left(\mathbf{x}_i\right)-y_i\right)
+\cdot \mathbf{x}_{i, j} \\
+&amp;w_j^t=w_j^{t-1}-\alpha \frac{\partial}{\partial w_j} J(\mathbf{w})
+\end{aligned}
+\]</span></p></li>
+<li><p>同时更新 <span class="math inline">\(\mathbf{w}\)</span> 的各维
+<span
+class="math inline">\(f\left(\mathbf{x}_i\right)=\left[\mathbf{w}^{t-1}\right]^T
+\mathbf{x}_i\)</span></p></li>
+<li><p><span class="math inline">\(\alpha\)</span> 为学习率 (Learning
+rate) 或更新步长</p></li>
+<li><p>迭代速度<strong>较慢</strong></p></li>
+</ul>
+<h3 id="随机梯度下降">随机梯度下降</h3>
+<ul>
+<li><p>每次只用<strong>一个 <span
+class="math inline">\(\left(\mathbf{x}_r,
+y_r\right)\)</span></strong>或<strong>一些</strong>样本</p></li>
+<li><p><span class="math display">\[
+w_j^t=w_j^{t-1}-\alpha\left(f\left(\mathbf{x}_r\right)-y_r\right) \cdot
+\mathbf{x}_{r, j}
+\]</span></p>
+<ul>
+<li>收敛速度较快</li>
+<li>不太容易陷入局部极值</li>
+<li>对大样本数据较有效</li>
+</ul></li>
+<li><p>又叫在线学习 (Online learning)</p>
+<ul>
+<li>数据集可以随时进行增加，不需要预先了解所有的数据集</li>
+<li>可离线学习, 对所有样本循环使用多次 (一次循环称为一个 epoch)</li>
+<li>每次可以看一些样本 (mini-batch)</li>
+</ul></li>
+</ul>
+<h3 id="正规方程组normal-equations">正规方程组(Normal Equations)</h3>
+<h4 id="思想">思想</h4>
+<p>直接令导数为零，而非用梯度下降迭代得出</p>
+<h4 id="具体计算">具体计算</h4>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{\partial}{\partial \mathbf{w}} J(\mathbf{w})
+&amp;=\frac{\partial}{\partial \mathbf{w}}(X \mathbf{w}-\mathbf{y})^T(X
+\mathbf{w}-\mathbf{y}) \\
+&amp;=2 X^T(X \mathbf{w}-\mathbf{y})=0 \\
+\Rightarrow X^T X \mathbf{w} &amp;=X^T \mathbf{y}
+\end{aligned}
+\]</span> 得到模型的<strong>参数估计</strong>为：<span
+class="math inline">\(\hat{\mathbf{w}}=\left(X^T X\right)^{-1} X^T
+\mathbf{y}\)</span></p>
+<p>其中：<span class="math inline">\(\left(X^T X\right)^{-1}
+X^T\)</span>为<span
+class="math inline">\(\mathrm{X}\)</span>的伪逆矩阵</p>
+<h2
+id="线性判别函数用于分类">线性判别函数（用于<strong>分类</strong>）</h2>
+<h3 id="形式">形式</h3>
+<p><span class="math inline">\(d\)</span>
+维空间中的线性判别函数（决策面）的一般形式: <span
+class="math display">\[
+\mathrm{g}(\mathrm{x})=w^T x+w_0
+\]</span> 其中：<span class="math inline">\(x\)</span> 是样本向量-样本在
+<span class="math inline">\(d\)</span> 维特征空间中的描述, <span
+class="math inline">\(w\)</span> 是权 向量, <span
+class="math inline">\(w_0\)</span> 是一个常数(阈值权): <span
+class="math display">\[
+\begin{gathered}
+x=\left[x_1, x_2, \ldots, x_d\right]^T \\
+w=\left[w_1, w_2, \ldots, w_d\right]^T
+\end{gathered}
+\]</span> ### 决策规则</p>
+<p>两类问题的线性分类可采用如下决策规则: <span class="math display">\[
+\text { 如果 }\left\{\begin{array}{c}
+\mathbf{g}(\mathbf{x})&gt;\mathbf{0}, \text { 则决策 } \mathrm{x} \in
+\omega_1 \\
+\mathbf{g}(\mathbf{x})&lt;\mathbf{0}, \text { 则决策 } \mathrm{x} \in
+\omega_2 \\
+\mathbf{g}(\mathbf{x})=\mathbf{0}, \text { 可将其任意分类或拒绝 }
+\end{array}\right.
+\]</span> <span
+class="math inline">\(\mathbf{g}(\mathbf{x})=\mathbf{0}\)</span>
+定义了一个<strong>决策面</strong>, 把两类实例分开。如果 <span
+class="math inline">\(\mathbf{g}(\mathbf{x})\)</span> 是线性的,
+则决策面是一个<strong>超平面</strong>。 如果 <span
+class="math inline">\(x_1\)</span> 和 <span
+class="math inline">\(x_2\)</span> 都在决策面上, 则：</p>
+<p>对于超平面 <span class="math inline">\(H\)</span> 上的点 <span
+class="math inline">\(x_1\)</span> 和 <span
+class="math inline">\(x_2\)</span>, 有: <span class="math display">\[
+\quad w^T x_1+w_0=w^T x_2+w_0 \\
+w^T\left(x_1-x_2\right)=0
+\]</span> 说明<strong><span class="math inline">\(w\)</span>是<span
+class="math inline">\(H\)</span>的法向量</strong></p>
+<h3 id="gx的意义"><span class="math inline">\(g(x)\)</span>的意义</h3>
+判别函数 <span class="math inline">\(g(x)\)</span>
+也可以看作是特征空间中某个点 <span class="math inline">\(x\)</span>
+到<strong>超平面距离</strong>的一种<strong>代数度量</strong>。若把 <span
+class="math inline">\(x\)</span> 表示为: <span class="math display">\[
+x=x_p+r \frac{w}{\|w\|}
+\]</span> $$ {
+<span class="math display">\[\begin{array}{c}
+x_p 是 x 到 H 的射影向量\\
+
+r 是 x 到 H 的垂直距离\\
+
+\frac{w}{\|w\|} 是 w 方向上的单位向量\\
+\end{array}\]</span>
+<p>. $$</p>
+<p><img src="/images/2-线性判别函数.assets/image-20220911162732108-16668562085459-166685675857831.png" alt="image-20220911162732108" style="zoom:50%;" /></p>
+<p><span class="math inline">\(g(x)\)</span>可进一步写为: <span
+class="math display">\[
+\begin{aligned}
+g(x)&amp;=w^T\left(x_p+r \frac{w}{\| w \|}\right)+w_0\\
+&amp;=w^T x_p+\omega_0+r \frac{w^T w}{\| w\|} \\
+&amp;=r\|w\| \\
+\\
+r&amp;=\frac{g(x)}{\|w\|}
+\end{aligned}
+\]</span> 例如</p>
+<ul>
+<li>若 <span class="math inline">\(x\)</span> 为原点, 则 <span
+class="math inline">\(\mathrm{g}(\mathrm{x})=\omega_0\)</span></li>
+<li>原点到超平面 <span class="math inline">\(H\)</span> 的距离可以写作:
+<span class="math inline">\(r_0=\frac{\omega_0}{\|w\|}\)</span></li>
+</ul>
+<h3 id="增广数据与齐次化">增广数据与齐次化</h3>
+<h4 id="增广数据">增广数据</h4>
+<p>称<span class="math inline">\(y=\left[\begin{array}{c}1 \\ x_1 \\ x_2
+\\ \vdots \\ x_d\end{array}\right]=\left[\begin{array}{l}1 \\
+x\end{array}\right]\)</span> 为<strong>增广样本向量</strong>；称 <span
+class="math inline">\(a=\left[\begin{array}{c}w_0 \\ w_1 \\ w_2 \\
+\vdots \\ w_d\end{array}\right]=\left[\begin{array}{c}w_0 \\
+w\end{array}\right]\)</span> 为<strong>增广权向量</strong></p>
+<p>增广空间<strong>维数</strong>$=d+1 $ 方程 <span
+class="math inline">\(a^T y=0\)</span> 在增广空间 <span
+class="math inline">\(Y\)</span>
+确定了一个<strong>通过原点</strong>的超平面 <span
+class="math inline">\(\hat{H}\)</span>, 它对 <span
+class="math inline">\(d\)</span> 维子空间的划分与原决策面 <span
+class="math inline">\(w^T x+w_0=0\)</span> 对原 <span
+class="math inline">\(X\)</span> 空间的<strong>划分完全相同</strong>。
+<span class="math inline">\(Y\)</span> 空间中任意一点 <span
+class="math inline">\(y\)</span> 到 <span
+class="math inline">\(\hat{H}\)</span> 的距离: <span
+class="math inline">\(\quad r=\frac{g(x)}{\|a\|}=\frac{a^T
+y}{\|a\|}\)</span></p>
+<h4 id="线性判别函数齐次化">线性判别函数齐次化</h4>
+<p>线性判别函数 <span class="math display">\[
+g(x)=w^T x+w_0
+\]</span> 改写成 <span class="math display">\[
+g(x)=w_0+\sum_{i=1}^d w_i x_i=\sum_{i=1}^d a_i y_i=a^T y
+\]</span> 称为线性判别函数的<strong>齐次化</strong></p>
+<h2 id="准则函数">准则函数</h2>
+<h3 id="引入">引入</h3>
+<p>上文讲述了线性判别函数的<strong>决策规则</strong>，下文讲解的<strong>准则函数</strong>则是在这样的决策规则下给出的一个<strong>利益准则</strong>/<strong>目标函数</strong>，通过<strong>最大化利益准则</strong>可以使我们达到不同的<strong>分类效果</strong></p>
+<h3 id="fisher准则">Fisher准则</h3>
+<h4 id="基本思想">基本思想</h4>
+<p>希望<strong>投影后</strong>的一维数据满足：</p>
+<ol type="1">
+<li>两类<strong>之间</strong>的距离尽可能<strong>远</strong></li>
+<li>每一类<strong>自身</strong>尽可能<strong>紧凑</strong></li>
+</ol>
+<h4 id="基本思想的数学描述建模">基本思想的数学描述（建模）</h4>
+<p>(1)各类样本的<strong>均值向量</strong> $ m_i= _{x x_i} x, i=1,2$
+(2)原始空间内样本<strong>类内离散度矩阵</strong> <span
+class="math inline">\(S_i\)</span> 和<strong>总</strong>类内离散度矩阵
+<span class="math inline">\(S_w\)</span> <span class="math display">\[
+\begin{gathered}
+S_i=\sum_{x \in \chi_i}\left(x-m_i\right)\left(x-m_i\right)^T, i=1,2 \\
+or \\
+S_w=S_1+S_2 \quad S_w=P\left(w_1\right) S_1+P\left(w_1\right) S_2
+\end{gathered}
+\]</span> (3)样本<strong>类间离散度矩阵</strong> <span
+class="math inline">\(S_b\)</span> <span class="math display">\[
+\begin{gathered}
+S_b=\left(m_1-m_2\right)\left(m_1-m_2\right)^T \\
+or \\
+S_b=P\left(w_1\right)
+P\left(w_2\right)\left(m_1-m_2\right)\left(m_1-m_2\right)^T
+\end{gathered}
+\]</span> [^1]:<span class="math inline">\(S_w\)</span>和<span
+class="math inline">\(S_b\)</span><strong>在<span
+class="math inline">\(w\)</span>​​确定的情况下</strong>可以用来评估<strong>类内距离</strong>和<strong>类间距离</strong>
+[^2]:这里的<span
+class="math inline">\(P(w_i)\)</span>​为不同类别的<strong>先验概率</strong>，也即不同类别样本的<strong>比例</strong></p>
+<h4 id="目标准则的数学描述建模">目标准则的数学描述（建模）</h4>
+<p>在投影以后的一维 <span class="math inline">\(Y\)</span> 空间 <span
+class="math inline">\(y_n=w^T x_n\)</span>
+(1)各类<strong>样本均值</strong> <span
+class="math inline">\(\tilde{m}_i=\frac{1}{N_i} \sum_{y \in \eta_i} y,
+i=1,2\)</span> (2)<strong>样本类内离散度</strong> <span
+class="math inline">\(\widetilde{S_i^2}\)</span>
+和<strong>总</strong>类内离散度 <span
+class="math inline">\(\widetilde{S_w}\)</span> <span
+class="math display">\[
+\begin{gathered}
+\tilde{S}_i^2=\sum_{y \in \eta_i}\left(y-\tilde{m}_i\right)^2, i=1,2 \\
+\tilde{S}_w=\tilde{S}_1^2+\tilde{S}_2^2
+\end{gathered}
+\]</span> (3)而类间离散度 <span
+class="math inline">\(\widetilde{S}_{\mathrm{b}}\)</span>
+就成为了两类均值差的平方 <span
+class="math inline">\(\left(\widetilde{m_1}-\widetilde{m}_2\right)^2\)</span>
+。</p>
+<p><strong>注</strong>：这是<strong>投影后</strong>空间上的离散度（<strong>距离</strong>)表征(也正是我们的<strong>目标准则</strong>所要求的)，在<strong>给定<span
+class="math inline">\(w\)</span></strong>的情况下<span
+class="math inline">\(S\)</span>和<span
+class="math inline">\(\tilde{S}\)</span>的<strong>本质</strong>是相同的[^1]，例如：
+<span class="math display">\[
+\begin{aligned}
+\tilde{S}_i^2&amp;=\sum_{y \in \eta_i}\left(y-\tilde{m}_i\right)^2 \\
+&amp;=\sum_{x \in \chi_i}\left(w^T x-w^Tm_i\right)^2 \\
+&amp;=\sum_{x \in \chi_i}\left(w^T x-w^Tm_i\right)\left(w^T
+x-w^Tm_i\right) \\
+&amp;=\sum_{x \in \chi_i}w^T\left( x-m_i\right)\left( x-m_i\right)^Tw \\
+&amp;=w^T S_i w
+\end{aligned}
+\]</span></p>
+<p>故<strong>目标准则</strong>可以形式化成问题</p>
+<p><span class="math display">\[
+\underset{w}{\arg \max }\quad J_F(w)
+=\frac{\left(\widetilde{m_1}-\widetilde{m}_2\right)^2}{\tilde{S}_1^2+\tilde{S}_2^2}
+=\frac{w^T S_b w}{w^T S_w w}
+\]</span></p>
+<p>若考虑两类样本<strong>类内散度矩阵</strong>的<strong>不对称性</strong>（即考虑他们的<strong>先验概率</strong>），（?)则[^2]
+<span class="math display">\[
+\begin{aligned}
+J_F(w)&amp;=\frac{w^T S_b w}{w^T S_w w} \\
+&amp;=\frac{w^T P\left(w_1\right)
+P\left(w_2\right)\left(m_1-m_2\right)\left(m_1-m_2\right)^T
+w}{w^TP\left(w_2\right) S_1 w+w^T P\left(w_1\right) S_2 w} \\
+&amp;=\frac{w^T \left(m_1-m_2\right)\left(m_1-m_2\right)^T
+w}{w^T\frac{S_1}{P\left(w_1\right)} w+w^T \frac{S_2}{P\left(w_2\right)}
+w}
+\end{aligned}
+\]</span> #### 投影方向<span class="math inline">\(w\)</span>求解</p>
+<p><span class="math inline">\(J_F(w)\)</span> 只与投影方向有关, 与
+<span class="math inline">\(w\)</span> 的<strong>大小无关</strong>。即若
+<span class="math inline">\(w\)</span> 是一个最优解, <span
+class="math inline">\(k w\)</span> 也是最优解，其中 <span
+class="math inline">\(k\)</span> 是任何不为零的常数。 因此, 在求解时,
+可以假定分母项为非零的常数而最大化分子部分, 可以转化为如下问题： <span
+class="math display">\[
+\underset{w}{\arg \max}\quad w^T S_b w \quad \\
+s.t. \quad w^T S_w w=c \neq 0
+\]</span> 假定 <span class="math inline">\(S_{\mathrm{w}}\)</span>
+是非奇异的, 可以得到: <span class="math display">\[
+S_w^{-1} S_b w^*=\lambda w^*
+\]</span> 也就是说, <span class="math inline">\(w^*\)</span> 是 <span
+class="math inline">\(S_w^{-1} S_b\)</span>
+的<strong>特征向量</strong>。把 <span class="math inline">\(S_b\)</span>
+代入, 可进一步写为： <span class="math display">\[
+\lambda w^*=S_w^{-1}\left(m_1-m_2\right)\left(m_1-m_2\right)^T w^*
+\]</span> 应该注意, <span class="math inline">\(\left(m_1-m_2\right)^T
+w^*\)</span> 是<strong>标量</strong>, 不影响 <span
+class="math inline">\(w^*\)</span> 的方向, <span
+class="math inline">\(w^*\)</span> 的方向是由 <span
+class="math inline">\(S_w^{-1}\left(m_1-m_2\right)\)</span> 决定的,
+因此可取: <span class="math display">\[
+w^*=S_w^{-1}\left(m_1-m_2\right)=\left(S_1+S_2\right)^{-1}\left(m_1-m_2\right)
+\]</span> 这就是Fisher判别准则下的<strong>最优投影方向</strong></p>
+<h4 id="分类阈值b求解">分类阈值<span
+class="math inline">\(b\)</span>求解</h4>
+<p>上文只给出了<strong>投影方向</strong>,
+却没给出分类面（缺少<strong>截距</strong>），所以要在投影之后的方向上确定<strong>分类阈值</strong></p>
+<p><strong>分类阈值</strong>的两种确定方法</p>
+<ul>
+<li>两类均值的中点(先验概率相同) <span class="math display">\[
+b=\frac{\mu_1+\mu_2}{2}
+\]</span></li>
+<li>投影后数据的<strong>调和</strong>均值
+(先验概率相同)(?权重是不是反了)</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+b&amp;=\frac{n_1 \mu_1+n_2 \mu_2}{n_1+n_2}
+\end{aligned}
+\]</span></p>
+<p>（在先验概率不同时,
+分界点向先验概率<strong>小</strong>的一侧偏移）</p>
+<p>其中，<span class="math inline">\(n_1, n_2\)</span>
+是两类样本的个数，<span class="math inline">\(\mu_i=
+\tilde{m}_i=\frac{1}{N_i} \sum_{x \in x_i} w^T x=\frac{1}{N_i} \sum_{y
+\in \eta_i} y, i=1,2\)</span></p>
+<p>注意这里<span
+class="math inline">\(\mu_i\)</span>的求解<strong>与b无关</strong>，也就是<strong>不妨取<span
+class="math inline">\(b_0=0\)</span></strong>，求完调和平均后才能真正的确定能用来分类的<span
+class="math inline">\(b\)</span></p>
+<p>直观来说，用<strong>0</strong>将1个<strong>-1</strong>和3个<strong>3</strong>调和分开，和用<strong>100</strong>将1个<strong>99</strong>和3个<strong>103</strong>调和分开是一样的</p>
+<p><img src="/images/2-线性判别函数.assets/image-20220911212641491-16668561840203-166685676367732.png" alt="image-20220911212641491" style="zoom: 67%;" /></p>
+<p>故最后的Fisher准则下的分类器为 <span class="math display">\[
+\begin{gathered}
+\mathrm{g}(\mathrm{x})=w^T x+w_0\\ \\
+\text{其中}\quad
+w=S_w^{-1}\left(m_1-m_2\right)=\left(S_1+S_2\right)^{-1}\left(m_1-m_2\right)\\
+\\
+w_0=-b=-\frac{\mu_1+\mu_2}{2}\quad or\quad-\frac{n_2 \mu_1+n_1
+\mu_2}{n_1+n_2}
+\end{gathered}
+\]</span></p>
+<h3 id="感知机准则">感知机准则</h3>
+<h4 id="思想-1">思想</h4>
+<p>感知准则是一种自学习判别函数的生成方法, 由于
+Rosenblatt试图将其用于脑模型感知器, 因此得名。</p>
+<p>该方法对<strong>随意给定</strong>的判别函数<strong>初始值</strong>,
+通过<strong>样本分类训练过程</strong>逐步对其<strong>修正</strong>直至最终确定。</p>
+<h4 id="基本概念">基本概念</h4>
+<h5 id="线性可分性">线性可分性</h5>
+<p>一组容量为 <span class="math inline">\(N\)</span> 的样本集 <span
+class="math inline">\(y_1, y_2, \ldots y_N\)</span>, 其中 <span
+class="math inline">\(y_n\)</span> 为 <span
+class="math inline">\(d\)</span> 维增广样本向量, 分别来自 <span
+class="math inline">\(w_I\)</span> 类和 <span
+class="math inline">\(w_2\)</span> 类, 如果存在权向量 <span
+class="math inline">\(a\)</span>, 使得对于任何 <span
+class="math inline">\(y \in w_1\)</span>, 都有 <span
+class="math inline">\(a^T y&gt;0\)</span>, 而对于任何 <span
+class="math inline">\(y \in w_2\)</span>, 都有 <span
+class="math inline">\(a^T y&lt;0\)</span>,
+则称这组样本为线性可分的。</p>
+<h5 id="样本的规范化">样本的规范化</h5>
+<p>原问题是 <span class="math display">\[
+\begin{aligned}
+&amp;\left\{\begin{array}{l}
+a^T y_i&gt;0, y_i \in w_1 \\
+a^T y_j&lt;0, y_j \in w_2
+\end{array}\right. \\
+\end{aligned}
+\]</span></p>
+<p>通过<strong>规范化样本增广向量</strong></p>
+<p><span class="math display">\[
+y_n^{\prime}=\left\{\begin{array}{c}
+y_i&gt;0, y_i \in w_1 \\
+-y_j&lt;0, y_j \in w_2
+\end{array}\right.
+\]</span></p>
+<p>使得 <span class="math display">\[
+a^T y_n^{\prime}&gt;0, n=1,2, \ldots, N
+\]</span> <strong>线性可分</strong>的条件: 存在向量 <span
+class="math inline">\(a^*\)</span>, 使得上式成立; <span
+class="math inline">\(a^*\)</span>为解向量</p>
+<h5
+id="解向量存在向量a使得上式成立">解向量：存在向量a*，使得上式成立</h5>
+<h5
+id="解区在权值空间内所有的解向量组成的区域">解区：在权值空间内所有的解向量组成的区域</h5>
+<p><img src="/images/2-线性判别函数.assets/image-20220911211153532-16668561871824-166685676671633.png" alt="image-20220911211153532" style="zoom:50%;" /></p>
+<p>考虑到<strong>噪声、误差</strong>的存在，应为解区留有<strong>余量</strong>，即<span
+class="math inline">\(a^T y_n\ge b&gt;0\)</span></p>
+<p><img src="/images/2-线性判别函数.assets/image-20220911211227659-16668561895625-166685677060434.png" alt="image-20220911211227659" style="zoom:50%;" /></p>
+<h4 id="目标准则的数学描述建模-1">目标准则的数学描述（建模）</h4>
+<p>寻找解向量 <span class="math inline">\(a^*\)</span>，使得对于一组样本
+<span class="math inline">\(y_1, y_2, \ldots y_N\)</span>： <span
+class="math display">\[
+a^T y_n&gt;0, n=1,2, \ldots, N
+\]</span> 其中 <span class="math inline">\(y_n\)</span>
+是规范化增广样本向量</p>
+<h4 id="算法思想">算法思想</h4>
+<p>对于<strong>线性可分</strong>问题, 构造<strong>准则函数</strong>
+<span class="math inline">\(J_P(a)=\sum_{y \in \eta^k}\left(-a^T
+y\right)\)</span> 其中 <span class="math inline">\(\eta^k\)</span>
+是被权向量 <span class="math inline">\(a\)</span> 错分的样本集合, 即当
+<span class="math inline">\(y\)</span> 被<strong>错分</strong>时, 就有
+<span class="math inline">\(a^T y_n \leq 0\)</span> 因此 <span
+class="math inline">\(J_P(a) \geq 0\)</span>, 仅当 <span
+class="math inline">\(a\)</span> 为解向量或在解区边界时 <span
+class="math inline">\(J_P(a)=0\)</span> 也就是说, 当且仅当 <span
+class="math inline">\(\eta^k\)</span> 为空集时 <span
+class="math inline">\(J_P^*(a)=\min J_P(a)=0\)</span>，此时无错分样本,
+这时的 <span class="math inline">\(a\)</span> 就是解向量 <span
+class="math inline">\(a^*\)</span> 。</p>
+<h4 id="算法梯度下降法">算法——梯度下降法</h4>
+<p>求使 <span class="math inline">\(J_P(a)\)</span> 达到最小值的 <span
+class="math inline">\(a^*\)</span>, 采用梯度下降法求解: <span
+class="math display">\[
+\begin{aligned}
+J_P(a) &amp;=\sum_{y \in \eta^k}\left(-a^T y\right) \\
+\nabla J_P(a)=&amp; \frac{\partial J_P(a)}{\partial a}=\sum_{y \in
+\eta^k}(-y) \\
+a(k+1) &amp;=a(k)-\rho_k \nabla J \quad   \\
+a(k+1) &amp;=a(k)+\rho_k  \sum_{y \in \eta^k} y
+\end{aligned}
+\]</span></p>
+<h5 id="具体步骤">具体步骤</h5>
+<p><strong>初值</strong>：任意给定一向量初始值 <span
+class="math inline">\(a(0)\)</span> <strong>迭代</strong>: 第 <span
+class="math inline">\(k+1\)</span> 次迭代时的权向量 <span
+class="math inline">\(a(k+1)\)</span> 等于第 <span
+class="math inline">\(k\)</span> 次的权向量 <span
+class="math inline">\(a(k)\)</span> 加上被错分类的所有样本之和与 <span
+class="math inline">\(r_k\)</span> 的乘积 <strong>终止</strong>:
+对所有样本正确分类。</p>
+<h5 id="算法tricks">算法Tricks</h5>
+<ul>
+<li><p><strong>固定增量法</strong>与<strong>可变增量法</strong>(<span
+class="math inline">\(\rho_k\)</span>的变化与否)</p></li>
+<li><p><strong>批量样本</strong>修正法与<strong>单样本</strong>修正法</p>
+<ul>
+<li><p>单样本修正法: 样本集视为不断重复出现的序列, 逐个样本检查,
+修正权向量✔</p></li>
+<li><p>批量样本修正法:
+样本<strong>成批</strong>或<strong>全部</strong>检查后,
+修正权向量</p></li>
+</ul></li>
+</ul>
+<h5 id="注意">注意</h5>
+<ol type="1">
+<li>只要<strong>解区间存在</strong>,
+那么经过<strong>有限的步骤</strong>后可以得到一个解向量。</li>
+<li>如果不是线性可分，迭代的过程中总会出现<strong>新的被错误分类</strong>的样本<span
+class="math inline">\(y\)</span>，算法<strong>不会终止</strong><a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></li>
+</ol>
+<h3 id="最小平方误差准则">最小平方误差准则</h3>
+<h4 id="思想-2">思想</h4>
+<p>寻找最好<strong>投影方向 $a^* $ </strong>使得<span
+class="math inline">\(\quad a^T y_n&gt;0\)</span>
+，对于一个<strong>人为给定</strong>的n维向量<span
+class="math inline">\(b&gt;0,b\in R^N\)</span> <span
+class="math display">\[
+Y=\left[\begin{array}{c}
+y_1^T \\
+y_2^T \\
+\vdots \\
+y_N^T
+\end{array}\right]=\left[\begin{array}{cccc}
+y_{11} &amp; y_{12} &amp; \cdots &amp; y_{1 \hat{d}} \\
+y_{21} &amp; y_{22} &amp; \cdots &amp; y_{2 \widehat{d}} \\
+\cdots &amp; \cdots &amp; \cdots &amp; \cdots \\
+y_{N 1} &amp; y_{N 2} &amp; \cdots &amp; y_{N \widehat{d}}
+\end{array}\right]
+\]</span> <span
+class="math inline">\(Ya=b\)</span>通常是<strong>不可以直接求解</strong>的（<strong>方程数</strong>多于<strong>末知数</strong>的矛盾方程组通常没有精确解）</p>
+<p>通过减少误差来确定最优的<strong>投影方向</strong> $a^* $</p>
+<p>定义误差向量: <span class="math inline">\(e=Y
+a-b\)</span>,及平方误差准则函数: <span class="math display">\[
+J_S(a)=\|e\|^2=\|Y a-b\|^2=\sum_{n=1}^N\left(a^T y_n-b_n\right)^2
+\]</span> #### 解法</p>
+<h5 id="直接求解析解">直接求<strong>解析解</strong></h5>
+<p><span class="math display">\[
+a^*=Y^{+} b \quad Y^{+}=\left(Y^T Y\right)^{-1}  Y^T
+\]</span> 问题: (1)要求 <span class="math inline">\(Y^T\)</span>
+<strong>非奇异</strong>; (2) 求 <span class="math inline">\(Y^*\)</span>
+<strong>计算量大</strong>同时可能引入<strong>较大误差</strong>。</p>
+<h5 id="或者用梯度下降法">或者用<strong>梯度下降法</strong></h5>
+<p>采用梯度下降法求解: <span class="math inline">\(\nabla J_S(a)=2 Y^T(Y
+a-b)\)</span> <span class="math display">\[
+\left\{\begin{array}{l}
+a(1), \text { Random } \\
+a(k+1)=a(k)-\rho_k Y^T(Y a-b)
+\end{array}\right.
+\]</span> 可以证明,选择 <span
+class="math inline">\(\rho_k=\frac{\rho_1}{k}\)</span>比较合适， <span
+class="math inline">\(\rho_1\)</span> 是任意常数 该算法权向量收敛于使
+<span class="math inline">\(\nabla J_S(a)=2 Y^T(Y a-b)=0\)</span>
+的权向量 <span class="math inline">\(a^{\text {* }}\)</span>
+优点：（1）不要求 <span class="math inline">\(Y^r Y\)</span> 奇异与否
+（2）只计算 <span class="math inline">\(d \times d\)</span> 方阵 <span
+class="math inline">\(Y ^T Y\)</span>, 比 <span class="math inline">\(d
+\times N\)</span> 矩阵<span class="math inline">\(Y^{+}=\left(Y^T
+Y\right)^{-1} Y^T\)</span>计算量小</p>
+<h4 id="b不同取值的意义"><span
+class="math inline">\(b\)</span>不同取值的意义</h4>
+<h5
+id="如果同一类样本对应的-b_i-为相同的值">如果<strong>同一类样本</strong>对应的
+<span class="math inline">\(b_i\)</span>
+为<strong>相同</strong>的值</h5>
+<p><span class="math display">\[
+\boldsymbol{b}=\left[\begin{array}{c}
+N / N_1 \\
+\cdots \\
+N / N_1 \\
+N / N_2 \\
+\cdots \\
+N / N_2
+\end{array}\right] N_1 \text { 个 }
+\]</span> <strong>a</strong>*等价于<strong>Fisher解</strong></p>
+<h5
+id="如果所有样本对应b_i取相同值且n趋于无穷">如果<strong>所有样本</strong>对应<span
+class="math inline">\(b_i\)</span>取<strong>相同</strong>值，且<strong>N</strong>趋于<strong>无穷</strong></h5>
+<p><span class="math display">\[
+N \rightarrow \infty, b=\underset{N \uparrow}{[1,1, \cdots, 1}]^T
+\]</span></p>
+<p><span class="math display">\[
+g_0(x)=P\left(w_1 \mid x\right)-P\left(w_2 \mid x\right)
+\]</span>
+以<strong>最小均方误差</strong>逼近<strong>贝叶斯判别函数</strong>（？不会）</p>
+<h4 id="问题和对比">问题和对比</h4>
+<p>相对其他准则，对于<strong>异常值</strong>(outlier)很敏感（很受印象）</p>
+<p><img src="/images/2-线性判别函数.assets/image-20220920200808481-16668561936516-166685677735635.png" alt="image-20220920200808481" style="zoom:50%;" /></p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 41%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>线性可分</th>
+<th>线性不可分</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>感知机准则</td>
+<td>收敛</td>
+<td>不收敛</td>
+</tr>
+<tr class="even">
+<td>最小平方误差准则</td>
+<td>算法会收敛，但可能未将样本分开</td>
+<td>算法会收敛，样本不会被分开</td>
+</tr>
+</tbody>
+</table>
+<h2 id="多分类问题">多分类问题</h2>
+<h3 id="概括">概括</h3>
+<p><strong>多分类问题</strong>可以通过三种方法<strong>转换为二分类问题</strong>（下面方法中<strong>c</strong>为<strong>类别数</strong>）</p>
+<h3 id="c-1-two-class-problems"><span class="math inline">\(c-1\)</span>
+two-class problems</h3>
+<h4 id="思想-3">思想</h4>
+<p>用c-1个超平面把特征空间划分为c个区域</p>
+<p>每一个超平面将 <span class="math inline">\(\omega_i\)</span> 和not
+<span class="math inline">\(\omega_i\)</span> 的样本分开</p>
+<h4 id="问题">问题</h4>
+<ol type="1">
+<li>两类样本不均衡导致<strong>分类面有偏</strong>,
+样本<strong>数量少</strong>的类别易发生<strong>分类错误</strong></li>
+<li>往往<strong>不会</strong>恰好<strong>得到c个区域</strong>，造成特征空间内部分区域<strong>歧义</strong>（下图中绿色区域无法判断是<span
+class="math inline">\(C_1\)</span>或者<span
+class="math inline">\(C_2\)</span>）</li>
+</ol>
+<p><img src="/images/2-线性判别函数.assets/image-20220920202043462-16668561961537-166685678037436.png" alt="image-20220920202043462" style="zoom:50%;" /></p>
+<h3 id="cc-1-2-two-class-problems"><span class="math inline">\(c(c-1) /
+2\)</span> two-class problems</h3>
+<h4 id="思想-4">思想</h4>
+<p>每两类构造一个分类器</p>
+<p>Separate every pair of classes.</p>
+<h4 id="问题-1">问题</h4>
+<p>下图中的<strong>ambiguous region</strong> B的样本满足</p>
+<p>𝐻12: 1 &gt; 2</p>
+<p>𝐻13: 3 &gt; 1</p>
+<p>𝐻14: 4 &gt; 1</p>
+<p>𝐻23: 2 &gt; 3</p>
+<p>𝐻24: 4 &gt; 2</p>
+<p>𝐻34: 3 &gt; 4</p>
+<p>那么这6个分类器产生<strong>矛盾</strong>，无法确定这个区域的类别到底属于什么（没有一个类别大于<strong>所有</strong>其他类别）</p>
+<p><img src="/images/2-线性判别函数.assets/image-20220920202859425-166685679443841.png" alt="image-20220920202859425" style="zoom:50%;" /></p>
+<h3 id="define-c-linear-discriminant-functions">Define <span
+class="math inline">\(c\)</span> linear discriminant functions</h3>
+<h4 id="思想-5">思想</h4>
+<p>所有<strong>（分段）线性分类器</strong>转化为<strong>线性判别函数</strong></p>
+<p>Assign <span class="math inline">\(x\)</span> to <span
+class="math inline">\(\omega_i\)</span> if <span
+class="math inline">\(g_i(x)&gt;g_j(x)\)</span> for all <span
+class="math inline">\(j \neq i\)</span> <span class="math display">\[
+g_i(x)=w_i^t x+w_{i 0} \quad i=1, \ldots, c
+\]</span>
+<img src="/images/2-线性判别函数.assets/image-20220920203642463-166685678562638.png" alt="image-20220920203642463" style="zoom:50%;" /></p>
+<h2 id="逻辑回归">逻辑回归</h2>
+<p>逻辑回归是概率型非线性回归,
+但其<strong>本质</strong>是<strong>线性回归</strong>,
+只是在特征到结果的映射中加入了<strong>一层函数映射</strong>,</p>
+<p>即先把特征线性求和, 然后使用函数 <span
+class="math inline">\(\sigma(\mathbf{z})\)</span> (Sigmoid函数) 来预测。
+$(a)= $</p>
+<p>其中<span class="math inline">\(a=w^T
+x\)</span>,其<strong>意义</strong>是：属于第一个类别的几率（<strong>相对可能性</strong>）的对数，即<span
+class="math inline">\(a=\ln \left(\frac{\sigma}{1-\sigma}\right)=\ln
+\frac{p\left(C_1 \mid x\right)}{p\left(C_2 \mid x\right)}\)</span></p>
+<blockquote>
+<p>Sigmoid函数性质：</p>
+<ol type="1">
+<li>可以将连续值映射到0和1区间上</li>
+<li>可导性 <span class="math inline">\(\frac{d \sigma}{d
+a}=\sigma(1-\sigma)\)</span></li>
+<li>对称性 <span
+class="math inline">\(\sigma(-a)=1-\sigma(a)\)</span></li>
+<li>反转性 <span class="math inline">\(a=\ln
+\left(\frac{\sigma}{1-\sigma}\right)=\ln \frac{p\left(C_1 \mid
+x\right)}{p\left(C_2 \mid x\right)}\)</span></li>
+</ol>
+</blockquote>
+<p>可根据已有样本, 定义目标函数为模型的似然函数的负对数, 并采用梯度下降
+算法进行优化求解</p>
+<h3 id="多类逻辑回归">多类逻辑回归</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;p\left(C_k \mid \mathbf{x}\right)=\frac{p\left(\mathbf{x} \mid
+C_k\right) p\left(c_k\right)}{\sum_j p\left(\mathbf{x} \mid C_j\right)
+p\left(c_j\right)}=\frac{\exp \left(a_k\right)}{\sum_j \exp
+\left(a_j\right)} \quad \begin{array}{c}
+\text { 归一化指数 } \\
+\text { Normalized Exponential }
+\end{array} \\
+&amp;a_k=\ln p\left(\mathbf{x} \mid C_k\right) p\left(c_k\right)
+\end{aligned}
+\]</span> <span
+class="math inline">\(p(C_k|x)\)</span>的表达转换为<strong>Softmax函数</strong>：如果
+<span class="math inline">\(a_k \gg a_j\)</span>, 对于所有的 <span
+class="math inline">\(k \neq j\)</span>, 有 <span
+class="math inline">\(p\left(C_k \mid \mathbf{x}\right) \simeq
+1\)</span> <span class="math inline">\(p\left(C_j \mid \mathbf{x}\right)
+\simeq 0\)</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li
+id="fn1"><p>需要注意，这里必须保证样本是线性可分的，否则算法迭代不会结束<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+    
+          <article class="default">
 <h1>Parameter Estimation</h1>
 
 
@@ -2228,25 +2231,25 @@ class="math display">\[
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667018930" defer></script>
-        <script src="/js/lunr.min.js?1667018930" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667018930" defer></script>
-        <script src="/js/lunr.multi.min.js?1667018930" defer></script>
-        <script src="/js/lunr.en.min.js?1667018930" defer></script>
-        <script src="/js/search.js?1667018930" defer></script>
+        <script src="/js/auto-complete.js?1667020413" defer></script>
+        <script src="/js/lunr.min.js?1667020413" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667020413" defer></script>
+        <script src="/js/lunr.multi.min.js?1667020413" defer></script>
+        <script src="/js/lunr.en.min.js?1667020413" defer></script>
+        <script src="/js/search.js?1667020413" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
           <li data-nav-id="/game-theory/" class="dd-item"><input type="checkbox" id="section-e70f5d73bafb2f417493745d881ff2c1" aria-controls="subsections-e70f5d73bafb2f417493745d881ff2c1" class="toggle"><label class="a11y-only toggle" for="section-e70f5d73bafb2f417493745d881ff2c1" >Submenu Game Theory</label><a href="/game-theory/">Game Theory<i class="fas fa-check read-icon"></i></a><ul id="subsections-e70f5d73bafb2f417493745d881ff2c1">
           <li data-nav-id="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" class="dd-item"><a href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">Nash Equilibrium<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Dynamic Game<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Dynamic Game<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/">Repeated Game<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Incomplete Information Static Game<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/pattern-recognition/" class="dd-item active parent"><input type="checkbox" id="section-d97dd4feeffe48ab6a56cf2ae66c1e37" aria-controls="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37" class="toggle" checked><label class="a11y-only toggle" for="section-d97dd4feeffe48ab6a56cf2ae66c1e37" >Submenu Pattern Recognition</label><a href="/pattern-recognition/">Pattern Recognition<i class="fas fa-check read-icon"></i></a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
-          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Nonlinear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
         <div id="shortcuts">
@@ -2301,10 +2304,10 @@ class="math display">\[
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667018930" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667018930" defer></script>
-    <script src="/js/featherlight.min.js?1667018930" defer></script>
-    <script src="/js/theme.js?1667018930" defer></script>
+    <script src="/js/clipboard.min.js?1667020413" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667020413" defer></script>
+    <script src="/js/featherlight.min.js?1667020413" defer></script>
+    <script src="/js/theme.js?1667020413" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >
