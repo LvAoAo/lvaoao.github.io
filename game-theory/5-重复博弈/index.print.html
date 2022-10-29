@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.104.3">
+    <meta name="generator" content="Relearn 5.3.3+tip">
+    <meta name="description" content="Documentation for Hugo Relearn Theme">
+    <meta name="author" content="Sören Weber">
+    <title>Repeated Game :: YU&#39;s POOL</title>
+    <link href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" rel="canonical" type="text/html" title="YU&#39;s POOL">
+    <link href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667018930" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667018930" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667018930" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667018930" rel="stylesheet">
+    <link href="/css/nucleus.css?1667018930" rel="stylesheet">
+    <link href="/css/fonts.css?1667018930" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667018930" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667018930" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667018930" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667018930" rel="stylesheet">
+    <link href="/css/variant.css?1667018930" rel="stylesheet">
+    <link href="/css/print.css?1667018930" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1667018930" rel="stylesheet">
+    <script src="/js/variant.js?1667018930"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var index_url="/index.json";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+    </script>
+    <script src="/js/jquery.min.js?1667018930" defer></script>
+  </head>
+  <body class="mobile-support print" data-url="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+             <a class="nav nav-next" href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" title="Complete Information Static Game (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+             <a class="nav nav-prev" href="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" title="Complete Information Static Game (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link" title='Print whole chapter (CTRL+ALT+p)' href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/Game%20theory/5-%e9%87%8d%e5%a4%8d%e5%8d%9a%e5%bc%88.md" target="blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">YU&#39;s POOL</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/game-theory/"><span itemprop="name">Game Theory</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Repeated Game</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+           
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+    });
+</script>
+  
+
+    
+          <article class="default">
+<h1>Repeated Game</h1>
+
+<h1 id="重复博弈">重复博弈</h1>
+<blockquote>
+<p>本节分析在参与者之间长期重复的相互往来中,
+关于<strong>将来行动</strong>的威胁或承诺能否<strong>影响</strong>到<strong>当前</strong>的行动</p>
+</blockquote>
+<h2 id="两阶段重复博弈">两阶段重复博弈</h2>
+<h3 id="特点">特点</h3>
+<ul>
+<li>第二次博弈开始前参与者<strong>可观测</strong>第一次进行的结果</li>
+<li>整个过程的收益等于两阶段收益的<strong>简单相加</strong></li>
+<li><strong>逆向归纳</strong>：唯一的子博弈精炼解为 (L1, L2), (L1,
+L2)</li>
+</ul>
+<h3 id="定义">定义</h3>
+<p>这一结论在更为一般的条件下同样成立 (这里我们暂时离开两阶段的例子,
+允许任何有限的 <span class="math inline">\(T\)</span> 次重复)。</p>
+<h4 id="定义阶段博弈">定义：阶段博弈</h4>
+<p>令 <span class="math inline">\(G=\left\{A_1, \cdots, A_n ; u_1,
+\cdots, u_n\right\}\)</span> 表示一个完全信息博弈, 其中参与者 1 到 <span
+class="math inline">\(n\)</span> 同时从各自的行动空间 <span
+class="math inline">\(A_1\)</span> 到 <span
+class="math inline">\(A_n\)</span> 中分别选择行动 <span
+class="math inline">\(a_1\)</span> 到 <span
+class="math inline">\(a_n\)</span>, 得到的收益分别为 <span
+class="math inline">\(u_1\left(a_1, \cdots, a_n\right), \cdots,
+u_n\left(a_1, \cdots\right.\)</span>, <span
+class="math inline">\(\left.a_n\right)\)</span>, 此后我们称博弈 <span
+class="math inline">\(G\)</span>
+为重复博弈中的<strong>阶段博弈</strong></p>
+<h4 id="定义有限重复博弈">定义：（有限）重复博弈</h4>
+<p>对给定的<strong>阶段博弈</strong> <span
+class="math inline">\(G\)</span>, 令 <span
+class="math inline">\(G(T)\)</span> 表示 <span
+class="math inline">\(G\)</span> <strong>重复进行 <span
+class="math inline">\(T\)</span> 次</strong>的有限重复博弈,
+并且在下一次博弈开始前,
+所有以前博弈的进行<strong>都可被观测</strong></p>
+<p><strong>到</strong>。G <span class="math inline">\((T)\)</span>
+的收益为 <span class="math inline">\(T\)</span>
+次阶段博弈收益的<strong>简单相加</strong></p>
+<h4 id="定理">定理</h4>
+<p>如果阶段博弈 <span class="math inline">\(G\)</span>
+有<strong>惟一的纳什均衡</strong>, 则对任意有限的 <span
+class="math inline">\(T\)</span>, <strong>重复博弈</strong> <span
+class="math inline">\(G(T)\)</span>
+有<strong>惟一</strong>的<strong>子博弈精炼解</strong>; 即 <span
+class="math inline">\(G\)</span>
+的<strong>纳什均衡结果</strong>在每一</p>
+<p>阶段重复进行。</p>
+<blockquote>
+<p>这一结论对于</p>
+<ol type="1">
+<li><span
+class="math inline">\(G\)</span>是完全信息动态博弈（有<strong>唯一</strong>逆向归纳解）</li>
+<li><span
+class="math inline">\(G\)</span>是两阶段重复博弈（有<strong>唯一</strong>子博弈精炼解）</li>
+</ol>
+<p>同样成立</p>
+</blockquote>
+<p><strong>证</strong>：对每一个收益，同样加上其之后阶段的<strong>纳什均衡解</strong>，并不会影响参与人<span
+class="math inline">\(i\)</span>在当前阶段的不同策略收益的<strong>相对大小</strong>，从而不会影响作出的<strong>最优对策</strong></p>
+<hr />
+<p>两阶段囚徒困境 (（每阶段）博弈只有<strong>唯一纳什均衡</strong>)</p>
+<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291233791.png?token=AWSGDYQTHP6YHZDPSPKRVC3DLSWTY" alt="image-20221018153736673" style="zoom:67%;" /></p>
+<p>回到两阶段博弈，考虑阶段博弈有多个纳什均衡的情况：
+例2：(扩展的）两阶段囚徒困境</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">阶段博弈<span
+class="math inline">\(G\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(L_2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(M_2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(R_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(L_1\)</span></td>
+<td style="text-align: center;">1,1</td>
+<td style="text-align: center;">5,0</td>
+<td style="text-align: center;">0,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(M_1\)</span></td>
+<td style="text-align: center;">0,5</td>
+<td style="text-align: center;">4,4</td>
+<td style="text-align: center;">0,0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(R_1\)</span></td>
+<td style="text-align: center;">0,0</td>
+<td style="text-align: center;">0,0</td>
+<td style="text-align: center;">3,3</td>
+</tr>
+</tbody>
+</table>
+<p>由于第二阶段有两个纳什均衡<span
+class="math inline">\((L_1,L_2),(R_1,R_2)\)</span>，那么对于第一阶段的<strong>选择</strong>会使第二阶段滑向<strong>不同</strong>的纳什均衡。</p>
+<ol type="1">
+<li>如果第一阶段策略为<span
+class="math inline">\((M_1,M_2)\)</span>，那么由于两者是<strong>相互信任</strong>的，第二阶段会滑向纳什均衡<span
+class="math inline">\((R_1,R_2)\)</span></li>
+<li>如果第一阶段策略为其他8个，那么由于两者是<strong>不可相互信任</strong>的，第二阶段会滑向纳什均衡<span
+class="math inline">\((L_1,L_2)\)</span></li>
+</ol>
+<p>这样便造成合成后的<strong>一次性博弈</strong>产生出新的可选的<strong>纳什均衡</strong>。</p>
+<p>而 一次性博弈的<strong>纳什均衡</strong><span
+class="math inline">\(\Leftrightarrow\)</span>重复博弈的<strong>子博弈精炼解</strong></p>
+<p>这意味着存在一个<strong>阶段博弈</strong>（但不会是最后一个阶段，<strong>最后一阶段</strong>永远会选择<strong>纳什均衡解</strong>），两者的策略选择<strong>并非</strong>是纳<strong>什均衡解</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">合成后的一次性博弈</th>
+<th style="text-align: center;"><span
+class="math inline">\(L_2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(M_2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(R_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(L_1\)</span></td>
+<td style="text-align: center;">2,2</td>
+<td style="text-align: center;">6,1</td>
+<td style="text-align: center;">1,1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(M_1\)</span></td>
+<td style="text-align: center;">1,1</td>
+<td style="text-align: center;">7,7</td>
+<td style="text-align: center;">1,1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(R_1\)</span></td>
+<td style="text-align: center;">1,1</td>
+<td style="text-align: center;">1,1</td>
+<td style="text-align: center;">4,4</td>
+</tr>
+</tbody>
+</table>
+<h4 id="定理-1">定理</h4>
+<p>如果 <span class="math inline">\(G=\left\{A_1,
+\cdots\right.\)</span>, <span class="math inline">\(\left.A_n ; u_1,
+\cdots, u_n\right\}\)</span>
+是一个<strong>有多个纳什均衡</strong>的<strong>完全信息静态博弈</strong>,
+则重复博弈 <span class="math inline">\(C\)</span> <span
+class="math inline">\((T)\)</span>
+可以存在<strong>子博弈精炼解</strong>, 其中对<strong>每一 <span
+class="math inline">\(t&lt;T, t\)</span></strong>
+阶段的结果<strong>都不是</strong> <span class="math inline">\(G\)</span>
+的<strong>纳什均衡</strong>。</p>
+<blockquote>
+<p>出现这样的情况的<strong>本质问题</strong>是：前面的阶段结果会滑向后面阶段的<strong>不同纳什均衡解</strong>，导致对于每一个受益人的不同策略的收益的<strong>相对大小</strong>有了<strong>变化</strong>，最终体现在<u>最优对策的不同</u>，从而导致<u><strong>一次性博弈</strong></u>的纳什均衡解<strong>偏离</strong><u><strong>阶段博弈</strong></u>的纳什均衡解</p>
+</blockquote>
+<p>这个例子要说明的主要观点是,
+对将来行动所作的可信的<u>威胁</u>或<u>承诺</u>（滑向<strong>不同</strong>的纳什均衡解）可以<strong>影响到当前的行动</strong>。</p>
+<table>
+<thead>
+<tr class="header">
+<th>阶段博弈<span class="math inline">\(G\)</span></th>
+<th><span class="math inline">\(L_2\)</span></th>
+<th><span class="math inline">\(M_2\)</span></th>
+<th><span class="math inline">\(R_2\)</span></th>
+<th><span class="math inline">\(P_2\)</span></th>
+<th><span class="math inline">\(Q_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(L_1\)</span></td>
+<td>1,1</td>
+<td>5,0</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(M_1\)</span></td>
+<td>0,5</td>
+<td>4,4</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(R_1\)</span></td>
+<td>0,0</td>
+<td>0,0</td>
+<td>3,3</td>
+<td>0,0</td>
+<td>0,0</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(P_1\)</span></td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>4,1/2</td>
+<td>0,0</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q_1\)</span></td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>1/2,4</td>
+</tr>
+</tbody>
+</table>
+<p>和 <span class="math inline">\(\left(L_2, L_2\right)\)</span> 相比,
+参与双方都更倾向于选择 <span class="math inline">\(\left(R_1,
+R_2\right)\)</span>，我们称<span class="math inline">\(\left(R_1,
+R_2\right)\)</span> <strong>帕累托优于</strong><span
+class="math inline">\(\left(L_2, L_2\right)\)</span>。</p>
+<p>但更重要的, 图 <span class="math inline">\(2.3 .5\)</span> 的博弈中,
+不存在一个纳什均衡 <span class="math inline">\((x, y)\)</span>,
+使参与双方和 <span class="math inline">\(\left(P_1, P_2\right)\)</span>
+或 <span class="math inline">\(\left(Q_1, Q_2\right)\)</span> 或 <span
+class="math inline">\(\left(R_1, R_2\right)\)</span> 相比,
+都更倾向于选择 <span class="math inline">\((x\)</span>, <span
+class="math inline">\(\left.P_2\right) 、\left(Q_1, Q_2\right)\)</span>
+和 <span class="math inline">\(\left(R_1, R_2\right)\)</span> 都处于图
+2.3.5 所示博弈的纳什均衡收益的<strong>帕累托边界</strong>(Pareto
+frontier)之上。</p>
+<blockquote>
+<p><strong>帕累托</strong>的含义主要用于比较<strong>纳什均衡</strong>的优劣。如果无法比较（即对于一部分人纳什均衡1比纳什均衡2优，而对于另一部分劣），则他们处于同一边界，最优的边界便是<strong>帕累托边界</strong>。</p>
+</blockquote>
+<h2 id="无限重复博弈">无限重复博弈</h2>
+<h3 id="贴现因子">贴现因子</h3>
+<p>贴现因子 <span class="math inline">\(\delta=1 /(1+r)\)</span>
+为一个时期后的一美元在今天的价值, 其中 <span
+class="math inline">\(r\)</span> 为每一阶段的利率。</p>
+<h3 id="现值">现值</h3>
+<p>给定贴现因子 <span class="math inline">\(\delta\)</span>,
+无限的收益序列 <span class="math inline">\(\pi_1, \pi_2, \pi_3,
+\cdots\)</span> 的<strong>现值</strong>为 <span class="math display">\[
+\pi_1+\delta \pi_2+\delta^2 \pi_3+\cdots=\sum_{t=1}^{\infty}
+\delta^{t-1} \pi_t .
+\]</span> 借助于贴现因子 <span class="math inline">\(\delta\)</span>,
+<strong>无限重复的博弈</strong><span
+class="math inline">\(\Leftrightarrow\)</span><strong>一个有限重复的博弈</strong>,
+但在其结束之前重复进行的<strong>次数</strong>是<strong>随机</strong>的</p>
+<p>设想在博弈的每一阶段完成后, 都要掷一枚 (加权的)
+硬币来<strong>决定博弈</strong>是否<strong>结束</strong>。</p>
+<p>如果博弈<strong>立刻结束</strong>的概率为 <span
+class="math inline">\(p\)</span>,
+则博弈将<strong>至少再进行一个阶段</strong>的概率为 <span
+class="math inline">\(1-p\)</span>, 在下一阶段将可以得到的收益
+(如果能继续进行) <span class="math inline">\(\pi\)</span>,
+在当前阶段的硬币未掷之前的价值只有 <span class="math inline">\((1-p) \pi
+/(1+r)\)</span> 。与之相似,
+在两个阶段之后可能得到的收益(如果后面两个阶段都能继续进行) <span
+class="math inline">\(\pi\)</span>, 在当前阶段的硬币末抄之前的价值只有
+<span class="math inline">\((1-p)^2 \pi /(1+r)^2\)</span> 。</p>
+<p>令 <span class="math inline">\(\delta=(1-p) /(1+r)\)</span>, 则现值为
+<span class="math inline">\(\pi_1+\delta \pi_2+\)</span> <span
+class="math inline">\(\delta^2
+\pi_3+\cdots\)</span>的这样一个<strong>无限重复博弈</strong>既包含了货币的<strong>时间价值</strong>,
+又包含了博弈将要<strong>结束的可能性</strong></p>
+<h3 id="触发战略">触发战略</h3>
+<p><strong>无限重复囚徒困境</strong></p>
+<blockquote>
+<p>假设参与者 <span class="math inline">\(i\)</span>
+在无限重复博弈的开始选择相互合作的战略,
+并且当且仅当前面每个阶段参与双方都选择相互合作时,
+在其后的阶段博弈中也选择相互合作。（并不是永远都合作，而是会有一种威胁——如果对方不合则，则自己也不合作）</p>
+</blockquote>
+<p>我们可把参与者 <span class="math inline">\(i\)</span>
+的这一战略正式表述为:</p>
+<p>在第一阶段选择 <span class="math inline">\(R_i\)</span> 。且在第
+<span class="math inline">\(t\)</span> 阶段, 如果所有前面 <span
+class="math inline">\(t-1\)</span> 阶段的结果都是 <span
+class="math inline">\(\left(R_1, R_2\right)\)</span>, 则选择 <span
+class="math inline">\(R_i\)</span>, 否则选择 <span
+class="math inline">\(L_i\)</span> 。</p>
+<p>我们首先论证如果 <span class="math inline">\(\delta\)</span> 距 1
+<strong><u>足够近</u></strong>（大于<strong>某个临界值</strong>）,
+则采取这种战略, 对参与双方都是无限重复博弈的<strong>纳什均衡</strong>,
+其后再证明这一纳什</p>
+<p>均衡是<strong>子博弈精炼</strong>的。</p>
+<hr />
+<p>在前面阶段都选择<span
+class="math inline">\((R_1,R_2)\)</span>的情况下，参与人<span
+class="math inline">\(i\)</span><strong>从某个阶段开始</strong>选择
+<span class="math inline">\(L_i\)</span> 将会使<strong>当期</strong>得到
+5 的收益, 但却会触发参与者 <span class="math inline">\(i\)</span>
+的<strong>永远不合作战略</strong> (从而亦引发参与者 <span
+class="math inline">\(j\)</span> 本人的不合作),
+于是末来每一阶段的收益都将成为 1 。由于 <span
+class="math inline">\(1+\delta+\delta^2+\cdots=1
+/(1-\delta)\)</span>,</p>
+<p>所以选择<span class="math inline">\(L_i\)</span>的现值为 <span
+class="math display">\[
+V_L=5+\delta \cdot 1+\delta^2 \cdot 1+\cdots=5+\frac{\delta}{1-\delta} .
+\]</span> 而选择<span class="math inline">\(R_i\)</span>的现值为 <span
+class="math display">\[
+V_R=4+\delta \cdot V_R ，
+\]</span> 或 <span class="math inline">\(V=4 /(1-\delta)\)</span>,
+因为选择 <span class="math inline">\(R_j\)</span> 时,
+下一阶段还有机会进行<strong>相同选择</strong>。</p>
+<p>于是,选择 <span class="math inline">\(R_j\)</span>
+为最优，<strong>当且仅当</strong>下式成立: <span class="math display">\[
+\frac{4}{1-\delta} \geqslant 5+\frac{\delta}{1-\delta} \text {, }
+\]</span> 即 <span class="math inline">\(\delta \geqslant 1 / 4\)</span>
+。</p>
+<p>于是, 当且仅当 <span class="math inline">\(\delta \geqslant 1 /
+4\)</span>（也就是前文所述的$$接近1) 时，在第一阶段, 并且在前面结果都是
+<span class="math inline">\(\left(R_1, R_2\right)\)</span>
+的下一阶段,参与者 <span class="math inline">\(j\)</span>
+的<strong>最优反应</strong> (给定参与者 <span
+class="math inline">\(i\)</span> 已采取了触发战略)为 <span
+class="math inline">\(R_j\)</span>这一结论,</p>
+<p>再加上前面已证明的,一旦某一阶段的结果偏离了 <span
+class="math inline">\(\left(R_1, R_2\right), j\)</span> （对<span
+class="math inline">\(i\)</span>的触发战略）的<strong>最优反应</strong>就是永远选择
+<span
+class="math inline">\(L_1\)</span>（滑向低收益的<strong>纳什均衡</strong>）,
+我们已经证明当且仅当 <span class="math inline">\(\delta \geqslant 1 /
+4\)</span> 时,
+参与双方<strong>都采取触发战略</strong>为博弈的<strong>纳什均衡</strong>(注意纳什均衡的定义)</p>
+<h4 id="定理-2">定理</h4>
+<p>在<strong>无限重复博</strong>弈中一个更强的结论成立:
+即使<strong>阶段博弈</strong>有<strong>惟一的纳什均衡</strong>,
+无限重复博弈中也可以存在<strong>子博弈精炼解</strong>,
+其中<strong>没有一个阶段</strong>的结果是 <span
+class="math inline">\(G\)</span>
+的<strong>纳什均衡</strong>。（上述无限重复囚徒困境中，两人都选<u>触发战略</u>便是这样一个<u>纳什均衡</u>/<u>子博弈精炼解</u>）</p>
+<hr />
+<p>下面我们要论证的是这一<strong>纳什均衡</strong>同时又是<strong>子博弈精炼</strong>的。</p>
+<p>为做到这一点, 首先定义重复博弈中的以下三个概念:
+<u>重复博弈中的<strong>战略</strong></u>、<u>重复博弈的<strong>子博弈</strong></u>以及<u>重复博弈的<strong>子博弈精炼纳什均衡</strong></u>。</p>
+<p>上一节我们通过<strong>阶段博弈</strong> <span
+class="math inline">\(G=\left\{A_1, \cdots, A_n ; u_1, \cdots,
+u_n\right\}\)</span> 给出<strong>有限重复博弈</strong>定义 <span
+class="math inline">\(G(T)\)</span>, 其中的 <span
+class="math inline">\(G\)</span>
+是一个<strong>完全信息静态博弈</strong>。</p>
+<p>下面给出无限重复博弈定义</p>
+<h4 id="定义无限重复博弈">定义：无限重复博弈</h4>
+<p>给定一个阶段博弈 <span class="math inline">\(G\)</span>, 令 <span
+class="math inline">\(G(\infty, \delta)\)</span> 表示相应的无限重复博弈,
+其中 <span class="math inline">\(G\)</span> 将无限次地重复进行,
+且参与者的贴现因子都为 <span class="math inline">\(\delta\)</span>
+。</p>
+<p>对每一个 <span class="math inline">\(t\)</span>, 之前 <span
+class="math inline">\(t-1\)</span> 次阶段博弈的结果在 <span
+class="math inline">\(t\)</span>
+阶段开始进行前都<strong>可被观测到</strong>, 每个参与者在 <span
+class="math inline">\(G(\infty, \delta)\)</span>
+中的<strong>收益</strong>都是该参与者在无限次的阶段博弈中所得收益的<strong>现值</strong>。</p>
+<h4 id="定义战略">定义：战略</h4>
+<p>在所有博弈 (无论是重复的还是非重复的)中,
+参与者的一个战略都是行动的一个<strong>完整计划</strong>：它包括了该参与者在所有可能的情况下,
+需</p>
+<p>要作出选择时的<strong>行动</strong>。</p>
+<p>所以，战略的大小（指战略空间的元素个数）取决于<strong>条件</strong>的可能个数、自己在这个<strong>条件</strong>下可采取的行动个数。</p>
+<p>战略本质上可以表达成一个函数<span
+class="math inline">\(A_i(s_{-i})\rightarrow S_i\)</span></p>
+<p>其中<span
+class="math inline">\(s_{-i}\)</span>表达当前阶段可观测到的其他人的所有行动（也可以包含自己的行动），<span
+class="math inline">\(S_i\)</span>表示在观察到这些行动之后，参与人<span
+class="math inline">\(i\)</span>可以采取的<strong>行动</strong></p>
+<h4 id="定义子博弈">定义：子博弈</h4>
+<p>在有限重复博弈 <span class="math inline">\(G(T)\)</span> 中, 由第
+<span class="math inline">\(t+1\)</span> 阶段开始的一个子博弈为 <span
+class="math inline">\(G\)</span> 进行 <span
+class="math inline">\(T-t\)</span> 次的重复博弈, 可表示为 <span
+class="math inline">\(G(T-t)\)</span> 。由第 <span
+class="math inline">\(t+1\)</span> 阶段开始有许多子博弈, 到 <span
+class="math inline">\(t\)</span>
+阶段为止的每一<strong>可能</strong>的进行过程之后都是<strong>不同的子博弈</strong>。</p>
+<p>在无限重复博弈 <span class="math inline">\(G(\infty, \delta)\)</span>
+中, 由 <span class="math inline">\(t+1\)</span>
+阶段开始的每个子博弈都等同于初始博弈 <span
+class="math inline">\(G(\infty, \delta)\)</span>, 和在有限情况下相似,
+博弈 <span class="math inline">\(G(\infty, \delta)\)</span> 到 <span
+class="math inline">\(t\)</span> 阶段为止有多少不同的可能进行过程,
+就有多少从 <span class="math inline">\(t+1\)</span>
+阶段开始的子博弈。</p>
+<blockquote>
+<p>注意上文战略和子博弈的定义中，“<strong>可能</strong>”的含义是指<u>该阶段及以前阶段</u>所包含的<strong>所有参与者</strong>的<strong>行动组合</strong>可能</p>
+<p><strong>战略</strong>和<strong>子博弈</strong>都依赖于这种“<strong>可能</strong>”来定义，他们是息息相关的。</p>
+</blockquote>
+<h4 id="定义子博弈精炼纳什均衡">定义：子博弈精炼纳什均衡</h4>
+<p>如果参与者的战略在<strong>每一子博弈</strong>中都构成<strong>纳什均衡</strong>,
+我们则说<u>纳什均衡</u>是<strong>子博弈精炼</strong>的。</p>
+<blockquote>
+<p>这里要注意三点：</p>
+<ol type="1">
+<li>满足子博弈精炼，首先要满足战略在每个子博弈构成<strong>纳什均衡</strong></li>
+<li><strong>无线重复博弈</strong>的（子博弈精炼）<u>纳什均衡</u>，可以不是任何一个<strong>阶段博弈</strong>的<u>纳什均衡</u>；要注意<strong>区分</strong>这两个博弈的纳什均衡</li>
+<li>无限重复博弈的<strong>子博弈</strong>依旧是<strong>无限重复博弈</strong></li>
+</ol>
+</blockquote>
+<p>我们必须证明<strong>触发战略</strong>（已经证明是纳什均衡）在此<strong>无限重复博弈</strong>中的<strong>每一子博弈</strong>中都构成了<strong>纳什均衡</strong>。</p>
+<p>在无限重复囚徒困境的触发战略纳什均衡中,
+这些<strong>子博弈</strong>可分为两类:</p>
+<ol type="1">
+<li>所有以前阶段的结果都是 <span class="math inline">\(\left(R_1,
+R_2\right)\)</span> 的子博弈</li>
+<li>至少有一个前面阶段的结果不是 <span class="math inline">\(\left(R_1,
+R_2\right)\)</span> 的子博弈</li>
+</ol>
+<p>如果参与者在整个博弈中采取触发战略, 则</p>
+<ol type="1">
+<li>参与者在第一类子博弈中的战略同样是触发战略,
+我们已证明它是整个博弈的一个纳什均衡</li>
+<li>参与者在第二类子博弈中的战略只是永远单纯重复阶段博弈的均衡 <span
+class="math inline">\(\left(L_1, L_2\right)\)</span>,
+它同样是整体博弈的纳什均衡。</li>
+</ol>
+<p>从而可以证明,
+无限重复囚徒困境中的<strong>触发战略</strong>纳什均衡是<strong>子博弈精炼</strong>的。</p>
+<blockquote>
+<p>注意</p>
+<p>证明<strong>触发策略</strong>是<strong>纳什均衡</strong>和<strong>子博弈精炼</strong>的方法是不一样的</p>
+<p>证明是<strong>纳什均衡</strong>：只要在所有参与者<strong>都采取触发战略</strong>的情况下，证明所有人的<strong>战略</strong>（触发战略）<strong>都是最优的</strong>即可</p>
+<p>证明是<strong>子博弈精炼的</strong>：考虑子博弈的所有可能，对于<strong>每种子博弈</strong>都要保证所有参与人选择触发战略是<strong>纳什均衡</strong></p>
+<blockquote>
+<p>一般无限重复博弈的<strong>子博弈</strong>比较好考虑，因为其子博弈仍然是无限重复博弈；只不过因为之前所有阶段的阶段博弈，造成这一子博弈会拥有不同的（<u>无限重复博弈</u>的）<strong>纳什均衡</strong></p>
+</blockquote>
+</blockquote>
+<h3 id="弗里德曼-无限重复博弈定理">弗里德曼-无限重复博弈定理</h3>
+<h4 id="可行收益">可行收益</h4>
+<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291233792.png?token=AWSGDYQ2ESBMVGCMZ2MYZT3DLSWT2" alt="image-20221019102657545" style="zoom:50%;" /></p>
+<p>称一组收益 <span class="math inline">\(\left(x_1, \cdots,
+x_n\right)\)</span> 为<strong>阶段博弈</strong> <span
+class="math inline">\(G\)</span> 的<strong>可行收益</strong>(feasible),
+如果它们是 <span class="math inline">\(G\)</span>
+的纯战略收益的<strong>凸组合</strong> (convex combination)
+(即纯战略收益的加权平均, 权重非负且和为 1 ), 囚徒困境的可行收益集合为图
+2.3.7 中的<strong>阴影区域</strong>。</p>
+<h4 id="平均收益">平均收益</h4>
+<p>之前我们将每一参与者在无限重复博弈 <span
+class="math inline">\(G(\infty, \delta)\)</span>
+的收益定义为该参与者在无限个阶段博弈中收益的现值,
+但我们用同样无限个收益值的<strong>平均 收益</strong> (average
+payoff)来表示这一现值却更为方便,</p>
+<p>平均收益指<strong>为得到相等的收益现值</strong>而在<strong>每一阶段</strong>都应该得到的<strong>等额收益值</strong>。</p>
+<p>令贴现因子为 <span class="math inline">\(\delta\)</span>,
+设无限的收益序列 <span class="math inline">\(\pi_1, \pi_2, \pi_3,
+\cdots\)</span> 的现值为<span class="math inline">\(V\)</span></p>
+<p>如果每一阶段都能得到的收益为 <span
+class="math inline">\(\pi\)</span>, 则现值为 <span
+class="math inline">\(\pi /(1-\delta)\)</span></p>
+<p>这两个现值必须相等, 于是 <span
+class="math inline">\(\pi=V(1-\delta)\)</span>, 也就是说,
+平均收益为现值的 <span class="math inline">\((1-\delta)\)</span> 倍。
+<strong>定义</strong> 给定贴现因子 <span
+class="math inline">\(\delta\)</span>, 无限的收益序列 <span
+class="math inline">\(\pi_1, \pi_2, \pi_3, \cdots\)</span>
+的<strong>平均收益</strong>为 <span class="math display">\[
+(1-\delta) \sum_{t=1}^{\infty} \delta^{t-1} t_t \text {. }
+\]</span> 和现值相比,
+使用平均收益的优点在于后者能够和阶段博弈的收益直接比较。</p>
+<p>由于平均收益只是现值的另一种衡量,
+使平均收益最大化即等同于使现值最大化。</p>
+<hr />
+<h4
+id="定理弗里德曼-无限重复博弈定理">定理：弗里德曼-无限重复博弈定理</h4>
+<p>令 <span class="math inline">\(G\)</span>
+为一个<strong>有限</strong>的<strong>完全信息静态博弈</strong>,令 <span
+class="math inline">\(\left(e_1, \cdots, e_n\right)\)</span> 表示 <span
+class="math inline">\(G\)</span>
+的一个<strong>纳什均衡</strong>下的收益, 且 <span
+class="math inline">\(\left(x_1, \cdots, x_n\right)\)</span> 表示 <span
+class="math inline">\(G\)</span> 的其他任何可行收益。</p>
+<p>如果对<strong>每一个</strong>参与者 <span
+class="math inline">\(i\)</span> 有 <span
+class="math inline">\(x_i&gt;e_i\)</span>, 且如果 <span
+class="math inline">\(\delta\)</span> 足够接近于 1 , 则无限重复博恋
+<span class="math inline">\(G(\infty, \delta)\)</span>
+存在一个<strong>子博弈精炼纳什均衡</strong>, 其平均收益可</p>
+<p>达到 <span class="math inline">\(\left(x_1, \cdots,
+x_n\right)\)</span> 。</p>
+<blockquote>
+<p>证明见附录P89 2.3.B</p>
+</blockquote>
+<h2 id="古诺双头垄断下的共谋">古诺双头垄断下的共谋</h2>
+<blockquote>
+<p>下面所述的<strong>合作产量</strong>为两参与者都都选择触发战略时各自的<strong>初始合作</strong>时<strong>选择的产量</strong></p>
+</blockquote>
+<h3
+id="合作产量为垄断产量的一半pi_m2的触发战略">合作产量为垄断产量的一半<span
+class="math inline">\(\pi_m/2\)</span>的触发战略</h3>
+<p>考虑以上述古诺博弈为阶段博弈的无限重复博弈, 两企业的贴现因子均为
+<span class="math inline">\(\delta\)</span>
+。下面我们计算两个企业的下述<strong>触发战略</strong>成为无限重复博弈的<strong>纳什均衡</strong>时,
+贴现因子 <span class="math inline">\(\delta\)</span> 的值:</p>
+<ul>
+<li>在第一阶段生产<strong>垄断产量的一半</strong>, <span
+class="math inline">\(q_m / 2\)</span></li>
+<li>第 <span class="math inline">\(t\)</span> 阶段, 如果前面 <span
+class="math inline">\(t-1\)</span> 个阶段两个企业的产量都为 <span
+class="math inline">\(q_m / 2\)</span>, 则生产 <span
+class="math inline">\(q_m / 2\)</span>; 否则, 生产古诺产量 <span
+class="math inline">\(q_c\)</span> 。</li>
+</ul>
+<hr />
+<p>当双方都生产 <span class="math inline">\(q_m / 2\)</span> 时,
+每个企业的利润为 <span class="math inline">\((a-c)^2 / 8\)</span>,
+我们用 <span class="math inline">\(\pi_m / 2\)</span> 来表示。</p>
+<p>当双方都生产 <span class="math inline">\(q_c\)</span>
+时,每个企业的利润为 <span class="math inline">\((a-c)^2 / 9\)</span>,
+我们 <span class="math inline">\(\pi_c\)</span> 用表示。</p>
+<p>最后, 如果企业 <span class="math inline">\(i\)</span> 将在本期生产
+<span class="math inline">\(q_m / 2\)</span>, 则使企业 <span
+class="math inline">\(j\)</span> 本期利润最大化的产量是下式的解 <span
+class="math display">\[
+\max _{q,}\left(a-q,-\frac{1}{2} q_m-c\right) q_j .
+\]</span> 它的解为 <span class="math inline">\(q_3=3(a-c) / 8\)</span>,
+相应的利润水平为 <span class="math inline">\(9(a-c)^2 / 64\)</span>,
+我们用 <span class="math inline">\(\pi_d\)</span> 表示 ( <span
+class="math inline">\(d\)</span> 表示偏离)。那么,
+要使两企业采取上述触发战略成为<strong>纳什均衡</strong>, 必须满足 <span
+class="math display">\[
+\frac{1}{1-\delta} \cdot \frac{1}{2} \pi_m \geqslant
+\pi_d+\frac{\delta}{1-\delta} \cdot \pi_c
+\]</span> 将 <span class="math inline">\(\pi_m 、 \pi_c 、
+\pi_d\)</span> 的值带入 (2.3.2) 可得 <span class="math inline">\(\delta
+\geqslant 9 / 17\)</span> 。由于与前一节相同的原因,
+这一纳什均衡又是<strong>子博弈精炼</strong>的。</p>
+<h3
+id="贴现因子delta对触发战略合作产量q选择的影响"><strong>贴现因子</strong><span
+class="math inline">\(\delta\)</span>对触发战略<strong>合作产量</strong><span
+class="math inline">\(q^*\)</span>选择的影响</h3>
+<p>我们可以进一步追问:如果 <span class="math inline">\(\delta \geqslant
+9 / 17\)</span>, 企业的行为将如何。</p>
+<p>首先来计算对任意一个给定的 <span
+class="math inline">\(\delta\)</span> 值,
+如果双方都采用<strong>触发战略</strong>,
+一旦出现背离就永远转到<strong>古诺产出</strong>,
+企业可以达到的<strong>利润最大化</strong>的产量。</p>
+<blockquote>
+<p>现在我们知道</p>
+<p>但对任意 <span class="math inline">\(\delta\)</span> 的值,
+<strong>永远简单重复古诺产量</strong>（是选择初始合作产量为<span
+class="math inline">\(q^*\)</span>的<strong>特殊情况</strong>）都是是一个<strong>子博弈精炼纳什均衡</strong>。</p>
+<p>但<strong>不是</strong>对于<strong>任意</strong>的<span
+class="math inline">\(\delta\)</span>，选择<span
+class="math inline">\(q^*=q_m /
+2\)</span><strong>都是</strong>子博弈精炼纳什均衡。上述证明表现了这样的问题需要<span
+class="math inline">\(\delta \geqslant 9 / 17\)</span></p>
+</blockquote>
+<p>考虑<strong>触发战略</strong>（即上文所述）：</p>
+<ul>
+<li>第一阶段生产 <span class="math inline">\(q^*\)</span> 。</li>
+<li>在第 <span class="math inline">\(t\)</span> 阶段, 如果在此之前的
+<span class="math inline">\(t-1\)</span> 个阶段两企业的产量都是 <span
+class="math inline">\(q^*\)</span>, 生产 <span
+class="math inline">\(q^*\)</span>; 否则, 生产古诺产出 <span
+class="math inline">\(q_c\)</span> 。</li>
+</ul>
+<p>如果双方都生产 <span class="math inline">\(q^*\)</span>,
+每个企业的利润为 <span class="math inline">\(\left(a-2 q^*-c\right)
+q^*\)</span>, 我们用 <span class="math inline">\(\pi^*\)</span>
+表示。如果企业 <span class="math inline">\(i\)</span> 计划在当期生产
+<span class="math inline">\(q^*\)</span>, 则使企业 <span
+class="math inline">\(j\)</span> 当期收益(利润)最大化的产量为下式的解:
+<span class="math display">\[
+\max _{q_j}\left(a-q^*-c\right) q_j
+\]</span> 其解为 <span class="math inline">\(q_j=\left(a-q^*-c\right) /
+2\)</span>, 相应的利润为 <span
+class="math inline">\(\left(a-q^*-c\right)^2 / 4\)</span>, 我们仍用
+<span class="math inline">\(\pi_d\)</span> 表示。当下式成立时,
+两个企业都采取上面给出的触发战略为纳什均衡 <span class="math display">\[
+\frac{1}{1-\delta} \cdot \pi^* \geqslant \pi_d+\frac{\delta}{1-\delta}
+\cdot \pi_c .
+\]</span> 解由此式形成的关于 <span class="math inline">\(q^*\)</span>
+的二次方程, 可得令上面给出的触发战略成为子博弈精炼纳什均衡的 <span
+class="math inline">\(q^*\)</span> <span class="math display">\[
+q^*\ge\frac{9-5 \delta}{3(9-\delta)}(a-c) \text {, }
+\]</span> 右式随 <span class="math inline">\(\delta\)</span> 单调递减,
+且当 <span class="math inline">\(\delta\)</span> 达到 <span
+class="math inline">\(9 / 17\)</span> 时, 达到 <span
+class="math inline">\(q_m / 2\)</span>, 当 <span
+class="math inline">\(\delta\)</span> 达到 0 时达到 <span
+class="math inline">\(q_c\)</span> 。</p>
+<blockquote>
+<p>考虑<span
+class="math inline">\(0\le\delta\le9/17\)</span>时，随着<span
+class="math inline">\(\delta\)</span>的增加，<span
+class="math inline">\(q^*\)</span>的<strong>下届</strong>是逐渐变小的，而为了使用<span
+class="math inline">\(q^*\)</span>作为其合作产量时各自的收益最大化，彼此肯定会选择下届而不是更大的值作为<span
+class="math inline">\(q^*\)</span>。所以<span
+class="math inline">\(\delta\)</span>逐渐接近9/17(乃至于到达9/17)的情况下，<span
+class="math inline">\(q^*\)</span>一定是随着逐渐变小的下届取<strong>更小的下届</strong>（乃至于到达
+<span class="math inline">\(q_m / 2\)</span>）。</p>
+<p>而对于<span class="math inline">\(\delta \gt 9/17\)</span>，<span
+class="math inline">\(q^*\)</span>的选择是显然的。随着<span
+class="math inline">\(\delta\)</span>的增加，触发战略不会选择更小的<span
+class="math inline">\(q^*\)</span>（这会导致收益不如<span
+class="math inline">\(q_m / 2\)</span>）而是继续选择<span
+class="math inline">\(q_m / 2\)</span>作为<span
+class="math inline">\(q^*\)</span></p>
+<p>总体来说，无论<span
+class="math inline">\(\delta\)</span>等于何值，触发战略总能达到<strong>子博弈纳什均衡</strong>。只不过<span
+class="math inline">\(\delta\)</span>的取值会影响到这些<strong>子博弈纳什均衡</strong>的<strong>最优收益</strong>。而当<span
+class="math inline">\(\delta\)</span>足够接近1时，便回归到了<strong>弗里德曼-无限重复博弈定理</strong>，从而所有<strong>子博弈纳什均衡</strong>的<strong>最优收益</strong>能达到<strong>最优</strong>的<strong>可行收益</strong>。</p>
+</blockquote>
+<h3 id="两面战略胡萝卜加大棒战略">两面战略（胡萝卜加大棒战略）</h3>
+<p>下面我们试者使用第二种方法,
+它的出发点是威胁使用最严厉的可信的惩罚。</p>
+<p>阿布勒 (1986) 将这一思路运用于古诺模型中,
+比我们使用一个任意的贴现因子更具有一般性;这里只简单证明在我们的模型中,
+如果用阿布</p>
+<p>勒的方法，如果取<span class="math inline">\(\delta = 1/2\lt
+9/17\)</span>，也可以<strong>达到垄断产量</strong>，进而获得<strong>最优的可行收益</strong></p>
+<blockquote>
+<p>相当于用了一个<strong>更优（或者说更复杂）的战略</strong>将能保证子博弈精炼纳什均衡得到<strong>最优收益</strong>的<span
+class="math inline">\(\delta\)</span>的范围<strong>拓宽了一些</strong></p>
+</blockquote>
+<blockquote>
+<p>疑问：是不是可以证明一定<strong>存在</strong>一个战略（足够复杂），使得能保证子博弈精炼纳什均衡得到<strong>最优收益</strong>的<span
+class="math inline">\(\delta\)</span>最够接近于0？</p>
+<p>假如定义：不同的<strong>能获得全部可行收益</strong>的<strong>子博弈精炼纳什均衡</strong>对应的<strong>战略</strong>为<span
+class="math inline">\(S_F=(S_1=S,\cdots,S_n=S)\)</span>，定义<span
+class="math inline">\(\delta_m(S)\)</span>为<strong>临界贴现因子</strong>，其代表在双方都选取这种战略<span
+class="math inline">\(S\)</span>时，最小的能保证获得<strong>最优可行收益</strong>的<strong>贴现因子</strong>。</p>
+<p>我们要证明的便是，是否存在<span
+class="math inline">\(S\)</span>，使得<span
+class="math inline">\(\delta_m(S)\rightarrow0\)</span></p>
+</blockquote>
+<hr />
+<p>“两面” (two-phase) (亦称胡萝卜加大棒 (carrot-and-stick)) 战略：</p>
+<ul>
+<li>在<strong>第一阶段</strong>生产垄断产量的一半, <span
+class="math inline">\(q_m / 2\)</span></li>
+<li>第 <span class="math inline">\(t\)</span> 阶段,
+<ul>
+<li>如果两个企业在第 <span class="math inline">\(t-1\)</span> 阶段都生产
+<span class="math inline">\(q_m / 2\)</span>, 则生产 <span
+class="math inline">\(q_m / 2\)</span>;</li>
+<li>如果两个企业在 <span class="math inline">\(t-1\)</span>
+阶段的产量都是 <span class="math inline">\(x\)</span>, 则生产 <span
+class="math inline">\(q_m / 2\)</span>;</li>
+<li>其他情况下生产 <span class="math inline">\(x\)</span> 。</li>
+</ul></li>
+</ul>
+<blockquote>
+<p>这里延续了之前的不合作便惩罚的思想，但是新增了一个思想：</p>
+<blockquote>
+<p>如果<strong>背弃惩罚</strong>（即如果不遵守惩罚产量<span
+class="math inline">\(x\)</span>，却选择其他产量（例如<span
+class="math inline">\(x\)</span>的<strong>最优对策</strong>）），那么下回合继续惩罚</p>
+<p>如果都<strong>遵循惩罚</strong>，那么回归合作</p>
+</blockquote>
+</blockquote>
+<p>如果两企业都生产 <span class="math inline">\(x\)</span>,
+每个企业的利润为 <span class="math inline">\((a-2 x-c) x\)</span>,
+我们用 <span class="math inline">\(\pi(x)\)</span> 表示。令 <span
+class="math inline">\(V(x)\)</span> 表示当期的利润为 <span
+class="math inline">\(\pi(x)\)</span>,
+以后每阶段的利润永远是垄断利润的一半, 企业总收益的现值: <span
+class="math display">\[
+V(x)=\pi(x)+\frac{\delta}{1-\delta} \cdot \frac{1}{2} \pi_m .
+\]</span> 如果企业 <span class="math inline">\(\mathrm{i}\)</span>
+让划在当期生产 <span class="math inline">\(x\)</span>, 则使企业 <span
+class="math inline">\(j\)</span> 利润最大化的产出为下式的解 <span
+class="math display">\[
+\max _{q_i}\left(a-q_j-x-c\right) q_j .
+\]</span> 其解为 <span class="math inline">\(q_j=(a-x-c) / 2\)</span>,
+相应的利润为 <span class="math inline">\((a-x-c)^2 / 4\)</span>, 我们用
+<span class="math inline">\(\pi_{d p}(x)\)</span> 表示,其中 <span
+class="math inline">\(d p\)</span>
+的含义是<strong>对惩罚的背离</strong>。</p>
+<p>如果两家企业都采用上面的两面战略,
+则无限重复博弈里的<strong>子博弈</strong>就可归为两类:</p>
+<ol type="1">
+<li><strong>合作</strong>的子博弈, 其前面一个阶段的结果是 <span
+class="math inline">\(\left(q_m / 2, q_m / 2\right)\)</span> 或 <span
+class="math inline">\((x, x)\)</span>;</li>
+<li><strong>惩罚</strong>的子博弈, 其前面一个阶段的结果既非 <span
+class="math inline">\(\left(q_m / 2, q_m / 2\right)\)</span>, 又不是
+<span class="math inline">\((x, x)\)</span> 。</li>
+</ol>
+<p>两企业都采取上面的两面战略要成为一个<strong>子博弈精炼纳什均衡</strong>,
+则在其每一类子博弈中遵守该战略必须是<strong>纳什均衡</strong>。具体地说,
+在合作 <span class="math display">\[
+\frac{1}{1-\delta} \cdot \frac{1}{2} \pi_m \geqslant \pi_d+\delta V(x)
+.\label{29}
+\]</span> <span class="math display">\[
+V(x) \geqslant \pi_{d p}(x)+\delta V(x) .\label{30}
+\]</span> 将 <span class="math inline">\(V(x)\)</span> 代入 <span
+class="math inline">\(\eqref{29}\)</span>可得 <span
+class="math display">\[
+\delta\left(\frac{1}{2} \pi_m-\pi(x)\right) \geqslant \pi_d-\frac{1}{2}
+\pi_m .
+\]</span> 它表示,
+在本期背离所得的好处必定不大于下一期惩罚带来担失的现值。同样, <span
+class="math inline">\(\eqref{30}\)</span>又可写成 <span
+class="math display">\[
+\delta\left(\frac{1}{2} \pi_m-\pi(x)\right) \geqslant \pi_{d
+p}(x)-\pi(x),
+\]</span> 其含义与上面是相似的。</p>
+<p>对 <span class="math inline">\(\delta=1 / 2\)</span>,</p>
+<p>如果 <span class="math inline">\(x /(a-c)\)</span> 不在 <span
+class="math inline">\(1 / 8\)</span> 到 <span class="math inline">\(3 /
+8\)</span> 之间， <span class="math inline">\(\eqref{29}\)</span>
+式即可满足,</p>
+<p>并且如果 <span class="math inline">\(x /(a-c)\)</span> 处于 <span
+class="math inline">\(3 / 10\)</span> 到 <span class="math inline">\(1 /
+2\)</span> 之问, <span
+class="math inline">\(\eqref{30}\)</span>式亦可满足。</p>
+<p>从而, 对 <span class="math inline">\(\delta=1 / 2\)</span>
+<strong>可达到垄断产出</strong>的<strong>两面战略</strong>成为<strong>子博弈精炼纳什均衡</strong>的条件是
+<span class="math inline">\(3 / 8 \leqslant x /(a-c) \leqslant 1 /
+2\)</span> 。</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation showVisitedLinks">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+          <style>
+            #logo svg,
+            #logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 30px;
+              font-weight: 300;
+              margin-top: -13px;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 226px;
+              white-space: nowrap;
+            }
+            a#logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #logo svg {
+              margin-bottom: -20px;
+              margin-left: -23.5px;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.938em) {
+              a#logo {
+                font-size: 25px;
+                margin-top: -3px;
+              }
+              #logo svg {
+                margin-bottom: -12px;
+                margin-left: -23px;
+              }
+            }
+            @media all and (-ms-high-contrast:none) {
+              /* IE11s understanding of positioning is weird at best */
+              a#logo {
+                margin-top: -58px;
+              }
+              #logo svg {
+                margin-bottom: -62px;
+              }
+            }
+          </style>
+          <a id="logo" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044">
+              <path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:1.03763;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.992837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" style="color:#000;fill:#282828;stroke-width:1.02352;-inkscape-stroke:none" transform="translate(-40.698 -95.175)"/>
+              <path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.991342;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+            </svg>
+            Relearn
+          </a>
+        </div>
+        <div class="searchbox default-animation">
+          <label class="a11y-only" for="search-by">Search</label>
+          <i class="fas fa-search"></i>
+          <input data-search-input id="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1667018930" defer></script>
+        <script src="/js/lunr.min.js?1667018930" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667018930" defer></script>
+        <script src="/js/lunr.multi.min.js?1667018930" defer></script>
+        <script src="/js/lunr.en.min.js?1667018930" defer></script>
+        <script src="/js/search.js?1667018930" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/game-theory/" class="dd-item parent"><input type="checkbox" id="section-e70f5d73bafb2f417493745d881ff2c1" aria-controls="subsections-e70f5d73bafb2f417493745d881ff2c1" class="toggle" checked><label class="a11y-only toggle" for="section-e70f5d73bafb2f417493745d881ff2c1" >Submenu Game Theory</label><a href="/game-theory/">Game Theory<i class="fas fa-check read-icon"></i></a><ul id="subsections-e70f5d73bafb2f417493745d881ff2c1">
+          <li data-nav-id="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" class="dd-item"><a href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">Nash Equilibrium<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Dynamic Game<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" class="dd-item active"><a href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/">Repeated Game<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/pattern-recognition/" class="dd-item"><input type="checkbox" id="section-d97dd4feeffe48ab6a56cf2ae66c1e37" aria-controls="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37" class="toggle"><label class="a11y-only toggle" for="section-d97dd4feeffe48ab6a56cf2ae66c1e37" >Submenu Pattern Recognition</label><a href="/pattern-recognition/">Pattern Recognition<i class="fas fa-check read-icon"></i></a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
+          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Nonlinear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation<i class="fas fa-check read-icon"></i></a></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
+          <ul>
+            <li><a class="padding" href="/https:/github.com/LvAoAo/lvaoao.github.io"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="/tags/"><i class='fas fa-fw fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch showVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" selected>English</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-light" value="relearn-light" selected>Relearn Light</option>
+                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="red" value="red">Red</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks showVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1667018930" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667018930" defer></script>
+    <script src="/js/featherlight.min.js?1667018930" defer></script>
+    <script src="/js/theme.js?1667018930" defer></script>
+  </body>
+        
+<link rel="stylesheet" href="/js/katex/katex.min.css" >
+<script src="/js/katex/katex.min.js" > </script>
+<script src="/js/katex/contrib/auto-render.min.js" ></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body);
+    });
+</script>
+</html>
