@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/content/Game theory/习题课.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Game theory/4-完全信息动态博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/4-完全信息动态博弈.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Game theory/6-非完全信息静态博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/6-非完全信息静态博弈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/2-纳什均衡.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/2-纳什均衡.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/3-完全信息静态博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/3-完全信息静态博弈.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <workItem from="1666854790001" duration="12112000" />
       <workItem from="1666869460127" duration="8364000" />
       <workItem from="1666956313342" duration="8441000" />
-      <workItem from="1667016926355" duration="4884000" />
+      <workItem from="1667016926355" duration="7089000" />
     </task>
     <servers />
   </component>
