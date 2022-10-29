@@ -11,7 +11,7 @@
       <link>/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/</guid>
-      <description>纳什均衡 博弈组成 参与人\(i=1,2,\cdots,n\) 参与人的策略集为\(S_i\),\(s_i\)为\(S_i\)中的一个策略，\(\left\{s_1, s_2,\cdots, s_n\right\}\)为所有人的一个策略组合 参与人的收益为\(u_i\left(s_1, s_2,\cdots, s_n\right)\) 博弈\(G=\left\{s_1, \cdots, s_n ; u_1, \cdots, u_n\right\}\) 博弈的解 重复剔除严格劣策略 定义 在标准式博弈 \(G=\left\{s_1, \cdots, s_n ; u_1, \cdots, u_n\right\}\) 中，令 \(s_i^{\prime}\) 和 \(s_i^{\prime \prime}\) 代表参与者 \(i\) 的两个可行策略 (即 \(s_i^{\prime}\) 和 \(s_i^{\prime \prime}\) 是 \(S_i\) 中的元素) 。如果对其他参与者每一个可能的策略组合， \(i\)选择 \(s_i^{\prime}\) 的收益都小于其选择 \(s_i^{\prime \prime}\) 的收益（只是两个策略的对比，而不是多个)，则称策略 \(s_i^{\prime}\) 相对于策略 \(s_i^{\prime \prime}\) 是严格劣策略： \(u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime}, s_{i+1}, \cdots, s_n\right)&amp;lt;u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime \prime}, s_{i+1}, \cdots, s_n\right)\) 对其他参与者在其策略空间 \(S_1, \cdots S_{i-1}, s_{i+1}, \cdots, s_n\) 中每一组可能的策略 \(\left(s_1, \cdots, s_{i-1}, s_{i+1}, \cdots, s_n\right)\) 都成立。</description>
+      <description>纳什均衡 博弈组成 参与人\(i=1,2,\cdots,n\) 参与人的策略集为\(S_i\),\(s_i\)为\(S_i\)中的一个策略，\(\left\{s_1, s_2,\cdots, s_n\right\}\)为所有人的一个策略组合 参与人的收益为\(u_i\left(s_1, s_2,\cdots, s_n\right)\) 博弈\(G=\left\{s_1, \cdots, s_n ; u_1, \cdots, u_n\right\}\) 博弈的解 重复剔除严格劣策略 定义 在标准式博弈 \(G=\left\{s_1, \cdots, s_n ; u_1, \cdots, u_n\right\}\) 中，令 \(s_i^{\prime}\) 和 \(s_i^{\prime \prime}\) 代表参与者 \(i\) 的两个可行策略 (即 \(s_i^{\prime}\) 和 \(s_i^{\prime \prime}\) 是 \(S_i\) 中的元素) 。如果对其他参与者每一个可能的策略组合， \(i\)选择 \(s_i^{\prime}\) 的收益都小于其选择 \(s_i^{\prime \prime}\) 的收益（只是两个策略的对比，而不是多个)，则称策略 \(s_i^{\prime}\) 相对于策略 \(s_i^{\prime \prime}\) 是严格劣策略： \(u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime}, s_{i+1}, \cdots, s_n\right)&amp;lt;u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime \prime}, s_{i+1}, \cdots, s_n\right)\) 对其他参与者在其策略空间 \(S_1, \cdots S_{i-1}, S_{i+1}, \cdots, S_n\) 中每一组可能的策略 \(\left(s_1, \cdots, s_{i-1}, s_{i+1}, \cdots, s_n\right)\) 都成立。</description>
     </item>
     <item>
       <title>Complete Information Static Game</title>
@@ -61,6 +61,16 @@
 企业 2 知道自己的成本函数和企业 1 的成本函数, 企业 1 知道自己的成本函数, 但却只知道企业 2 边际成本为 \(c_H\) 的概率是 \(\theta\), 边际成本为 \(c_L\) 的概率是 \(1-\theta\) 上述一切都是共同知识:企业 1 知道企业 2 享有信息优势, 企业 2 知道企业 1 知道自己的信息优势, 如此等等。
 自然地, 企业 2 的边际成本较高时和较低时, 它希望生产的产出水平是不同的 (一般而言,成本高时的产出要更低一些)。企业 1 从自己的角度, 也会预测到企业 2 根据其成本情况将选择不同的产量。
 用 \(q_2^*\left(c_H\right)\) 和 \(q_2^*\left(c_L\right)\) 分别把企业 2 的产量选择表示为成本的函数,并令 \(q_1{ }^*\) 表示企业 1 的单一产量选择。</description>
+    </item>
+    <item>
+      <title>Examination Points</title>
+      <link>/game-theory/%E4%B9%A0%E9%A2%98%E8%AF%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/game-theory/%E4%B9%A0%E9%A2%98%E8%AF%BE/</guid>
+      <description>考点 完全信息静态博弈 标准式表述（囚徒困境） 重复剔除严格劣策略 （纯战略）纳什均衡 混合策略纳什均衡 如果考几个纳什均衡解，需要把混合战略和纯战略纳什均衡都考虑到
+古诺模型，公共财产问题，最后要价仲裁，贝特兰德模型
+完全信息动态博弈 完全完美信息博弈（逆向归纳解） 完全且完美信息（两阶段博弈） 重复博弈 非完全信息静态博弈 静态贝叶斯博弈的标准式 贝叶斯纳什均衡 非对称信息下的古诺模型 非完全信息动态博弈 不考–
+回来得整理笔记</description>
     </item>
   </channel>
 </rss>
