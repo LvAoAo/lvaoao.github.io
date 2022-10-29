@@ -11,18 +11,18 @@
     <link href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <link href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/index.print.html" rel="alternate" type="text/html" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667018929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667018929" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667018929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667018929" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667018929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667018929" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667018929" rel="stylesheet">
-    <link href="/css/nucleus.css?1667018929" rel="stylesheet">
-    <link href="/css/fonts.css?1667018929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667018929" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667018929" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667018929" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667018929" rel="stylesheet">
-    <link href="/css/variant.css?1667018929" rel="stylesheet">
-    <link href="/css/print.css?1667018929" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667018929"></script>
+    <link href="/css/fontawesome-all.min.css?1667020412" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667020412" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667020412" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667020412" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667020412" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667020412" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667020412" rel="stylesheet">
+    <link href="/css/nucleus.css?1667020412" rel="stylesheet">
+    <link href="/css/fonts.css?1667020412" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667020412" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667020412" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667020412" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667020412" rel="stylesheet">
+    <link href="/css/variant.css?1667020412" rel="stylesheet">
+    <link href="/css/print.css?1667020412" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667020412"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -38,7 +38,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667018929" defer></script>
+    <script src="/js/jquery.min.js?1667020412" defer></script>
   </head>
   <body class="mobile-support html" data-url="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">
     <div id="body" class="default-animation">
@@ -47,7 +47,7 @@
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-             <a class="nav nav-next" href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" title="Parameter Estimation (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+             <a class="nav nav-next" href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="Linear Discriminant Analysis (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
              <a class="nav nav-prev" href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" title="Nonlinear Discriminant Analysis (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
@@ -227,7 +227,7 @@ class="math display">\[
 \]</span></p>
 <h3 id="图示">图示</h3>
 <p>从图中可以看到，这种决策实际的分类线就是图中的<strong>虚线</strong>位置，被称为<strong>决策边界</strong>或<strong>分类线</strong>。在多维的情况下，<strong>称为决策面</strong>或<strong>分类面</strong>，它把特征空间划分成属于各类的区域。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223109.png?token=AWSGDYRDXYMKVF4E73IN7Q3DLSVOU" alt="image-20221005082900683" style="zoom:50%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005082900683-166686901998458.png" alt="image-20221005082900683" style="zoom:50%;" /></p>
 <h3 id="多类识别问题">多类识别问题</h3>
 <p>多类识别问题的Bayes最小错误率决策:</p>
 <ul>
@@ -267,10 +267,13 @@ p\left(\omega_2\right)+\boldsymbol{p}\left(\boldsymbol{x} \in
 \boldsymbol{p}\left(\boldsymbol{x} \mid
 \boldsymbol{\omega}_{\mathbf{2}}\right) \boldsymbol{d x}
 \]</span></p>
-<p><img
-src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223110.png?token=AWSGDYXOGNZ2Y6O3Z76D47DDLSVOW"
-alt="image-20221028200841094" /> 在多类决策的过程中，要把特征空间分割成
-<span class="math inline">\(\Re_1 、 \Re_2\)</span>,<span
+<figure>
+<img src="/images/4-贝叶斯决策.assets/image-20221028200841094.png"
+alt="image-20221028200841094" />
+<figcaption aria-hidden="true">image-20221028200841094</figcaption>
+</figure>
+<p>在多类决策的过程中，要把特征空间分割成 <span
+class="math inline">\(\Re_1 、 \Re_2\)</span>,<span
 class="math inline">\(\ldots, \mathfrak{R}_{\mathrm{c}}\)</span> 个区域,
 平均错误率由c(c-1)项组成, 即: <span class="math display">\[
 \left.\begin{array}{l}
@@ -632,7 +635,7 @@ class="math inline">\(x\)</span> 到 <span
 class="math inline">\(\mu\)</span> 的马氏距离 <span
 class="math inline">\(\gamma\)</span>
 为常数的<strong>超椭球面</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223111.png?token=AWSGDYS3VBYKKIFYK3VSLJDDLSVOY" alt="image-20221005144716870" style="zoom:50%;" />
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005144716870-166686902360559.png" alt="image-20221005144716870" style="zoom:50%;" />
 从下图可以看出, 从正态分布总体中抽取的样本大部分落在由 <span
 class="math inline">\(\mu\)</span> 和 <span
 class="math inline">\(\Sigma\)</span> 所确定的一个区域里,
@@ -789,7 +792,7 @@ class="math inline">\(P\left(\omega_i\right), i=1,2, \ldots, c\)</span>
 不相等, 决策面与<strong>先验概率相等</strong>时候的决策面平行,
 向<strong><u>先验概率小</u></strong>的方向偏移,
 即<strong>先验概率大</strong>的一类占据<strong>更大的决策空间</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223112.png?token=AWSGDYS64ZR3AHEMDR4N7SDDLSVO4" alt="image-20221005155716961" style="zoom:50%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005155716961-166686902640460.png" alt="image-20221005155716961" style="zoom:50%;" /></p>
 <h4
 id="特硃情况2各类的协方差矩阵都相等">特硃情况2：各类的协方差矩阵都相等</h4>
 <p><span class="math display">\[
@@ -842,7 +845,7 @@ class="math inline">\(\mu_i,\mu_j\)</span> 连线的中点,
 决策面<strong>通过该点</strong>。 当 <span
 class="math inline">\(P\left(\omega_i\right), i=1,2, \ldots, c\)</span>
 不相等, 决策面向<strong>先验概率小</strong>的方向偏移。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223113.png?token=AWSGDYSGTERDPBRRLSEYYQLDLSVO6" alt="image-20221005162330467" style="zoom: 67%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005162330467-166686904171964.png" alt="image-20221005162330467" style="zoom: 67%;" /></p>
 <h4 id="特殊情况3-各类协方差阵不相等">特殊情况3: 各类协方差阵不相等</h4>
 <p>判别函数中只有 <span class="math inline">\(\frac{d}{2} \ln 2
 \pi\)</span> 与 <span class="math inline">\(i\)</span> 无关,
@@ -867,7 +870,7 @@ x^T\left(W_i-W_j\right) x+\left(w_i-w_j\right)^T x+\omega_{i
 class="math inline">\(\Sigma_i, \mu_i, \quad
 P\left(\omega_i\right)\)</span> 的不同而呈现出某种曲面,
 即<strong>超球面、超椭球面、超拋物线面、超双曲面或者超平面</strong>。</p>
-<p><img src="https://raw.githubusercontent.com/LvAoAo/PicGo4Typora/main/img/202210291223115.png?token=AWSGDYQPBYQZFYSULFI57PDDLSVPA" alt="image-20221005162816331" style="zoom:50%;" /></p>
+<p><img src="/images/4-贝叶斯决策.assets/image-20221005162816331-166686903211662.png" alt="image-20221005162816331" style="zoom:50%;" /></p>
 <h2 id="错误率计算非考试重点">错误率计算（非考试重点）</h2>
 <h3 id="引入-2">引入</h3>
 <ul>
@@ -1130,25 +1133,25 @@ class="math display">\[
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667018930" defer></script>
-        <script src="/js/lunr.min.js?1667018930" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667018930" defer></script>
-        <script src="/js/lunr.multi.min.js?1667018930" defer></script>
-        <script src="/js/lunr.en.min.js?1667018930" defer></script>
-        <script src="/js/search.js?1667018930" defer></script>
+        <script src="/js/auto-complete.js?1667020412" defer></script>
+        <script src="/js/lunr.min.js?1667020412" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667020412" defer></script>
+        <script src="/js/lunr.multi.min.js?1667020412" defer></script>
+        <script src="/js/lunr.en.min.js?1667020412" defer></script>
+        <script src="/js/search.js?1667020412" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
           <li data-nav-id="/game-theory/" class="dd-item"><input type="checkbox" id="section-e70f5d73bafb2f417493745d881ff2c1" aria-controls="subsections-e70f5d73bafb2f417493745d881ff2c1" class="toggle"><label class="a11y-only toggle" for="section-e70f5d73bafb2f417493745d881ff2c1" >Submenu Game Theory</label><a href="/game-theory/">Game Theory<i class="fas fa-check read-icon"></i></a><ul id="subsections-e70f5d73bafb2f417493745d881ff2c1">
           <li data-nav-id="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" class="dd-item"><a href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">Nash Equilibrium<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Dynamic Game<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Dynamic Game<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/">Repeated Game<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Incomplete Information Static Game<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/pattern-recognition/" class="dd-item parent"><input type="checkbox" id="section-d97dd4feeffe48ab6a56cf2ae66c1e37" aria-controls="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37" class="toggle" checked><label class="a11y-only toggle" for="section-d97dd4feeffe48ab6a56cf2ae66c1e37" >Submenu Pattern Recognition</label><a href="/pattern-recognition/">Pattern Recognition<i class="fas fa-check read-icon"></i></a><ul id="subsections-d97dd4feeffe48ab6a56cf2ae66c1e37">
-          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Nonlinear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/" class="dd-item active"><a href="/pattern-recognition/4-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%86%B3%E7%AD%96/">Beyasian Decision<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/" class="dd-item"><a href="/pattern-recognition/2-%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0/">Linear Discriminant Analysis<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/" class="dd-item"><a href="/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/">Parameter Estimation<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
         <div id="shortcuts">
@@ -1203,10 +1206,10 @@ class="math display">\[
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667018930" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667018930" defer></script>
-    <script src="/js/featherlight.min.js?1667018930" defer></script>
-    <script src="/js/theme.js?1667018930" defer></script>
+    <script src="/js/clipboard.min.js?1667020412" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667020412" defer></script>
+    <script src="/js/featherlight.min.js?1667020412" defer></script>
+    <script src="/js/theme.js?1667020412" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >

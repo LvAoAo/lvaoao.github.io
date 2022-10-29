@@ -14,6 +14,18 @@
       <description>纳什均衡 博弈组成 参与人\(i=1,2,\cdots,n\) 参与人的策略集为\(S_i\),\(s_i\)为\(S_i\)中的一个策略，\(\left\{s_1, s_2,\cdots, s_n\right\}\)为所有人的一个策略组合 参与人的收益为\(u_i\left(s_1, s_2,\cdots, s_n\right)\) 博弈\(G=\left\{s_1, \cdots, s_n ; u_1, \cdots, u_n\right\}\) 博弈的解 重复剔除严格劣策略 定义 在标准式博弈 \(G=\left\{s_1, \cdots, s_n ; u_1, \cdots, u_n\right\}\) 中，令 \(s_i^{\prime}\) 和 \(s_i^{\prime \prime}\) 代表参与者 \(i\) 的两个可行策略 (即 \(s_i^{\prime}\) 和 \(s_i^{\prime \prime}\) 是 \(S_i\) 中的元素) 。如果对其他参与者每一个可能的策略组合， \(i\)选择 \(s_i^{\prime}\) 的收益都小于其选择 \(s_i^{\prime \prime}\) 的收益（只是两个策略的对比，而不是多个)，则称策略 \(s_i^{\prime}\) 相对于策略 \(s_i^{\prime \prime}\) 是严格劣策略： \(u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime}, s_{i+1}, \cdots, s_n\right)&amp;lt;u_i\left(s_1, \cdots, s_{i-1}, s_i^{\prime \prime}, s_{i+1}, \cdots, s_n\right)\) 对其他参与者在其策略空间 \(S_1, \cdots S_{i-1}, s_{i+1}, \cdots, s_n\) 中每一组可能的策略 \(\left(s_1, \cdots, s_{i-1}, s_{i+1}, \cdots, s_n\right)\) 都成立。</description>
     </item>
     <item>
+      <title>Complete Information Static Game</title>
+      <link>/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/</guid>
+      <description>完全信息静态博弈 古诺模型（定产量） 令 \(q_1 、 q_2\) 分别表述企业 \(1 、 2\) 生产的同质产品的产量, 市场中该产品的总供给 \(Q=q_1+q_2\), 令 \(P(Q)=a-Q\) 表示市场出清时的价格(更为精确些的表述为: \(Q&amp;lt;a\) 时, \(P(Q)=a-Q ; Q&amp;gt;a\) 时, \(P(Q)=0)\) 。设企业 \(i\) 生产 \(q_i\) 的总成本 \(C_i\left(q_i\right)=c q_i\), 即企业不存在固定成本, 且生产每单位产品的进行产量决策 \(\Phi_{\text {。 }}\) \[ \begin{aligned} u_1=&amp;amp;P(Q)q_1-cq_1=q_1(a-c-q_1-q_2)\\ \frac{\partial u}{\partial q_1}=&amp;amp;-2q_1+a-c-q_2=0\\ q_1^\star=&amp;amp;\frac{a-c-q_2}{2} \end{aligned} \]
+协调投资模型 参与方：所有人
+策略集合：{投资10块，不投资}
+收益：90%以上投资的话，投资的人得15；否则投资的人不得钱
+两个纳什均衡：要不都投资，要不都不投资
+伯川德模型（产品无差异，定价格） 用 \(p_1\) 和 \(p_2\) 分别表示企业 1 和企业 2 生产相同产品的价格, 消费者对产品的需求为 \(Q\left(p_1, p_2\right)=\) \(1-\min \left(\mathrm{p}_1, \mathrm{p}_2\right)\) 那么，消费者对企业 1 产品的需求为 \(Q_1\left(p_1, p_2\right)=\left\{\begin{array}{c}1-p_1 \text { if } p_1&amp;lt;p_2 \\ 0 \text { if } p_1&amp;gt;p_2 \\ \frac{1-p_1}{2} \text { if } p_1=p_2\end{array}\right.</description>
+    </item>
+    <item>
       <title>Complete Information Dynamic Game</title>
       <link>/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,18 +40,6 @@
 完全且完美信息动态博弈 流程 参与者 1 从可行集 \(A_1\) 中选择一个行动 \(a_1\), 参与者 2 观察到 \(a_1\), 之后从可行集 \(A_2\) 中选择一个行动 \(a_2\), 两人的收益分别为 \(u_1\left(a_1, a_2\right)\) 和 \(u_2\left(a_1, a_2\right)\) 。 特点 行动是顺序发生的 下一步行动选择之前, 所有以前的行动都可被观察到 每一可能的行动组合下参与者的收益都是共同知识 方法 当在博弈的第二阶段参与者 2 行动时, 由于其前参与者 1 已选择行动 \(a_1\)</description>
     </item>
     <item>
-      <title>Complete Information Static Game</title>
-      <link>/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/</guid>
-      <description>完全信息静态博弈 古诺模型（定产量） 令 \(q_1 、 q_2\) 分别表述企业 \(1 、 2\) 生产的同质产品的产量, 市场中该产品的总供给 \(Q=q_1+q_2\), 令 \(P(Q)=a-Q\) 表示市场出清时的价格(更为精确些的表述为: \(Q&amp;lt;a\) 时, \(P(Q)=a-Q ; Q&amp;gt;a\) 时, \(P(Q)=0)\) 。设企业 \(i\) 生产 \(q_i\) 的总成本 \(C_i\left(q_i\right)=c q_i\), 即企业不存在固定成本, 且生产每单位产品的进行产量决策 \(\Phi_{\text {。 }}\) \[ \begin{aligned} u_1=&amp;amp;P(Q)q_1-cq_1=q_1(a-c-q_1-q_2)\\ \frac{\partial u}{\partial q_1}=&amp;amp;-2q_1+a-c-q_2=0\\ q_1^\star=&amp;amp;\frac{a-c-q_2}{2} \end{aligned} \]
-协调投资模型 参与方：所有人
-策略集合：{投资10块，不投资}
-收益：90%以上投资的话，投资的人得15；否则投资的人不得钱
-两个纳什均衡：要不都投资，要不都不投资
-伯川德模型（产品无差异，定价格） 用 \(p_1\) 和 \(p_2\) 分别表示企业 1 和企业 2 生产相同产品的价格, 消费者对产品的需求为 \(Q\left(p_1, p_2\right)=\) \(1-\min \left(\mathrm{p}_1, \mathrm{p}_2\right)\) 那么，消费者对企业 1 产品的需求为 \(Q_1\left(p_1, p_2\right)=\left\{\begin{array}{c}1-p_1 \text { if } p_1&amp;lt;p_2 \\ 0 \text { if } p_1&amp;gt;p_2 \\ \frac{1-p_1}{2} \text { if } p_1=p_2\end{array}\right.</description>
-    </item>
-    <item>
       <title>Repeated Game</title>
       <link>/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -52,7 +52,7 @@
 定理 如果阶段博弈 \(G\) 有惟一的纳什均衡, 则对任意有限的 \(T\), 重复博弈 \(G(T)\) 有惟一的子博弈精炼解; 即 \(G\) 的纳什均衡结果在每一</description>
     </item>
     <item>
-      <title>Complete Information Static Game</title>
+      <title>Incomplete Information Static Game</title>
       <link>/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/game-theory/6-%E9%9D%9E%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/</guid>
