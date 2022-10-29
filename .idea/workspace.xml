@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="" />
+    <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/content/Game theory/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,18 +31,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Users/13599/Documents/GitHub/lvaoao.github.io/layouts/partials/shortcodes",
+    "last_opened_file_path": "C:/Users/13599/Documents/GitHub/lvaoao.github.io/content",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "ssh.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\layouts\partials\shortcodes" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\layouts\partials" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Pattern Recognition" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Pattern Recognization" />
-      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\layouts" />
@@ -55,7 +61,8 @@
       <workItem from="1666846167714" duration="1767000" />
       <workItem from="1666854790001" duration="12112000" />
       <workItem from="1666869460127" duration="8364000" />
-      <workItem from="1666956313342" duration="5190000" />
+      <workItem from="1666956313342" duration="8441000" />
+      <workItem from="1667016926355" duration="1142000" />
     </task>
     <servers />
   </component>
