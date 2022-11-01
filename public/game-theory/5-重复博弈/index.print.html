@@ -11,19 +11,19 @@
     <link href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/" rel="canonical" type="text/html" title="YU&#39;s POOL">
     <link href="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667033171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667033171" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667033171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667033171" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667033171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667033171" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667033171" rel="stylesheet">
-    <link href="/css/nucleus.css?1667033171" rel="stylesheet">
-    <link href="/css/fonts.css?1667033171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667033171" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667033171" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667033171" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667033171" rel="stylesheet">
-    <link href="/css/variant.css?1667033171" rel="stylesheet">
-    <link href="/css/print.css?1667033171" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1667033171" rel="stylesheet">
-    <script src="/js/variant.js?1667033171"></script>
+    <link href="/css/fontawesome-all.min.css?1667294596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667294596" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667294596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667294596" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667294596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667294596" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667294596" rel="stylesheet">
+    <link href="/css/nucleus.css?1667294596" rel="stylesheet">
+    <link href="/css/fonts.css?1667294596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667294596" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667294596" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667294596" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667294596" rel="stylesheet">
+    <link href="/css/variant.css?1667294596" rel="stylesheet">
+    <link href="/css/print.css?1667294596" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1667294596" rel="stylesheet">
+    <script src="/js/variant.js?1667294596"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,7 +39,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667033171" defer></script>
+    <script src="/js/jquery.min.js?1667294596" defer></script>
   </head>
   <body class="mobile-support print" data-url="/game-theory/5-%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88/">
     <div id="body" class="default-animation">
@@ -405,9 +405,29 @@ class="math inline">\(L_i\)</span> 。</p>
 <p>我们首先论证如果 <span class="math inline">\(\delta\)</span> 距 1
 <strong><u>足够近</u></strong>（大于<strong>某个临界值</strong>）,
 则采取这种战略, 对参与双方都是无限重复博弈的<strong>纳什均衡</strong>,
-其后再证明这一纳什</p>
-<p>均衡是<strong>子博弈精炼</strong>的。</p>
+其后再证明这一纳什均衡是<strong>子博弈精炼</strong>的。</p>
 <hr />
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">阶段博弈G</th>
+<th style="text-align: center;">L2</th>
+<th style="text-align: center;">R2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">L1</td>
+<td style="text-align: center;">1,1</td>
+<td style="text-align: center;">5,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">R1</td>
+<td style="text-align: center;">0,5</td>
+<td style="text-align: center;">4,4</td>
+</tr>
+</tbody>
+</table>
 <p>在前面阶段都选择<span
 class="math inline">\((R_1,R_2)\)</span>的情况下，参与人<span
 class="math inline">\(i\)</span><strong>从某个阶段开始</strong>选择
@@ -448,7 +468,7 @@ class="math inline">\(L_1\)</span>（滑向低收益的<strong>纳什均衡</str
 4\)</span> 时,
 参与双方<strong>都采取触发战略</strong>为博弈的<strong>纳什均衡</strong>(注意纳什均衡的定义)</p>
 <h4 id="定理-2">定理</h4>
-<p>在<strong>无限重复博</strong>弈中一个更强的结论成立:
+<p>在<strong>无限重复博弈</strong>中一个更强的结论成立:
 即使<strong>阶段博弈</strong>有<strong>惟一的纳什均衡</strong>,
 无限重复博弈中也可以存在<strong>子博弈精炼解</strong>,
 其中<strong>没有一个阶段</strong>的结果是 <span
@@ -806,10 +826,10 @@ class="math inline">\(\left(q_m / 2, q_m / 2\right)\)</span>, 又不是
 <p>两企业都采取上面的两面战略要成为一个<strong>子博弈精炼纳什均衡</strong>,
 则在其每一类子博弈中遵守该战略必须是<strong>纳什均衡</strong>。具体地说,
 在合作 <span class="math display">\[
-\frac{1}{1-\delta} \cdot \frac{1}{2} \pi_m \geqslant \pi_d+\delta V(x)
-.\label{29}
+\frac{1}{1-\delta} \cdot \frac{1}{2} \pi_m \geqslant \pi_d+\delta V(x) .
+{29}
 \]</span> <span class="math display">\[
-V(x) \geqslant \pi_{d p}(x)+\delta V(x) .\label{30}
+V(x) \geqslant \pi_{d p}(x)+\delta V(x) . {30}
 \]</span> 将 <span class="math inline">\(V(x)\)</span> 代入 <span
 class="math inline">\(\eqref{29}\)</span>可得 <span
 class="math display">\[
@@ -914,12 +934,12 @@ class="math inline">\(\eqref{30}\)</span>式亦可满足。</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667033171" defer></script>
-        <script src="/js/lunr.min.js?1667033171" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667033171" defer></script>
-        <script src="/js/lunr.multi.min.js?1667033171" defer></script>
-        <script src="/js/lunr.en.min.js?1667033171" defer></script>
-        <script src="/js/search.js?1667033171" defer></script>
+        <script src="/js/auto-complete.js?1667294596" defer></script>
+        <script src="/js/lunr.min.js?1667294596" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667294596" defer></script>
+        <script src="/js/lunr.multi.min.js?1667294596" defer></script>
+        <script src="/js/lunr.en.min.js?1667294596" defer></script>
+        <script src="/js/search.js?1667294596" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -988,10 +1008,10 @@ class="math inline">\(\eqref{30}\)</span>式亦可满足。</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667033171" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667033171" defer></script>
-    <script src="/js/featherlight.min.js?1667033171" defer></script>
-    <script src="/js/theme.js?1667033171" defer></script>
+    <script src="/js/clipboard.min.js?1667294596" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667294596" defer></script>
+    <script src="/js/featherlight.min.js?1667294596" defer></script>
+    <script src="/js/theme.js?1667294596" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >

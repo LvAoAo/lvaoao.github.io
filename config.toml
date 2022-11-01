@@ -72,6 +72,7 @@ defaultContentLanguage = "en"
   page = ["HTML", "RSS", "PRINT"]
 
 # Hugo 解析文档的配置
+
 [markup]
   defaultMarkdownHandler = "pandoc"
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
@@ -79,6 +80,8 @@ defaultContentLanguage = "en"
     # false 是必要的设置 (https://github.com/hugo-fixit/FixIt/issues/43)
     noClasses = false
     guessSyntax = false
+  [markup.pandocExt]
+    extensions = ["pandoc-crossref"]
 [security]
   enableInlineShortcodes = false
   [security.exec]
@@ -145,3 +148,4 @@ defaultContentLanguage = "en"
     name = "<i class='fas fa-fw fa-tags'></i> Arrr! Tags"
     url = "tags/"
     weight = 40
+

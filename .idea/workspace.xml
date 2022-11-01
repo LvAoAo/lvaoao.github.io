@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/content/Game theory/习题课.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Game theory/2-纳什均衡.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/2-纳什均衡.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Game theory/3-完全信息静态博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/3-完全信息静态博弈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/4-完全信息动态博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/4-完全信息动态博弈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/5-重复博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/5-重复博弈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/6-非完全信息静态博弈.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/6-非完全信息静态博弈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/习题课.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/习题课.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +27,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Game theory",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ssh.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Game theory&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory" />
@@ -61,7 +64,9 @@
       <workItem from="1666854790001" duration="12112000" />
       <workItem from="1666869460127" duration="8364000" />
       <workItem from="1666956313342" duration="8441000" />
-      <workItem from="1667016926355" duration="7089000" />
+      <workItem from="1667016926355" duration="8062000" />
+      <workItem from="1667039195396" duration="3618000" />
+      <workItem from="1667287257798" duration="1709000" />
     </task>
     <servers />
   </component>

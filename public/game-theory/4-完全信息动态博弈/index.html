@@ -11,18 +11,18 @@
     <link href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <link href="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/index.print.html" rel="alternate" type="text/html" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667033170" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667033170" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667033170" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667033170" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667033170" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667033170" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667033170" rel="stylesheet">
-    <link href="/css/nucleus.css?1667033170" rel="stylesheet">
-    <link href="/css/fonts.css?1667033170" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667033170" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667033170" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667033170" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667033170" rel="stylesheet">
-    <link href="/css/variant.css?1667033170" rel="stylesheet">
-    <link href="/css/print.css?1667033170" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667033170"></script>
+    <link href="/css/fontawesome-all.min.css?1667294595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667294595" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667294595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667294595" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667294595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667294595" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667294595" rel="stylesheet">
+    <link href="/css/nucleus.css?1667294595" rel="stylesheet">
+    <link href="/css/fonts.css?1667294595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667294595" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667294595" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667294595" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667294595" rel="stylesheet">
+    <link href="/css/variant.css?1667294595" rel="stylesheet">
+    <link href="/css/print.css?1667294595" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667294595"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -38,7 +38,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667033170" defer></script>
+    <script src="/js/jquery.min.js?1667294595" defer></script>
   </head>
   <body class="mobile-support html" data-url="/game-theory/4-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8A%A8%E6%80%81%E5%8D%9A%E5%BC%88/">
     <div id="body" class="default-animation">
@@ -237,7 +237,7 @@ class="math inline">\(\left(a_1^*, R_2\left(a_1^*\right)\right)\)</span>
 <li>企业 <span class="math inline">\(i\)</span>
 的收益由下面的利润函数给出 <span
 class="math inline">\(\pi_{\mathrm{i}}\left(q_i,
-q_j\right)=q_i[(Q)-c]\)</span>.</li>
+q_j\right)=q_i[p(Q)-c]\)</span>.</li>
 </ol>
 <p>注意1先，2后，这是和古诺模型的主要区别</p>
 <h3 id="求解">求解</h3>
@@ -274,7 +274,8 @@ class="math inline">\(R_2\left(q_1\right)\)</span> 是企业 2 对假定的企�
 _{q_1 \geq 0} q_1\left[a-q_1-R_2\left(q_1\right)-c\right] \\
 &amp;=\max _{q_1 \geq 0} q_1 \frac{a-q_1-c}{2} .
 \end{aligned}
-\]</span> 由上式可得 及 <span class="math display">\[
+\]</span> 由上式可得</p>
+<p>及 <span class="math display">\[
 \begin{gathered}
 q_1^*=\frac{a-c}{2} \\
 R_2\left(q_1^*\right)=\frac{a-c}{4},
@@ -802,12 +803,12 @@ t_1\right) .
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667033171" defer></script>
-        <script src="/js/lunr.min.js?1667033171" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667033171" defer></script>
-        <script src="/js/lunr.multi.min.js?1667033171" defer></script>
-        <script src="/js/lunr.en.min.js?1667033171" defer></script>
-        <script src="/js/search.js?1667033171" defer></script>
+        <script src="/js/auto-complete.js?1667294596" defer></script>
+        <script src="/js/lunr.min.js?1667294596" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667294596" defer></script>
+        <script src="/js/lunr.multi.min.js?1667294596" defer></script>
+        <script src="/js/lunr.en.min.js?1667294596" defer></script>
+        <script src="/js/search.js?1667294596" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -876,10 +877,10 @@ t_1\right) .
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667033171" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667033171" defer></script>
-    <script src="/js/featherlight.min.js?1667033171" defer></script>
-    <script src="/js/theme.js?1667033171" defer></script>
+    <script src="/js/clipboard.min.js?1667294596" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667294596" defer></script>
+    <script src="/js/featherlight.min.js?1667294596" defer></script>
+    <script src="/js/theme.js?1667294596" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >
