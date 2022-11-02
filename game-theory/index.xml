@@ -63,10 +63,21 @@
 用 \(q_2^*\left(c_H\right)\) 和 \(q_2^*\left(c_L\right)\) 分别把企业 2 的产量选择表示为成本的函数,并令 \(q_1{ }^*\) 表示企业 1 的单一产量选择。</description>
     </item>
     <item>
-      <title>Examination Points</title>
-      <link>/game-theory/%E4%B9%A0%E9%A2%98%E8%AF%BE/</link>
+      <title>Exercises</title>
+      <link>/game-theory/%E4%B9%A0%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/game-theory/%E4%B9%A0%E9%A2%98%E8%AF%BE/</guid>
+      <guid>/game-theory/%E4%B9%A0%E9%A2%98/</guid>
+      <description>习题课 1. 坏孩子定理 流程 假设一个家长和他的孩子进行如下博弈:
+小孩选择一个行动 \(A\), 可使孩子获得收入 \(I_c(A)\), 并使家长得到收入 \(I_p(A)\) （可以认 \(I_c(A)\) 为孩子减去因 \(A\) 发生的各种成本后的净收益）； 家长观测到收入 \(I_c\) 和 \(I_p\), 然后选择给孩子的奖励或惩罚 \(B\) 。 收益 孩子的收益为 \(U\left(I_c+\right.\) \(B)\), 家长的收益为 \(V\left(I_p-B\right)+k U\left(I_c+B\right)\), 其中 \(k&amp;gt;0\) 反映出家长关心孩子的福利。
+假定行动是一个非负数字, \(A \geq 0\), 收入函数 \(I_c(A)\) 和 \(I_p(A)\) 为严格凹（二阶导数小于 0 ） 且分别在 \(A_c&amp;gt;0\) 和 \(A_p&amp;gt;0\) 达到最大值; 奖励或惩罚 \(B\) 为正或负的数字; 且效用函数 \(U\) 和 \(V\) 严格递增且严格凹。
+题目 证明“宠坏的孩子”(Rotten Kid)定理：在逆向归纳解中，孩子选择可使全家收入 \(I_c(A)+I_p(A)\) 最大化的行为，尽管在效用函数中, 只有家长显示出利他的特点。
+求解 \[ \begin{aligned} &amp;amp;先找出家长的最优战略B^*(A)\\ &amp;amp;\frac{\partial u_p}{\partial B}=-V^{\prime}\left(I_p-B\right)+k U^{\prime}\left(I_c+B\right)\\ &amp;amp;\Rightarrow \quad-V^{\prime}\left(I_p(A)-B^*(A)\right)+k U^{\prime}\left(I_c(A)+B^*(A)\right)=0\\ &amp;amp;再带入B^*(A)到孩子的收益并求解最优A^*\\ &amp;amp;\frac{\partial u_c}{\partial A}=U^{\prime}\cdot\left(I_c^{\prime}(A)+B^*(A)\right)=0\\ &amp;amp;\text { 由} U^{\prime}&amp;gt;0 \Rightarrow I_c^{\prime}(A)+B ^{*\prime}(A)=0\\ &amp;amp;\text {让家长收益的导数式对A求导}\\ &amp;amp;-V^{\prime \prime} \cdot\left(I_p^{\prime}(A)-B^{* \prime}(A)\right)+k U^{\prime \prime} \cdot\left(I_c{ }^{\prime}(A)+B^{* \prime}(A)\right)=0\\ &amp;amp;故 I_P^{\prime}(A)-B^{* \prime}(A)=0\\ &amp;amp;\text { 故} \frac{\partial\left(I_c(A)+I_p(A)\right)}{\partial A}=I_c^{\prime}(A)+I_p^{\prime}(A)=B^{*^{\prime}}-B^{*^{\prime}}=0 \end{aligned} \]</description>
+    </item>
+    <item>
+      <title>Examination Points</title>
+      <link>/game-theory/%E8%80%83%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/game-theory/%E8%80%83%E7%82%B9/</guid>
       <description>考点 完全信息静态博弈 标准式表述（囚徒困境） 重复剔除严格劣策略 （纯战略）纳什均衡 混合策略纳什均衡 如果考几个纳什均衡解，需要把混合战略和纯战略纳什均衡都考虑到
 古诺模型，公共财产问题，最后要价仲裁，贝特兰德模型
 完全信息动态博弈 完全完美信息博弈（逆向归纳解） 完全且完美信息（两阶段博弈） 重复博弈 非完全信息静态博弈 静态贝叶斯博弈的标准式 贝叶斯纳什均衡 非对称信息下的古诺模型 非完全信息动态博弈 不考–
