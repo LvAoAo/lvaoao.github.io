@@ -65,7 +65,7 @@ title = "Hugo Relearn Documentation"
     # if you want to use a predefined style instead:
     # - remove the following `noClasses`
     # - set the following `style` to a predefined style name
-    # - remove the `@import` of the self-defined chroma stylesheet from your CSS files
+    # - remove the `@import` of the self-defined chroma stylesheet from your CSS _index.files
     #   (here eg.: theme-relearn-light.css / theme-relearn-dark.css)
     noClasses = false
     # style = "tango"

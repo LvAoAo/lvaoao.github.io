@@ -6,3 +6,5 @@ disableToc = false
 +++
 
 This is mainly about Pattern Recognition.
+
+{{% attachments sort="desc" title="Course Introduction" /%}}

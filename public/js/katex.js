@@ -112,7 +112,7 @@ ParseError.prototype.__proto__ = Error.prototype;
 ;// CONCATENATED MODULE: ./src/utils.js
 /**
  * This file contains a list of utility functions which are useful in other
- * files.
+ * _index.files.
  */
 
 /**
@@ -3127,7 +3127,7 @@ var DocumentFragment = /*#__PURE__*/function () {
 /**
  * This file contains metrics regarding fonts and individual symbols. The sigma
  * and xi variables, as well as the metricMap map contain data extracted from
- * TeX, TeX font metrics, and the TTF files. These data are then exposed via the
+ * TeX, TeX font metrics, and the TTF _index.files. These data are then exposed via the
  * `metrics` variable and the getCharacterMetrics function.
  */
 // In TeX, there are actually three sets of dimensions, one for each of
@@ -7185,7 +7185,7 @@ var buildHTMLTree = function buildHTMLTree(tree, expression, settings) {
 ;// CONCATENATED MODULE: ./src/stretchy.js
 /**
  * This file provides support to buildMathML.js and buildHTML.js
- * for stretchy wide elements rendered from SVG files
+ * for stretchy wide elements rendered from SVG _index.files
  * and other CSS trickery.
  */
 
@@ -7268,7 +7268,7 @@ var mathMLnode = function mathMLnode(label) {
 //    Low resolution monitors struggle to display images in fine detail.
 //    So browsers apply anti-aliasing. A long straight arrow shaft therefore
 //    will sometimes appear as if it has a blurred edge.
-//    To mitigate this, these SVG files contain a second "brush-stroke" on the
+//    To mitigate this, these SVG _index.files contain a second "brush-stroke" on the
 //    arrow shafts. That is, a second long thin rectangular SVG path has been
 //    written directly on top of each arrow shaft. This reinforcement causes
 //    some of the screen pixels to display as black instead of the anti-aliased
