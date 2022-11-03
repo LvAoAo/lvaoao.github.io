@@ -96,7 +96,7 @@ var __webpack_exports__ = {};
  * The commas in the string aim to increase ease of understanding
  * when read by a screenreader.
  */
-// NOTE: since we're importing types here these files won't actually be
+// NOTE: since we're importing types here these _index.files won't actually be
 // included in the build.
 // $FlowIgnore: we import the types directly anyways
 
