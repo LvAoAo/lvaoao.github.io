@@ -11,19 +11,19 @@
     <link href="/" rel="canonical" type="text/html" title="YU&#39;s POOL">
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667480111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667480111" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667480111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667480111" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667480111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667480111" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667480111" rel="stylesheet">
-    <link href="/css/nucleus.css?1667480111" rel="stylesheet">
-    <link href="/css/fonts.css?1667480111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667480111" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667480111" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667480111" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667480111" rel="stylesheet">
-    <link href="/css/variant.css?1667480111" rel="stylesheet">
-    <link href="/css/print.css?1667480111" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1667480111" rel="stylesheet">
-    <script src="/js/variant.js?1667480111"></script>
+    <link href="/css/fontawesome-all.min.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667718384" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667718384" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667718384" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667718384" rel="stylesheet">
+    <link href="/css/nucleus.css?1667718384" rel="stylesheet">
+    <link href="/css/fonts.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667718384" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667718384" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667718384" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667718384" rel="stylesheet">
+    <link href="/css/variant.css?1667718384" rel="stylesheet">
+    <link href="/css/print.css?1667718384" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1667718384" rel="stylesheet">
+    <script src="/js/variant.js?1667718384"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,7 +39,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667480111" defer></script>
+    <script src="/js/jquery.min.js?1667718384" defer></script>
   </head>
   <body class="mobile-support print" data-url="/">
     <div id="body" class="default-animation">
@@ -118,7 +118,15 @@
 <div class="article-subheading">Chapter 2</div>
 <h1>Game Theory</h1>
 
-<p>This is mainly about Game Theory.</p>
+<p>This is mainly about Game Theory. 
+<div class="box attachments cstyle info">
+  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> The Slides</div>
+  <ul class="box-content attachments-files">
+    <li><a href="/Game%20theory/_index.files/%e5%8d%9a%e5%bc%88%e8%ae%ba%e5%9f%ba%e7%a1%80.pdf">博弈论基础.pdf</a> (4 MB)</li>
+    <li><a href="/Game%20theory/_index.files/Solution.pdf">Solution.pdf</a> (236 KB)</li>
+  </ul>
+</div>
+</p>
 
             <footer class="footline">
             </footer>
@@ -4830,10 +4838,14 @@ S_b=\sum_{i=1}^c P_i\left(m_i-m\right)\left(m_i-m\right)^T \quad
 &amp;\text { 注: 协方差矩阵的迹 } \\
 &amp;\text { 等同于方差 }
 \end{aligned}
-\]</span> &gt; 这种类间散度矩阵的定义在只有两类的情况下和 &gt; <span
+\]</span></p>
+<blockquote>
+<p>这种类间散度矩阵的定义在只有两类的情况下和 <span
 class="math display">\[
-&gt; S_b=\left(m_1-m_2\right)\left(m_1-m_2\right)^T
-&gt; \]</span> &gt; 是等价的</p>
+S_b=\left(m_1-m_2\right)\left(m_1-m_2\right)^T
+\]</span></p>
+<p>是等价的</p>
+</blockquote>
 <p>类可区分性判据，以各类特征向量的平均平方距离为判据: <span
 class="math display">\[
 J_d(x)=\operatorname{tr}\left(S_w+S_b\right)
@@ -4868,7 +4880,9 @@ J_1=\operatorname{tr}\left(S_w+S_b\right)
 class="math inline">\(J_p\)</span> 来度量: <span class="math display">\[
 J_{\boldsymbol{p}}=\int {g[P\left(x \mid \omega_1\right), P\left(x \mid
 \omega_2\right)}\left.P_1, P_2\right] dx
-\]</span> 构造的基于类概率的<strong>可分性判据</strong>应满足的条件:</p>
+\]</span> &gt; 其中<span
+class="math inline">\(P_1=P(\omega_1),P_2=P(\omega_2)\)</span>为先验概率</p>
+<p>构造的基于类概率的<strong>可分性判据</strong>应满足的条件:</p>
 <ol type="1">
 <li><span class="math inline">\(J_P \geq 0\)</span></li>
 <li>当两类不重叠时, <span class="math inline">\(J_P=\max\)</span></li>
@@ -4876,27 +4890,134 @@ J_{\boldsymbol{p}}=\int {g[P\left(x \mid \omega_1\right), P\left(x \mid
 class="math inline">\(J_P=0\)</span></li>
 <li>相对于两个概率密度具有 “对称性”</li>
 </ol>
-<hr />
-<h1 id="下面没整理">下面没整理</h1>
 <p>下面介绍三个判据 <span class="math inline">\(J_B, J_C,
 J_D\)</span></p>
-<ul>
-<li><span class="math inline">\(J_B\)</span> (Bhattacharyya 判据) <span
-class="math display">\[
+<h5 id="j_b-bhattacharyya-判据"><span class="math inline">\(J_B\)</span>
+(Bhattacharyya 判据)</h5>
+<p><span class="math display">\[
 J_B=-\ln \int\left[p\left(\boldsymbol{x} \mid \omega_1\right)
 p\left(\boldsymbol{x} \mid \omega_2\right)\right]^{\frac{1}{2}} d
 \boldsymbol{x}
-\]</span></li>
-<li>直观分析：当两类的概率密度函数完全重合时, <span
-class="math inline">\(J_{\mathrm{B}}=0\)</span>;
-当两类的概率密度函数完全没有交叠时, <span
+\]</span> 直观分析：</p>
+<ul>
+<li>当两类的概率密度函数完全重合时, <span
+class="math inline">\(J_{\mathrm{B}}=0\)</span>;</li>
+<li>当两类的概率密度函数完全没有交叠时, <span
 class="math inline">\(J_{\mathrm{B}}=\infty\)</span></li>
-<li>它与错误率的上界有直接关系：</li>
 </ul>
-<p><span class="math display">\[
+<p>它与错误率的上界有直接关系： <span class="math display">\[
 P(\boldsymbol{e}) \leq\left[P\left(\omega_1\right)
 P\left(\omega_2\right)\right]^{\frac{1}{2}} \exp \left(-J_B\right)
 \]</span></p>
+<blockquote>
+<p>证明思路: 转成后验比较 <span class="math display">\[
+\begin{aligned}
+p(e)=&amp;\int_{\mathfrak{R}_1} p\left(\omega_2 \mid x\right)
+p(\mathrm{x}) d x+\int_{\mathfrak{R}_2} p\left(\omega_1 \mid x\right)
+p(\mathrm{x}) d x \\
+\left[P\left(\omega_1\right) P\left(\omega_2\right)\right]^{\frac{1}{2}}
+\exp \left(-J_B\right)=&amp;\int_{\mathfrak{R}_1}\left[p\left(\omega_1
+\mid x\right) p\left(\omega_2 \mid x\right)\right]^{\frac{1}{2}}
+p(\mathrm{x}) d x+
+\int_{\mathfrak{R}_2}\left[p\left(\omega_1 \mid x\right) p\left(\omega_2
+\mid x\right)\right]^{\frac{1}{2}} \boldsymbol{p}(\mathrm{x}) d x
+\end{aligned}
+\]</span> 又有 <span class="math display">\[
+\Re_1上: p\left(\omega_1 \mid x\right)&gt;p\left(\omega_2 \mid x\right)
+\\
+\Re_2上: p\left(\omega_2 \mid x\right)&gt;p\left(\omega_1 \mid x\right)
+\]</span> 故得证</p>
+<blockquote>
+<p>注意<span class="math inline">\(\Re_1\)</span>的含义为实际类型为<span
+class="math inline">\(\omega_1\)</span>的<span
+class="math inline">\(x\)</span>区间</p>
+</blockquote>
+</blockquote>
+<h5 id="j_c-chernoff-判据"><span class="math inline">\(J_C\)</span>
+(Chernoff 判据)</h5>
+<p><span class="math display">\[
+J_C=-\ln \int\left[p\left(\boldsymbol{x} \mid
+\omega_1\right)\right]^s\left[p\left(\boldsymbol{x} \mid
+\omega_2\right)\right]^{1-s} d \boldsymbol{x} \quad s \in[0,1]
+\]</span> - 对一切 <span class="math inline">\(0 \leq s \leq 1, J_C \geq
+0\)</span></p>
+<ul>
+<li><p>对一切 <span class="math inline">\(0 \leq s \leq 1, J_C=0
+\leftrightarrow p\left(x \mid \omega_1\right)=p\left(x \mid
+\omega_2\right)\)</span></p></li>
+<li><p>当 <span class="math inline">\(x\)</span> 的各分量彼此独立时
+<span class="math display">\[
+J_C\left(s ; x_1, x_2, \cdots, x_n\right)=\sum_{i=1}^n J_C\left(s ;
+x_i\right)
+\]</span></p></li>
+<li><p>当 <span class="math inline">\(x\)</span>
+的各分量彼此独立时</p></li>
+</ul>
+<p><span class="math display">\[
+J_C\left(s ; x_1, x_2, \cdots, x_k\right) \leq J_C\left(s ; x_1, x_2,
+\cdots, x_k, x_{k+1}\right)J_C\left(s ; x_1, x_2, \cdots, x_k\right)
+\leq J_C\left(s ; x_1, x_2, \cdots, x_k, x_{k+1}\right)
+\]</span></p>
+<h5 id="j_d-d-判据散度"><span class="math inline">\(J_D\)</span>
+(D-判据、散度)</h5>
+<p>在似然比的基础上定义了以下散度作为可分性度量（相对熵的和）: <span
+class="math display">\[
+\begin{aligned}
+&amp;J_D=I_{12}(\mathrm{x})+I_{21}(\mathrm{x})=\int\left[p\left(\mathrm{x}
+\mid \omega_1\right)-p\left(\mathrm{x} \mid \omega_2\right)\right] \ln
+\frac{p\left(\mathrm{x} \mid \omega_1\right)}{p\left(\mathrm{x} \mid
+\omega_2\right)} d \mathrm{x} \\
+&amp;I_{12}(\mathrm{x})=E_1\left[\ln\frac{p\left(\mathrm{x} \mid
+\omega_1\right)}{p\left(\mathrm{x} \mid \omega_2\right)}\right]=\int
+p\left(\mathrm{x} \mid \omega_1\right) \ln \frac{p\left(\mathrm{x} \mid
+\omega_1\right)}{p\left(\mathrm{x} \mid \omega_2\right)} d \mathrm{x} \\
+&amp;I_{21}(\mathrm{x})=E_2\left[\ln\frac{p\left(\mathrm{x} \mid
+\omega_2\right)}{p\left(\mathrm{x} \mid \omega_1\right)}\right]=\int
+p\left(\mathrm{x} \mid \omega_2\right) \ln \frac{p\left(\mathrm{x} \mid
+\omega_2\right)}{p\left(\mathrm{x} \mid \omega_1\right)} d \mathrm{x}
+\end{aligned}
+\]</span> ##### 关系</p>
+<p>当两类均是<strong>正态分布</strong>且<strong>协方差矩阵相等</strong>时:
+<span class="math display">\[
+J_D=\left(\boldsymbol{\mu}_{\mathbf{1}}-\boldsymbol{\mu}_{\mathbf{2}}\right)^{\boldsymbol{T}}
+\boldsymbol{\Sigma}^{\mathbf{-
+1}}\left(\boldsymbol{\mu}_{\mathbf{1}}-\boldsymbol{\mu}_{\mathbf{2}}\right)=8
+J_B
+\]</span> #### 基于熵的判据</p>
+<p>熵 (Entropy), 以Shannon熵为例: <span class="math display">\[
+H=-\sum_{i=1}^c P\left(w_i \mid x\right) \log _2 P\left(w_i \mid
+x\right)
+\]</span> - 样本类别确定: <span class="math inline">\(P\left(w_i \mid
+x\right)=1, H=0\)</span>; - 样本类别不确定: <span
+class="math inline">\(P\left(w_i \mid x\right)&lt;1, H&gt;0\)</span>; -
+衡量<strong>后验概率</strong>的集中程度 - <strong>熵值越大</strong>,
+说明样本的类别<strong>不确定性越大</strong></p>
+<p>香农熵 (Shannon Entropy) : <span class="math display">\[
+H=-\sum_{i=1}^c P\left(w_i \mid x\right) \log _2 P\left(w_i \mid
+x\right)
+\]</span> 平方熵 (Square Entropy) : <span class="math display">\[
+H=J_C^2=\left[P\left(w_1 \mid x\right), P\left(w_2 \mid x\right), \ldots
+P\left(w_c \mid x\right)\right]=2\left[1-\sum_{i=1}^c P^2\left(w_i \mid
+x\right)\right]
+\]</span> 对特征所有取值的熵积分，得到可分性判据： <span
+class="math display">\[
+J_{\mathrm{E}}=\int H(x) p(x) d x
+\]</span></p>
+<p>熵值可以度量<strong>后验概率</strong>的分布
+(集中程度)，<strong>后验概率分布</strong>在一定程度上体现<strong>分类性能</strong>的优劣：后验概率分散性越大，<strong>熵值越大</strong>，<strong>一般分类错误率越高</strong>，分类效果越差。</p>
+<p>对于一个样本, 如果所有类的后验概率是相同的（熵会很大）,
+则分类结果非常不确定，例如:</p>
+<p>对于<span class="math inline">\(x\in Re_i\)</span></p>
+<ul>
+<li>if <span
+class="math inline">\(\mathbf{P}\left(\boldsymbol{w}_{\boldsymbol{i}}
+\mid x\right)=\frac{1}{c}, c\)</span> 是类别数量，分类错误率: <span
+class="math inline">\(e=1-\frac{1}{c}=\frac{C-1}{C}\)</span></li>
+<li>if <span class="math inline">\(P\left(w_i \mid x\right)=1,
+P\left(w_j \mid x\right)=0, j \neq i\)</span>，分类错误率: <span
+class="math inline">\(e=0\)</span></li>
+</ul>
+<p>当然，以熵值作为判据不一定靠谱：有些时候我们需要给出确定的答案，但是前提是分类正确，如果给了一个“确定的”错误答案，可能会造成很严重的后果；在这种容错率低的问题上，一个确定的错误答案，不如一个不那么确定、转而将问题交给人类去判断的分类器。</p>
 
             <footer class="footline">
             </footer>
@@ -4978,12 +5099,12 @@ P\left(\omega_2\right)\right]^{\frac{1}{2}} \exp \left(-J_B\right)
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667480111" defer></script>
-        <script src="/js/lunr.min.js?1667480111" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667480111" defer></script>
-        <script src="/js/lunr.multi.min.js?1667480111" defer></script>
-        <script src="/js/lunr.en.min.js?1667480111" defer></script>
-        <script src="/js/search.js?1667480111" defer></script>
+        <script src="/js/auto-complete.js?1667718385" defer></script>
+        <script src="/js/lunr.min.js?1667718385" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667718385" defer></script>
+        <script src="/js/lunr.multi.min.js?1667718385" defer></script>
+        <script src="/js/lunr.en.min.js?1667718385" defer></script>
+        <script src="/js/search.js?1667718385" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -5056,10 +5177,10 @@ P\left(\omega_2\right)\right]^{\frac{1}{2}} \exp \left(-J_B\right)
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667480111" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667480111" defer></script>
-    <script src="/js/featherlight.min.js?1667480111" defer></script>
-    <script src="/js/theme.js?1667480111" defer></script>
+    <script src="/js/clipboard.min.js?1667718385" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667718385" defer></script>
+    <script src="/js/featherlight.min.js?1667718385" defer></script>
+    <script src="/js/theme.js?1667718385" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >

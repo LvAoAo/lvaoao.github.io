@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.files/模式识别-第二章-线性判别函数-yhy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.files/模式识别-第三章-非线性判别函数-yhy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.files/模式识别-第四章-贝叶斯决策理论-yhy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.files/模式识别-第五章-概率密度函数的估计-yhy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/6-SVM.files/模式识别-第六章-支持向量机-yhy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.files/模式识别-第七章-特征选择与提取-yhy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.files/模式识别-2022年秋季-本科生课程-课程介绍与第一章.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Game theory/_index.files/博弈论基础.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Game theory/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/2-线性判别函数.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/3-非线性判别函数.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/contrib/render-a11y-string.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/contrib/render-a11y-string.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.svg.pan.zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.svg.pan.zoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/katex.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/katex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/katex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/katex.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/mathjax/input/asciimath.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/mathjax/input/asciimath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/contrib/render-a11y-string.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/contrib/render-a11y-string.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/katex.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/katex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/katex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/katex.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-relearn/exampleSite/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-relearn/exampleSite/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-relearn/static/js/jquery.svg.pan.zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-relearn/static/js/jquery.svg.pan.zoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-relearn/static/js/mathjax/input/asciimath.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-relearn/static/js/mathjax/input/asciimath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +24,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Game theory/files",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ssh.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Game theory/_index.files&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory\files" />
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory\_index.files" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory" />
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory\files" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\layouts\partials\shortcodes" />
-      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\layouts\partials" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Pattern Recognition\7-特征选择和提取.files" />
@@ -91,7 +75,12 @@
       <workItem from="1667352296887" duration="2433000" />
       <workItem from="1667403560147" duration="1403000" />
       <workItem from="1667438380085" duration="738000" />
-      <workItem from="1667475110807" duration="2872000" />
+      <workItem from="1667475110807" duration="8822000" />
+      <workItem from="1667535679017" duration="3739000" />
+      <workItem from="1667548184343" duration="864000" />
+      <workItem from="1667555434743" duration="632000" />
+      <workItem from="1667610518723" duration="606000" />
+      <workItem from="1667710178215" duration="1767000" />
     </task>
     <servers />
   </component>
