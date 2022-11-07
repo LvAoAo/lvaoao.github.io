@@ -6,5 +6,5 @@ disableToc = false
 +++
 
 This is mainly about Game Theory.
-{{% attachments style="info" sort="desc" title="The Slides" /%}}
+{{% attachments sort="desc" title="The Slides" /%}}
 
