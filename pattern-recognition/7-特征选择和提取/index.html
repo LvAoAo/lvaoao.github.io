@@ -11,18 +11,18 @@
     <link href="/pattern-recognition/7-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9%E5%92%8C%E6%8F%90%E5%8F%96/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <link href="/pattern-recognition/7-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9%E5%92%8C%E6%8F%90%E5%8F%96/index.print.html" rel="alternate" type="text/html" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667718384" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667718384" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667718384" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667718384" rel="stylesheet">
-    <link href="/css/nucleus.css?1667718384" rel="stylesheet">
-    <link href="/css/fonts.css?1667718384" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667718384" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667718384" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667718384" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667718384" rel="stylesheet">
-    <link href="/css/variant.css?1667718384" rel="stylesheet">
-    <link href="/css/print.css?1667718384" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667718384"></script>
+    <link href="/css/fontawesome-all.min.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667829605" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667829605" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667829605" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667829605" rel="stylesheet">
+    <link href="/css/nucleus.css?1667829605" rel="stylesheet">
+    <link href="/css/fonts.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667829605" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667829605" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667829605" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667829605" rel="stylesheet">
+    <link href="/css/variant.css?1667829605" rel="stylesheet">
+    <link href="/css/print.css?1667829605" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667829605"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -38,7 +38,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667718384" defer></script>
+    <script src="/js/jquery.min.js?1667829605" defer></script>
   </head>
   <body class="mobile-support html" data-url="/pattern-recognition/7-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9%E5%92%8C%E6%8F%90%E5%8F%96/">
     <div id="body" class="default-animation">
@@ -67,7 +67,7 @@
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">YU&#39;s POOL</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">An Essay</span></a><meta itemprop="position" content="1"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/pattern-recognition/"><span itemprop="name">Pattern Recognition</span></a><meta itemprop="position" content="2"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Feature Selection and Extraction</span><meta itemprop="position" content="3"></li>
             </ol>
@@ -412,6 +412,607 @@ P\left(w_j \mid x\right)=0, j \neq i\)</span>，分类错误率: <span
 class="math inline">\(e=0\)</span></li>
 </ul>
 <p>当然，以熵值作为判据不一定靠谱：有些时候我们需要给出确定的答案，但是前提是分类正确，如果给了一个“确定的”错误答案，可能会造成很严重的后果；在这种容错率低的问题上，一个确定的错误答案，不如一个不那么确定、转而将问题交给人类去判断的分类器。</p>
+<h3 id="特征选择策略">特征选择策略</h3>
+<p><strong>特征选择策略</strong>即<strong>特征子集搜索</strong>和<strong>子集评估</strong>组合起来的过程</p>
+<ul>
+<li><p><strong>过滤式</strong> (Filter)</p>
+<p>特征选择发生在<strong>训练过程之前</strong>,
+单独利用<strong>可分性准则</strong>来选择特征</p>
+<p>代表性方法: Relief</p></li>
+<li><p><strong>包裹式</strong> (Wrapper)</p>
+<p>评估准则与分类的错误率直接相关!</p>
+<p>直接将<strong>分类器的性能</strong>作为特征选择中的<strong>子集评估方法</strong></p>
+<p>代表性方法: LVW（拉斯维加斯算法）</p></li>
+<li><p><strong>嵌入式</strong> (Embedding)</p>
+<p>通过优化的方式<strong>同时</strong>实现特征选择与评估特征选择</p>
+<p>特征选择和学习器训练同时嵌入到一个优化过程中,
+特征选择在学习器训练过程中完成 (有<strong>训练</strong>过程)</p>
+<p>例如 <span class="math display">\[
+\min _\omega \sum_{i=1}^m\left(y_i-\omega^T
+x_i\right)^2+\lambda\|\omega\|_1
+\]</span>
+易获得<strong>稀疏解</strong>，是一种嵌入式特征选择方法</p></li>
+</ul>
+<h4 id="过滤式">过滤式</h4>
+<p>特征选择发生在<strong>训练过程之前</strong>,
+单独利用<strong>可分性准则</strong>来选择特征</p>
+<p>代表性方法: <strong>Relief</strong></p>
+<p><strong>思想</strong></p>
+<ol type="1">
+<li>给定“相关<strong>统计量</strong>” ，度量特征的重要性</li>
+<li>设置一个<strong>阈值t</strong>, 如果某一个特征的相关统计量大于阈值t,
+那么就将其加入特征子集</li>
+<li>特征子集的重要性等于<strong>特征子集相关统计量</strong>的<strong>和</strong></li>
+</ol>
+<p>Relief 是为<strong>二分类</strong>问题设计的, 其扩展变体 Relief-F
+[Kononenko, 1994] 能处理多分类问题.</p>
+<p>假定数据集 <span class="math inline">\(D\)</span> 中的样本来自 <span
+class="math inline">\(|\mathcal{Y}|\)</span> 个类别. 对示例 <span
+class="math inline">\(x_i\)</span>, 若它属于第 <span
+class="math inline">\(k\)</span> 类 <span class="math inline">\(k
+\in\{1,2, \ldots,|\mathcal{Y}|\}\)</span>,</p>
+<p>则 Relief-F 先在第 <span class="math inline">\(k\)</span>
+类的样本中寻找 <span class="math inline">\(x_i\)</span> 的最近邻示例
+<span class="math inline">\(\boldsymbol{x}_{i, \mathrm{nh}}\)</span>
+并将其作为<strong>猜中近邻</strong></p>
+<p>然后在第 <span class="math inline">\(k\)</span>
+类之外的<strong>每个类</strong>中找到一个 <span
+class="math inline">\(\boldsymbol{x}_i\)</span>
+的<strong>最近邻示例</strong>作为<strong>猜错近邻</strong>, 记为 <span
+class="math inline">\(x_{i, l, \mathrm{~nm}}(l=1,2, \ldots,|\mathcal{Y}|
+; l \neq k)\)</span>. 于是, 相关统计量对应于属性 <span
+class="math inline">\(j\)</span> 的分量为 <span class="math display">\[
+\delta^j=\sum_i\left(-\operatorname{diff}\left(x_i^j, x_{i,
+\mathrm{nh}}^j\right)^2+\sum_{l \neq k}\left(p_l \times
+\operatorname{diff}\left(x_i^j, x_{i, l,
+\mathrm{~nm}}^j\right)^2\right)\right),
+\]</span> 其中 <span class="math inline">\(p_l\)</span> 为第 <span
+class="math inline">\(l\)</span> 类样本在数据集 <span
+class="math inline">\(D\)</span> 中所占的比例.</p>
+<p>然后再通过对比统计量<span
+class="math inline">\(\delta^j\)</span>和阈值<span
+class="math inline">\(t\)</span>筛选特征<span
+class="math inline">\(j\)</span></p>
+<h4 id="包裹式">包裹式</h4>
+<p>直接将<strong>分类器的性能</strong>作为特征选择中的<strong>子集评估方法</strong>，评估准则与分类的<strong>错误率</strong>直接相关。</p>
+<p>代表性方法: LVW（拉斯维加斯算法）</p>
+<p><strong>思想</strong></p>
+<ol type="1">
+<li>在候选特征集中<strong>自由选择特征子集</strong></li>
+<li>在特征子集表示的数据集上，运行<strong>学习算法（分类算法等）</strong></li>
+<li>用分类的<strong>错误率</strong>来<strong>评估特征子集</strong>的好坏</li>
+</ol>
+<p><img src="/images/7-特征选择和提取.assets/70.png" style="zoom:50%;" /></p>
+<p><strong>特点</strong></p>
+<ul>
+<li>LVW
+可以<strong>减少</strong>特征的<strong>维数</strong>，并且<strong>提高</strong>分类的<strong>准确率</strong></li>
+<li>子集搜索采用随机策略。由于每次都要运行分类器，<strong>复杂性高</strong>，算法<strong>运行速度慢</strong></li>
+</ul>
+<h4 id="嵌入式">嵌入式</h4>
+<p>通过优化的方式<strong>同时</strong>实现<strong>特征子集选择</strong>与<strong>评估特征子集</strong></p>
+<p><strong>特征选择</strong>和学习器<strong>训练</strong>同时嵌入到<strong>一个</strong>优化过程中,
+特征选择在学习器训练过程中完成 (有<strong>训练</strong>过程)</p>
+<p>例如 <span class="math display">\[
+\min _\omega \sum_{i=1}^m\left(y_i-\omega^T
+x_i\right)^2+\lambda\|\omega\|_1
+\]</span> <span class="math inline">\(L_1\)</span>范数比<span
+class="math inline">\(L_2\)</span>范数更容易获得<strong>稀疏解</strong>，是一种嵌入式特征选择方法</p>
+<p>假设x仅有两个属性，那么w有两个分量𝒘𝟏和𝒘𝟐。那么<strong>目标优化的解</strong>要在平方误差项与正则化项之间<strong>折中</strong>，即出现在图中平方误差项等值线与正则化等值线<strong>相交处</strong>。</p>
+<p>从图中看出，采用<span
+class="math inline">\(L_1\)</span>范数时交点常出现在<strong>坐标轴上</strong>，
+即产生𝒘𝟏或者𝒘𝟐为0的<strong>稀疏解</strong>。</p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107110140358.png" alt="image-20221107110140358" style="zoom:50%;" /></p>
+<h2 id="特征提取">特征提取</h2>
+<p>特征提取不同于特征选择，其将<strong>原始特征</strong>通过组合转换到<strong>新的特征空间</strong>，这一过程<strong>可学习</strong></p>
+<ul>
+<li><strong>线性方法</strong>
+<ul>
+<li>Principal Component Analysis (PCA)[Pearson , 1901]</li>
+<li>Linear Discriminant Analysis (LDA) [Ronald Fisher , 1936]
+[Belhumeur, 1996]</li>
+</ul></li>
+<li><strong>非线性方法</strong>
+<ul>
+<li>Multi-dimensional Scaling (MDS) [Torgerson, W.S. et al. ,1958]</li>
+<li>Kernel principal component analysis (KPCA) [Scholkopf et al.,
+1998]</li>
+<li>Principal Curves [Hastie, 1989]</li>
+<li>Self-Organizing Feature Map (SOM) [Kohonen et al., 1995] •
+Generative topographic map (GTM) [Bishop et al., 1998]</li>
+<li>Manifold Learning：Isomap,LLE,LE…….</li>
+<li>……</li>
+</ul></li>
+</ul>
+<h3 id="主成分分析principal-component-analysis-pca">主成分分析(Principal
+Component Analysis, PCA)</h3>
+<p>主成分分析(Principal Component Analysis,
+PCA)，将原有众多具有一定相关性的指标重新组合成一组<strong>少量互相无关</strong>的综合指标。</p>
+<ul>
+<li>使得降维后样本的<strong>方差</strong>尽可能<strong>大</strong></li>
+<li>使得降维后数据的<strong>均方误差</strong>尽可能<strong>小</strong></li>
+</ul>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107111425663.png" alt="image-20221107111425663" style="zoom: 33%;" /></p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107111440998.png" alt="image-20221107111440998" style="zoom:50%;" /></p>
+<h4 id="最大方差思想"><strong>最大方差</strong>思想</h4>
+<p>使用<strong>较少</strong>的数据<strong>维度</strong>保留住<strong>较多</strong>的<strong>原数据特性</strong></p>
+<p><strong>定义</strong></p>
+<ul>
+<li>将 <span class="math inline">\(D\)</span> 维数据集 <span
+class="math inline">\(\left\{\mathrm{x}_n\right\}, n=1,2, \ldots,
+N\)</span> 降为 <span class="math inline">\(M\)</span> 维, <span
+class="math inline">\(M&lt;D\)</span>，首先考虑 <span
+class="math inline">\(M=1\)</span>,
+定义这个空间的<strong>投影方向</strong>为 <span
+class="math inline">\(D\)</span> 维向量 <span
+class="math inline">\(\mathbf{u}_1\)</span> ，出于方便且不失一般性, 令
+<span class="math inline">\(\mathbf{u}_1^T \mathbf{u}_1=1\)</span></li>
+<li>每个数据点 <span class="math inline">\(\mathbf{x}_n\)</span>
+在新空间中表示为标量 <span class="math inline">\(\mathbf{u}_1^T
+\mathbf{x}_n\)</span></li>
+<li>样本均值在新空间中表示为 <span class="math inline">\(\mathbf{u}_1^T
+\overline{\mathrm{x}}\)</span>, 其中 <span
+class="math inline">\(\overline{\mathbf{x}}=\frac{1}{N} \sum_{n=1}^N
+\mathbf{x}_n\)</span></li>
+<li>投影后样本<strong>方差</strong>表示为 <span
+class="math inline">\(\frac{1}{N} \sum_{n=1}^N\left\{\mathbf{u}_1^T
+\mathbf{x}_n-\mathbf{u}_1^T
+\overline{\mathbf{x}}\right\}^2=\mathbf{u}_1^T \mathbf{S u _ { 1
+}}\)</span> （使这个方差<strong>最大化</strong>），其中原样本方差矩阵
+<span class="math inline">\(\mathbf{S}=\frac{1}{N}
+\sum_{n=1}^N\left(\mathbf{x}_n-\overline{\mathbf{x}}\right)\left(\mathbf{x}_n-\overline{\mathbf{x}}\right)^T\)</span></li>
+</ul>
+<p><strong>目标</strong>：<strong>最大化</strong> <span
+class="math inline">\(\mathbf{u}_1^T \mathbf{S u}_1\)</span>, s.t. <span
+class="math inline">\(\mathbf{u}_1^T \mathbf{u}_1=1\)</span></p>
+<ol type="1">
+<li>利用拉格朗日乘子法 <span class="math inline">\(\mathbf{u}_1^T
+\operatorname{Su}_1+\lambda_1\left(1-\mathbf{u}_1^T
+\mathbf{u}_1\right)\)</span></li>
+<li>对 <span class="math inline">\(\mathbf{u}_1\)</span> 求导置零得到
+<span class="math inline">\(\mathrm{Su}_1=\lambda_1
+\mathbf{u}_1\)</span></li>
+<li><span class="math inline">\(\mathbf{u}_1\)</span>是 <span
+class="math inline">\(\mathrm{S}\)</span> 的特征向量，进一步得到 <span
+class="math inline">\(\mathbf{u}_1^T \mathbf{S
+u}_1=\lambda_1\)</span></li>
+</ol>
+<p><span class="math inline">\(\mathbf{u}_1\)</span> 是 <span
+class="math inline">\(\mathrm{S}\)</span>
+<strong>最大特征值</strong>对应的<strong>特征向量</strong>时<strong>方差取到极大值</strong>,
+称 <span class="math inline">\(\mathrm{u}_1\)</span>
+为<strong>第一主成分</strong></p>
+<h4 id="最小均方误差思想"><strong>最小均方误差</strong>思想</h4>
+<p>使<strong>原数据</strong>与<strong>降维后的数据</strong>(在原空间中的重建)的<strong>误差最小</strong></p>
+<p>定义一组正交的 <span class="math inline">\(D\)</span> 维基向量 <span
+class="math inline">\(\left\{\mathbf{u}_i\right\}, i=1, \ldots,
+D\)</span>, 满足 <span class="math inline">\(\mathbf{u}_i^T
+\mathbf{u}_j=\delta_{i j}\)</span></p>
+<blockquote>
+<p>这里<span
+class="math inline">\(\delta_{ij}\)</span>容易引起误解，直观来说就是<span
+class="math inline">\(i=j\)</span>时为1，<span
+class="math inline">\(i\neq
+j\)</span>时为0。和我们通常理解的基向量意义是一致的</p>
+</blockquote>
+<p>当基是<strong>完全</strong>的,
+每个数据点可以表示为基向量的<strong>线性组合</strong>，相当于进行了<strong>坐标变换</strong>
+<span class="math inline">\(\mathbf{x}_n=\sum_{i=1}^D \alpha_{n i}
+\mathbf{u}_i\)</span> <span class="math display">\[
+\left\{\mathbf{x}_{n 1}, \ldots, \mathbf{x}_{n D}\right\}
+\stackrel{\left\{\mathbf{u}_i\right\}}{\longrightarrow}\left\{\alpha_{n
+1}, \ldots, \alpha_{n D}\right\}
+\]</span> <span class="math inline">\(\alpha_{n j}=\mathrm{x}_n^T
+\mathbf{u}_j\)</span> 或 <span class="math inline">\(\alpha=A^T
+\boldsymbol{x}\)</span> 其中 <span
+class="math inline">\(\mathrm{A}\)</span> 是由 <span
+class="math inline">\(\mu_i\)</span> 构成的<strong>变换矩阵</strong></p>
+<p>那么 <span
+class="math inline">\(\mathbf{x}_n=\sum_{i=1}^D\left(\mathbf{x}_n^T
+\mathbf{u}_i\right) \mathbf{u}_i\)</span></p>
+<p>在 <span class="math inline">\(M\)</span> 维变量 <span
+class="math inline">\((M&lt;D)\)</span> 生成的空间中对其进行表示 <span
+class="math display">\[
+\tilde{\mathbf{x}}_n=\sum_{i=1}^M z_{n i} \mathbf{u}_i+\sum_{i=M+1}^D
+b_i \mathbf{u}_i
+\]</span> 目标最小化失真度 <span class="math inline">\(\quad
+J=\frac{1}{N}
+\sum_{n=1}^N\left\|\mathbf{x}_n-\tilde{\mathbf{x}}_n\right\|^2\)</span>
+，导数置零得到 <span class="math display">\[
+z_{n j}=\mathbf{x}_n^T \mathbf{u}_j, j=1, . ., M \\
+b_j=\overline{\mathbf{x}}^T \mathbf{u}_j, j=M+1, \ldots, D
+\]</span> 有 <span class="math display">\[
+\mathbf{x}_n-\tilde{\mathbf{x}}_n=\sum_{i=M+1}^{D}\left\{\left(\mathbf{x}_n-\overline{\mathbf{x}}\right)^T
+\mathbf{u}_i\right\} \mathbf{u}_i \\J=\frac{1}{N} \sum_{n=1}^N
+\sum_{i=M+1}^D\left(\mathbf{x}_n^T \mathbf{u}_i-\overline{\mathbf{x}}^T
+\mathbf{u}_i\right)^2=\sum_{i=M+1}^D \mathbf{u}_i^T \mathbf{S}
+\mathbf{u}_i
+\]</span> 拉格朗日乘子法 <span class="math display">\[
+\tilde{J}=\sum_{i=M+1}^D \mathbf{u}_i^T \mathbf{S u}_i+\sum_{i=M+1}^D
+\lambda_i\left(1-\mathbf{u}_i^T \mathbf{u}_i\right)
+\]</span></p>
+<p>求导置零得到 <span class="math inline">\(\mathrm{Su}_i=\lambda_i
+\mathbf{u}_i\)</span>,</p>
+<p>对应失真度为 <span
+class="math inline">\(J=\sum_{i=M+1}^D\lambda_i\)</span></p>
+<p>$ J$ 最小时取 <span class="math inline">\(D-M\)</span>
+个<strong>最小的特征值</strong>， <strong>主子空间</strong>对应 <span
+class="math inline">\(M\)</span> 个<strong>最大特征值</strong></p>
+<blockquote>
+<p>这两种思想在结果上是等价的，都要求样本方差矩阵的最大M个特征向量</p>
+</blockquote>
+<h4 id="算法流程">算法流程</h4>
+<ul>
+<li>计算给定样本 <span
+class="math inline">\(\left\{\mathrm{x}_n\right\}, n=1,2, \ldots,
+N\)</span> 的均值 <span class="math inline">\(\bar{x}\)</span>
+和协方差矩阵 <span class="math inline">\(\mathbf{S}\)</span>;</li>
+<li>计算 <span class="math inline">\(\mathrm{S}\)</span>
+的<strong>特征向量</strong>与特征值;</li>
+<li>将特征值从大到小排列, 前 <span class="math inline">\(M\)</span>
+个特征值 <span class="math inline">\(\lambda_1, \ldots,
+\lambda_M\)</span> 所对应的特征向量 <span
+class="math inline">\(\mathbf{u}_1, \ldots, \mathbf{u}_M\)</span>
+构成投影矩阵。</li>
+</ul>
+<h4 id="利用-pca处理高维数据">利用 PCA处理<strong>高维数据</strong></h4>
+<p>在实际应用中, 样本维数可能很高, 远大于样本的个数在人脸识别中, 1000
+张人脸图像, 每张图像 <span class="math inline">\(100 \times 100\)</span>
+像素</p>
+<ul>
+<li><span class="math inline">\(D\)</span> 维空间, <span
+class="math inline">\(N\)</span> 个样本点, <span
+class="math inline">\(\mathrm{D}&gt;\mathrm{N}\)</span></li>
+<li><span class="math inline">\(\mathrm{X}\)</span> 是 <span
+class="math inline">\(\boldsymbol{D} \times N\)</span> 维的数据矩阵,
+其列向量为 <span class="math inline">\(\left(x_n-\bar{x}\right)\)</span>
+<span class="math inline">\(\mathrm{S}=\frac{1}{N}
+\sum_{n=1}^N\left(\mathbf{x}_n-\overline{\mathbf{x}}\right)\left(\mathbf{x}_n-\overline{\mathbf{x}}\right)^T\)</span>
+可以写为 <span class="math inline">\(\mathbf{S}=\frac{1}{N}
+\boldsymbol{X} \boldsymbol{X}^T\)</span></li>
+<li>S维数? <span class="math inline">\(D \times D\)</span>
+维。考察样本集构成的另一个矩阵 (内积矩阵) <span
+class="math inline">\(R=\frac{1}{N} X^T X\)</span>, 维数 <span
+class="math inline">\(N \times N\)</span> 。通常 (不妨假设) <span
+class="math inline">\(\mathrm{N}&lt;&lt;\mathrm{D}\)</span> 。</li>
+</ul>
+<p>在实际应用中, 样本维数可能很高, 远大于样本的个数</p>
+<p>对 <span class="math inline">\(R=\frac{1}{N} X^T X\)</span>
+求的特征值 <span class="math inline">\(\lambda_i\)</span> 和特征向量
+<span class="math inline">\(\mathrm{v}_i\)</span> <span
+class="math display">\[
+X^T X v_i=\lambda_i v_i
+\]</span> <span class="math inline">\(X X^T X v_i=\lambda_i X
+v_i\)</span></p>
+<p><span class="math inline">\(S X v_i=\lambda_i X v_i\)</span> 记:
+<span class="math inline">\(\mu_i=X v_i\)</span>, 则 <span
+class="math inline">\(S \mu_i=\lambda_i \mu_i\)</span></p>
+<p>因此, <span class="math inline">\(R\)</span> 与 <span
+class="math inline">\(S\)</span> 具有<strong>相同本征值</strong>,
+本征向量: <span class="math inline">\(\mu_i=X v_i\)</span></p>
+<p>调整尺度 <span class="math inline">\(\mu_i=\frac{1}{\sqrt{\lambda_i}}
+X v_i \quad\)</span> 满足: <span
+class="math inline">\(\left\|\mathrm{u}_i\right\|=1\)</span></p>
+<p>通过这种转换，我们可以求一个更小的矩阵R的<strong>特征向量</strong>，进而可以根据<strong>特征值</strong>求得维度更小的<strong>特征子集</strong></p>
+<blockquote>
+<p>注：也可以借鉴SVD奇异值分解的思想，对X进行SVD，其中一个奇异矩阵是S的特征矩阵，另一个是R的特征矩阵。而奇异值矩阵<span
+class="math inline">\(\Sigma\)</span>对角线上的奇异值和S、R的特征值意义接近。借鉴更简便的SVD方法求出奇异值，从而也可以对矩阵X进行主成分分析。</p>
+</blockquote>
+<ul>
+<li>PCA优点
+<ul>
+<li>具有很高普适性，最大程度地<strong>保持了</strong>原有数据的<strong>信息</strong>；</li>
+<li>可对主元的<strong>重要性</strong>进行<strong>排序</strong>，并根据需要略去部分维数，达到降维从而简化模型或对数据进行压缩的效果，<strong>采样密度增大</strong>。</li>
+<li>当数据受到特征影响时，<strong>较小特征值</strong>所对应的特征向量往往与<strong>噪声有关</strong>。略去部分维数能起到一定的<strong>去噪效果</strong>。</li>
+<li>完全<strong>无参数限制</strong>，在计算过程中<strong>不需要人为设定参数</strong>或是根据任何经验模型对计算进行干预，最终结果<strong>只与数据相关</strong>。</li>
+</ul></li>
+<li>PCA的局限性
+<ul>
+<li>假设模型是线性的，也就决定了它能进行的主元分析之间的关系也是线性的。假设数据具有<strong>较高信噪比</strong>（信息比较多，噪声比较少），具有最高方差的一维向量被看作是主元，而方差较小的变化被认为是<strong>噪声</strong>。这样被略去的维度对信息的<strong>损失较大</strong></li>
+<li>假设概率分布模型是指数型(如下图)，没有很好的办法进行分析</li>
+</ul></li>
+</ul>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107190006342.png" alt="image-20221107190006342" style="zoom: 67%;" /></p>
+<h4 id="pca和lda的区别">PCA和LDA的区别</h4>
+<ul>
+<li>PCA追求降维后能够<strong>最大化保持数据内在信息</strong>，并通过衡量在投影方向上的<strong>数据方差</strong>来判断其重要性。但这对数据的<strong>区分作用</strong>并<strong>不大</strong>，反而可能使得数据点混杂在一起。
+(只用到<strong>方差</strong>，没用到<strong>标签</strong>)</li>
+<li>LDA所追求的目标与PCA不同，不是希望保持数据最多的信息，而是希望数据在降维后能够很容易地被<strong>区分</strong>开。（用到了标签）</li>
+</ul>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107190342749.png" alt="image-20221107190342749" style="zoom:50%;" /></p>
+<h4 id="核主成分分析kernal-pca">核主成分分析（Kernal PCA)</h4>
+<p>将主成分分析的线性假设一般化使之适应<strong>非线性数据</strong></p>
+<p>传统PCA: <span class="math inline">\(D\)</span> 维样本 <span
+class="math inline">\(\left\{\mathbf{x}_n\right\}, n=1,2, \ldots, N,
+\sum_n \mathbf{x}_n=0\)</span>(去中心化后)</p>
+<p>核PCA: 非线性映射 <span class="math inline">\(\phi(\mathbf{x}),
+\mathbf{x}_n \longmapsto \phi\left(\mathbf{x}_n\right), \Sigma_n
+\phi\left(\mathbf{x}_n\right)=0\)</span> <span class="math display">\[
+\mathrm{C}=\frac{1}{N} \sum_{n=1}^N \phi\left(\mathbf{x}_n\right)
+\phi\left(\mathbf{x}_n\right)^{\mathrm{T}} \quad \mathrm{Cv}_i=\lambda_i
+\mathbf{v}_i
+\]</span> <span class="math inline">\(C: N\)</span>
+个矩阵相加求平均，高维度且 <span class="math inline">\(\phi\)</span>
+末知, 难以直接计算 <span class="math inline">\(C\)</span>
+的<strong>特征值</strong>与<strong>特征向量</strong>。考虑引入<strong>核函数</strong>:
+<span class="math display">\[
+k\left(\mathbf{x}_n,
+\mathbf{x}_m\right)=\phi\left(\mathbf{x}_n\right)^{\mathrm{T}}
+\phi\left(\mathbf{x}_m\right)
+\]</span> 核主成分分析 <span class="math inline">\(\stackrel{v \text {
+归一化 }}{\longrightarrow} v=\frac{1}{\|X \mu\|} X
+\mu=\frac{1}{\sqrt{\mu^T X^T X \mu}} X \mu=\frac{1}{\sqrt{\mu^T \lambda
+\mu}} X \mu=\frac{1}{\sqrt{\lambda}} X \mu\)</span></p>
+<p>但我们通常仅关注于投影到 <span class="math inline">\(v\)</span>
+后的<strong>坐标</strong>（即那些<strong>特征值</strong>），对于新样本
+<span class="math inline">\(x\)</span> : <span class="math display">\[
+v^T \varphi(x)=\frac{\mathbb{1}}{\sqrt{\lambda}} \boldsymbol{\mu}^T X^T
+\varphi(x)=\frac{\mathbb{1}}{\sqrt{\lambda}} \mu^T\left[\begin{array}{c}
+\varphi\left(x_1\right)^T \\
+\ldots \\
+\varphi\left(x_N\right)^T
+\end{array}\right] \varphi(x)=\frac{\mathbb{1}}{\sqrt{\lambda}}
+\boldsymbol{\mu}^T\left[\begin{array}{c}
+\boldsymbol{k}\left(\boldsymbol{x}_1, x\right) \\
+\ldots \\
+\boldsymbol{k}\left(\boldsymbol{x}_N, x\right)
+\end{array}\right]
+\]</span>
+<img src="/images/7-特征选择和提取.assets/image-20221107191558550.png" alt="image-20221107191558550" style="zoom:50%;" /></p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107191719350.png" alt="image-20221107191719350" style="zoom: 50%;" /></p>
+<h3 id="多维尺度分析-mds-multi-dimensional-scaling">多维尺度分析 MDS
+(Multi-dimensional Scaling)</h3>
+<p>MDS基本出发点：将样本之间的<strong>距离关系</strong>或<strong>不相似关系</strong>在<strong>低维</strong>空间中表示出来。</p>
+<ul>
+<li><strong>度量型</strong>（定量度量样本间距离）</li>
+<li><strong>非度量型</strong>（定性度量样本间距离）</li>
+<li><strong>古典尺度法</strong>：主坐标分析方法。<strong>根据</strong>两两点之间的<strong>距离关系</strong>（距离矩阵），确定在空间中的<strong>坐标</strong>。</li>
+</ul>
+<p><strong>定义</strong>：距离矩阵</p>
+<p>一个 <span class="math inline">\(n \times n\)</span> 矩阵 <span
+class="math inline">\(D=\left\{\mathrm{d}_{\mathrm{ij}}\right\}\)</span>被称为<strong>距离矩阵</strong>,
+如果满足以下条件: <span class="math display">\[
+d_{i j} \geq 0, d_{i i}=0, i, j=1, \ldots, n
+\]</span> 则<span class="math inline">\(d_{i j}\)</span> 称为第 <span
+class="math inline">\(i\)</span> 与第 <span
+class="math inline">\(j\)</span> 个点间的<strong>距离</strong></p>
+<blockquote>
+<p>距离矩阵通常<strong>不限于</strong>欧式距离。</p>
+</blockquote>
+<blockquote>
+<p>有了距离矩阵, 多维尺度法的目的就是要确定<strong>维数</strong> <span
+class="math inline">\(k\)</span>, 并在 <span
+class="math inline">\(k\)</span> 维空间 <span
+class="math inline">\(R_k\)</span> 中求 <span
+class="math inline">\(n\)</span> 个点 <span
+class="math inline">\(\left\{\mathrm{x}_1, \mathrm{x}_2, \mathrm{x}_3,
+\ldots, \mathrm{x}_{\mathrm{n}}\right\}\)</span>, 使得 <span
+class="math inline">\(n\)</span>
+个点(在原空间）的<strong>欧式距离</strong>与（降维空间下）<strong>距离阵中的相应值</strong>在某种意义下尽量<strong>接近</strong>。</p>
+<p>（这里的解释有待商榷）</p>
+</blockquote>
+<p><strong>原始数据矩阵</strong>为样本 <span
+class="math inline">\(X\)</span> 的 <span class="math inline">\(n \times
+q\)</span> 维矩阵, <span class="math inline">\(n\)</span> 为样本数,
+<span class="math inline">\(q\)</span> 是原始数据的维度
+(样本表示成行向量)</p>
+<blockquote>
+<p>注意这里的样本矩阵的列是维度，行是样本。和前面PCA部分的矩阵是<strong>转置</strong>关系。</p>
+</blockquote>
+<p>为了方便计算, 对原始数据矩阵进行<strong>中心化</strong>: <span
+class="math display">\[
+\sum_{i=1}^n x_{i k}=0, k=0,1, . ., q
+\]</span> 我们首先构造一个内积矩阵 <span class="math inline">\(B=X X^T,
+B\)</span> 为 <span class="math inline">\(n \times n\)</span> 的矩阵。
+<span class="math display">\[
+B=\left[\begin{array}{cccc}x_{11} &amp; x_{12} &amp; \ldots &amp; x_{1
+q} \\ \cdot &amp; \cdot &amp; \cdot &amp; \cdot \\ \cdot &amp; . &amp;
+\cdot &amp; \cdot \\ x_{n 1} &amp; x_{n 2} &amp; \cdot &amp; x_{n
+q}\end{array}\right] \times\left[\begin{array}{cccc}x_{11} &amp; . &amp;
+. &amp; x_{n 1} \\ x_{12} &amp; \cdot &amp; . &amp; x_{n 2} \\ \cdot
+&amp; \cdot &amp; . &amp; \cdot \\ x_{1 q} &amp; . &amp; . &amp; x_{n
+q}\end{array}\right] \\
+=\left[\begin{array}{cccc}
+x_{11}^2+x_{12}^2+\ldots+x_{1 q}^2 &amp; . &amp; \cdot &amp; x_{11} x_{n
+1}+x_{12} x_{n 2}+\ldots+x_{1 q} x_{n q} \\
+. &amp; . &amp; . &amp; . \\
+\cdot &amp; . &amp; . &amp; . \\
+x_{n 1} x_{11}+x_{n 2} x_{12}+\ldots+x_{n q} x_{1 q} &amp; . &amp; .
+&amp; x_{n 1}^2+x_{n 2}^2+\ldots+x_{n q}^2
+\end{array}\right]_{\mathrm{n} \times n}
+\]</span> <span class="math inline">\(b_{i j}=\sum_{k=1}^q x_{i k}
+x_{\mathrm{j} k}=x_i x_j\)</span></p>
+<blockquote>
+<p>实际应该写为<span class="math inline">\(x_i
+x_j^T\)</span>，这里简化的用一维向量来表示，并不影响推导结果</p>
+</blockquote>
+<p>距离矩阵 <span class="math inline">\(D\)</span> 的计算公式为: <span
+class="math display">\[
+d_{i j}^2=\left(x_i-x_j\right)^2=x_i^2+x_j^2-2 x_i x_j
+\]</span> 因为 <span class="math inline">\(b_{i j}=x_i x_j\)</span>,</p>
+<p>所以: <span class="math inline">\(d_{i j}^2=\sum_{k=1}^q x_{i
+k}^2+\sum_{k=1}^q x_{j k}^2-2 b_{i j}=b_{i i}+b_{j j}-2 b_{i
+j}\)</span></p>
+<p>由于进行了中心化处理, 所以: <span class="math display">\[
+\sum_{i=1}^n x_{i k}=0, k=0,1, . ., q
+\]</span> 因此有 <span class="math display">\[
+\begin{array}{ll}
+\sum_{j=1}^n b_{i j}&amp;=\sum_{j=1}^n \sum_{k=1}^q x_{i k} x_{j k} \\
+&amp;=\sum_{k=1}^q\left(x_{i k} \sum_{j=1}^n x_{j k}\right) \\
+&amp;=0
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+\begin{array}{ll}
+\sum_{i=1}^n b_{i j} &amp;=\sum_{i=1}^n \sum_{k=1}^q x_{i k} x_{j k} \\
+&amp;=\sum_{k=1}^q\left(x_{j k} \sum_{i=1}^n x_{i k}\right) \\
+&amp;=0
+\end{array}
+\]</span></p>
+<p>那么: <span class="math display">\[
+\begin{aligned}
+\sum_{i=1}^n d_{i j}^2&amp;=\sum_{i=1}^n b_{i i}+\sum_{i=1}^n b_{j j}-2
+\sum_{i=1}^n b_{i j}  \\
+&amp;=\sum_{i=1}^n b_{i i}+n b_{j j} \\
+\sum_{j=1}^n d_{i j}^2&amp;=\sum_{j=1}^n b_{i i}+\sum_{j=1}^n b_{j j}-2
+\sum_{j=1}^n b_{i j} \\
+&amp;=\sum_{j=1}^n b_{j j}+n b_{i i} \\
+\sum_{i=1}^n \sum_{j=1}^n d_{i j}^2&amp;=\sum_{i=1}^n \sum_{j=1}^n b_{j
+j}+\sum_{i=1}^n n b_{i i}\\
+&amp;=n \sum_{j=1}^n b_{j j}+n \sum_{i=1}^n b_{i i}\\
+&amp;=2 n T
+\end{aligned}
+\]</span> 其中$T=<em>{i=1}^n b</em>{i i}=<em>{j=1}^n b</em>{j j} $</p>
+<p>于是联立以下等式: <span class="math display">\[
+\begin{aligned}
+&amp;d_{i j}^2=\sum_{k=1}^q x_{i k}^2+\sum_{k=1}^q x_{j k}^2-2 b_{i
+j}=b_{i i}+b_{i j}-2 b_{i j} \\
+&amp;\sum_{i=1}^n d_{i j}^2=T+n b_{j j} \Rightarrow b_{j
+j}=\frac{T}{n}+\frac{1}{n} \sum_{i=1}^n d_{i j}^2 \\
+&amp;\sum_{j=1}^n d_{i j}^2=T+n b_{i i} \Rightarrow b_{i
+i}=\frac{T}{n}+\frac{1}{n} \sum_{i=1}^n d_{i j}^2 \\
+&amp;\sum_{i=1}^n \sum_{j=1}^n d_{i j}^2=2 n T \Rightarrow \frac{2
+T}{n}=\frac{1}{n^2} \sum_{i=1}^n \sum_{j=1}^n d_{i j}^2
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+&amp;b_{i j}=-\frac{1}{2}\left(d_{i j}^2-b_{i i}-b_{i j}\right) \\
+&amp;=-\frac{1}{2}\left(d_{i j}^2-\frac{1}{n} \sum_{j=1}^n d_{i
+j}^2-\frac{1}{n} \sum_{i=1}^n d_{i j}^2+\frac{2 T}{n}\right) \\
+&amp;=-\frac{1}{2}\left(d_{i j}^2-\frac{1}{n} \sum_{j=1}^n d_{i
+j}^2-\frac{1}{n} \sum_{i=1}^n d_{i j}^2+\frac{1}{n^2} \sum_{i=1}^n
+\sum_{j=1}^n d_{i j}^2\right)
+\end{aligned}
+\]</span> 由上述公式, <span class="math inline">\(B=X X^T\)</span>
+内积矩阵可以完全由 <span class="math inline">\(D\)</span>
+距离阵得出!</p>
+<blockquote>
+<p>以下的步骤类似主成分分析。MDS的主要作用是将距离矩阵变换成内积矩阵</p>
+</blockquote>
+<p><span class="math inline">\(\boldsymbol{B}=\frac{\boldsymbol{-
+1}}{\mathbf{2}} \boldsymbol{H S H}\)</span>, 其中 <span
+class="math inline">\(H=I_n-\frac{1}{N} 11^T \quad S(i, j)=D_G^2(i,
+j)\)</span></p>
+<p><span class="math inline">\(B=X X^T\)</span>, 可以对角化: <span
+class="math display">\[
+B=V \Lambda V^{-1}=V \Lambda^{1 / 2} \Lambda^{1 / 2} V^{-1}=X X^T
+\]</span> 其中, <span class="math inline">\(\Lambda\)</span> 是由矩阵
+<span class="math inline">\(B\)</span> 的特征值组成的矩阵, <span
+class="math inline">\(V\)</span> 是由特征向量组成的矩阵。</p>
+<p>因此如果想通过距离阵还原原始数据, 就选择 <span
+class="math inline">\(B\)</span> 矩阵的 <span
+class="math inline">\(q\)</span> 个向量, 如果想达到降维的目的, 就选择
+<span class="math inline">\(p(p&lt;q)\)</span>
+个特征向量。最终<strong>降维的数据</strong> <span
+class="math inline">\(X\)</span> 为: <span class="math display">\[
+\mathrm{X}=V \Lambda^{1 / 2}
+\]</span></p>
+<h3 id="等距映射-iso-metric-mapping">等距映射 ISO-Metric Mapping</h3>
+<blockquote>
+<p>保持数据点<strong>内在几何性质</strong>(测地距离)</p>
+</blockquote>
+<p>高维空间中直接计算直线距离具有<strong>误导性</strong>，因为该直线距离在<strong>低维嵌入</strong>中具有<strong>不可达性</strong>。</p>
+<p>思想：通过<strong>局部距离</strong>来定义<strong>非线性距离度量</strong>，在<strong>样本较密集</strong>的情况下可以实现复杂的<strong>非线性距离度量</strong>。</p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107204408947.png" alt="image-20221107204408947" style="zoom:50%;" /></p>
+<p>对于给定数据 <span class="math inline">\(X=\left\{x_1, x_2, \ldots,
+x_N\right\}\)</span>, 构造加权图 <span class="math inline">\(G=\{V,
+E\}\)</span> <span class="math inline">\(V\)</span> 是顶点集合, <span
+class="math inline">\(E\)</span> 是边的集合</p>
+<p>若 $d(i, j)=(x_i, x_j) $ 小于某个值 <span
+class="math inline">\(\epsilon(\epsilon-\mathrm{ISOMAP})\)</span>或
+<span class="math inline">\(j\)</span> 是 <span
+class="math inline">\(i\)</span> 的 <span
+class="math inline">\(K\)</span> 近邻 <span
+class="math inline">\((K-\)</span> ISOMAP) ，则顶点 <span
+class="math inline">\(i\)</span> 与 <span
+class="math inline">\(j\)</span> 的边权值设为 <span
+class="math inline">\(d(i, j)\)</span> ，否则为 0</p>
+<p>计算图 <span class="math inline">\(G=\{V, E\}\)</span>
+中任意两点间的<strong>最短距离</strong>，得到矩阵 <span
+class="math inline">\(D_G(i, j)\)</span></p>
+<ul>
+<li>Dijkstra最短路径算法</li>
+<li>Floyd-Warshall算法</li>
+</ul>
+<p>根据样本间的<strong>距离矩阵</strong>,
+可用MDS（多维尺度法）<strong>映射</strong>到<strong>低维空间</strong>,
+具体做法（以古典尺度法为例）：</p>
+<p>定义平方距离矩阵 <span class="math inline">\(S(i, j)=D_G^2(i,
+j)\)</span>，并令 <span class="math inline">\(H=I_n-\frac{1}{N}
+11^T\)</span> (中心矩阵, Centering Matrix)</p>
+<p>求矩阵 <span class="math inline">\(B=\frac{-1}{2} H S H\)</span>
+的特征值与特征向量(按特征值降序排列), <span
+class="math inline">\(\lambda_p\)</span> 为第 <span
+class="math inline">\(p\)</span> 个特征值, <span
+class="math inline">\(v_p\)</span> 为对应的特征向量。</p>
+<p>降维矩阵为 <span class="math inline">\(\left[\sqrt{\lambda_1} v_1,
+\ldots,\left.\sqrt{\lambda_d} v_d\right]_{N \times
+d}\right.\)</span></p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107210050675.png" alt="image-20221107210050675" style="zoom:50%;" /></p>
+<p><strong>计算步骤</strong></p>
+<ul>
+<li><strong>构造临近关系图</strong>
+对每一个点，将它与指定半径邻域内所有点相连(或与指定个数最近 邻相连)</li>
+<li><strong>计算最短路径</strong>
+计算临近关系图所有点对之间的最短路径，得到距离矩阵</li>
+<li><strong>多尺度分析</strong>
+将高维空间中的数据点投影到低维空间，使投影前后的距离矩阵相似 度最大</li>
+</ul>
+<p><strong>优缺点</strong></p>
+<ul>
+<li>优点
+<ul>
+<li>非线性</li>
+<li>非迭代</li>
+<li>全局最优</li>
+<li>参数可调节</li>
+</ul></li>
+<li>缺点
+<ul>
+<li>容易受噪声干扰</li>
+<li>在大曲率区域存在短路现象</li>
+<li>不适用于非凸参数空间</li>
+<li>大样本训练速度慢</li>
+</ul></li>
+</ul>
+<h3 id="局部线性嵌入">局部线性嵌入</h3>
+<blockquote>
+<p>保持数据点的原有<strong>流形结构</strong>：多个点之间的<strong>局部线性关系</strong></p>
+</blockquote>
+<p>计算权值, 首先构造<strong>局部协方差</strong>矩阵 <span
+class="math inline">\(C^i\)</span> <span class="math display">\[
+C_{j k}^i=\left(x_i-x_j\right) \cdot\left(x_i-x_k\right)
+\]</span> 然后，求解 <span class="math display">\[
+\underset{w}{\min} \sum_i\left|x_i-\sum_j w_{i j} x_{i j}\right|^2, s.t.
+\sum_j w_{i j}=1
+\]</span></p>
+<blockquote>
+<p>这里求解<span
+class="math inline">\(w_{i,j}\)</span>的含义为，找出一组能最好体现<strong>原有流形结构</strong>的关系权重</p>
+</blockquote>
+<p>最后可求得闭式解: <span class="math display">\[
+w_{i j}=\frac{\sum_k\left(C_{j k}^i\right)^{-1}}{\sum_{j k}\left(C_{j
+k}^i\right)^{-1}}
+\]</span> 计算<strong>低维数据</strong>, 求解 <span
+class="math display">\[
+\underset{y}{\min} \sum_i\left|y_i-\sum_j w_{i j} y_{i j}\right|^2
+\]</span> 通过拉格朗日乘子法可以将其转换为可转化为最小化 <span
+class="math inline">\(\min \sum_{i j} M_{i j}\left(y_i \cdot
+y_j\right)\)</span></p>
+<p>其中, <span class="math inline">\(M=(I-W)^T(I-W)\)</span></p>
+<p>求解 <span class="math inline">\(M Y=\lambda Y\)</span></p>
+<p>取 <span class="math inline">\(Y\)</span> 为 <span
+class="math inline">\(M\)</span> 的<strong>最小 <span
+class="math inline">\(d\)</span>
+个非零特征值</strong>所对应的特征向量构成的矩阵，最终的输出结果即为
+<span class="math inline">\(N \times d\)</span> 大小的矩阵<span
+class="math inline">\(Y\)</span></p>
+<p>LLE效果</p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107213339798.png" alt="image-20221107213339798" style="zoom: 33%;" /></p>
+<p>各特征选择算法<strong>对比</strong></p>
+<p><img src="/images/7-特征选择和提取.assets/image-20221107213357067.png" alt="image-20221107213357067" style="zoom: 50%;" /></p>
 
             <footer class="footline">
             </footer>
@@ -491,15 +1092,16 @@ class="math inline">\(e=0\)</span></li>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667718384" defer></script>
-        <script src="/js/lunr.min.js?1667718384" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667718384" defer></script>
-        <script src="/js/lunr.multi.min.js?1667718384" defer></script>
-        <script src="/js/lunr.en.min.js?1667718384" defer></script>
-        <script src="/js/search.js?1667718384" defer></script>
+        <script src="/js/auto-complete.js?1667829606" defer></script>
+        <script src="/js/lunr.min.js?1667829606" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667829606" defer></script>
+        <script src="/js/lunr.multi.min.js?1667829606" defer></script>
+        <script src="/js/lunr.en.min.js?1667829606" defer></script>
+        <script src="/js/search.js?1667829606" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
+          <li data-nav-id="/book-list/" class="dd-item"><a href="/book-list/">Book List<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/" class="dd-item"><input type="checkbox" id="section-e70f5d73bafb2f417493745d881ff2c1" aria-controls="subsections-e70f5d73bafb2f417493745d881ff2c1" class="toggle"><label class="a11y-only toggle" for="section-e70f5d73bafb2f417493745d881ff2c1" >Submenu Game Theory</label><a href="/game-theory/">Game Theory<i class="fas fa-check read-icon"></i></a><ul id="subsections-e70f5d73bafb2f417493745d881ff2c1">
           <li data-nav-id="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/" class="dd-item"><a href="/game-theory/2-%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1/">Nash Equilibrium<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/" class="dd-item"><a href="/game-theory/3-%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E9%9D%99%E6%80%81%E5%8D%9A%E5%BC%88/">Complete Information Static Game<i class="fas fa-check read-icon"></i></a></li>
@@ -568,10 +1170,10 @@ class="math inline">\(e=0\)</span></li>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667718384" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667718384" defer></script>
-    <script src="/js/featherlight.min.js?1667718384" defer></script>
-    <script src="/js/theme.js?1667718384" defer></script>
+    <script src="/js/clipboard.min.js?1667829606" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667829606" defer></script>
+    <script src="/js/featherlight.min.js?1667829606" defer></script>
+    <script src="/js/theme.js?1667829606" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >

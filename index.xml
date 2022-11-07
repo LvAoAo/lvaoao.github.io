@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>YU&#39;s POOL</title>
+    <title>An Essay on YU&#39;s POOL</title>
     <link>/</link>
-    <description>Recent content on YU&#39;s POOL</description>
+    <description>Recent content in An Essay on YU&#39;s POOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book List</title>
+      <link>/book-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/book-list/</guid>
+      <description>The books deserving reading will be placed here.
+Book ListHeterogeneous Graph Representation Learning and Applications.pdf (9 MB)Deep Learning with PyTorch Step-by-Step A Beginner’s Guide.pdf (22 MB)</description>
+    </item>
     <item>
       <title>Game Theory</title>
       <link>/game-theory/</link>
@@ -19,7 +27,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/pattern-recognition/</guid>
       <description>This is mainly about Pattern Recognition.
-Course Introduction模式识别-2022年秋季-本科生课程-课程介绍与第一章.pdf (4 MB)</description>
+The Reference模式识别-2022年秋季-本科生课程-课程介绍与第一章.pdf (4 MB)模式识别 (张学工) .pdf (17 MB)Pattern classification (Richard O. Duda, Peter E. Hart, David G. Stork).pdf (11 MB)</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book List on YU&#39;s POOL</title>
+    <link>/book-list/</link>
+    <description>Recent content in Book List on YU&#39;s POOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/book-list/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
