@@ -11,18 +11,18 @@
     <link href="/pattern-recognition/7-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9%E5%92%8C%E6%8F%90%E5%8F%96/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <link href="/pattern-recognition/7-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9%E5%92%8C%E6%8F%90%E5%8F%96/index.print.html" rel="alternate" type="text/html" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667829605" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667829605" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667829605" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667829605" rel="stylesheet">
-    <link href="/css/nucleus.css?1667829605" rel="stylesheet">
-    <link href="/css/fonts.css?1667829605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667829605" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667829605" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667829605" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667829605" rel="stylesheet">
-    <link href="/css/variant.css?1667829605" rel="stylesheet">
-    <link href="/css/print.css?1667829605" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1667829605"></script>
+    <link href="/css/fontawesome-all.min.css?1667901171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667901171" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667901171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667901171" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667901171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667901171" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667901171" rel="stylesheet">
+    <link href="/css/nucleus.css?1667901171" rel="stylesheet">
+    <link href="/css/fonts.css?1667901171" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667901171" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667901171" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667901171" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667901171" rel="stylesheet">
+    <link href="/css/variant.css?1667901171" rel="stylesheet">
+    <link href="/css/print.css?1667901171" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667901171"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -38,7 +38,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667829605" defer></script>
+    <script src="/js/jquery.min.js?1667901171" defer></script>
   </head>
   <body class="mobile-support html" data-url="/pattern-recognition/7-%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9%E5%92%8C%E6%8F%90%E5%8F%96/">
     <div id="body" class="default-animation">
@@ -274,8 +274,11 @@ J_1=\operatorname{tr}\left(S_w+S_b\right)
 class="math inline">\(J_p\)</span> 来度量: <span class="math display">\[
 J_{\boldsymbol{p}}=\int {g[P\left(x \mid \omega_1\right), P\left(x \mid
 \omega_2\right)}\left.P_1, P_2\right] dx
-\]</span> &gt; 其中<span
+\]</span></p>
+<blockquote>
+<p>其中<span
 class="math inline">\(P_1=P(\omega_1),P_2=P(\omega_2)\)</span>为先验概率</p>
+</blockquote>
 <p>构造的基于类概率的<strong>可分性判据</strong>应满足的条件:</p>
 <ol type="1">
 <li><span class="math inline">\(J_P \geq 0\)</span></li>
@@ -333,14 +336,15 @@ class="math inline">\(x\)</span>区间</p>
 J_C=-\ln \int\left[p\left(\boldsymbol{x} \mid
 \omega_1\right)\right]^s\left[p\left(\boldsymbol{x} \mid
 \omega_2\right)\right]^{1-s} d \boldsymbol{x} \quad s \in[0,1]
-\]</span> - 对一切 <span class="math inline">\(0 \leq s \leq 1, J_C \geq
-0\)</span></p>
+\]</span></p>
 <ul>
+<li><p>对一切 <span class="math inline">\(0 \leq s \leq 1, J_C \geq
+0\)</span></p></li>
 <li><p>对一切 <span class="math inline">\(0 \leq s \leq 1, J_C=0
 \leftrightarrow p\left(x \mid \omega_1\right)=p\left(x \mid
 \omega_2\right)\)</span></p></li>
-<li><p>当 <span class="math inline">\(x\)</span> 的各分量彼此独立时
-<span class="math display">\[
+<li><p>当 <span class="math inline">\(x\)</span> 的各分量彼此独立时</p>
+<p><span class="math display">\[
 J_C\left(s ; x_1, x_2, \cdots, x_n\right)=\sum_{i=1}^n J_C\left(s ;
 x_i\right)
 \]</span></p></li>
@@ -370,22 +374,29 @@ p\left(\mathrm{x} \mid \omega_1\right) \ln \frac{p\left(\mathrm{x} \mid
 p\left(\mathrm{x} \mid \omega_2\right) \ln \frac{p\left(\mathrm{x} \mid
 \omega_2\right)}{p\left(\mathrm{x} \mid \omega_1\right)} d \mathrm{x}
 \end{aligned}
-\]</span> ##### 关系</p>
+\]</span></p>
+<h5 id="关系">关系</h5>
 <p>当两类均是<strong>正态分布</strong>且<strong>协方差矩阵相等</strong>时:
 <span class="math display">\[
 J_D=\left(\boldsymbol{\mu}_{\mathbf{1}}-\boldsymbol{\mu}_{\mathbf{2}}\right)^{\boldsymbol{T}}
 \boldsymbol{\Sigma}^{\mathbf{-
 1}}\left(\boldsymbol{\mu}_{\mathbf{1}}-\boldsymbol{\mu}_{\mathbf{2}}\right)=8
 J_B
-\]</span> #### 基于熵的判据</p>
+\]</span></p>
+<h4 id="基于熵的判据">基于熵的判据</h4>
 <p>熵 (Entropy), 以Shannon熵为例: <span class="math display">\[
 H=-\sum_{i=1}^c P\left(w_i \mid x\right) \log _2 P\left(w_i \mid
 x\right)
-\]</span> - 样本类别确定: <span class="math inline">\(P\left(w_i \mid
-x\right)=1, H=0\)</span>; - 样本类别不确定: <span
-class="math inline">\(P\left(w_i \mid x\right)&lt;1, H&gt;0\)</span>; -
-衡量<strong>后验概率</strong>的集中程度 - <strong>熵值越大</strong>,
-说明样本的类别<strong>不确定性越大</strong></p>
+\]</span></p>
+<ul>
+<li>样本类别确定: <span class="math inline">\(P\left(w_i \mid
+x\right)=1, H=0\)</span>;</li>
+<li>样本类别不确定: <span class="math inline">\(P\left(w_i \mid
+x\right)&lt;1, H&gt;0\)</span>;</li>
+<li>衡量<strong>后验概率</strong>的集中程度</li>
+<li><strong>熵值越大</strong>,
+说明样本的类别<strong>不确定性越大</strong></li>
+</ul>
 <p>香农熵 (Shannon Entropy) : <span class="math display">\[
 H=-\sum_{i=1}^c P\left(w_i \mid x\right) \log _2 P\left(w_i \mid
 x\right)
@@ -862,7 +873,9 @@ j}+\sum_{i=1}^n n b_{i i}\\
 &amp;=n \sum_{j=1}^n b_{j j}+n \sum_{i=1}^n b_{i i}\\
 &amp;=2 n T
 \end{aligned}
-\]</span> 其中$T=<em>{i=1}^n b</em>{i i}=<em>{j=1}^n b</em>{j j} $</p>
+\]</span></p>
+<p>其中 <span class="math inline">\(\text { (Trace) }T=\sum_{i=1}^n b_{i
+i}=\sum_{j=1}^n b_{j j}\)</span></p>
 <p>于是联立以下等式: <span class="math display">\[
 \begin{aligned}
 &amp;d_{i j}^2=\sum_{k=1}^q x_{i k}^2+\sum_{k=1}^q x_{j k}^2-2 b_{i
@@ -1092,12 +1105,12 @@ class="math inline">\(Y\)</span></p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667829606" defer></script>
-        <script src="/js/lunr.min.js?1667829606" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667829606" defer></script>
-        <script src="/js/lunr.multi.min.js?1667829606" defer></script>
-        <script src="/js/lunr.en.min.js?1667829606" defer></script>
-        <script src="/js/search.js?1667829606" defer></script>
+        <script src="/js/auto-complete.js?1667901171" defer></script>
+        <script src="/js/lunr.min.js?1667901171" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667901171" defer></script>
+        <script src="/js/lunr.multi.min.js?1667901171" defer></script>
+        <script src="/js/lunr.en.min.js?1667901171" defer></script>
+        <script src="/js/search.js?1667901171" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -1170,10 +1183,10 @@ class="math inline">\(Y\)</span></p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667829606" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667829606" defer></script>
-    <script src="/js/featherlight.min.js?1667829606" defer></script>
-    <script src="/js/theme.js?1667829606" defer></script>
+    <script src="/js/clipboard.min.js?1667901171" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667901171" defer></script>
+    <script src="/js/featherlight.min.js?1667901171" defer></script>
+    <script src="/js/theme.js?1667901171" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >

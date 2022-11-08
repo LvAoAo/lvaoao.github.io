@@ -50,14 +50,27 @@
       <link>/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/pattern-recognition/5-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1/</guid>
-      <description>参数估计 The Slides模式识别-第五章-概率密度函数的估计-yhy.pdf (1 MB)</description>
+      <description>参数估计 The Slides模式识别-第五章-概率密度函数的估计-yhy.pdf (1 MB)引言 回顾 贝叶斯决策 最小错误率准则 最小风险准则 多元正态分布 引入 计算贝叶斯后验概率进行决策如何实现? \[ P\left(\omega_i \mid x\right)=\frac{p\left(x \mid \omega_i\right) P\left(\omega_i\right)}{\sum_{j=1}^2 p\left(x \mid \omega_j\right) P\left(\omega_j\right)} \] 实现中有问题吗? 能直接计算吗?
+贝叶斯决策的实际使用
+以上一章中医生诊病为例: \[ P\left(\omega_1\right), P\left(\omega_2\right) \] \[ P\left(x \mid \omega_1\right), P\left(x \mid \omega_2\right) \] 先验概率末知, 医生可大致估计；但类条件概率密度无法很好的估计
+贝叶斯决策的基础是概率密度的估计，即根据一定的训练样本来估计统计决策中用 到的先验概率 \(P\left(\omega_i\right)\) 和类条件概率密度\(P\left(x \mid \omega_i\right)\)
+基于样本的两步贝叶斯决策 利用样本集估计 \(P\left(\omega_i\right)\) 和 \(P\left(x \mid \omega_i\right)\) 得到 \(\widehat{P}\left(\omega_i\right)\) 和 \(\widehat{P}\left(x \mid \omega_i\right)\) 将估计量带入贝叶斯决策规则中得到决策结果 其中重点是第一步，需要通过训练样本进行估计
+先验概率估计: 训练样本分布情况/根据领域知识认定 类条件概率密度估计：本章重点 而训练样本有限, 难以涵盖所有情况</description>
     </item>
     <item>
       <title>Support Vector Machine</title>
       <link>/pattern-recognition/6-svm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/pattern-recognition/6-svm/</guid>
-      <description>The Slides模式识别-第六章-支持向量机-yhy.pdf (1 MB)</description>
+      <description>支持向量机(SVM) The Slides模式识别-第六章-支持向量机-yhy.pdf (1 MB)引言 回顾 线性判别函数的基本概念 Fisher线性判别函数 感知准则函数 最小平方误差准则函数 多类问题 简介 支持向量机(Support Vector Machine)是基于统计学习理论(Statistical Learning Theory, SLT)发展起来的一种新的机器学习的方法。直接掀起了统计学习在2000前后的发展高潮。
+统计学习理论主要创立者是Vladimir N. Vapnik。
+线性支持向量机：对于线性可分样本集如何找出最优分类超平面 非线性支持向量机：SVM如何推广？ （基准）SVM SVM从线性可分情况下的最优分类面发展而来。
+最优分类面就是要求分类线不但能将两类正确分开(训练错误率为 0 ), 且使分类间隔最大。 SVM考虑寻找一个满足分类要求的超平面, 并且使训练集里的点距离分类面尽可能的远, 也就是寻找一个分类面使它两侧的空白区域(Margin)最大。
+要点:
+定义一种距离, 每个分类面都能够衡量出该性能指标; 最优分类面在该性能指标上最优。 定义：
+样本集 \(\left\{x_n, t_n\right\}, n=1,2, \ldots, N, x_n \in \mathcal{R}^d ; t_n \in\{-1,1\}\)
+线性模型：分类器定义为 \(y(x)=w^T x+b\), 可学习。
+线性可分的定义: \[ t_n=\left\{\begin{array}{ll} 1, &amp;amp; y\left(x_n\right)&amp;gt;0 \text { if } x_n \in w_1 \\ -1, &amp;amp; y\left(x_n\right)&amp;lt;0 \text { if } x_n \in w_2 \end{array} \Rightarrow \quad t_n y\left(x_n\right)&amp;gt;0\right.</description>
     </item>
     <item>
       <title>Feature Selection and Extraction</title>
