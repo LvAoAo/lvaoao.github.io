@@ -11,19 +11,19 @@
     <link href="/pattern-recognition/" rel="canonical" type="text/html" title="YU&#39;s POOL">
     <link href="/pattern-recognition/index.xml" rel="alternate" type="application/rss+xml" title="YU&#39;s POOL">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1667829606" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667829606" rel="stylesheet"></noscript>
-    <link href="/css/featherlight.min.css?1667829606" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667829606" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1667829606" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667829606" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1667829606" rel="stylesheet">
-    <link href="/css/nucleus.css?1667829606" rel="stylesheet">
-    <link href="/css/fonts.css?1667829606" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667829606" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1667829606" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1667829606" rel="stylesheet" id="variant-style">
-    <link href="/css/ie.css?1667829606" rel="stylesheet">
-    <link href="/css/variant.css?1667829606" rel="stylesheet">
-    <link href="/css/print.css?1667829606" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1667829606" rel="stylesheet">
-    <script src="/js/variant.js?1667829606"></script>
+    <link href="/css/fontawesome-all.min.css?1667901172" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667901172" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667901172" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667901172" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667901172" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667901172" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667901172" rel="stylesheet">
+    <link href="/css/nucleus.css?1667901172" rel="stylesheet">
+    <link href="/css/fonts.css?1667901172" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667901172" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667901172" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667901172" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667901172" rel="stylesheet">
+    <link href="/css/variant.css?1667901172" rel="stylesheet">
+    <link href="/css/print.css?1667901172" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1667901172" rel="stylesheet">
+    <script src="/js/variant.js?1667901172"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,7 +39,7 @@
       var baseUriFull='/';
       window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
-    <script src="/js/jquery.min.js?1667829606" defer></script>
+    <script src="/js/jquery.min.js?1667901172" defer></script>
   </head>
   <body class="mobile-support print" data-url="/pattern-recognition/">
     <div id="body" class="default-animation">
@@ -2191,6 +2191,360 @@ class="math display">\[
   </ul>
 </div>
 
+<h2 id="引言">引言</h2>
+<h3 id="回顾">回顾</h3>
+<ul>
+<li>贝叶斯决策
+<ul>
+<li>最小错误率准则</li>
+<li>最小风险准则</li>
+</ul></li>
+<li>多元正态分布</li>
+</ul>
+<h3 id="引入">引入</h3>
+<p>计算贝叶斯<strong>后验概率</strong>进行决策如何实现? <span
+class="math display">\[
+P\left(\omega_i \mid x\right)=\frac{p\left(x \mid \omega_i\right)
+P\left(\omega_i\right)}{\sum_{j=1}^2 p\left(x \mid \omega_j\right)
+P\left(\omega_j\right)}
+\]</span> 实现中有问题吗? 能直接计算吗?</p>
+<p>贝叶斯决策的<strong>实际使用</strong></p>
+<p>以上一章中医生诊病为例: <span class="math display">\[
+P\left(\omega_1\right), P\left(\omega_2\right)
+\]</span> <span class="math display">\[
+P\left(x \mid \omega_1\right), P\left(x \mid \omega_2\right)
+\]</span> 先验概率末知,
+医生可大致估计；但类条件概率密度无法很好的估计</p>
+<p>贝叶斯决策的<strong>基础</strong>是<strong>概率密度的估计</strong>，即根据一定的训练样本来估计统计决策中用
+到的<strong>先验概率</strong> <span
+class="math inline">\(P\left(\omega_i\right)\)</span>
+和<strong>类条件概率密度</strong><span class="math inline">\(P\left(x
+\mid \omega_i\right)\)</span></p>
+<h3
+id="基于样本的两步贝叶斯决策">基于样本的<strong>两步贝叶斯决策</strong></h3>
+<ol type="1">
+<li>利用样本集估计 <span
+class="math inline">\(P\left(\omega_i\right)\)</span> 和 <span
+class="math inline">\(P\left(x \mid \omega_i\right)\)</span> 得到 <span
+class="math inline">\(\widehat{P}\left(\omega_i\right)\)</span> 和 <span
+class="math inline">\(\widehat{P}\left(x \mid
+\omega_i\right)\)</span></li>
+<li>将估计量带入贝叶斯决策规则中得到决策结果</li>
+</ol>
+<p><img src="/images/5-参数估计.assets/image-20221108163522561.png" alt="image-20221108163522561" style="zoom:50%;" /></p>
+<p>其中重点是第一步，需要通过<strong>训练样本</strong>进行估计</p>
+<ul>
+<li>先验概率估计:
+<strong>训练样本分布</strong>情况/根据<strong>领域知识</strong>认定</li>
+<li>类条件概率密度估计：本章重点</li>
+</ul>
+<p>而训练样本有限, 难以涵盖所有情况</p>
+<blockquote>
+<p>当<strong>训练样本无限多</strong>,
+<strong>基于样本</strong>的两步贝叶斯决策可<strong>无限趋近</strong>第二章中的<strong>理论</strong>贝叶斯
+决策, 即: 当 <span class="math inline">\(N \rightarrow \infty\)</span>
+<span class="math display">\[
+\begin{aligned}
+\widehat{P}\left(\omega_i\right) &amp; \rightarrow
+P\left(\omega_i\right) \\
+\widehat{P}\left(x \mid \omega_i\right) &amp; \rightarrow P\left(x \mid
+\omega_i\right)
+\end{aligned}
+\]</span></p>
+</blockquote>
+<h3 id="方法">方法</h3>
+<p>由<strong>训练样本集</strong>估计总体概率密度的<strong>方法</strong>可分为：</p>
+<ul>
+<li><p><strong>监督</strong>参数估计:
+样本<strong>所属类别</strong>及类条件概率密度函数<strong>形式已知</strong>,
+表征概率密度函数的某些<strong>参数末知</strong>。</p>
+<blockquote>
+<p>注意: 在监督学习中, 用同一类样本来估计本类的类条件概率密度。
+在后续除特殊说明,
+一概<strong>假定</strong>所讨论的样本来自<strong>同一类</strong>,
+不再标出类别标号。</p>
+</blockquote></li>
+<li><p><strong>非监督</strong>参数估计:
+总体概率密度函数<strong>形式已知</strong>但样本所属<strong>类别未知</strong>,
+要求推断出概率密度函数的<strong>某些参数</strong>。</p></li>
+<li><p><strong>非参数估计</strong>: 样本所属类别已知,
+总体概率密度函数<strong>形式未知</strong>,
+直接推断概率密度函数本身。</p></li>
+</ul>
+<h2 id="基本概念">基本概念</h2>
+<ol type="1">
+<li><strong>统计量</strong>：样本中包含着总体信息、针对不同要求构造出<strong>样本的某种函数</strong>,
+这种函数在统计学中称<strong>统计量</strong>。</li>
+<li><strong>参数空间</strong>：假设总体概率密度函数<strong>形式已知</strong>,
+未知分布中的参数 <span class="math inline">\(\theta, \theta\)</span>
+的全部可容许值组成的集合称为<strong>参数空间</strong>, 记为 <span
+class="math inline">\(\Theta\)</span></li>
+<li><strong>点估计</strong>：点估计问题就是要构造一个<strong>统计量</strong>
+<span class="math inline">\(d\left(x_1, x_2, \ldots, x_N\right)\)</span>
+作为参数 <span class="math inline">\(\theta\)</span> 的估计 <span
+class="math inline">\(\widehat{\theta}\)</span></li>
+<li><strong>估计量</strong>： <span
+class="math inline">\(\widehat{\theta}\)</span> 被称为 <span
+class="math inline">\(\theta\)</span> 的<strong>估计量</strong>。</li>
+<li><strong>估计值</strong>: 如果 <span class="math inline">\(x_1^i,
+x_2^i, \ldots, x_N^i\)</span> 是属于类别 <span
+class="math inline">\(\omega_i\)</span> 的样本的<strong>观察值</strong>,
+代入统计量<span class="math inline">\(d\)</span>就得到对于第 <span
+class="math inline">\(i\)</span> 类的 <span
+class="math inline">\(\widehat{\theta}\)</span>
+的<strong>具体数值</strong>, 这一数值被称为 <span
+class="math inline">\(\theta\)</span> 的<strong>估计值</strong></li>
+<li><strong>区间估计</strong>: 估计出区间 <span
+class="math inline">\(\left(d_1, d_2\right)\)</span> 作为 <span
+class="math inline">\(\theta\)</span>
+可能的取值范围，这个区间叫<strong>置信区间</strong>，这类问题称为<strong>区间估计</strong>。</li>
+</ol>
+<blockquote>
+<p>本章所涉及的是估计总体分布的具体参数,
+是<strong>点估计问题</strong>。</p>
+</blockquote>
+<p>如何评估概率密度估计的好坏?——基于<strong>均值</strong>和<strong>方差</strong>进行评估</p>
+<p>常用标准：</p>
+<ul>
+<li><p><strong>无偏性</strong>: <span
+class="math inline">\(\theta\)</span> 的估计量 <span
+class="math inline">\(\widehat{\theta}\left(x_1, x_2, \ldots,
+x_N\right)\)</span> 的数学期望是 <span
+class="math inline">\(\theta\)</span></p></li>
+<li><p><strong>渐进无偏</strong>: <span class="math inline">\(N\)</span>
+<strong>趋于无穷</strong>时估计才具有<strong>无偏性</strong></p></li>
+<li><p><strong>有效性</strong>: 一种估计比另一种的方差小,
+此种估计<strong>更有效</strong></p></li>
+<li><p><strong>一致性</strong>：对于任意正数 <span
+class="math inline">\(\varepsilon\)</span>, 有 <span
+class="math display">\[
+\lim _{n \rightarrow \infty}
+P\left(\left|\widehat{\theta}_n-\theta\right|&gt;\varepsilon\right)=0
+\]</span> 则 <span class="math inline">\(\widehat{\theta}\)</span> 是
+<span class="math inline">\(\theta\)</span>
+的<strong>一致估计</strong>。</p></li>
+</ul>
+<blockquote>
+<p><strong>无偏性</strong>、<strong>有效性</strong>都是说明对于<strong>多次估计</strong>来说，估计量能以较小的方差<strong>平均地</strong>表示其真实值,
+不能保证具体的一次估计的性能;</p>
+<p><strong>一致性</strong>保证当<strong>样本无穷多</strong>时，每<strong>一次</strong>的估计量都在概率意义上任意地接近其真实值</p>
+</blockquote>
+<p>参数估计主要方法包括两类：</p>
+<ul>
+<li>最大似然估计</li>
+<li>贝叶斯估计</li>
+</ul>
+<p>非参数估计：统计学中的典型分布不能拟合所有的真实数据分布,
+因此需直接利用样本<strong>非参数</strong>地估计概率密度</p>
+<ul>
+<li>直方图法</li>
+<li><span class="math inline">\(k_N\)</span> 近邻法</li>
+<li>Parzen窗法</li>
+</ul>
+<h2 id="最大似然估计">最大似然估计</h2>
+<h3 id="基本假设">基本假设</h3>
+<ul>
+<li><p>参数 <span class="math inline">\(\theta\)</span>
+是<strong>确定</strong> (非随机)
+的而<strong>未知</strong>的量。</p></li>
+<li><p><strong>独立同分布</strong>：按类别把样本集分开, <span
+class="math inline">\(X_i\)</span>
+类中的<strong>每个样本</strong>都是<strong>独立</strong>地从概率密度为
+<span class="math inline">\(p\left(x \mid \omega_i\right)\)</span>
+的总体中独立地抽取出来的</p></li>
+<li><p>类条件概率密度 <span class="math inline">\(p\left(x \mid
+\omega_j\right)\)</span> 为某种<strong>确定的分布形式</strong>,
+参数未知。对于不同类别的参数, 可以记作 <span
+class="math inline">\(\theta_j\)</span> 。为了强调待估计的参数,
+可以写作： <span class="math display">\[
+p\left(x \mid \omega_j\right) \rightarrow p\left(x \mid \omega_j,
+\theta_j\right)
+\]</span></p></li>
+<li><p>假设 <span class="math inline">\(X_i\)</span> 中不包含关于 <span
+class="math inline">\(\theta_j(j \neq i)\)</span>
+的信息，即<strong>不同类别</strong>的<strong>参数</strong>在函数上是<strong>独立</strong>的,
+可以分别对每一类进行单独估计。</p></li>
+</ul>
+<h3 id="似然函数的定义">似然函数的定义</h3>
+<p>基于上述假设,
+在每一类中<strong>独立</strong>抽取样本集来估计未知参数。</p>
+<p>假设某类样本集中包含有 <span class="math inline">\(N\)</span>
+个样本:</p>
+<p><span class="math display">\[
+X=\left\{x_1, x_2, \ldots, x_N\right\}
+\]</span> 因样本独立地从 <span class="math inline">\(P(x \mid
+\theta)\)</span> 中抽取, 获得<strong>样本集 <span
+class="math inline">\(X\)</span>
+的概率</strong>为各个样本的<strong>联合概率</strong>:</p>
+<p><span class="math display">\[
+l(\theta)=P(X \mid \theta)=p\left(x_1, x_2, \ldots, x_N \mid
+\theta\right)=\prod_{i=1}^N p\left(x_i \mid \theta\right)
+\]</span> 这个概率反映了在概率密度函数的参数为 <span
+class="math inline">\(\theta\)</span> 时, 得到这组样本的概率。</p>
+<p>该函数为 <strong><span class="math inline">\(\theta\)</span>
+的函数</strong>,
+反映了不同参数取值下获得当前样本集的<strong>可能性</strong>。因此, <span
+class="math inline">\(P(X \mid \theta)\)</span> 也被称为参数 <span
+class="math inline">\(\theta\)</span> 相对于样本集 <span
+class="math inline">\(X\)</span> 的<strong>似然函数</strong>(likelihood
+function)</p>
+<p><strong>似然函数</strong>的定义: <span class="math display">\[
+\begin{aligned}
+&amp; l(\theta)=p\left(x_1, x_2, \ldots, x_N \mid \theta\right) \\
+=&amp; p\left(x_1 \mid \theta\right) p\left(x_2 \mid \theta\right)
+\ldots p\left(x_N \mid \theta\right)
+\end{aligned}
+\]</span></p>
+<h3 id="最大似然估计量-widehattheta">最大似然估计量 <span
+class="math inline">\(\widehat{\theta}\)</span></h3>
+<p>即: 要在参数空间中找到一个 <span
+class="math inline">\(\theta\)</span> 值（可用 <span
+class="math inline">\(\widehat{\boldsymbol{\theta}}\)</span> 表示）,
+能够使得 <span class="math inline">\(l(\theta)\)</span>
+<strong>极大化</strong>。</p>
+<p>使得似然函数的值最大的 <span
+class="math inline">\(\widehat{\theta}\)</span> 是样本 <span
+class="math inline">\(x_1, x_2, \ldots, x_N\)</span> 的函数, 记为:<span
+class="math inline">\(\widehat{\theta}=d(X)=d\left(x_1, x_2, \ldots,
+x_N\right)\)</span></p>
+<p>那么称 <span class="math inline">\(\widehat{\theta}\)</span> 是 <span
+class="math inline">\(\theta\)</span>
+的<strong>最大似然估计<u>量</u></strong></p>
+<p><strong>定义</strong></p>
+<p><span class="math inline">\(\widehat{\theta}\)</span>
+是参数空间中能使似然函数 <span class="math inline">\(l(\theta)=\)</span>
+<span class="math inline">\(p\left(x_1, x_2, \ldots, x_N \mid
+\theta\right)\)</span> 最大化的 <span
+class="math inline">\(\theta\)</span>, 记作 <span
+class="math inline">\(\widehat{\boldsymbol{\theta}}=\arg \max
+l(\theta)\)</span></p>
+<p><strong>求解</strong></p>
+<p>为了便于后续分析, 可以对 <span class="math inline">\(N\)</span>
+个训练样本出现概率的乘积<strong>取对数</strong>, 最优解不变: <span
+class="math display">\[
+H(\theta)=\ln l(\theta)=\ln \prod_{i=1}^N p\left(x_i \mid
+\theta\right)=\sum_{i=1}^N \ln p\left(x_i \mid \theta\right)
+\]</span> 当 <span class="math inline">\(p\)</span> 的形式已知, <span
+class="math inline">\(X\)</span> 确定时, 末知量只有 <span
+class="math inline">\(\theta\)</span></p>
+<p>在似然函数满足<strong>连续可微</strong>的条件下, 如果 <span
+class="math inline">\(\theta\)</span>
+是<strong>一维变量</strong>，即只有一个带估计的参数，其最大似然估计量就是如下微分方程的解:
+<span class="math display">\[
+\frac{\mathrm{d} l(\theta)}{\mathrm{d} \theta}=0 \quad或\quad
+\frac{\mathrm{d} H(\theta)}{\mathrm{d} \theta}=0
+\]</span> 更一般地, 当 <span
+class="math inline">\(\theta=\left(\theta_1, \ldots,
+\theta_s\right)^T\)</span>
+是由<strong>多个未知的参数</strong>组成的向量时，就需要对𝜽的每一维求偏导，即使用下面的梯度算子<span
+class="math inline">\(\nabla_\theta=\left(\frac{\partial}{\partial
+\theta_1}, \ldots, \frac{\partial}{\partial \theta_s}\right)^T\)</span>
+对似然函数求梯度, 并令其等于 0 : <span class="math display">\[
+\left[\begin{array}{c}
+\frac{\partial}{\partial \theta_1} \\
+\cdots \\
+\frac{\partial}{\partial \theta_s}
+\end{array}\right] \sum_{i=1}^N \ln p\left(x_i \mid \theta\right)=0
+\]</span> 进一步有: <span class="math display">\[
+\begin{aligned}
+&amp;\sum_{i=1}^N \frac{\partial}{\partial \theta_1} \ln P\left(x_i \mid
+\theta\right)=0 \\
+&amp;\sum_{i=1}^N \frac{\partial}{\partial \theta_s} \ln P\left(x_i \mid
+\theta\right)=0
+\end{aligned}
+\]</span>
+方程组的<strong>解</strong>就是对数似然函数的<strong>极值点</strong>。</p>
+<p>注意, 某些情况下可能有多个极值,
+此时上述方程组可能有<strong>多个解</strong>,
+其中使得<strong>似然函数最大</strong>的<strong>解</strong>是<strong>最大似然估计量</strong>。</p>
+<p><img src="/images/5-参数估计.assets/image-20221108173427156.png" alt="image-20221108173427156" style="zoom:50%;" /></p>
+<blockquote>
+<p>例: 此图有5个解, 只有一个解最大</p>
+</blockquote>
+<h3
+id="单变量正态分布的最大似然估计"><strong>单变量正态分布</strong>的最大似然估计</h3>
+<blockquote>
+<p>单变量：随机变量的<strong>维度</strong>为1</p>
+</blockquote>
+<p>样本集 <span class="math inline">\(X=\left\{x_1, x_2, \ldots,
+x_N\right\}\)</span> 服从正态分布形式: <span class="math display">\[
+p(x \mid \theta)=\frac{1}{\sqrt{2 \pi} \sigma} \exp
+\left\{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right\}
+\]</span> 其中均值 <span class="math inline">\(\mu\)</span> 和方差 <span
+class="math inline">\(\sigma^2\)</span> 末知, <span
+class="math inline">\(\boldsymbol{\theta}=\left[\boldsymbol{\theta}_1,
+\boldsymbol{\theta}_2\right]^{\mathrm{T}}=\left[\boldsymbol{\mu},
+\boldsymbol{\sigma}^2\right]^{\mathrm{T}}\)</span></p>
+<p>求解方程 <span class="math display">\[
+\sum_{i=1}^N \nabla_\theta \ln p\left(x_i \mid \theta\right)=0
+\]</span> 由正态分布公式可以得到： <span class="math display">\[
+\ln p\left(x_k \mid \theta\right)=-\frac{1}{2} \ln 2 \pi
+\theta_2-\frac{1}{2 \theta_2}\left(x_k-\theta_1\right)^2
+\]</span> 分别对两个末知参数求偏导, 最大似然估计应该是以下方程组的解:
+<span class="math display">\[
+\sum_{k=1}^N
+\frac{1}{\widehat{\theta_2}}\left(x_k-\widehat{\theta_1}\right)=0
+\\
+-\sum_{k=1}^N \frac{1}{\widehat{\theta_2}}+\sum_{k=1}^N
+\frac{\left(x_k-\widehat{\theta_1}\right)^2}{{\widehat{\theta_2}}^2}=0
+\]</span> 可以求得 <span class="math display">\[
+\hat{\mu}=\widehat{\theta_1}=\frac{1}{N} \sum_{k=1}^N x_k \\
+\widehat{\sigma}^2=\widehat{\theta_2}=\frac{1}{N}
+\sum_{k=1}^N\left(x_k-\widehat{\mu}\right)^2
+\]</span>
+以上是对正态分布样本的<strong>均值</strong>和<strong>方差</strong>的最大似然估计</p>
+<h3
+id="多维正态分布的最大似然估计"><strong>多维正态分布</strong>的最大似然估计</h3>
+<h4 id="sigma-已知-mu-未知"><span class="math inline">\(\Sigma\)</span>
+已知， <span class="math inline">\(\mu\)</span> 未知：</h4>
+<p><span class="math display">\[
+p\left(x_k \mid \mu\right)=-\frac{1}{2} \ln \left[(2
+\pi)^d|\Sigma|\right]-\frac{1}{2}\left(x_k-\mu\right)^T
+\Sigma^{-1}\left(x_k-\mu\right)
+\]</span> 对<span class="math inline">\(\mu\)</span>求偏导： <span
+class="math display">\[
+\begin{gathered}
+\Sigma^{-1} \sum_{k=1}^N\left(x_k-N \mu\right)=0 \\
+\mu=\widehat{\mu}=\frac{1}{N} \sum_{k=1}^N x_k
+\end{gathered}
+\]</span>
+说明未知均值的<strong>最大似然</strong>估计正好是训练样本的<strong>算术平均</strong></p>
+<h4 id="boldsymbolsigma-mu-均未知"><span
+class="math inline">\(\boldsymbol{\Sigma}, \mu\)</span> 均未知</h4>
+<p><strong>估计值</strong>: <span class="math display">\[
+\begin{gathered}
+\widehat{\mu}=\widehat{\theta}_1=\frac{1}{N} \sum_{k=1}^N x_k \\
+\widehat{\Sigma}=\widehat{\theta}_2=\frac{1}{N}
+\sum_{k=1}^N\left(x_k-\widehat{\boldsymbol{\mu}}\right)\left(x_k-\widehat{\boldsymbol{\mu}}\right)^T
+\end{gathered}
+\]</span> <strong>结论</strong>:</p>
+<ul>
+<li><p>正态总体均值 <span class="math inline">\(\mu\)</span>
+的最大似然估计即为训练样本的<strong>算术平均</strong></p></li>
+<li><p>协方差矩阵 <span class="math inline">\(\Sigma\)</span>
+的最大似然估计为 <span class="math inline">\(\mathbf{N}\)</span> 个矩阵
+<span
+class="math inline">\(\left(x_k-\widehat{\boldsymbol{\mu}}\right)\left(x_k-\widehat{\boldsymbol{\mu}}\right)^T\)</span>
+的<strong>算术平均</strong>。</p></li>
+<li><p>正态总体方差的最大似然估计与样本的方差不同 (一个是算术平均,
+一个是期望值），当 <span class="math inline">\(N\)</span> 较大的时候,
+二者的差别不大。</p>
+<blockquote>
+<p>样本方差：样本的天然分布属性，不是随人为采样的变化而变化的</p>
+<p>方差的最大似然估计：是<strong>依赖于</strong>采样出来的<strong>样本</strong>结果的，随每一次采样的结果变化而变化</p>
+</blockquote></li>
+<li><p>无偏性</p>
+<ul>
+<li><p><span
+class="math inline">\(\theta_1\)</span>，即𝝁为<strong>无偏</strong>估计量</p></li>
+<li><p><span
+class="math inline">\(\theta_2\)</span>，即𝚺并<strong>不是无偏</strong>的</p>
+<blockquote>
+<p>事实上<span class="math inline">\(\frac{1}{N-1}
+\sum_{k=1}^N\left(x_k-\widehat{\boldsymbol{\mu}}\right)\left(x_k-\widehat{\boldsymbol{\mu}}\right)^T\)</span>才是样本方差的无偏估计量</p>
+</blockquote></li>
+</ul></li>
+</ul>
 
             <footer class="footline">
             </footer>
@@ -2200,6 +2554,7 @@ class="math display">\[
           <article class="default">
 <h1>Support Vector Machine</h1>
 
+<h1 id="支持向量机svm">支持向量机(SVM)</h1>
 
 <div class="box attachments cstyle info">
   <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> The Slides</div>
@@ -2208,6 +2563,452 @@ class="math display">\[
   </ul>
 </div>
 
+<h2 id="引言">引言</h2>
+<h3 id="回顾">回顾</h3>
+<ul>
+<li>线性判别函数的基本概念</li>
+<li>Fisher线性判别函数</li>
+<li>感知准则函数</li>
+<li>最小平方误差准则函数</li>
+<li>多类问题</li>
+</ul>
+<h3 id="简介">简介</h3>
+<p><strong>支持向量机</strong>(Support Vector
+Machine)是基于统计学习理论(Statistical Learning Theory,
+SLT)发展起来的一种新的机器学习的方法。直接掀起了统计学习在2000前后的发展高潮。</p>
+<p>统计学习理论主要创立者是<strong>Vladimir N. Vapnik</strong>。</p>
+<ul>
+<li>线性支持向量机：对于<strong>线性可分</strong>样本集如何找出最优分类超平面</li>
+<li>非线性支持向量机：SVM如何推广？</li>
+</ul>
+<h2 id="基准svm">（基准）SVM</h2>
+<p>SVM从<strong>线性可分</strong>情况下的最优分类面发展而来。</p>
+<p>最优分类面就是要求分类线不但能将两类<strong>正确分开</strong>(训练错误率为
+0 ), 且使<strong>分类间隔</strong>最大。
+SVM考虑寻找一个满足分类要求的超平面,
+并且使训练集里的<strong>点距离分类面</strong>尽可能的远,
+也就是寻找一个分类面使它两侧的空白区域(<strong>Margin</strong>)最大。</p>
+<p><strong>要点</strong>:</p>
+<ul>
+<li>定义一种<strong>距离</strong>,
+每个分类面都能够衡量出该性能指标;</li>
+<li>最优分类面在该性能指标上<strong>最优</strong>。</li>
+</ul>
+<p><img src="/images/6-SVM.assets/image-20221108113532165.png" alt="image-20221108113532165" style="zoom: 50%;" /></p>
+<p><strong>定义</strong>：</p>
+<ul>
+<li><p>样本集 <span class="math inline">\(\left\{x_n, t_n\right\},
+n=1,2, \ldots, N, x_n \in \mathcal{R}^d ; t_n
+\in\{-1,1\}\)</span></p></li>
+<li><p>线性模型：分类器定义为 <span class="math inline">\(y(x)=w^T
+x+b\)</span>, 可学习。</p></li>
+<li><p>线性可分的定义: <span class="math display">\[
+t_n=\left\{\begin{array}{ll}
+1, &amp; y\left(x_n\right)&gt;0 \text { if } x_n \in w_1 \\
+-1, &amp; y\left(x_n\right)&lt;0 \text { if } x_n \in w_2
+\end{array} \Rightarrow \quad t_n y\left(x_n\right)&gt;0\right.
+\]</span></p></li>
+<li><p>最优超平面定义的<strong>分类决策函数</strong>可以表示为：</p></li>
+</ul>
+<p><span class="math display">\[
+f(\mathbf{x})=\operatorname{sgn}(\mathbf{w} \cdot \mathbf{x}+b)
+\]</span></p>
+<p><img src="/images/6-SVM.assets/image-20221108113754435.png" alt="image-20221108113754435" style="zoom:50%;" /></p>
+<p>样本集任意一点 <span class="math inline">\(x_n\)</span> 到分类面(满足
+<span class="math inline">\(t_n y\left(x_n\right)&gt;0\)</span> )
+的距离为 <span class="math inline">\(\frac{|g(x)|}{\|w\|}\)</span>, 即:
+<span class="math inline">\(\frac{t_n
+y\left(x_n\right)}{\|w\|}=\frac{t_n\left(w^T
+x_n+b\right)}{\|w\|}\)</span> <span class="math display">\[
+\begin{gathered}
+x=x_p+r \frac{w}{\|w\|} \\
+v^T\left(x_p+r \frac{w}{\|w\|}\right)+\omega_0
+\end{gathered}
+\]</span> 优化 <span class="math inline">\(w\)</span> 利 <span
+class="math inline">\(b\)</span> 使 Margin最大 <span
+class="math inline">\(\arg \max _{w, b}\left\{\frac{1}{\|w\|} \min
+_n\left[t_n\left(\boldsymbol{w}^T
+x_n+\boldsymbol{b}\right)\right]\right\}\)</span></p>
+<blockquote>
+<p>直接求解较复杂</p>
+</blockquote>
+<p>由于有无数等价解: <span class="math inline">\(w \rightarrow k w, b
+\rightarrow k b\)</span></p>
+<p>那么可以确定尺度：对于离超平面<strong>最近的点</strong> <span
+class="math inline">\(t_n\left(w^T x_n+b\right)=1\)</span>
+，那么对于<strong>所有点</strong>满足 <span
+class="math inline">\(t_n\left(w^T x_n+b\right) \geq 1\)</span></p>
+<blockquote>
+<p>思想：对于决策超平面的标准（规范化）表示 Canonical Representation</p>
+</blockquote>
+<p>问题转化为最大化 <span class="math inline">\(\|w\|^{-1}\)</span>,
+等价于 <span class="math display">\[
+\arg \min _{w, b} \frac{1}{2}\|w\|^2 \quad s.t. \quad t_n\left(w^T
+x_n+b\right) \geq 1
+\]</span></p>
+<blockquote>
+<p>这是一个凸二次规划问题——要么无解，要么唯一解。</p>
+</blockquote>
+<h3 id="kkt条件">KKT条件</h3>
+<h4 id="拉格朗日函数">拉格朗日函数</h4>
+<p><span class="math display">\[
+L(w, \alpha, \beta)=f(w)+\sum_{i=1}^n \alpha_i g_i(w)+\sum_{i=1}^i
+\beta_i h_i(w)
+\]</span></p>
+<h4 id="对偶问题">对偶问题</h4>
+<p>原问题 <span class="math inline">\(\min _w f(w)\)</span> 转化为:
+<span class="math inline">\(\min _w \theta_P(w)=\min _w \max _{\alpha,
+\beta ; \alpha_i \geq 0} L(w, \alpha, \beta)\)</span> ，记为 <span
+class="math inline">\(p^*\)</span></p>
+<blockquote>
+<p><span
+class="math inline">\(p^*\)</span>问题<strong>等价</strong>于原始问题，这一点可以从<span
+class="math inline">\(L(w, \alpha, \beta)\)</span>的结构看出：<span
+class="math inline">\(\max _{\alpha, \beta ; \alpha_i \geq 0} L(w,
+\alpha, \beta)\)</span>的含义和带约束的原问题是相同的</p>
+</blockquote>
+<p>直接求解不容易，进而转向另一个问题 <span
+class="math inline">\(\theta_D(\boldsymbol{\alpha},
+\boldsymbol{\beta})=\min _w L(w, \alpha, \beta)\)</span> 。</p>
+<p>先固定 <span class="math inline">\(\alpha, \beta\)</span>,
+求拉格朗日函数关于 <span class="math inline">\(w\)</span>
+的<strong>最小值</strong>, 之后再求 <span
+class="math inline">\(\theta_D(\alpha, \beta)\)</span>
+的<strong>最大值,</strong> 即： <span class="math display">\[
+\max _{\alpha, \beta ; \alpha_i \geq 0} \theta_D(\boldsymbol{\alpha},
+\boldsymbol{\beta})=\max _{\alpha, \beta ; \alpha_i \geq 0} \min _w L(w,
+\alpha, \beta)
+\]</span> 此问题为原问题的<strong>对偶问题</strong>，记为 <span
+class="math inline">\(d^*\)</span> 。</p>
+<p>对偶问题和原问题的关系：</p>
+<p><span class="math inline">\(\boldsymbol{d}^*=\max _{\alpha, \beta ;
+\alpha_i \geq 0} \min _w L(w, \alpha, \boldsymbol{\beta}) \leq \min _w
+\max _{\alpha, \beta ; \alpha_i \geq 0} L(w, \alpha,
+\beta)=p^*\)</span></p>
+<h4 id="拉格朗日对偶性">拉格朗日对偶性</h4>
+<p><span class="math display">\[
+\boldsymbol{d}^*=\max _{\alpha, \boldsymbol{\beta} ;
+\boldsymbol{\alpha}_i \geq 0} \min _{\boldsymbol{w}} L(w,
+\boldsymbol{\alpha}, \boldsymbol{\beta}) \leq \min _{\boldsymbol{w}}
+\max _{\alpha, \boldsymbol{\beta} ; \boldsymbol{\alpha}_i \geq 0} L(w,
+\boldsymbol{\alpha}, \boldsymbol{\beta})=p^*
+\]</span> &gt; 这种性质被称为<strong>弱对偶性</strong></p>
+<p>证明： <span class="math display">\[
+\begin{gathered}
+D(\alpha, \beta)=\min _x L(x, \alpha, \beta) \leq L(x, \alpha, \beta)
+\leq \max _{\alpha, \beta, \beta_i \geq 0} L(x, \alpha, \beta)=f(x) \\
+d^*=\max _{\alpha, \beta ; \beta_i \geq 0} D(\alpha, \beta) \leq \min _x
+f(x)=p^*
+\end{gathered}
+\]</span> 对偶间隔： <span class="math inline">\(p^*-d^*\)</span></p>
+<p>在<strong>强对偶成立</strong>（对偶间隔为0）的情况下,
+可以通过求解对偶问题来得到原始问题的解 (SVM利用强对偶求解) ;</p>
+<p>（凸优化下的Slater条件）假设 <span class="math inline">\(f\)</span>
+和 <span class="math inline">\(g\)</span> 都是凸函数, h是仿射的 (Affine,
+线性函数的一般形式), 且对于所有的i, <span
+class="math inline">\(g_i(w)&lt;\)</span> 0 ,
+那么一定<strong>存在</strong> <span class="math inline">\(w^*, \alpha^*,
+\beta^*\)</span>, 使 <span class="math inline">\(w^*\)</span>
+是原问题的解， <span class="math inline">\(\alpha^*, \beta^*\)</span>
+是对偶问题的解。</p>
+<blockquote>
+<p>凸优化下如果满足slater条件，那么最优解等价于满足KKT条件的解</p>
+</blockquote>
+<p>即 <span
+class="math inline">\(d^*=\boldsymbol{p}^*=\boldsymbol{L}\left(\boldsymbol{w}^*,
+\boldsymbol{\alpha}^*, \boldsymbol{\beta}^*\right)\)</span>, 且 <span
+class="math inline">\(w^*, \alpha^*, \beta^*\)</span> 满足KKT条件。</p>
+<blockquote>
+<p><a
+href="https://zhuanlan.zhihu.com/p/469930026">KKT、Slater、最优性三者的关系</a></p>
+</blockquote>
+<h4 id="kkt条件-1">KKT条件</h4>
+<p>KKT(Karush-Kuhn-Tucker)条件 <span class="math display">\[
+\begin{gathered}
+\frac{\partial}{\partial w_i} L\left(w^*, \alpha^*, \beta^*\right)=0,
+i=1, \ldots, n \\
+\frac{\partial}{\partial \beta_i} L\left(w^*, \alpha^*,
+\beta^*\right)=0, i=1, \ldots, l \\
+\alpha_i^* g_i\left(w^*\right)=0, i=1, \ldots, k \\
+g_i\left(w^*\right) \leq 0, i=1, \ldots, k \\
+\alpha_i^* \geq 0, i=1, \ldots, k
+\end{gathered}
+\]</span> (凸优化下）如果 <span class="math inline">\(w^*, \alpha^*,
+\beta^*\)</span> 满足 KKT
+条件，那么它们就是原问题和对偶问题的<strong>解</strong>。</p>
+<p><strong>互补条件</strong>含义：如果 <span
+class="math inline">\(\alpha^*&gt;0\)</span>, 那么 <span
+class="math inline">\(g_i\left(\boldsymbol{w}^*\right)=\mathbf{0}\)</span>,
+即 <span class="math inline">\(w\)</span> 处于可行域的边界上,
+是起作用的(Active)约束。</p>
+<hr />
+<p>回到SVM</p>
+<p>不等式约束下的优化问题,
+可以用<strong>拉格朗日乘子法</strong>求解极值: <span
+class="math display">\[
+\begin{gathered}
+\min _{w, b} \max _a L(w, b, a) \\
+L(w, b, a)=\frac{1}{2}\|w\|^2-\sum_{n=1}^N a_n\left\{t_n\left(w^T
+x_n+b\right)-1\right\}, a_n \geq 0
+\end{gathered}
+\]</span> 其中, <span class="math inline">\(L(w, b, a)\)</span>
+为<strong>拉格朗日泛函</strong>， <span
+class="math inline">\(a_n\)</span>
+为对每一个样本引入的<strong>拉格朗日系数</strong>。</p>
+<p>上述最小、最大问题, 最优解在<strong>鞍点处</strong>求得。</p>
+<p><img src="/images/6-SVM.assets/image-20221108115302812.png" alt="image-20221108115302812" style="zoom: 67%;" /></p>
+<p>最优解处<strong>偏导数</strong>为零: <span class="math display">\[
+\begin{gathered}
+\frac{\partial L(w, b, a)}{\partial w}=w-\sum_{n=1}^N a_n t_n x_n=0 \\
+\frac{\partial L(w, b, a)}{\partial b}=\sum_{n=1}^N a_n t_n=0
+\end{gathered}
+\]</span> 代入 <span class="math inline">\(L\)</span>
+拉格朗日泛函，消去w和<span class="math inline">\(b\)</span>
+，得到对偶问题(): <span class="math display">\[
+\begin{array}{cc}
+\underset{\alpha}{max}\quad\tilde{L}(\boldsymbol{a})=\sum_{n=1}^N
+a_n-\frac{1}{2} \sum_{n=1}^N \sum_{m=1}^N a_n a_m t_n t_m x_n{ }^T x_m
+&amp;  \\
+\text { s.t. } a_n \geq 0, n=1, \ldots, N, \sum_{n=1}^N a_n t_n=0 &amp;
+\end{array}
+\]</span> 通过<strong>对偶问题的解</strong> <span
+class="math inline">\(a_n^*, n=1,2, \ldots, N\)</span>,
+可以求解出<strong>原问题的解</strong>: <span class="math display">\[
+w^*=\sum_{n=1}^N a_n^* t_n x_n
+\]</span> 即:
+最优平面的权值向量等于训练样本以一定的系数<strong>加权</strong>后进行<strong>线性组合</strong>。</p>
+<p>下面考虑如何求解<span class="math inline">\(b\)</span></p>
+<p>KKT条件: <span class="math display">\[
+\begin{aligned}
+&amp;a_n \geq 0 \\
+&amp;t_n y\left(x_n\right)-1 \geq 0 \\
+&amp;a_n\left\{t_n y\left(x_n\right)-1\right\}=0
+\end{aligned}
+\]</span>
+其中支持向量是那些<strong>Active约束下</strong>的不等式对应的<strong>样本点</strong>:
+<span class="math display">\[
+t_n\left(w^T x+b\right)=1, a_n&gt;0
+\]</span> 可以根据已经求得的 <span class="math inline">\(w^*\)</span>,
+用<strong>支持向量</strong>求解 <span
+class="math inline">\(\mathrm{b}^*\)</span></p>
+<p>非支持向量： <span class="math display">\[
+\begin{aligned}
+&amp;t_n\left(w^T x+b\right)&gt;1, a_n=0 \\
+&amp;y(x)=\sum_{n=1}^N a_n t_n x^T x_n+b \\
+&amp;b=\frac{1}{N_s} \sum_{n \in S}\left(t_n-\sum_{m \in S} a_m t_m
+x_n^T x_m\right)
+\end{aligned}
+\]</span></p>
+<blockquote>
+<p>超平面法向量(<span
+class="math inline">\(\omega\)</span>)是支持向量的<strong>线性组合</strong></p>
+<p>由于最优超平面的解(<span
+class="math inline">\(\omega,b\)</span>)完全由支持向量决定，这种方法被称为支持向量机。</p>
+</blockquote>
+<p><img src="/images/6-SVM.assets/image-20221108143843247.png" alt="image-20221108143843247" style="zoom:50%;" /></p>
+<p>测试时: <span
+class="math inline">\(f(\mathbf{x})=\operatorname{sgn}\left(\boldsymbol{w}^*
+\boldsymbol{x}+\boldsymbol{b}^*\right)\)</span></p>
+<h2 id="软间隔svm">软间隔SVM</h2>
+<p>基准SVM处理<strong>噪声</strong>和<strong>离群点</strong>的问题</p>
+<ul>
+<li>如何处理<strong>线性不可分</strong>？</li>
+<li>求解最优分类面的时间代价大，还可能导致<strong>受噪声</strong>影响,泛化性能差。</li>
+</ul>
+<p>因此，对于分布有交集的数据需要有一定范围内的“<strong>错分</strong>”，又有较大分界区域的<strong>广义最优分类面</strong>。</p>
+<p><img src="/images/6-SVM.assets/image-20221108144656976.png" alt="image-20221108144656976" style="zoom:50%;" /></p>
+<p>这种处理方式也被视为是从<strong>硬间隔</strong>(Hard
+Margin)向<strong>软间隔</strong> (Soft Margin)的转变。</p>
+<p><strong>硬间隔</strong> <span class="math display">\[
+\begin{aligned}
+&amp;\min _{w, b} \frac{1}{\|w\|^2} \\
+&amp;\text { s.t. } t_n\left(w^T x_n+b\right) \geq 1, n=1, \ldots, N
+\end{aligned}
+\]</span>
+<img src="/images/6-SVM.assets/image-20221108145459376.png" alt="image-20221108145459376" style="zoom:50%;" /></p>
+<p><strong>软间隔</strong> <span class="math display">\[
+\begin{aligned}
+&amp;\min _{w, b, \xi} \frac{1}{\|w\|^2} +\mathcal{C} \sum_{n=1}^N \xi_n
+\\
+&amp;\text { s.t. } t_n\left(w^{\boldsymbol{T}}
+x_n+\boldsymbol{b}\right) \geq 1-\xi_n, n=1, \ldots, N \\
+&amp;\xi_n \geq 0
+\end{aligned}
+\]</span>
+<img src="/images/6-SVM.assets/image-20221108145520981.png" alt="image-20221108145520981" style="zoom:50%;" /></p>
+<p>利用拉格朗日乘子法求解: <span class="math display">\[
+\min _{w, b, \xi} \max _a L(w, b, \xi, a, \gamma)=\frac{1}{2}\|w\|^2+C
+\sum_{n=1}^N \xi_n-\sum_{n=1}^N a_n\left\{t_n
+y\left(x_n\right)-1+\xi_n\right\}-\sum_{n=1}^N \gamma_n \xi_n
+\]</span> <span class="math display">\[
+a_n \geq 0 ; \gamma_n \geq 0
+\]</span> 同样地, 对 <span class="math inline">\(\mathrm{L}\)</span>
+求导优化 <span class="math inline">\(w,
+b,\left\{\xi_n\right\}\)</span></p>
+<p>KKT条件: <span class="math display">\[
+\begin{aligned}
+&amp;a_n \geq 0 \\
+&amp;t_n y\left(x_n\right)-1+\xi_n \geq 0 \\
+&amp;a_n\left(t_n y\left(x_n\right)-1+\xi_n\right)=0 \\
+&amp;\gamma_n \geq 0 \\
+&amp;\xi_n \geq 0 \\
+&amp;\gamma_n \xi_n=0
+\end{aligned}
+\]</span> 令L关于<span
+class="math inline">\(\omega,b,\xi_n\)</span>的导数等于0： $$ &amp;=0
+w=<em>{n=1}^N a_n t_n x_n \ &amp;=0 </em>{n=1}^N a_n t_n=0 \ &amp;=0
+a_n=C-_n \</p>
+<p>$$ 代入 <span class="math inline">\(L\)</span>
+化简得到<strong>对偶优化</strong>问题 (max) : <span
+class="math inline">\(\tilde{L}(a)=\sum_{n=1}^N a_n-\frac{1}{2}
+\sum_{n=1}^N \sum_{m=1}^N a_n a_m t_n t_m x_{n}{ }^T x_m\)</span></p>
+<p>得到广义最优分类面的<strong>对偶形式</strong>： <span
+class="math display">\[
+\max _a \sum_{n=1}^N a_n-\frac{1}{2} \sum_{n=1}^N \sum_{m=1}^N a_n a_m
+t_n t_m x_n{ }^T x_m \\
+\text { s.t. } \sum_{n=1}^N a_n t_n=0 \\
+0 \leq a_n \leq C, n=1,2, \ldots, N
+\]</span> 那么原问题中的<strong>解向量</strong>满足: <span
+class="math display">\[
+w^*=\sum_{n=1}^N a_n^* t_n x_n
+\]</span> 代入 <span
+class="math inline">\(\operatorname{sgn}\left(w^{\boldsymbol{T}}
+x+b\right)\)</span>, 得到对于<strong>新样本</strong> <span
+class="math display">\[
+\begin{aligned}
+&amp;y(x)=\sum_{n=1}^N a_n t_n x^T x_n+b \\
+&amp;b=\frac{1}{N_{\mathcal{M}}} \sum_{n \in
+\mathcal{M}}\left(t_n-\sum_{m \in S} a_m t_m x_n{ }^T x_m\right)
+\end{aligned}
+\]</span>
+<img src="/images/6-SVM.assets/image-20221108151205045.png" alt="image-20221108151205045" style="zoom: 50%;" /></p>
+<p>根据KTT条件，式: <span class="math display">\[
+\min _{w, b, \xi} \max _a L(w, b, \xi, a, \gamma)=\frac{1}{2}\|w\|^2+C
+\sum_{n=1}^N \xi_n-\sum_{n=1}^N a_n\left\{t_n
+y\left(x_n\right)-1+\xi_n\right\}-\sum_{n=1}^N \gamma_n \xi_n
+\]</span> 在<strong>鞍点</strong>满足以下两个条件:</p>
+<ol type="1">
+<li><span
+class="math inline">\(a_n\left\{t_n\left[\boldsymbol{w}^{\boldsymbol{T}}
+\boldsymbol{x}_{\boldsymbol{n}}+b\right]-1+\xi_n\right\}=0
+\quad\)</span></li>
+<li><span class="math inline">\(\gamma_n \xi_n=\left(C-a_n\right)
+\xi_n=0 \quad\)</span></li>
+</ol>
+<p><strong>分析</strong>：多数的 <span
+class="math inline">\(a_n=0\)</span>, 只有使得 <span
+class="math inline">\(t_n\left[\boldsymbol{w}^T
+\boldsymbol{x}_n+b\right]- 1+\xi_n=\mathbf{0}\)</span> 的样本，才会使得
+<span class="math inline">\(a_n&gt;0\)</span>
+。这些样本分为两类，决定着<strong>支持向量</strong>：</p>
+<ol type="1">
+<li><strong>分类正确</strong>但处于<strong>分界面上</strong>的样本,
+<span class="math inline">\(0&lt;\)</span> <span
+class="math inline">\(a_n&lt;C, \quad \xi_n=0\)</span></li>
+<li><strong>分类错误</strong>的样本 <span class="math inline">\(a_n=C,
+\xi_n&gt;0\)</span> 。</li>
+</ol>
+<p>从上式可见, 只有对拉格朗日乘子达到<strong>上界</strong> <span
+class="math inline">\(a_n=C\)</span> 的样本才有 <span
+class="math inline">\(\xi_n&gt;\mathbf{0}\)</span>, 它们是被错分的样本,
+其余样本对应的 <span class="math inline">\(\xi_n=0\)</span></p>
+<h2 id="非线性svm">非线性SVM</h2>
+<h3 id="引入">引入</h3>
+<p>对于<strong>非线性可分</strong>的数据样本，可能通过适当的<strong>函数变换</strong>，将其在<strong>高维空间</strong>中转化为<strong>线性可分</strong>。</p>
+<p><strong>依据</strong>：如果原始空间是<strong>有限维</strong>，一定存在一个这样的高维空间使得<strong>样本可分</strong></p>
+<p><strong>非线性支持向量机</strong>的思路是：把样本x映射到某个高维特征空间
+𝝓(𝒙) ，并在其中使用<strong>线性分类器</strong>。</p>
+<h4 id="例子">例子</h4>
+<p><img src="/images/6-SVM.assets/image-20221108152651850.png" alt="image-20221108152651850" style="zoom:50%;" /></p>
+<p><img src="/images/6-SVM.assets/image-20221108152714874.png" alt="image-20221108152714874" style="zoom: 33%;" /></p>
+<p>XOR问题（<strong>二维空间</strong>中最简单的<strong>非线性</strong>问题）</p>
+<p><strong>问题</strong>：</p>
+<p>二维样本集 𝒙 = (𝒙𝟏, 𝒙𝟐) 第一类(0, 0)和 (1, 1)，第二类(1, 0)和 (0,
+1)</p>
+<p><img src="/images/6-SVM.assets/image-20221108153039028.png" alt="image-20221108153039028" style="zoom:50%;" /></p>
+<p><strong>思路</strong>：</p>
+<p>通过映射函数𝝓𝒙 = (𝒙𝟏, 𝒙𝟐, 𝒙𝟏𝒙𝟐)</p>
+<p><img src="/images/6-SVM.assets/image-20221108153025763.png" alt="image-20221108153025763" style="zoom:50%;" /></p>
+<p>将其变为可分情形</p>
+<p><img src="/images/6-SVM.assets/image-20221108153152535.png" alt="image-20221108153152535" style="zoom:50%;" /></p>
+<hr />
+<h3 id="推导">推导</h3>
+<p>利用一个固定的<strong>非线性映射</strong> <span
+class="math inline">\(\phi(x)\)</span>
+将数据映射到特征空间学习的<strong>线性分类器等价于</strong>基于原始数据学习的<strong>非线性分类器</strong>。
+<span class="math display">\[
+y(x)=w^T x+b \Rightarrow y(x)=w^T \phi(x)+b
+\]</span> 决策时 <span class="math display">\[
+\begin{gathered}
+y(x)=\sum_{n=1}^N a_n t_n x^T x_n+b \Rightarrow y(x)=\sum_{n=1}^N a_n
+t_n \phi(x)^T \phi\left(x_n\right)+b \\
+\qquad k\left(x, x_n\right)=\phi(x)^T \phi\left(x_n\right) \quad
+\text{核函数}
+\end{gathered}
+\]</span> 不论 <span class="math inline">\(\phi(x)\)</span>
+所生成的变换空间的维数有多高、具体形式如何,
+<strong>高维特征空间</strong>里的<strong>内积</strong>都可以在原空间通过函数<span
+class="math inline">\(k\left(x, x_n\right)\)</span>
+计算得到。避免高维空间运算。</p>
+<p><img src="/images/6-SVM.assets/image-20221108154647130.png" alt="image-20221108154647130" style="zoom:50%;" /></p>
+<p><img src="/images/6-SVM.assets/image-20221108154707409.png" alt="image-20221108154707409" style="zoom: 33%;" /></p>
+<p>根据问题和数据的不同，选择带有不同的<strong>核函数</strong>。</p>
+<p>一些常用的核函数:</p>
+<ul>
+<li>线性核： <span class="math inline">\(\quad k\left(x_1,
+x_2\right)=x_1^T x_2\)</span></li>
+<li>多项式核： <span class="math inline">\(k\left(x_1,
+x_2\right)=\left(&lt;x_1, x_2&gt;+R\right)^d \quad\)</span>
+如何判断一个函数是</li>
+<li>高斯核: <span class="math inline">\(k\left(x_1, x_2\right)=\exp
+\left\{-\frac{\left\|x_1-x_2\right\|^2}{2 \sigma^2}\right\}
+\quad\)</span> 否可以作为核函数?</li>
+<li>Sigmoid核: <span class="math inline">\(k\left(x_1, x_2\right)=\tanh
+\left(\beta_0 x_1^T x_2+\beta_1\right)\)</span></li>
+</ul>
+<blockquote>
+<p>Mercer定理： <span class="math inline">\(\mathbb{R}^n \times
+\mathbb{R}^n \rightarrow \mathbb{R}\)</span> 上的映射 <span
+class="math inline">\(k\)</span>
+是一个<strong>有效核函数</strong>(也称Mercer核函数)当且仅当
+对于<strong>任何训练样本</strong>其相应的<strong>核函数矩阵</strong>是<strong>对称</strong>、<strong>半正定</strong>的,
+即对于任何平方可积函数 <span
+class="math inline">\(\boldsymbol{g}(\boldsymbol{x})\)</span> 有 <span
+class="math inline">\(\iint k(x, y) g(x) g(y) d x d y \geq 0\)</span>
+。</p>
+</blockquote>
+<h3 id="工具">工具</h3>
+<p>LibSVM: http://www.csie.ntu.edu.tw/~cjlin/libsvm/</p>
+<p><img src="/images/6-SVM.assets/image-20221108155445076.png" alt="image-20221108155445076" style="zoom:50%;" /></p>
+<h2 id="vc维">VC维</h2>
+<p>VC维用于衡量<strong>假设空间的复杂度</strong>，为机器学习提供了坚实的理论基础。</p>
+<p>VC维是SLT（统计学习理论）中衡量函数集性能的指标</p>
+<p><strong>定义</strong>：
+对于一个<strong>指示函数</strong>(即只有0和1两种取值的函数)<strong>集</strong>，如果<strong>存在</strong>h个样本能够被函数集里的函数按照<strong>所有可能</strong>的<span
+class="math inline">\(2^h\)</span>种（标签）形式分开，则称函数集能够把h个样本<strong>打散</strong>，<strong>函数集</strong>的<strong>VC维</strong>就是<strong>能够打散的最大样本数目</strong>。</p>
+<p>例如，（存在）二维平面上大小为3的示例集可以<strong>被直线打散</strong>，但（任何）大小为4的示例集<strong>不能被直线打散</strong>。因此二维平面上<strong>线性划分</strong>构成的假设空间的<strong>VC维为3</strong>。</p>
+<p><img src="/images/6-SVM.assets/image-20221108160133375.png" alt="image-20221108160133375" style="zoom:50%;" /></p>
+<blockquote>
+<p>注意<strong>存在</strong>、<strong>任意</strong>等概念：</p>
+<p>对于样本数量为h的样本集合，<strong>只要找出一个</strong>，其上<strong>任意</strong>的标签形式都可以被<strong>函数集</strong>分开，就可以称h为这个函数集的<strong>VC维</strong></p>
+</blockquote>
+<p>一般而言, <span class="math inline">\(V C\)</span>
+维反映了<strong>函数集</strong>的<strong>学习能力</strong>, <u><span
+class="math inline">\(V C\)</span> 维越大则学习机器越复杂</u>,
+学习的<strong>内容量</strong>就越大。</p>
+<p>目前<strong>没有通用的</strong>关于任意函数集 <span
+class="math inline">\(\mathrm{VC}\)</span>
+维计算的<strong>理论</strong>，只对一些特殊的函数集知道其VC维。</p>
+<ul>
+<li>在 <span class="math inline">\(n\)</span>
+维实数空间中<strong>线性分类器</strong>和<strong>线性实函数</strong>的
+<span class="math inline">\(\mathrm{VC}\)</span> 维是<span
+class="math inline">\(n+1\)</span></li>
+<li>而 <span class="math inline">\(f(x, a)=\sin (a x)\)</span> 的 <span
+class="math inline">\(\mathrm{VC}\)</span>
+维则为<strong>无穷大</strong></li>
+</ul>
+<p>如何用理论和试验的方法计算其VC维是当前SLT中一个待研究的问题。</p>
 
             <footer class="footline">
             </footer>
@@ -2379,8 +3180,11 @@ J_1=\operatorname{tr}\left(S_w+S_b\right)
 class="math inline">\(J_p\)</span> 来度量: <span class="math display">\[
 J_{\boldsymbol{p}}=\int {g[P\left(x \mid \omega_1\right), P\left(x \mid
 \omega_2\right)}\left.P_1, P_2\right] dx
-\]</span> &gt; 其中<span
+\]</span></p>
+<blockquote>
+<p>其中<span
 class="math inline">\(P_1=P(\omega_1),P_2=P(\omega_2)\)</span>为先验概率</p>
+</blockquote>
 <p>构造的基于类概率的<strong>可分性判据</strong>应满足的条件:</p>
 <ol type="1">
 <li><span class="math inline">\(J_P \geq 0\)</span></li>
@@ -2438,14 +3242,15 @@ class="math inline">\(x\)</span>区间</p>
 J_C=-\ln \int\left[p\left(\boldsymbol{x} \mid
 \omega_1\right)\right]^s\left[p\left(\boldsymbol{x} \mid
 \omega_2\right)\right]^{1-s} d \boldsymbol{x} \quad s \in[0,1]
-\]</span> - 对一切 <span class="math inline">\(0 \leq s \leq 1, J_C \geq
-0\)</span></p>
+\]</span></p>
 <ul>
+<li><p>对一切 <span class="math inline">\(0 \leq s \leq 1, J_C \geq
+0\)</span></p></li>
 <li><p>对一切 <span class="math inline">\(0 \leq s \leq 1, J_C=0
 \leftrightarrow p\left(x \mid \omega_1\right)=p\left(x \mid
 \omega_2\right)\)</span></p></li>
-<li><p>当 <span class="math inline">\(x\)</span> 的各分量彼此独立时
-<span class="math display">\[
+<li><p>当 <span class="math inline">\(x\)</span> 的各分量彼此独立时</p>
+<p><span class="math display">\[
 J_C\left(s ; x_1, x_2, \cdots, x_n\right)=\sum_{i=1}^n J_C\left(s ;
 x_i\right)
 \]</span></p></li>
@@ -2475,22 +3280,29 @@ p\left(\mathrm{x} \mid \omega_1\right) \ln \frac{p\left(\mathrm{x} \mid
 p\left(\mathrm{x} \mid \omega_2\right) \ln \frac{p\left(\mathrm{x} \mid
 \omega_2\right)}{p\left(\mathrm{x} \mid \omega_1\right)} d \mathrm{x}
 \end{aligned}
-\]</span> ##### 关系</p>
+\]</span></p>
+<h5 id="关系">关系</h5>
 <p>当两类均是<strong>正态分布</strong>且<strong>协方差矩阵相等</strong>时:
 <span class="math display">\[
 J_D=\left(\boldsymbol{\mu}_{\mathbf{1}}-\boldsymbol{\mu}_{\mathbf{2}}\right)^{\boldsymbol{T}}
 \boldsymbol{\Sigma}^{\mathbf{-
 1}}\left(\boldsymbol{\mu}_{\mathbf{1}}-\boldsymbol{\mu}_{\mathbf{2}}\right)=8
 J_B
-\]</span> #### 基于熵的判据</p>
+\]</span></p>
+<h4 id="基于熵的判据">基于熵的判据</h4>
 <p>熵 (Entropy), 以Shannon熵为例: <span class="math display">\[
 H=-\sum_{i=1}^c P\left(w_i \mid x\right) \log _2 P\left(w_i \mid
 x\right)
-\]</span> - 样本类别确定: <span class="math inline">\(P\left(w_i \mid
-x\right)=1, H=0\)</span>; - 样本类别不确定: <span
-class="math inline">\(P\left(w_i \mid x\right)&lt;1, H&gt;0\)</span>; -
-衡量<strong>后验概率</strong>的集中程度 - <strong>熵值越大</strong>,
-说明样本的类别<strong>不确定性越大</strong></p>
+\]</span></p>
+<ul>
+<li>样本类别确定: <span class="math inline">\(P\left(w_i \mid
+x\right)=1, H=0\)</span>;</li>
+<li>样本类别不确定: <span class="math inline">\(P\left(w_i \mid
+x\right)&lt;1, H&gt;0\)</span>;</li>
+<li>衡量<strong>后验概率</strong>的集中程度</li>
+<li><strong>熵值越大</strong>,
+说明样本的类别<strong>不确定性越大</strong></li>
+</ul>
 <p>香农熵 (Shannon Entropy) : <span class="math display">\[
 H=-\sum_{i=1}^c P\left(w_i \mid x\right) \log _2 P\left(w_i \mid
 x\right)
@@ -2967,7 +3779,9 @@ j}+\sum_{i=1}^n n b_{i i}\\
 &amp;=n \sum_{j=1}^n b_{j j}+n \sum_{i=1}^n b_{i i}\\
 &amp;=2 n T
 \end{aligned}
-\]</span> 其中$T=<em>{i=1}^n b</em>{i i}=<em>{j=1}^n b</em>{j j} $</p>
+\]</span></p>
+<p>其中 <span class="math inline">\(\text { (Trace) }T=\sum_{i=1}^n b_{i
+i}=\sum_{j=1}^n b_{j j}\)</span></p>
 <p>于是联立以下等式: <span class="math display">\[
 \begin{aligned}
 &amp;d_{i j}^2=\sum_{k=1}^q x_{i k}^2+\sum_{k=1}^q x_{j k}^2-2 b_{i
@@ -3198,12 +4012,12 @@ class="math inline">\(Y\)</span></p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1667829606" defer></script>
-        <script src="/js/lunr.min.js?1667829606" defer></script>
-        <script src="/js/lunr.stemmer.support.min.js?1667829606" defer></script>
-        <script src="/js/lunr.multi.min.js?1667829606" defer></script>
-        <script src="/js/lunr.en.min.js?1667829606" defer></script>
-        <script src="/js/search.js?1667829606" defer></script>
+        <script src="/js/auto-complete.js?1667901172" defer></script>
+        <script src="/js/lunr.min.js?1667901172" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667901172" defer></script>
+        <script src="/js/lunr.multi.min.js?1667901172" defer></script>
+        <script src="/js/lunr.en.min.js?1667901172" defer></script>
+        <script src="/js/search.js?1667901172" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -3276,10 +4090,10 @@ class="math inline">\(Y\)</span></p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1667829606" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1667829606" defer></script>
-    <script src="/js/featherlight.min.js?1667829606" defer></script>
-    <script src="/js/theme.js?1667829606" defer></script>
+    <script src="/js/clipboard.min.js?1667901172" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667901172" defer></script>
+    <script src="/js/featherlight.min.js?1667901172" defer></script>
+    <script src="/js/theme.js?1667901172" defer></script>
   </body>
         
 <link rel="stylesheet" href="/js/katex/katex.min.css" >

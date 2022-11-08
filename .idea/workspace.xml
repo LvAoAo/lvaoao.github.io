@@ -2,59 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/content/Book List/_index.files/Deep Learning with PyTorch Step-by-Step A Beginner’s Guide.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Book List/_index.files/Heterogeneous Graph Representation Learning and Applications.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Book List/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.files/Pattern classification (Richard O. Duda, Peter E. Hart, David G. Stork).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.files/模式识别 (张学工) .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Game theory/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/6-SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/6-SVM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/en/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/2-纳什均衡/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/2-纳什均衡/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/2-纳什均衡/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/2-纳什均衡/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/3-完全信息静态博弈/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/3-完全信息静态博弈/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/3-完全信息静态博弈/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/3-完全信息静态博弈/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/4-完全信息动态博弈/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/4-完全信息动态博弈/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/4-完全信息动态博弈/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/4-完全信息动态博弈/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/5-重复博弈/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/5-重复博弈/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/5-重复博弈/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/5-重复博弈/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/6-非完全信息静态博弈/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/6-非完全信息静态博弈/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/6-非完全信息静态博弈/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/6-非完全信息静态博弈/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/习题/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/习题/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/习题/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/习题/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/考点/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/考点/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game-theory/考点/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/game-theory/考点/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/2-线性判别函数/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/2-线性判别函数/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/2-线性判别函数/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/2-线性判别函数/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/3-非线性判别函数/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/3-非线性判别函数/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/3-非线性判别函数/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/3-非线性判别函数/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/4-贝叶斯决策/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/4-贝叶斯决策/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/4-贝叶斯决策/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/4-贝叶斯决策/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/5-参数估计/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/5-参数估计/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/5-参数估计/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/5-参数估计/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/6-svm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/6-svm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/6-svm/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/6-svm/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/7-特征选择和提取/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/7-特征选择和提取/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/7-特征选择和提取/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/7-特征选择和提取/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pattern-recognition/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pattern-recognition/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pir/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pir/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pir/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pir/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pir/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pir/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pir/index.print.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pir/index.print.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pir/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pir/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +87,9 @@
       <workItem from="1667610518723" duration="606000" />
       <workItem from="1667710178215" duration="1878000" />
       <workItem from="1667784222651" duration="6174000" />
-      <workItem from="1667815166468" duration="2458000" />
+      <workItem from="1667815166468" duration="3361000" />
+      <workItem from="1667871788451" duration="1646000" />
+      <workItem from="1667885817975" duration="2719000" />
     </task>
     <servers />
   </component>
