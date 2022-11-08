@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Book List/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Book List/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Game theory/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/6-SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/6-SVM.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/7-特征选择和提取.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,8 @@
       <workItem from="1667784222651" duration="6174000" />
       <workItem from="1667815166468" duration="3361000" />
       <workItem from="1667871788451" duration="1646000" />
-      <workItem from="1667885817975" duration="2719000" />
+      <workItem from="1667885817975" duration="2877000" />
+      <workItem from="1667904551372" duration="1409000" />
     </task>
     <servers />
   </component>
