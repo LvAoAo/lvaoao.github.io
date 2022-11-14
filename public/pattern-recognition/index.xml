@@ -83,5 +83,12 @@
 特征选择 一般来说，特征选择步骤如下，主要包括子集搜索和子集评估
 严格定义 给定一个特征集 \(X=\left\{x_i \mid i=1,2, \ldots, N\right\}\), 找到该特征集的子集 \[ Y_M=\left\{x_{i_1}, x_{i_2}, \ldots, x_{i_M}\right\}, M&amp;lt;N \] 使得所定义的准则函数 \(J(Y)\) 最优</description>
     </item>
+    <item>
+      <title>Image Feature Extraction</title>
+      <link>/pattern-recognition/8-%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pattern-recognition/8-%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</guid>
+      <description>特征选择和提取 The Slides模式识别-第八章-图像特征提取-yhy.pdf (2 MB)</description>
+    </item>
   </channel>
 </rss>
