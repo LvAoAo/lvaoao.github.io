@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ee5d38-1a1a-439b-a6b2-ec18e9982c68" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/content/Blog/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Book List/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Book List/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Game theory/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Game theory/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/4-贝叶斯决策.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/5-参数估计.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Pattern Recognition/_index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +26,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Pattern Recognition/_index.files&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "C:/Users/13599/Documents/GitHub/lvaoao.github.io/content/Blog",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "ssh.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Blog" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Pattern Recognition\_index.files" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Book List\_index.files" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Book List" />
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory\_index.files" />
-      <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Game theory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\13599\Documents\GitHub\lvaoao.github.io\content\Book List\_index.files" />
@@ -92,7 +88,10 @@
       <workItem from="1667815166468" duration="3361000" />
       <workItem from="1667871788451" duration="1646000" />
       <workItem from="1667885817975" duration="2877000" />
-      <workItem from="1667904551372" duration="1409000" />
+      <workItem from="1667904551372" duration="1612000" />
+      <workItem from="1668131741988" duration="1300000" />
+      <workItem from="1668147735426" duration="8000" />
+      <workItem from="1668413779842" duration="911000" />
     </task>
     <servers />
   </component>
