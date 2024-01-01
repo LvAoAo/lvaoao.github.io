@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>MobaSSL: An Adaptive Graph Self-Supervised Learning Framework Emphasizing Functional Substructure - Wenhao Yu&#39;s Homepage</title>
+<meta property="og:title" content="MobaSSL: An Adaptive Graph Self-Supervised Learning Framework Emphasizing Functional Substructure - Wenhao Yu&#39;s Homepage">
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="img/profile.jpg">
+
+<meta property="og:url" content="https://lvaoao.github.io/mobassl/"><meta property="og:description" content="The homepage of Wenhao Yu.">
+<meta name="Description" property="description" content="The homepage of Wenhao Yu.">
+
+
+<meta property="keywords" content ="graph neural networks, self-supervised learning, neural architecture search, ai4science">
+
+
+
+<link rel="stylesheet" href="https://lvaoao.github.io/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://lvaoao.github.io/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="https://lvaoao.github.io/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Wenhao Yu&#39;s Homepage</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/post/">Posts</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/categories/">Categories</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/about/">About</a>
+        </li>
+        
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="https://lvaoao.github.io/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="https://lvaoao.github.io/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
+    
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">MobaSSL: An Adaptive Graph Self-Supervised Learning Framework Emphasizing Functional Substructure</h1>
+        
+        <div class="flex justify-between items-center">
+            
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="https://lvaoao.github.io/mobassl/">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="2023-10-13T00:00:00Z"
+                    content="2023-10-13T00:00:00Z">
+                    2023.10.13
+                </time>
+            </a>
+            
+            
+                
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="https://lvaoao.github.io/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wenhao Yu</span></a>
+                
+            
+        </div>
+        
+        <div>
+            Reading time: 8 minutes.
+        </div>
+        
+    </div>
+
+    <div class="article-content e-content" itemprop="articleBody">
+        <h1 id="abstract">Abstract</h1>
+<p>In recent years Graph Neural Networks (GNNs) are increasingly being employed to process structural data prevalent in diverse domains such as social networks, molecular graphs, and multi-agent networks. In order to effectively extract valuable insights concealed within the structures, some researchers meticulously integrate experience-based rules into their encoders. However, these approaches often lead to a lack of generality and flexibility in rule selection.</p>
+<p>This paper introduces a comprehensive GNNs-based Encoding Framework, designed to address these limitations by focusing on functional substructures within ubiquitous graph architectures. Specifically, we adopt the widely used fragmentation rule, BRICS, as our foundational approach to identifying functional motifs within molecular graphs. We propose a neural networks (NNs) based controller that enables node-wise adaptation of BRICS during the message-passing process of GNNs. The controller is further divided into two components: switchers and a decider, each fulfilling specific roles in transforming the meaning of each embedding layer and determining the subsequent layer. Extensive experiments conducted on various downstream benchmark tasks demonstrate that our framework consistently outperforms state-of-the-art baselines.</p>
+<h1 id="supplementary-materials">Supplementary Materials</h1>
+<p>This part is for showing the supplementary <strong>Figures</strong> and <strong>References</strong> for the <!-- raw HTML omitted -->Research Proposal<!-- raw HTML omitted --> I submitted.</p>
+<h2 id="figures">Figures</h2>
+<p><img src="../img/motif-view.svg" alt=""></p>
+<p><strong>Figure 1: Derivation of Motif-View Graph and Directed Propagation Graph (DPG).</strong> The atoms highlighted by red circles in the motif-view graph indicate nodes that will aggregate information from the located motif. The red solid line and green dashed line in the DPG represent additional and excluded information, respectively, compared to the original propagation of \(G_o\).</p>
+<hr>
+<p><img src="../img/Encoder-Framwork.svg" alt=""></p>
+<p><strong>Figure 2: Workflow of a 2-layer encoder, illustrating the design of the Controller and Graph Neural Networks (GNNs).</strong> The upper half demonstrates that GNNs aggregate information according to the sampled Directed Propagation Graph (DPG) instead of the original graph \(G_o\), while the lower half clarifies the controlling process with embeddings as input.</p>
+<hr>
+<p><img src="../img/Traning-Framework.svg" alt="Figure 3: Overall Framework of MobaSSL"></p>
+<h2 id="references">References</h2>
+<p>[1] Jörg Degen, Christof Wegscheid-Gerlach, Andrea Zaliani, and Matthias Rarey. 2008. On the Art of Compiling and Using’Drug-Like’Chemical Fragment Spaces.ChemMedChem: Chemistry Enabling Drug Discovery 3, 10 (2008), 1503–1507.</p>
+<p>[2] Federico Errica, Marco Podda, Davide Bacciu, and Alessio Micheli. 2019. A fair comparison of graph neural networks for graph classification. arXiv preprint arXiv:1912.09893 (2019).</p>
+<p>[3] Wenqi Fan, Yao Ma, Qing Li, Yuan He, Eric Zhao, Jiliang Tang, and Dawei Yin. 2019. Graph neural networks for social recommendation. In The world wide web conference. 417–426.</p>
+<p>[4] Hongyang Gao, Shuo Pei, Zhiting Huang, Zihang Dai, Ming-Fai Leung, Fanjin Chen, and Le Song. 2020. Graph neural architecture search. In International Joint Conference on Artificial Intelligence (IJCAI). 1403–1409.</p>
+<p>[5] Justin Gilmer, Samuel S Schoenholz, Patrick F Riley, Oriol Vinyals, and George E Dahl. 2017. Neural message passing for quantum chemistry. In International conference on machine learning. PMLR, 1263–1272.</p>
+<p>[6] Aditya Grover, Aaron Zweig, and Stefano Ermon. 2018. Graphite: Iterative Generative Modeling of Graphs. ArXiv abs/1803.10459 (2018).</p>
+<p>[7] Weihua Hu, Bowen Liu, Joseph Gomes, Marinka Zitnik, Percy Liang, Vijay Pande, and Jure Leskovec. 2019. Strategies for pre-training graph neural networks. arXiv preprint arXiv:1905.12265 (2019).</p>
+<p>[8] Ziniu Hu, Yuxiao Dong, Kuansan Wang, Kai-Wei Chang, and Yizhou Sun. 2020. Gpt-gnn: Generative pre-training of graph neural networks. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining. 1857–1867.</p>
+<p>[9] Nadav Kashtan, Shalev Itzkovitz, Ron Milo, and Uri Alon. 2004. Efficient sampling algorithm for estimating subgraph concentrations and detecting network motifs. Bioinformatics 20, 11 (2004), 1746–1758.</p>
+<p>[10] Suyeon Kim, Dongha Lee, SeongKu Kang, Seonghyeon Lee, and Hwanjo Yu. 2023. Learning topology-specific experts for molecular property prediction. In Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 37. 8291–8299.</p>
+<p>[11] Thomas N Kipf and Max Welling. 2017. Semi-supervised classification with graph convolutional networks. In International Conference on Learning Representations (ICLR).</p>
+<p>[12] Greg Landrum. 2013. RDKit Documentation. Release.</p>
+<p>[13] Shengchao Liu, Meng Qu, Zuobai Zhang, Huiyu Cai, and Jian Tang. 2022. Structured multi-task learning for molecular property prediction. In International conference on artificial intelligence and statistics. PMLR, 8906–8920.</p>
+<p>[14] Yixin Liu, Ming Jin, Shirui Pan, Chuan Zhou, Yu Zheng, Feng Xia, and S Yu Philip. 2022. Graph self-supervised learning: A survey. IEEE Transactions on Knowledge and Data Engineering 35, 6 (2022), 5879–5900.</p>
+<p>[15] Yong Liu, Weixun Wang, Yujing Hu, Jianye Hao, Xingguo Chen, and Yang Gao. 2020. Multi-agent game abstraction via graph attention neural network. In Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 34. 7211–7218.</p>
+<p>[16] Zhenyu Liu, Xin Wang, Ziwei Zhang, Yijian Qin, and Wenwu Zhu. 2020. PSP: Progressive space pruning for efficient graph neural architecture search. In European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD). 1–17.</p>
+<p>[17] Zhenyu Liu, Xin Wang, Ziwei Zhang, Yijian Qin, and Wenwu Zhu. 2020. Search to aggregate neighborhood for graph neural network. In International Conference on Data Mining (ICDM). 1–10.</p>
+<p>[18] Chengqiang Lu, Qi Liu, Chao Wang, Zhenya Huang, Peize Lin, and Lixin He. 2019. Molecular property prediction: A multilevel quantum interactions modeling perspective. In Proceedings of the AAAI conference on artificial intelligence, Vol. 33. 1052–1060.</p>
+<p>[19] Jiezhong Qiu, Qibin Chen, Yuxiao Dong, Jing Zhang, Hongxia Yang, Ming Ding, Kuansan Wang, and Jie Tang. 2020. GCC: Graph Contrastive Coding for Graph Neural Network Pre-Training. ArXiv abs/2010.13902 (2020).</p>
+<p>[20] Bharath Ramsundar, Peter Eastman, Pat Walters, and Vijay Pande. 2019. Deep learning for the life sciences: applying deep learning to genomics, microscopy, drug discovery, and more. &ldquo;O’Reilly Media, Inc.&rdquo;.</p>
+<p>[21] Yu Rong, Yatao Bian, Tingyang Xu, Weiyang Xie, Ying Wei, Wenbing Huang, and Junzhou Huang. 2020. Self-supervised graph transformer on large-scale molecular data. Advances in Neural Information Processing Systems 33 (2020), 12559–12571.</p>
+<p>[22] Aravind Sankar, Xinyang Zhang, and Kevin Chen-Chuan Chang. 2017. Motif-based convolutional neural network on graphs. arXiv preprint arXiv:1711.05697 (2017).</p>
+<p>[23] Kristof T Schütt, Farhad Arbabzadah, Stefan Chmiela, Klaus R Müller, and Alexandre Tkatchenko. 2017. Quantum-chemical insights from deep tensor neural networks. Nature communications 8, 1 (2017), 13890.</p>
+<p>[24] Teague Sterling and John J Irwin. 2015. ZINC 15–ligand discovery for everyone. Journal of chemical information and modeling 55, 11 (2015), 2324–2337.</p>
+<p>[25] Arjun Subramonian. 2021. Motif-driven contrastive learning of graph representations. In Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 35. 15980–15981.</p>
+<p>[26] Fan-Yun Sun, Jordan Hoffmann, Vikas Verma, and Jian Tang. 2019. InfoGraph: Unsupervised and Semi-supervised Graph-Level Representation Learning via Mutual Information Maximization. ArXiv abs/1908.01000 (2019).</p>
+<p>[27] Richard S Sutton, David McAllester, Satinder Singh, and Yishay Mansour. 1999. Policy gradient methods for reinforcement learning with function approximation. Advances in neural information processing systems 12 (1999).</p>
+<p>[28] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Liò, and Yoshua Bengio. 2018. Graph attention networks. In International Conference on Learning Representations (ICLR).</p>
+<p>[29] Petar Veličković, William Fedus, William L Hamilton, Pietro Liò, Yoshua Bengio, and R Devon Hjelm. 2018. Deep graph infomax. arXiv preprint arXiv:1809.10341 (2018).</p>
+<p>[30] Daixin Wang, Zhiqiang Zhang, Yeyu Zhao, Kai Huang, Yulin Kang, and Jun Zhou. 2023. Financial Default Prediction via Motif-preserving Graph Neural Network with Curriculum Learning. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2233–2242.</p>
+<p>[31] Junmei Wang and Tingjun Hou. 2011. Application of molecular dynamics simulations in molecular property prediction II: diffusion coefficient. Journal of computational chemistry 32, 16 (2011), 3505–3519.</p>
+<p>[32] Sebastian Wernicke. 2006. Efficient detection of network motifs. IEEE/ACM transactions on computational biology and bioinformatics 3, 4 (2006), 347–359.</p>
+<p>[33] Zonghan Wu, Shirui Pan, Guodong Long, Jing Jiang, and Chengqi Zhang. 2020. Self-Supervised Learning of Graph Neural Networks: A Unified Review. ArXiv abs/2011.15069 (2020).</p>
+<p>[34] Zhenqin Wu, Bharath Ramsundar, Evan N Feinberg, Joseph Gomes, Caleb Geniesse, Aneesh S Pappu, Karl Leswing, and Vijay Pande. 2018. MoleculeNet: a benchmark for molecular machine learning. Chemical science 9, 2 (2018), 513–530.</p>
+<p>[35] Jiaxuan Xu, Xin Wang, Ziwei Zhang, Yijian Qin, and Wenwu Zhu. 2020. Do not train it: A linear neural architecture search of graph neural networks. In International Conference on Data Mining (ICDM). 1–10.</p>
+<p>[36] Keyulu Xu, Weihua Hu, Jure Leskovec, and Stefanie Jegelka. 2019. How powerful are graph neural networks?. In International Conference on Learning Representations (ICLR).</p>
+<p>[37] Kevin Yang, Kyle Swanson, Wengong Jin, Connor Coley, Philipp Eiden, Hua Gao, Angel Guzman-Perez, Timothy Hopper, Brian Kelley, Miriam Mathea, et al . 2019. Analyzing learned molecular representations for property prediction. Journal of chemical information and modeling 59, 8 (2019), 3370–3388.</p>
+<p>[38] Zhilin Yang, William Cohen, and Ruslan Salakhudinov. 2016. Revisiting semi-supervised learning with graph embeddings. In International conference on machine learning. PMLR, 40–48.</p>
+<p>[39] Yuning You, Tianlong Chen, Yongduo Sui, Ting Chen, Zhangyang Wang, and Yang Shen. 2020. Graph contrastive learning with augmentations. Advances in neural information processing systems 33 (2020), 5812–5823.</p>
+<p>[40] Matthew D Zeiler and Rob Fergus. 2014. Visualizing and understanding convolutional networks. In Computer Vision–ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I 13. Springer, 818–833.</p>
+<p>[41] Muhan Zhang and Yixin Chen. 2018. Link prediction based on graph neural networks. Advances in neural information processing systems 31 (2018).</p>
+<p>[42] Wentao Zhang, Zeang Sheng, Ziqi Yin, Yuezihan Jiang, Yikuan Xia, Jun Gao, Zhi Yang, and Bin Cui. 2022. Model degradation hinders deep graph neural networks. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2493–2503.</p>
+<p>[43] Zaixi Zhang, Qi Liu, Hao Wang, Chengqiang Lu, and Chee-Kong Lee. 2021. Motif-based graph self-supervised learning for molecular property prediction. Advances in Neural Information Processing Systems 34 (2021), 15870–15882.</p>
+<p>[44] Ziwei Zhang, Yijian Qin, Xin Wang, and Wenwu Zhu. 2020. Designing the topology of graph neural networks: A novel feature fusion perspective. In International Conference on Machine Learning (ICML). 11348–11358.</p>
+<p>[45] Bolei Zhou, David Bau, Aude Oliva, and Antonio Torralba. 2018. Interpreting deep visual representations via network dissection. IEEE transactions on pattern analysis and machine intelligence 41, 9 (2018), 2131–2145.</p>
+<p>[46] Jie Zhou, Zhen Zhang, Xin Wang, and Wenwu Zhu. 2020. Efficient and explainable graph neural architecture search via monte-carlo tree search. In European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD). 1–17.</p>
+<p>[47] Jinhua Zhu, Kehan Wu, Bohan Wang, Yingce Xia, Shufang Xie, Qi Meng, Lijun Wu, Tao Qin, Wengang Zhou, Houqiang Li, et al. 2022. O-GNN: incorporating ring priors into molecular modeling. In The Eleventh International Conference on Learning Representations.</p>
+
+    </div>
+
+    
+<ul class="list-none pl-0 font-sm align-left">
+
+<hr>
+<li class="list-none">
+    Categories:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/categories/paper">
+    <span class="tag-item dark:bg-zinc-900 dark:hover:bg-zinc-700
+                 hover:bg-zinc-200 bg-zinc-100
+                 dark:border-zinc-600 py-0.5
+                 px-1 rounded-t border-b-2 border-zinc-300
+                 hover:border-zinc-500">
+    Paper
+    </span>
+</a>
+</li >
+
+
+<li class="list-none">
+    Tags:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/graph-neural-networks">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://lvaoao.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Graph Neural Networks
+        </span>
+    </a>
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/self-supervised-learning">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://lvaoao.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Self-Supervised Learning
+        </span>
+    </a>
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/neural-architecture-search">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://lvaoao.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Neural Architecture Search
+        </span>
+    </a>
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/ai4science">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://lvaoao.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            AI4Science
+        </span>
+    </a>
+    
+</li>
+
+</ul>
+
+
+    
+
+    
+    <div class="text-neutral-500 mb-4">
+        Last modified <span itemprop="dateModified"
+                            datetime="2023-10-13T00:00:00Z"
+                            content="2023-10-13T00:00:00Z">
+        2023.10.13
+        </span>
+    </div>
+    
+</article>
+
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
+    
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Wenhao Yu 2024</span>
+    </li>
+  </ul>
+</footer>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+  </body>
+</html>

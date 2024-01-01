@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="306 -131 855 445" width="855" height="445">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 4 4" markerWidth="4" markerHeight="4" color="black">
+      <g>
+        <path d="M 1.92 0 L 0 -.72 L 0 .72 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#235e00">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_4" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#b1001c">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_5" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="black">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_29">
+        <line x1="319.6364" y1="-48.608465" x2="367.2157" y2="-61.357465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_28">
+        <line x1="371.9737" y1="-60.082465" x2="377.209" y2="-79.620465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_27">
+        <line x1="377.209" y1="-79.620465" x2="382.4444" y2="-99.15947" stroke="red" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_26">
+        <line x1="362.4578" y1="-62.631465" x2="367.6932" y2="-82.170465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_25">
+        <line x1="367.6932" y1="-82.170465" x2="372.9286" y2="-101.70947" stroke="red" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_24">
+        <line x1="367.2157" y1="-61.357465" x2="381.3701" y2="-47.202465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_23">
+        <line x1="381.3701" y1="-47.202465" x2="395.5245" y2="-33.048465" stroke="blue" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_22">
+        <line x1="408.568" y1="-28.274465" x2="429.097" y2="-33.774465" stroke="blue" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_21">
+        <line x1="429.097" y1="-33.774465" x2="449.626" y2="-39.275465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_20">
+        <line x1="449.626" y1="-39.275465" x2="462.374" y2="-86.85447" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_19">
+        <line x1="461.054" y1="-43.862465" x2="469.978" y2="-77.168465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_18">
+        <line x1="449.626" y1="-39.275465" x2="484.456" y2="-4.444465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_17">
+        <line x1="462.374" y1="-86.85447" x2="509.954" y2="-99.60347" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_16">
+        <line x1="509.954" y1="-99.60347" x2="544.784" y2="-64.773465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_15">
+        <line x1="508.212" y1="-87.41247" x2="532.594" y2="-63.031465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_14">
+        <line x1="544.784" y1="-64.773465" x2="532.035" y2="-17.193465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_13">
+        <line x1="544.784" y1="-64.773465" x2="592.364" y2="-77.521465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_12">
+        <line x1="532.035" y1="-17.193465" x2="484.456" y2="-4.444465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_11">
+        <line x1="522.349" y1="-24.797465" x2="489.043" y2="-15.873465" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 373.5611 -108.89747 C 373.5611 -111.13013 374.11277 -112.8704 375.2161 -114.11827 C 376.3195 -115.36613 377.90233 -115.99007 379.9646 -115.99007 C 382.02687 -115.99007 383.60967 -115.36613 384.713 -114.11827 C 385.8164 -112.8704 386.3681 -111.13013 386.3681 -108.89747 C 386.3681 -106.63813 385.80983 -104.8648 384.6933 -103.57747 C 383.57677 -102.3028 382.00053 -101.66547 379.9646 -101.66547 C 377.91547 -101.66547 376.33263 -102.3028 375.2161 -103.57747 C 374.11277 -104.85147 373.5611 -106.6248 373.5611 -108.89747 M 379.9646 -103.24247 C 381.3832 -103.24247 382.47343 -103.71513 383.2353 -104.66047 C 384.0103 -105.6198 384.3978 -107.03213 384.3978 -108.89747 C 384.3978 -110.72293 384.0103 -112.09543 383.2353 -113.01497 C 382.47343 -113.94757 381.3832 -114.41387 379.9646 -114.41387 C 378.54593 -114.41387 377.4491 -113.95413 376.6741 -113.03467 C 375.9123 -112.11513 375.5314 -110.73607 375.5314 -108.89747 C 375.5314 -107.0188 375.9123 -105.60647 376.6741 -104.66047 C 377.4491 -103.71513 378.54593 -103.24247 379.9646 -103.24247" fill="red"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 398.9627 -33.501465 L 403.5338 -26.112465 C 403.83593 -25.626465 404.23 -24.943465 404.716 -24.063465 C 405.202 -23.183465 405.45813 -22.717132 405.4844 -22.664465 L 405.4844 -33.501465 L 407.337 -33.501465 L 407.337 -19.551465 L 405.4253 -19.551465 L 400.5192 -27.629465 C 400.13827 -28.26013 399.7442 -28.9368 399.337 -29.659465 C 398.943 -30.38213 398.68687 -30.8548 398.5686 -31.077465 L 398.5686 -19.551465 L 396.7559 -19.551465 L 396.7559 -33.501465 L 398.9627 -33.501465" fill="blue"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 396.5885 -18.156465 L 398.48 -18.156465 L 398.48 -12.226465 L 405.6125 -12.226465 L 405.6125 -18.156465 L 407.504 -18.156465 L 407.504 -4.206465 L 405.6125 -4.206465 L 405.6125 -10.649465 L 398.48 -10.649465 L 398.48 -4.206465 L 396.5885 -4.206465 L 396.5885 -18.156465" fill="blue"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 394.0645 -109.81924 C 397.1628 -92.17968 390.34945 -66.75193 378.8465 -53.02475 C 367.34353 -39.297485 355.50695 -42.46909 352.40873 -60.108726 C 349.31045 -77.74829 356.1238 -103.17604 367.62677 -116.90322 C 379.1297 -130.63048 390.9663 -127.45888 394.0645 -109.81924" fill="#c0c0ff"/>
+      </g>
+      <g id="Graphic_5">
+        <ellipse cx="323.415" cy="-49.701465" rx="17.4150278274616" ry="16.6530266098603" fill="#ffc0ff"/>
+      </g>
+      <g id="Graphic_4">
+        <ellipse cx="402.04645" cy="-17.924465" rx="17.4150278274615" ry="19.826031680003" fill="#c0ffc0"/>
+      </g>
+      <g id="Graphic_3">
+        <ellipse cx="496.5" cy="-51.348465" rx="56.0000894825062" ry="57.2500914798835" fill="#c0ffff"/>
+      </g>
+      <g id="Graphic_2">
+        <ellipse cx="588.243" cy="-79.284465" rx="17.4150278274616" ry="16.6530266098603" fill="#ffc0ff"/>
+      </g>
+      <g id="Graphic_51">
+        <line x1="329.6772" y1="190.33888" x2="377.2565" y2="177.58988" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_50">
+        <line x1="382.0145" y1="178.86488" x2="387.2498" y2="159.32688" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_49">
+        <line x1="387.2498" y1="159.32688" x2="392.4852" y2="139.78788" stroke="red" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_48">
+        <line x1="372.4986" y1="176.31588" x2="377.734" y2="156.77688" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_47">
+        <line x1="377.734" y1="156.77688" x2="382.9694" y2="137.23788" stroke="red" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_46">
+        <line x1="377.2565" y1="177.58988" x2="391.4109" y2="191.74488" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_45">
+        <line x1="391.4109" y1="191.74488" x2="405.5653" y2="205.89888" stroke="blue" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_44">
+        <line x1="418.6088" y1="210.67288" x2="439.1378" y2="205.17288" stroke="blue" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_43">
+        <line x1="439.1378" y1="205.17288" x2="459.6668" y2="199.67188" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_42">
+        <line x1="459.6668" y1="199.67188" x2="472.4148" y2="152.09288" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_41">
+        <line x1="471.0948" y1="195.08488" x2="480.0188" y2="161.77888" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_40">
+        <line x1="459.6668" y1="199.67188" x2="494.4968" y2="234.50288" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_39">
+        <line x1="472.4148" y1="152.09288" x2="519.9948" y2="139.34388" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_38">
+        <line x1="519.9948" y1="139.34388" x2="554.8248" y2="174.17388" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_37">
+        <line x1="518.2528" y1="151.53488" x2="542.6348" y2="175.91588" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_36">
+        <line x1="554.8248" y1="174.17388" x2="542.0758" y2="221.75388" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_35">
+        <line x1="554.8248" y1="174.17388" x2="602.4048" y2="161.42588" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_34">
+        <line x1="542.0758" y1="221.75388" x2="494.4968" y2="234.50288" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_33">
+        <line x1="532.3898" y1="214.14988" x2="499.0838" y2="223.07388" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_32">
+        <path d="M 383.6019 130.04988 C 383.6019 127.81721 384.15357 126.07695 385.2569 124.82908 C 386.3603 123.58121 387.94313 122.95728 390.0054 122.95728 C 392.06767 122.95728 393.65047 123.58121 394.7538 124.82908 C 395.8572 126.07695 396.4089 127.81721 396.4089 130.04988 C 396.4089 132.30921 395.85063 134.08255 394.7341 135.36988 C 393.61757 136.64455 392.04133 137.28188 390.0054 137.28188 C 387.95627 137.28188 386.37343 136.64455 385.2569 135.36988 C 384.15357 134.09588 383.6019 132.32255 383.6019 130.04988 M 390.0054 135.70488 C 391.424 135.70488 392.51423 135.23221 393.2761 134.28688 C 394.0511 133.32755 394.4386 131.91521 394.4386 130.04988 C 394.4386 128.22441 394.0511 126.85191 393.2761 125.93238 C 392.51423 124.99978 391.424 124.53348 390.0054 124.53348 C 388.58673 124.53348 387.4899 124.99321 386.7149 125.91268 C 385.9531 126.83221 385.5722 128.21128 385.5722 130.04988 C 385.5722 131.92855 385.9531 133.34088 386.7149 134.28688 C 387.4899 135.23221 388.58673 135.70488 390.0054 135.70488" fill="red"/>
+      </g>
+      <g id="Graphic_31">
+        <path d="M 409.0035 205.44588 L 413.5746 212.83488 C 413.87673 213.32088 414.2708 214.00388 414.7568 214.88388 C 415.2428 215.76388 415.49893 216.23021 415.5252 216.28288 L 415.5252 205.44588 L 417.3778 205.44588 L 417.3778 219.39588 L 415.4661 219.39588 L 410.56 211.31788 C 410.17907 210.68721 409.785 210.01055 409.3778 209.28788 C 408.9838 208.56521 408.72767 208.09255 408.6094 207.86988 L 408.6094 219.39588 L 406.7967 219.39588 L 406.7967 205.44588 L 409.0035 205.44588" fill="blue"/>
+      </g>
+      <g id="Graphic_30">
+        <path d="M 406.6293 220.79088 L 408.5208 220.79088 L 408.5208 226.72088 L 415.6533 226.72088 L 415.6533 220.79088 L 417.5448 220.79088 L 417.5448 234.74088 L 415.6533 234.74088 L 415.6533 228.29788 L 408.5208 228.29788 L 408.5208 234.74088 L 406.6293 234.74088 L 406.6293 220.79088" fill="blue"/>
+      </g>
+      <g id="Line_53">
+        <line x1="447.59084" y1="133.75079" x2="448.4265" y2="76.02934" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_54">
+        <rect x="408.2429" y="82.72943" width="79.652" height="36" fill="white"/>
+        <text transform="translate(413.2429 87.72943)" fill="#2a2a2a">
+          <tspan font-family="Cochin" font-weight="bold" font-size="22" fill="#2a2a2a" x="0" y="20">BRICS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <line x1="873.0938" y1="-54.096064" x2="920.6731" y2="-66.845064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_56">
+        <line x1="925.4311" y1="-65.570064" x2="930.6664" y2="-85.10806" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_57">
+        <line x1="930.6664" y1="-85.10806" x2="935.9018" y2="-104.64706" stroke="red" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_58">
+        <line x1="915.9152" y1="-68.119064" x2="921.1506" y2="-87.65806" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_59">
+        <line x1="921.1506" y1="-87.65806" x2="926.386" y2="-107.19706" stroke="red" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_60">
+        <line x1="920.6731" y1="-66.845064" x2="934.8275" y2="-52.690064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_61">
+        <line x1="934.8275" y1="-52.690064" x2="948.9819" y2="-38.536064" stroke="blue" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_62">
+        <line x1="962.0254" y1="-33.762064" x2="982.5544" y2="-39.262064" stroke="blue" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_63">
+        <line x1="982.5544" y1="-39.262064" x2="1003.0834" y2="-44.763064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_64">
+        <line x1="1003.0834" y1="-44.763064" x2="1015.8314" y2="-92.34206" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_65">
+        <line x1="1014.5114" y1="-49.350064" x2="1023.4354" y2="-82.65606" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_66">
+        <line x1="1003.0834" y1="-44.763064" x2="1037.9134" y2="-9.932064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_67">
+        <line x1="1015.8314" y1="-92.34206" x2="1063.4114" y2="-105.09106" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_68">
+        <line x1="1063.4114" y1="-105.09106" x2="1098.2414" y2="-70.261064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_69">
+        <line x1="1061.6694" y1="-92.90006" x2="1086.0514" y2="-68.519064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_70">
+        <line x1="1098.2414" y1="-70.261064" x2="1085.4924" y2="-22.681064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_71">
+        <line x1="1098.2414" y1="-70.261064" x2="1145.8214" y2="-83.00906" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_72">
+        <line x1="1085.4924" y1="-22.681064" x2="1037.9134" y2="-9.932064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_73">
+        <line x1="1075.8064" y1="-30.285064" x2="1042.5004" y2="-21.361064" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_74">
+        <path d="M 927.0185 -114.38506 C 927.0185 -116.61773 927.5702 -118.358 928.6735 -119.60586 C 929.7769 -120.85373 931.3597 -121.47766 933.422 -121.47766 C 935.4843 -121.47766 937.0671 -120.85373 938.1704 -119.60586 C 939.2738 -118.358 939.8255 -116.61773 939.8255 -114.38506 C 939.8255 -112.12573 939.2672 -110.3524 938.1507 -109.06506 C 937.0342 -107.7904 935.4579 -107.15306 933.422 -107.15306 C 931.3729 -107.15306 929.79 -107.7904 928.6735 -109.06506 C 927.5702 -110.33906 927.0185 -112.1124 927.0185 -114.38506 M 933.422 -108.73006 C 934.8406 -108.73006 935.9308 -109.20273 936.6927 -110.14806 C 937.4677 -111.1074 937.8552 -112.51973 937.8552 -114.38506 C 937.8552 -116.21053 937.4677 -117.58303 936.6927 -118.50256 C 935.9308 -119.43516 934.8406 -119.90146 933.422 -119.90146 C 932.0033 -119.90146 930.9065 -119.44173 930.1315 -118.52226 C 929.3697 -117.60273 928.9888 -116.22366 928.9888 -114.38506 C 928.9888 -112.5064 929.3697 -111.09406 930.1315 -110.14806 C 930.9065 -109.20273 932.0033 -108.73006 933.422 -108.73006" fill="red"/>
+      </g>
+      <g id="Graphic_75">
+        <path d="M 952.4201 -38.989064 L 956.9912 -31.600064 C 957.2933 -31.114064 957.6874 -30.431064 958.1734 -29.551064 C 958.6594 -28.671064 958.9155 -28.20473 958.9418 -28.152064 L 958.9418 -38.989064 L 960.7944 -38.989064 L 960.7944 -25.039064 L 958.8827 -25.039064 L 953.9766 -33.117064 C 953.5957 -33.74773 953.2016 -34.424398 952.7944 -35.147064 C 952.4004 -35.86973 952.1443 -36.342398 952.026 -36.565064 L 952.026 -25.039064 L 950.2133 -25.039064 L 950.2133 -38.989064 L 952.4201 -38.989064" fill="blue"/>
+      </g>
+      <g id="Graphic_76">
+        <path d="M 950.0459 -23.644064 L 951.9374 -23.644064 L 951.9374 -17.714064 L 959.0699 -17.714064 L 959.0699 -23.644064 L 960.9614 -23.644064 L 960.9614 -9.694064 L 959.0699 -9.694064 L 959.0699 -16.137064 L 951.9374 -16.137064 L 951.9374 -9.694064 L 950.0459 -9.694064 L 950.0459 -23.644064" fill="blue"/>
+      </g>
+      <g id="Graphic_79">
+        <path d="M 920.0026 -85.10806 L 924.8326 -85.10806 C 933.1169 -85.10806 939.8326 -78.39234 939.8326 -70.108064 L 939.8326 -66.802064 C 939.8326 -58.51779 933.1169 -51.802064 924.8326 -51.802064 L 920.0026 -51.802064 C 911.7183 -51.802064 905.0026 -58.51779 905.0026 -66.802064 L 905.0026 -70.108064 C 905.0026 -78.39234 911.7183 -85.10806 920.0026 -85.10806 Z" fill="#ff8080"/>
+      </g>
+      <g id="Graphic_80">
+        <title>矩形</title>
+        <path d="M 1014.6566 -111.53056 L 1019.4866 -111.53056 C 1027.7709 -111.53056 1034.4866 -104.81484 1034.4866 -96.53056 L 1034.4866 -93.22456 C 1034.4866 -84.94029 1027.7709 -78.22456 1019.4866 -78.22456 L 1014.6566 -78.22456 C 1006.3723 -78.22456 999.6566 -84.94029 999.6566 -93.22456 L 999.6566 -96.53056 C 999.6566 -104.81484 1006.3723 -111.53056 1014.6566 -111.53056 Z" fill="#ff8080"/>
+      </g>
+      <g id="Graphic_121">
+        <line x1="877.5606" y1="180.24876" x2="925.1399" y2="167.49976" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_122">
+        <line x1="929.8979" y1="168.77476" x2="935.1332" y2="149.23676" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_123">
+        <line x1="935.1332" y1="149.23676" x2="940.3686" y2="129.69776" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_124">
+        <line x1="920.382" y1="166.22576" x2="925.6174" y2="146.68676" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_125">
+        <line x1="925.6174" y1="146.68676" x2="930.8528" y2="127.14776" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_126">
+        <line x1="925.1399" y1="167.49976" x2="939.2943" y2="181.65476" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_127">
+        <line x1="939.2943" y1="181.65476" x2="953.4487" y2="195.80876" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_128">
+        <line x1="966.4922" y1="200.58276" x2="987.0212" y2="195.08276" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_129">
+        <line x1="987.0212" y1="195.08276" x2="1007.5502" y2="189.58176" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_130">
+        <line x1="1007.5502" y1="189.58176" x2="1020.2982" y2="142.00276" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_132">
+        <line x1="1007.5502" y1="189.58176" x2="1042.3802" y2="224.41276" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_133">
+        <line x1="1020.2982" y1="142.00276" x2="1067.8782" y2="129.25376" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_134">
+        <line x1="1067.8782" y1="129.25376" x2="1102.7082" y2="164.08376" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_136">
+        <line x1="1102.7082" y1="164.08376" x2="1089.9592" y2="211.66376" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_137">
+        <line x1="1102.7082" y1="164.08376" x2="1150.2882" y2="151.33576" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_138">
+        <line x1="1089.9592" y1="211.66376" x2="1042.3802" y2="224.41276" stroke="black" stroke-opacity=".25796813" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_109">
+        <ellipse cx="883.3583" cy="178.98615" rx="10.2645164016639" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="883.3583" cy="178.98615" rx="10.2645164016639" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_111">
+        <ellipse cx="936.2724" cy="123.46277" rx="10.2645164016639" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="936.2724" cy="123.46277" rx="10.2645164016639" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_112">
+        <ellipse cx="959.5542" cy="201.06815" rx="10.2645164016639" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="959.5542" cy="201.06815" rx="10.2645164016639" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_113">
+        <ellipse cx="1007.94" cy="188.73176" rx="10.2645164016639" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1007.94" cy="188.73176" rx="10.2645164016639" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_114">
+        <ellipse cx="1021.9289" cy="140.29337" rx="10.264516401664" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1021.9289" cy="140.29337" rx="10.264516401664" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_115">
+        <ellipse cx="1066.5602" cy="131.40715" rx="10.264516401664" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1066.5602" cy="131.40715" rx="10.264516401664" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_116">
+        <ellipse cx="1100.7242" cy="162.28437" rx="10.264516401664" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1100.7242" cy="162.28437" rx="10.264516401664" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_117">
+        <ellipse cx="1044.4787" cy="222.25937" rx="10.264516401664" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1044.4787" cy="222.25937" rx="10.264516401664" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_118">
+        <ellipse cx="1089.6837" cy="208.52176" rx="10.264516401664" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1089.6837" cy="208.52176" rx="10.264516401664" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_119">
+        <ellipse cx="1149.4385" cy="151.27337" rx="10.2645164016639" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="1149.4385" cy="151.27337" rx="10.2645164016639" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_143">
+        <ellipse cx="924.8687" cy="169.65315" rx="10.2645164016639" ry="10.5956298339758" fill="#ccc"/>
+        <ellipse cx="924.8687" cy="169.65315" rx="10.2645164016639" ry="10.5956298339758" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_169">
+        <path d="M 926.6262 129.45629 C 917.2971 136.24976 914.2332 142.42439 914.2092 147.85834" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_171">
+        <path d="M 894.4795 180.8356 C 900.1991 181.32699 904.9226 180.9406 908.799 180.06894" marker-end="url(#FilledArrow_Marker_3)" stroke="#235e00" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Line_174">
+        <path d="M 955.0867 190.42 C 951.5292 184.0471 947.1425 179.62579 942.8254 176.55981" marker-end="url(#FilledArrow_Marker_3)" stroke="#235e00" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Line_176">
+        <path d="M 1004.6481 177.6399 C 1003.4283 170.18013 1004.2929 163.36769 1006.2008 157.65764" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_177">
+        <path d="M 1058.6028 123.19962 C 1051.0229 117.63635 1044.0321 118.73471 1038.1877 122.30374" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_179">
+        <path d="M 1082.4642 199.61963 C 1070.292 185.99765 1051.8593 170.1288 1038.5272 158.03765" marker-end="url(#FilledArrow_Marker_4)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_181">
+        <path d="M 1044.1812 210.66778 C 1042.2591 196.15768 1035.5171 177.8774 1029.9503 163.39187" marker-end="url(#FilledArrow_Marker_4)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_182">
+        <path d="M 1090.443 157.53848 C 1076.8128 151.85296 1059.5845 146.55591 1045.81 143.20292" marker-end="url(#FilledArrow_Marker_4)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_183">
+        <text transform="translate(366.8988 256.88556)" fill="#2a2a2a">
+          <tspan font-family="Big Caslon" font-size="21" fill="#2a2a2a" x="13.8026" y="20">Original Graph</tspan>
+        </text>
+      </g>
+      <g id="Graphic_184">
+        <text transform="translate(343.7082 28.072425)" fill="#2a2a2a">
+          <tspan font-family="Big Caslon" font-size="21" fill="#2a2a2a" x="12.473403" y="20"> Fragmented Graph</tspan>
+        </text>
+      </g>
+      <g id="Graphic_186">
+        <text transform="translate(905.9463 7.890074)" fill="#2a2a2a">
+          <tspan font-family="Big Caslon" font-size="21" fill="#2a2a2a" x="2.6405537" y="20">Motif-View Graph</tspan>
+        </text>
+      </g>
+      <g id="Graphic_187">
+        <text transform="translate(882.5606 257.95976)" fill="#2a2a2a">
+          <tspan font-family="Big Caslon" font-size="21" fill="#2a2a2a" x="21.193" y="20">Directed Propagation </tspan>
+          <tspan font-family="Big Caslon" font-size="21" fill="#2a2a2a" x="86.776" y="45.378113">Graph</tspan>
+        </text>
+      </g>
+      <g id="Graphic_188">
+        <path d="M 672.54685 -30.285064 L 795.86835 -30.285064 C 804.1526 -30.285064 810.86835 -23.569336 810.86835 -15.285064 L 810.86835 45.05283 C 810.86835 53.3371 804.1526 60.05283 795.86835 60.05283 L 672.54685 60.05283 C 664.2626 60.05283 657.54685 53.3371 657.54685 45.05283 L 657.54685 -15.285064 C 657.54685 -23.569336 664.2626 -30.285064 672.54685 -30.285064 Z" fill="white"/>
+        <path d="M 672.54685 -30.285064 L 795.86835 -30.285064 C 804.1526 -30.285064 810.86835 -23.569336 810.86835 -15.285064 L 810.86835 45.05283 C 810.86835 53.3371 804.1526 60.05283 795.86835 60.05283 L 672.54685 60.05283 C 664.2626 60.05283 657.54685 53.3371 657.54685 45.05283 L 657.54685 -15.285064 C 657.54685 -23.569336 664.2626 -30.285064 672.54685 -30.285064 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(662.54685 -.11611725)" fill="#2a2a2a">
+          <tspan font-family="Arial Black" font-weight="bold" font-size="21" fill="#2a2a2a" x="14.505478" y="23">Controller</tspan>
+        </text>
+      </g>
+      <g id="Line_189">
+        <line x1="586.7816" y1="-9.932064" x2="640.3674" y2="-.912061" marker-end="url(#FilledArrow_Marker_5)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_190">
+        <line x1="591" y1="138" x2="667.8658" y2="71.9182" marker-end="url(#FilledArrow_Marker_5)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_196">
+        <path d="M 741.4897 -31.785064 C 761.1707 -77.70402 815.331 -72.74052 842.093 -67.07978" marker-end="url(#FilledArrow_Marker_5)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_197">
+        <line x1="982.5544" y1="52.873563" x2="985.3489" y2="113.24623" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_198">
+        <rect x="926.8331" y="65.760974" width="114.302" height="36" fill="white"/>
+        <text transform="translate(931.8331 70.760974)" fill="#2a2a2a">
+          <tspan font-family="Cochin" font-weight="bold" font-size="22" fill="#2a2a2a" x="0" y="20">Equivalent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_199">
+        <rect x="746.0219" y="-84.43124" width="67.838" height="36" fill="white"/>
+        <text transform="translate(751.0219 -79.43124)" fill="#2a2a2a">
+          <tspan font-family="Cochin" font-weight="bold" font-size="22" fill="#2a2a2a" x="0" y="20">Select</tspan>
+        </text>
+      </g>
+      <g id="Graphic_200">
+        <ellipse cx="739.5988" cy="159.00576" rx="82.0521061110063" ry="45.1690193273589" fill="white"/>
+        <ellipse cx="739.5988" cy="159.00576" rx="82.0521061110063" ry="45.1690193273589" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(678.95725 144.00576)" fill="#2a2a2a">
+          <tspan font-family="Arial Black" font-weight="bold" font-size="21" fill="#2a2a2a" x="34.401833" y="23">GNN</tspan>
+        </text>
+      </g>
+      <g id="Line_201">
+        <path d="M 905.0026 200 C 841.531 263.94225 786.9642 246.56518 758.72355 215.07414" marker-end="url(#FilledArrow_Marker_5)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_202">
+        <rect x="764.8816" y="221.9491" width="156.322" height="36" fill="white"/>
+        <text transform="translate(769.8816 226.9491)" fill="#2a2a2a">
+          <tspan font-family="Cochin" font-weight="bold" font-size="22" fill="#2a2a2a" x="5684342e-20" y="20">Be Referred To</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

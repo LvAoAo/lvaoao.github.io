@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neural Architecture Search on Wenhao Yu&#39;s Homepage</title>
+    <link>https://lvaoao.github.io/tags/neural-architecture-search/</link>
+    <description>Recent content in Neural Architecture Search on Wenhao Yu&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lvaoao.github.io/tags/neural-architecture-search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MobaSSL: An Adaptive Graph Self-Supervised Learning Framework Emphasizing Functional Substructure</title>
+      <link>https://lvaoao.github.io/mobassl/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://lvaoao.github.io/mobassl/</guid>
+      <description>Abstract In recent years Graph Neural Networks (GNNs) are increasingly being employed to process structural data prevalent in diverse domains such as social networks, molecular graphs, and multi-agent networks. In order to effectively extract valuable insights concealed within the structures, some researchers meticulously integrate experience-based rules into their encoders. However, these approaches often lead to a lack of generality and flexibility in rule selection.&#xA;This paper introduces a comprehensive GNNs-based Encoding Framework, designed to address these limitations by focusing on functional substructures within ubiquitous graph architectures.</description>
+    </item>
+  </channel>
+</rss>
