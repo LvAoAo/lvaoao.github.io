@@ -39,7 +39,7 @@ Let's exchange ideas and explore the fascinating world around us!
 
 
 # 🔥 News
-- *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/).
+- *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)!
 
 <!-- 
 # 📝 Publications 
