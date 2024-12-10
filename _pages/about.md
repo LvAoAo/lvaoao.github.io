@@ -26,14 +26,24 @@ I hope you find what you want here!
 ## About Myself
 
 - [**CV of Wenhao Yu**(**于文昊**)](img/WenhaoYu.pdf)
-- (Pursuing) Bachelor's Degree in **Artificial Intelligence**
+- (Pursuing) PhD. in **Computer Science and Engineering**
+  - Institution: **The Chinese University of Hong Kong**(CUHK)
+- Bachelor's Degree in **Artificial Intelligence**
   - Institution: **Beijing University of Aeronautics and Astronautics**(BUAA, or **Beihang University**)
-  - Expected Graduation: **06/30/2024**
 - My Research Interests
   -  **Graph Machine Learning**
+  -  **Large Language Model**
   -  **AI4Anything**, Like AI4Bio, AI4EDA, AI4Architechture
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+I love engaging in meaningful conversations about various aspects of **life**, **research**, and **anything else that piques curiosity**. Feel free to reach out if you'd like to discuss:
+
+- Everyday experiences and thoughts about life.
+- Exciting developments in the world of research and academia.
+- Creative projects, hobbies, or interests.
+
+Let's exchange ideas and explore the fascinating world around us!
+
+<!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
