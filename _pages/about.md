@@ -75,5 +75,5 @@ Let's exchange ideas and explore the fascinating world around us!
 -->
 
 # 🗺️ Visitor Map
-<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=QJL5564OnLfbAoACTZYvXipaP9pJSzB9MMUTwBbYDI4&co=1c5c89&ct=55edeb&cmo=79eab2&cmn=f98d8d'></script>
+<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=313977&w=300&t=m&d=QJL5564OnLfbAoACTZYvXipaP9pJSzB9MMUTwBbYDI4&co=ffffff&ct=116e93&cmo=47e296&cmn=ff7676'></script>
 
