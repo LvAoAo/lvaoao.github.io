@@ -23,7 +23,7 @@ I am delighted to have you here! This webpage is my personal space where I share
 
 ## About Myself
 
-- [**CV of Wenhao Yu** (**于文昊**)](img/WenhaoYu.pdf)
+- [**CV of Wenhao Yu** (**于文昊**)](images/WenhaoYu.pdf)
 
 I am currently pursuing a PhD in Computer Science and Engineering at **The Chinese University of Hong Kong (CUHK)**. Before this, I completed my Bachelor's Degree in Artificial Intelligence at **Beijing University of Aeronautics and Astronautics (BUAA, or Beihang University)**.
 
