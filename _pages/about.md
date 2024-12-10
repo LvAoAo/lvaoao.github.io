@@ -17,29 +17,21 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Welcome to the world of Wenhao Yu
+# Welcome to the World of Wenhao Yu
 
-I will writing Everything in this webpage, like my notes, publications, news and blogs. 
-
-I hope you find what you want here! 
+I am delighted to have you here! This webpage is my personal space where I share my notes, publications, news, and blogs. I hope you find what you're looking for!
 
 ## About Myself
 
-- [**CV of Wenhao Yu**(**于文昊**)](img/WenhaoYu.pdf)
-- (Pursuing) PhD. in **Computer Science and Engineering**
-  - Institution: **The Chinese University of Hong Kong**(CUHK)
-- Bachelor's Degree in **Artificial Intelligence**
-  - Institution: **Beijing University of Aeronautics and Astronautics**(BUAA, or **Beihang University**)
-- My Research Interests
-  -  **Graph Machine Learning**
-  -  **Large Language Model**
-  -  **AI4Anything**, Like AI4Bio, AI4EDA, AI4Architechture
+- [**CV of Wenhao Yu** (**于文昊**)](img/WenhaoYu.pdf)
 
-I love engaging in meaningful conversations about various aspects of **life**, **research**, and **anything else that piques curiosity**. Feel free to reach out if you'd like to discuss:
+I am currently pursuing a PhD in Computer Science and Engineering at **The Chinese University of Hong Kong (CUHK)**. Before this, I completed my Bachelor's Degree in Artificial Intelligence at **Beijing University of Aeronautics and Astronautics (BUAA, or Beihang University)**.
 
-- Everyday experiences and thoughts about life.
-- Exciting developments in the world of research and academia.
-- Creative projects, hobbies, or interests.
+### My Research Interests
+
+My research interests include **Graph Machine Learning**, **Large Language Models**, and various applications of AI, such as AI for Bioinformatics, Electronic Design Automation, and Architecture.
+
+I love engaging in meaningful conversations about various aspects of **life**, **research**, and anything else that piques curiosity. Feel free to reach out if you'd like to discuss everyday experiences, exciting developments in research, or creative projects and hobbies.
 
 Let's exchange ideas and explore the fascinating world around us!
 
@@ -47,9 +39,9 @@ Let's exchange ideas and explore the fascinating world around us!
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/).
 
+<!-- 
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
@@ -80,3 +72,4 @@ Let's exchange ideas and explore the fascinating world around us!
 
 # 💻 Internships
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+-->
