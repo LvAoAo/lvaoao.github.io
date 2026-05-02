@@ -38,9 +38,9 @@ Let's exchange ideas and explore the fascinating world around us!
 
 
 # 🔥 News
-- *2025.05*: &nbsp;🎉🎉 Our paper titled "Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning" has been accepted by [ICML 2026](https://icml.cc/Conferences/2026)!
-- *2025.01*: &nbsp;🎉🎉 Our paper titled "PerFit: Exploring Personalization Shifts in Representation Space of LLMs" has been accepted by [ICLR 2026](https://iclr.cc/Conferences/2026)!
-- *2025.01*: &nbsp;🎉🎉 Our paper titled "Generative Archetype-Grounded Item Representations for Sequential Recommendation" has been accepted by [WWW 2026](https://www2026.thewebconf.org/)!
+- *2026.05*: &nbsp;🎉🎉 Our paper titled "Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning" has been accepted by [ICML 2026](https://icml.cc/Conferences/2026)!
+- *2026.01*: &nbsp;🎉🎉 Our paper titled "PerFit: Exploring Personalization Shifts in Representation Space of LLMs" has been accepted by [ICLR 2026](https://iclr.cc/Conferences/2026)!
+- *2026.01*: &nbsp;🎉🎉 Our paper titled "Generative Archetype-Grounded Item Representations for Sequential Recommendation" has been accepted by [WWW 2026](https://www2026.thewebconf.org/)!
 - *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted as an oral paper by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)!
 
 # 📝 Publications 
