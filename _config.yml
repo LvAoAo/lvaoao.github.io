@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "LvAoAo's Home"
-description              : "Graph Learning, AI for Science, Large Language Model"
+description              : "Graph Learning, AI for Science, Large Language Model, LLM Reasoning & Personalization"
 repository               : "LvAoAo/lvaoao.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -27,7 +27,7 @@ author:
   location         : "Hong Kong SAR, China"
   employer         :
   pubmed           : 
-  googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
+  googlescholar    : "https://scholar.google.com/citations?user=L3dVMPsAAAAJ"
   email            : "yuwenhao117@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :

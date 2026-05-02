@@ -25,46 +25,62 @@ I am delighted to have you here! This webpage is my personal space where I share
 
 - [**CV of Wenhao Yu** (**于文昊**)](../images/WenhaoYU.pdf)
 
-I am currently pursuing a PhD in Computer Science and Engineering at **The Chinese University of Hong Kong (CUHK)**. Before this, I completed my Bachelor's Degree in Artificial Intelligence at **Beijing University of Aeronautics and Astronautics (BUAA, or Beihang University)**.
+I am currently pursuing a PhD in Computer Science and Engineering at **The Chinese University of Hong Kong (CUHK)**, supervised by [Prof. Irwin King](https://www.cse.cuhk.edu.hk/irwin.king/). Before this, I completed my Bachelor's Degree in Artificial Intelligence at **Beijing University of Aeronautics and Astronautics (BUAA, or Beihang University)**.
 
 ### My Research Interests
 
-My research interests include **Graph Machine Learning**, **Large Language Models**, and various applications of AI, such as AI for Bioinformatics, Electronic Design Automation, and Architecture.
+My research interests include **Graph Machine Learning**, **Large Language Models (Reasoning & Personalization)**, and various applications of AI, such as AI for Bioinformatics, Electronic Design Automation, and Architecture.
 
 I love engaging in meaningful conversations about various aspects of **life**, **research**, and anything else that piques curiosity. Feel free to reach out if you'd like to discuss everyday experiences, exciting developments in research, or creative projects and hobbies.
 
 Let's exchange ideas and explore the fascinating world around us!
 
-<!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
+<!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=L3dVMPsAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=L3dVMPsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉🎉 Our paper titled "Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning" has been accepted by [ICML 2026](https://icml.cc/Conferences/2026)!
+- *2025.01*: &nbsp;🎉🎉 Our paper titled "PerFit: Exploring Personalization Shifts in Representation Space of LLMs" has been accepted by [ICLR 2026](https://iclr.cc/Conferences/2026)!
+- *2025.01*: &nbsp;🎉🎉 Our paper titled "Generative Archetype-Grounded Item Representations for Sequential Recommendation" has been accepted by [WWW 2026](https://www2026.thewebconf.org/)!
 - *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted as an oral paper by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)!
 
-<!-- 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning](https://arxiv.org/abs/2602.01745)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Wenhao Yu**, Shaohang Wei, Jiahong Liu, Yifan Li, Minda Hu, Aiwei Liu, Hao Zhang, Irwin King
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- RankTuner introduces a probability-entropy calibration signal, the Relative Rank Indicator, to reweight the fine-tuning objective, focusing updates on truly under-learned tokens. Experiments on multiple backbones show consistent improvements on mathematical reasoning benchmarks.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[PerFit: Exploring Personalization Shifts in Representation Space of LLMs](https://openreview.net/forum?id=Lwn67fk9e1)
+
+Jiahong Liu, **Wenhao Yu**, Quanyu Dai, Zhongyang Li, Jieming Zhu, Menglin Yang, Tat-Seng Chua, Irwin King
+
+- PerFit uncovers key patterns of user-specific information in the representation space of LLMs, introducing a two-stage solution that achieves precise steering of LLM personalization with 92.3% fewer parameters than the state-of-the-art method.
+</div>
+</div>
+
+- [Generative Archetype-Grounded Item Representations for Sequential Recommendation](https://github.com/AI-Santiago/GenAIR), Yifan Li, Jiahong Liu, Xinni Zhang, Hao Chen, Yankai Chen, **Wenhao Yu**, Jianting Chen, Irwin King, **WWW 2026**
+
+- [Exploring Personalization Shifts in Representation Space of LLMs](https://openreview.net/forum?id=Lwn67fk9e1), Jiahong Liu, **Wenhao Yu**, Quanyu Dai, Zhongyang Li, Jieming Zhu, Menglin Yang, Tat-Seng Chua, Irwin King, **KnowFM @ ACL 2025**
+
+- [GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation](https://arxiv.org/abs/2501.08001), Shengyin Sun, **Wenhao Yu**, Yuxiang Ren, Weitao Du, Liwei Liu, Xuecang Zhang, Ying Hu, Chen Ma, **AAAI 2025 (Oral)**
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.09 - Present*, Ph.D. in Computer Science and Engineering, The Chinese University of Hong Kong (CUHK). Supervisor: [Prof. Irwin King](https://www.cse.cuhk.edu.hk/irwin.king/)
+- *2020.09 - 2024.06*, B.Eng. in Artificial Intelligence, Beijing University of Aeronautics and Astronautics (BUAA / Beihang University)
+
+<!-- # 🎖 Honors and Awards
+- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
@@ -76,4 +92,3 @@ Let's exchange ideas and explore the fascinating world around us!
 
 # 🗺️ Visitor Map
 <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=313977&w=300&t=m&d=QJL5564OnLfbAoACTZYvXipaP9pJSzB9MMUTwBbYDI4&co=ffffff&ct=116e93&cmo=47e296&cmn=ff7676'></script>
-
