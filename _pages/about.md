@@ -23,7 +23,6 @@ I am delighted to have you here! This webpage is my personal space where I share
 
 ## About Myself
 
-- [**CV of Wenhao Yu** (**于文昊**)](../images/WenhaoYU.pdf)
 
 I am currently pursuing a PhD in Computer Science and Engineering at **The Chinese University of Hong Kong (CUHK)**, supervised by [Prof. Irwin King](https://www.cse.cuhk.edu.hk/irwin.king/). Before this, I completed my Bachelor's Degree in Artificial Intelligence at **Beijing University of Aeronautics and Astronautics (BUAA, or Beihang University)**.
 
@@ -46,7 +45,7 @@ Let's exchange ideas and explore the fascinating world around us!
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/ranktuner_fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning](https://arxiv.org/abs/2602.01745)
@@ -57,7 +56,7 @@ Let's exchange ideas and explore the fascinating world around us!
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/perfit_fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [PerFit: Exploring Personalization Shifts in Representation Space of LLMs](https://openreview.net/forum?id=Lwn67fk9e1)
