@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "LvAoAo's Home"
-description              : "Graph Learning, AI for Science, Large Language Model, LLM Reasoning & Personalization"
+description              : "LLM Post-training, LLM Personalization, Self-evolving Agents, Agentic RL"
 repository               : "LvAoAo/lvaoao.github.io"
 google_scholar_stats_use_cdn : true
 
