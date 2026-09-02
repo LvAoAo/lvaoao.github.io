@@ -28,7 +28,7 @@ I am currently pursuing a PhD in Computer Science and Engineering at **The Chine
 
 ### My Research Interests
 
-My research interests include **Graph Machine Learning**, **Large Language Models (Reasoning & Personalization)**, and various applications of AI, such as AI for Bioinformatics, Electronic Design Automation, and Architecture.
+My research interests center on **Large Language Models and AI Agents**, especially **Personalization**, **Long-Term Memory**, **Continual Learning**, **LLM Post-training**, and **Agentic Reinforcement Learning**.
 
 I love engaging in meaningful conversations about various aspects of **life**, **research**, and anything else that piques curiosity. Feel free to reach out if you'd like to discuss everyday experiences, exciting developments in research, or creative projects and hobbies.
 
@@ -38,12 +38,16 @@ Let's exchange ideas and explore the fascinating world around us!
 
 
 # 🔥 News
+- *2026.08*: &nbsp;🎉🎉 Our paper titled "TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents" has been accepted to **EMNLP 2026 Main Conference (Oral)**!
 - *2026.05*: &nbsp;🎉🎉 Our paper titled "Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning" has been accepted by [ICML 2026](https://icml.cc/Conferences/2026)!
 - *2026.01*: &nbsp;🎉🎉 Our paper titled "PerFit: Exploring Personalization Shifts in Representation Space of LLMs" has been accepted by [ICLR 2026](https://iclr.cc/Conferences/2026)!
 - *2026.01*: &nbsp;🎉🎉 Our paper titled "Generative Archetype-Grounded Item Representations for Sequential Recommendation" has been accepted by [WWW 2026](https://www2026.thewebconf.org/)!
 - *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted as an oral paper by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)!
 
 # 📝 Publications 
+
+- [TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents](https://openreview.net/forum?id=1gcOhsSkRU), Feiyang Xu, **Wenhao Yu**, Li Xiang, Quanyu Dai, Irwin King, **EMNLP 2026 Main Conference (Oral)**
+  - TSHMem organizes conversational evidence into a temporal-semantic hierarchical memory graph and couples time-aware structural propagation with semantic retrieval, achieving 66.3% accuracy on LongMemEval S* while retrieving fewer evidence tokens.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/ranktuner_fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">

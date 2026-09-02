@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "LvAoAo's Home"
-description              : "LLM Post-training, LLM Personalization, Self-evolving Agents, Agentic RL"
+description              : "LLM Personalization, Long-Term Memory, Continual Learning, LLM Post-training, Agentic RL"
 repository               : "LvAoAo/lvaoao.github.io"
 google_scholar_stats_use_cdn : true
 
