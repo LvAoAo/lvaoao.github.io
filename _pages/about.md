@@ -46,8 +46,16 @@ Let's exchange ideas and explore the fascinating world around us!
 
 # 📝 Publications 
 
-- [TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents](https://openreview.net/forum?id=1gcOhsSkRU), Feiyang Xu, **Wenhao Yu**, Li Xiang, Quanyu Dai, Irwin King, **EMNLP 2026 Main Conference**
-  - TSHMem organizes conversational evidence into a temporal-semantic hierarchical memory graph and couples time-aware structural propagation with semantic retrieval, achieving 66.3% accuracy on LongMemEval S* while retrieving fewer evidence tokens.
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026</div><img src='images/tshmem_fig1.png' alt="Overview of the TSHMem framework" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents](https://openreview.net/forum?id=1gcOhsSkRU)
+
+Feiyang Xu, **Wenhao Yu**, Li Xiang, Quanyu Dai, Irwin King
+
+- TSHMem organizes conversational evidence into a temporal-semantic hierarchical memory graph and couples time-aware structural propagation with semantic retrieval, achieving 66.3% accuracy on LongMemEval S* while retrieving fewer evidence tokens.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/ranktuner_fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
