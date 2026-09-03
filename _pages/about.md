@@ -38,15 +38,15 @@ Let's exchange ideas and explore the fascinating world around us!
 
 
 # 🔥 News
-- *2026.08*: &nbsp;🎉🎉 Our paper titled "TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents" has been accepted to **EMNLP 2026 Main Conference (Oral)**!
+- *2026.08*: &nbsp;🎉🎉 Our paper titled "TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents" has been accepted to **EMNLP 2026 Main Conference**!
 - *2026.05*: &nbsp;🎉🎉 Our paper titled "Probability-Entropy Calibration: An Elastic Indicator for Adaptive Fine-tuning" has been accepted by [ICML 2026](https://icml.cc/Conferences/2026)!
 - *2026.01*: &nbsp;🎉🎉 Our paper titled "PerFit: Exploring Personalization Shifts in Representation Space of LLMs" has been accepted by [ICLR 2026](https://iclr.cc/Conferences/2026)!
-- *2026.01*: &nbsp;🎉🎉 Our paper titled "Generative Archetype-Grounded Item Representations for Sequential Recommendation" has been accepted by [WWW 2026](https://www2026.thewebconf.org/)!
+- *2026.01*: &nbsp;🎉🎉 Our paper titled "Generative Archetype-Grounded Item Representations for Sequential Recommendation" has been accepted as an oral paper by [WWW 2026](https://www2026.thewebconf.org/)!
 - *2024.12*: &nbsp;🎉🎉 Our paper titled "GDiffRetro: Retrosynthesis Prediction with Dual Graph Enhanced Molecular Representation and Diffusion Generation" has been accepted as an oral paper by [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/)!
 
 # 📝 Publications 
 
-- [TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents](https://openreview.net/forum?id=1gcOhsSkRU), Feiyang Xu, **Wenhao Yu**, Li Xiang, Quanyu Dai, Irwin King, **EMNLP 2026 Main Conference (Oral)**
+- [TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents](https://openreview.net/forum?id=1gcOhsSkRU), Feiyang Xu, **Wenhao Yu**, Li Xiang, Quanyu Dai, Irwin King, **EMNLP 2026 Main Conference**
   - TSHMem organizes conversational evidence into a temporal-semantic hierarchical memory graph and couples time-aware structural propagation with semantic retrieval, achieving 66.3% accuracy on LongMemEval S* while retrieving fewer evidence tokens.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/ranktuner_fig1.png' alt="sym" width="100%"></div></div>
@@ -71,7 +71,7 @@ Jiahong Liu, **Wenhao Yu**, Quanyu Dai, Zhongyang Li, Jieming Zhu, Menglin Yang,
 </div>
 </div>
 
-- [Generative Archetype-Grounded Item Representations for Sequential Recommendation](https://github.com/AI-Santiago/GenAIR), Yifan Li, Jiahong Liu, Xinni Zhang, Hao Chen, Yankai Chen, **Wenhao Yu**, Jianting Chen, Irwin King, **WWW 2026**
+- [Generative Archetype-Grounded Item Representations for Sequential Recommendation](https://github.com/AI-Santiago/GenAIR), Yifan Li, Jiahong Liu, Xinni Zhang, Hao Chen, Yankai Chen, **Wenhao Yu**, Jianting Chen, Irwin King, **WWW 2026 (Oral)**
 
 - [Exploring Personalization Shifts in Representation Space of LLMs](https://openreview.net/forum?id=Lwn67fk9e1), Jiahong Liu, **Wenhao Yu**, Quanyu Dai, Zhongyang Li, Jieming Zhu, Menglin Yang, Tat-Seng Chua, Irwin King, **KnowFM @ ACL 2025**
 
